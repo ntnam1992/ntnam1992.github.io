@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Slider</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<div class="container">
+      	<ul class="slider">
+            <li class="img-slider act"><img alt="no1" src="img/images-1.jpg" /></li>
+            <li class="img-slider"><img alt="no2" src="img/images-2.jpg" /></li>
+            <li class="img-slider"><img alt="no3" src="img/images-3.jpg" /></li>
+            <li class="img-slider"><img alt="no4" src="img/images-4.jpg" /></li>
+            <li class="img-slider"><img alt="no5" src="img/images-5.jpg" /></li>
+        </ul>
+        <div class="controll">
+        	<input type="button"  class="pre-btn" />
+        	<input type="button"  class="next-btn" />
+        </div>
+        <ul class="small-slider">
+            <li class="small-act" ><img alt="no1" src="img/images-1.jpg" onclick="slider.clickimg(0)" /></li>
+            <li ><img alt="no2" src="img/images-2.jpg" onclick="slider.clickimg(1)"/></li>
+            <li ><img alt="no3" src="img/images-3.jpg" onclick="slider.clickimg(2)"/></li>
+            <li ><img alt="no4" src="img/images-4.jpg" onclick="slider.clickimg(3)"/></li>
+            <li ><img alt="no5" src="img/images-5.jpg" onclick="slider.clickimg(4)"/></li>
+        </ul>
+    </div>
+    <script language="javascript" src="js/script.js"></script>
+</body>
+</html>

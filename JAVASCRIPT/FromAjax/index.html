@@ -1,0 +1,70 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FORMAJAX</title>
+</head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+<body>
+		<div class="container">
+         	<div class="inner">   
+                <form>
+                        <p>Username</p>
+                        <input id="user" type="text"></input>
+                        <span class="text-note mess-user"></span>
+                        <div class="clear"></div>                        
+                        <p>Password</p>
+                        <input id="pass" type="text"></input>
+                        <span class="text-note mess-pass"></span>
+                        <div class="clear"></div>                      
+                        <p>Email</p>
+                        <input id="mail" type="text"></input>
+                        <span class="text-note mess-email"></span>
+                        <div class="clear"></div>
+                        <p>Brithday</p>
+                       <!-- <input id="date" type="text"></input>-->
+						<input class="txt-date"type="text" onclick="calandershow()"></input>
+                        <span class="text-note mess-brith"></span>  
+                <table id="table2" class="show">
+                        <tr >
+                            <td ><input type="button" id="pre-year" onClick="preYear()"></td>
+                            <td ><input type="button" id="pre-month" onClick="preMonth()"></td>
+                        
+                            <td colspan="" class="top">
+                                <select id="month" onChange="changeMonth()"></select>
+                            </td>
+                            <td class="top">
+                                <select id="year" onChange="changeYear()"></select>
+                            </td>
+                            <td ><input type="button" id="next-month" onClick="nextMonth()"></td>
+                            <td ><input type="button" id="next-year" onClick="nextYear()"></td>
+                        </tr>
+                </table>
+                <table id="table1" class="show">
+                	<tr>
+                            <th>SUN</th>
+                            <th>MON</th>
+                            <th>TUE</th>
+                            <th>WED</th>
+                            <th>THU</th>
+                            <th>FRI</th>
+                            <th>SAT</th>
+					</tr>
+                 </table>
+                        
+                 
+                        
+                         
+                        <div class="clear"></div>
+                        <input id="sub" type="button" value="Submit" onclick="testForm()"> 
+                        <input id="ref" type="reset" value="Refresh" onclick="resetForm()">
+                        <div class="clear"></div>
+                                     
+                </form>
+                </div>
+            <div class="clear"></div>
+        </div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
