@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	width:1030px;
+	font-family: Arial;
+	background:#121214;
+	font-size:0.6878em;
+	color:#595959;
+}
+.container-1{
+	margin-top:40px;
+	width:500px;
+	float:left;
+}
+.container-2{
+	width:238px;
+	margin-top:22px;
+	background:#232326;
+	float:left;
+}
+.inner-1{
+	width:405px;
+	margin-left:69px;
+	margin-bottom:40px;
+}
+.padding-10{
+	padding-left:10px;
+	padding-bottom:20px;
+}
+.inner-1-2{
+	border-top:#595959 1px dotted;
+	width:395px;
+	margin-left:10px;
+}
+.content{
+	margin-top:40px;
+}
+.content img{
+	width:130px;
+	height:90px;
+	display:block;
+	float:left;
+	padding-right:40px;
+	padding-bottom:29px;
+}
+.icon{
+	background:url(../img/arr_1.gif) no-repeat top left;
+	float:left;
+	padding-right:5px;
+	margin-top: 5px;
+}
+.more-info{
+	padding-left: 16px;
+}
+.top-spacing{
+	padding-top:90px;
+}
+.title{
+	font-weight:bold;
+	color:#ffffff;
+}
+.info{
+	padding-top: 20px;
+	padding-bottom:20px;
+}
+.nav1, .nav2 {
+	float: left;
+	padding-top:30px;
+}
+.icon a{
+	text-decoration:none;
+	color:#ffffff;
+}
+ul, li {
+	margin-left: 5px;
+	padding-left: 0;
+	margin-bottom: 10px;
+}
+
+.nav2 ul, .nav2 li {
+	margin-left: 10px;
+}
+
+ul {
+	list-style-image: url("../img/arr.gif");
+}
+ul a{
+	color:#595959;
+}
+.clear{
+	float:none;
+	clear:both;
+	display:block;
+	height:1px;
+}
+.inner-2{
+	width:192px;
+	margin-top:72px;
+	margin-left:23px;
+	border-top:#595959 1px solid;
+}
+.section-img{
+	margin: 25px 10px 25px 10px ;	
+}
+.margin-left-10{
+	margin-left:10px;
+}
+.p-bottom{
+	padding-bottom:30px;
+}

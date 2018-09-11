@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 1260px;
+    height: auto;
+    background-color: rgb(45, 47, 53);
+    margin: 0px auto;
+}
+.header {
+    width: 1260px;
+    height: 110px;
+    background-color: rgb(45, 47, 53);
+    border-bottom: 1px solid rgb(71, 74, 81);
+}
+.banner {
+    display: block;
+    width: 1260px;
+    background: url(../img/bg_banner.gif) repeat-x;
+}
+.inner {
+    width: 1000px;
+    height: auto;
+    margin: 0px auto;
+}
+.banner .inner {
+    height: 300px;
+    position: relative;
+}
+.img-banner {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.title-baner {
+    padding-top: 10px;
+    display: block;
+    font-size: 20px;
+    color: rgb(255, 255, 0);
+    width: 400px;
+}
+.txt-banner {
+    width: 400px;
+    color: rgb(204, 204, 204);
+    font-size: 13px;
+    padding-top: 40px;
+}
+.border {
+    border-bottom: 1px solid rgb(71, 74, 81);
+    border-top: 1px solid rgb(71, 74, 81);
+}
+.list-img {
+    text-align: center;
+}
+.list-img li {
+    position: relative;
+    width: 220px;
+    height: 102px;
+    display: inline-block;
+    padding: 27px 8px 17px;
+}
+.img-number {
+    position: absolute;
+    top: 32px;
+    right: 12px;
+}
+.contant-left {
+    float: left;
+    font-size: 13px;
+    padding-top: 10px;
+    display: block;
+    width: 400px;
+    color: rgb(204, 204, 204);
+    text-align: justify;
+    padding-bottom: 50px;
+    background: url(../img/home_services_bg_design.gif) right bottom no-repeat;
+}
+.title-contant {
+    font-size: 16px;
+    color: rgb(255, 255, 0);
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+}
+.contant-right {
+    float: right;
+    font-size: 13px;
+    padding-top: 10px;
+    display: block;
+    width: 400px;
+    color: rgb(204, 204, 204);
+    text-align: justify;
+    padding-bottom: 10px;
+    background: url(../img/home_services_bg_marketing.gif) 0px 8px no-repeat;
+}
+
+.contant-right .title-contant {
+    line-height: 20px;
+    padding-bottom: 50px;
+}
+.clear {
+    float: none;
+    clear: both;
+}
+.footer {
+    height: 120px;
+    background: url(../img/bg_footer.gif) center 20px no-repeat rgb(36, 38, 42);
+}
+.footer p {
+    color: rgb(204, 204, 204);
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid rgb(204, 204, 204);
+}
+
