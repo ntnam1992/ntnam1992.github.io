@@ -74,9 +74,7 @@ var thiscanvas = function(){
 					ctx.stroke();
 					xstart = xend;
 					ystart = yend;
-				}
-				
-				if(midvalue > value[i+1]){
+					if(midvalue > value[i+1]){
 					ctx.moveTo(xstart,ystart);	
 					xend = xstart +25;
 					yend =  (ycenter-(50* value[i+1]));
@@ -86,6 +84,8 @@ var thiscanvas = function(){
 					ctx.stroke();
 					xstart = xend;
 					ystart = yend;
+					}
+				
 				}else if(value[i] == midvalue){
 						ctx.moveTo(xstart,ystart);//ycenter - (50*value[0]));	
 						xend = xstart +25;
@@ -94,6 +94,15 @@ var thiscanvas = function(){
 						ctx.stroke();
 						xstart = xend;
 						ystart = yend;
+						if(value[i+1] == midvalue){
+						ctx.moveTo(xstart,ystart);//ycenter - (50*value[0]));	
+						xend = xstart +25;
+						yend =  (ycenter-(50* value[i+1]));
+						ctx.lineTo(xend+1,yend);
+						ctx.stroke();
+						xstart = xend;
+						ystart = yend;
+						}
 					}
 			
 			}

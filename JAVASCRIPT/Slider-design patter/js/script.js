@@ -7,6 +7,7 @@ var slider = function(){
 	/** envent onclick button next*/
 	function next(){
 		count++;
+		stopImg();
 		if(count >4){
 			count = 0;
 			list = document.getElementsByClassName("img-slider");
@@ -20,12 +21,13 @@ var slider = function(){
 		
 		document.getElementsByClassName("small-act")[0].classList.remove("small-act"); //remove class small-act
 		document.getElementsByClassName("small-slider")[0].getElementsByTagName("li")[count].classList.add("small-act"); //add class small-acc
+	auto();
 	}
 	
 	/** envent onclick button pre*/
 	function pre(){
 		count--;
-		
+		stopImg();
 		if(count <0){
 			count = 4;
 			list = document.getElementsByClassName("img-slider");
@@ -39,6 +41,7 @@ var slider = function(){
 		
 		document.getElementsByClassName("small-act")[0].classList.remove("small-act");
 		document.getElementsByClassName("small-slider")[0].getElementsByTagName("li")[count].classList.add("small-act");
+		auto();
 		
 	}
 	
@@ -52,6 +55,7 @@ var slider = function(){
 	function clickImg(i){
 		count = i;
 	var item;
+	stopImg();
 	var ListSmall = document.getElementsByClassName("small-slider")[0].getElementsByTagName("li")[i];
 	item=document.getElementsByClassName("small-act")[0];
 	item.classList.remove("small-act");
@@ -61,6 +65,7 @@ var slider = function(){
 	List.classList.remove("act");
 	List= document.getElementsByClassName("img-slider")[i];
 	List.classList.add("act");
+	auto();
 	}
 	return{
 		btnnext : next,
