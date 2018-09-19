@@ -1,0 +1,180 @@
+// Reset
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0 none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+   font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo,sans-serif;
+}
+
+
+ol, ul, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* NGAN */
+img {
+  display: block;
+  max-width:100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: block;
+  width:100%;
+  margin: 0 auto;
+}
+.banner {
+  @extend .header;
+}
+$btn-hover: url("../images/btn-hover.jpg");
+@mixin btn-position ($left, $bottom) {
+  left: $left;
+  bottom: $bottom;
+  position: absolute;
+  display: inline-block;
+}
+// Product
+.product {
+  @extend .header;
+  .product__list {
+    display: block;
+    margin: 0 auto;
+    width:75.8%;
+    li {
+      display: inline-block;
+      width:50%;
+      max-width: 512px;
+      position: relative;
+      float: left;
+      .btn--on:hover {
+        content: $btn-hover;
+      }
+    }
+    .product-1 {
+      height:300px;
+      background: url("../images/HM037.jpg") no-repeat left;
+      .btn--on {
+        @include btn-position(13%, 10%);
+      }
+    }
+    .product-2 {
+      height:300px;
+      background: url("../images/HM035.jpg") no-repeat;
+      .btn--on {
+        @include btn-position(5%, 10%);
+      }
+    }
+    .product-3 {
+      height:315px;
+      background: url("../images/HM033.jpg") no-repeat left center;
+      .btn--on {
+        @include btn-position(13%, 13%);
+      }
+    }
+    .product-4 {
+      height:315px;
+      background: url("../images/HM031.jpg") no-repeat left center;
+      .btn--on {
+        @include btn-position(5%, 13%);
+
+      }
+    }
+  }
+}
+
+
+.introduce {
+  @extend .header;
+  width:75.8%;
+}
+
+/*Nam*/
+.container{
+  width:1124px;
+  margin:0 auto;
+  padding-left: 7px;
+  .content__list{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+
+    li{
+      position:relative;
+      width:512px;
+      height:306px;
+      .btn-content{
+          position:absolute;
+          width:418px;
+          height:49px;
+          background:url(../images/btn-on.jpg) no-repeat center center;
+        }
+      .btn-content:hover{
+        background:url(../images/btn-hover.jpg) no-repeat center center;
+        }
+      }
+    @for $i from 30 through 37 {
+      .li-#{$i}{
+        background:url(../images/content__HM0#{$i}.jpg) no-repeat center center;
+
+      }
+    }
+    li:nth-child(2n){
+      margin-left:10px;
+      .btn-content{
+        left:18px;
+        bottom:25px
+      }
+    }
+    li:nth-child(2n+1){
+      margin-left:43px;
+      .btn-content{
+        left:70px;
+        bottom:25px;
+        }
+      }
+    }
+  }
