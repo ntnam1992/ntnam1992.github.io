@@ -32,10 +32,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1.5;
-   font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo,sans-serif;
+  //font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo,sans-serif;
 }
-
-
 ol, ul, li {
   list-style: none;
 }
@@ -62,119 +60,113 @@ img {
   margin: 0 auto;
 }
 
+.inner {
+  display: block;
+  max-width: 1124px;
+  width:100%;
+  //max-width: 1124px;
+  margin: 0 auto;
+  //width:100%;
+}
 .header {
   display: block;
-  width:100%;
-  margin: 0 auto;
+  width: 100%;
+  p {
+    display: block;
+  }
 }
 .banner {
   @extend .header;
 }
-$btn-hover: url("../images/btn-hover.jpg");
 @mixin btn-position ($left, $bottom) {
+  display: block;
+  position: absolute;
   left: $left;
   bottom: $bottom;
-  position: absolute;
-  display: inline-block;
 }
-// Product
+//$btn-hover: url("../images/btn-hover.jpg");
 .product {
   @extend .header;
   .product__list {
-    display: block;
-    margin: 0 auto;
-    width:75.8%;
-    li {
-      display: inline-block;
-      width:50%;
-      max-width: 512px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .item{
       position: relative;
-      float: left;
-      .btn--on:hover {
-        content: $btn-hover;
+      a{
+        position: absolute;
+        width: 74%;
+        background: url(../images/btn-on.jpg) no-repeat center center;
+        background-size: 100%;
+        height: 49px;
       }
-    }
-    .product-1 {
-      height:300px;
-      background: url("../images/HM037.jpg") no-repeat left;
-      .btn--on {
-        @include btn-position(13%, 10%);
+      a:hover{
+        background: url(../images/btn-hover.jpg) no-repeat center center;
+        background-size: 100%;
       }
-    }
-    .product-2 {
-      height:300px;
-      background: url("../images/HM035.jpg") no-repeat;
-      .btn--on {
-        @include btn-position(5%, 10%);
-      }
-    }
-    .product-3 {
-      height:315px;
-      background: url("../images/HM033.jpg") no-repeat left center;
-      .btn--on {
-        @include btn-position(13%, 13%);
-      }
-    }
-    .product-4 {
-      height:315px;
-      background: url("../images/HM031.jpg") no-repeat left center;
-      .btn--on {
-        @include btn-position(5%, 13%);
-
-      }
+      li:nth-child(2n+1){
+        a{
+          left: 4.5%;
+        }
+      
     }
   }
+  li {
+    position: relative;
+    width: 50%;
+    }
+
+
+    .btn--on {
+      @include btn-position(20.5%, 9%);
+      //&.btn--on:hover {
+       // content: $btn-hover;
+      //}
+    }
+    .btn--even {
+      left: 4.5%;
+    }
+    .btn--last {
+      bottom: 10%;
+    }
+  }
+  //$n: 4;
+  //@for $i from 1 through $n {
+    //.product-#{$i} {
+    //  background: url("../images/product__item#{$i}.jpg") no-repeat;
+    //  background-position: center center;
+    //  -webkit-background-size: cover;
+    //  background-size: cover;
+    //}
+  //}
+  //.product--height {
+   // height: 306px;
+  //}
 }
 
-
-.introduce {
-  @extend .header;
-  width:75.8%;
-}
-
-/*Nam*/
-.container{
-  width:1124px;
-  margin:0 auto;
-  padding-left: 7px;
-  .content__list{
+.store {
+  display: block;
+  width: 100%;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
     width:100%;
-    display:flex;
-    flex-wrap:wrap;
-
-    li{
-      position:relative;
-      width:512px;
-      height:306px;
-      .btn-content{
-          position:absolute;
-          width:418px;
-          height:49px;
-          background:url(../images/btn-on.jpg) no-repeat center center;
-        }
-      .btn-content:hover{
-        background:url(../images/btn-hover.jpg) no-repeat center center;
-        }
-      }
-    @for $i from 30 through 37 {
-      .li-#{$i}{
-        background:url(../images/content__HM0#{$i}.jpg) no-repeat center center;
-
-      }
-    }
-    li:nth-child(2n){
-      margin-left:10px;
-      .btn-content{
-        left:18px;
-        bottom:25px
-      }
-    }
-    li:nth-child(2n+1){
-      margin-left:43px;
-      .btn-content{
-        left:70px;
-        bottom:25px;
-        }
+    max-width: 1124px;
+    margin: 0 auto;
+    //@for $i from 1 through 8 {
+      //.li-#{$i} {
+      //  width: 50%;
+      //  height: 299px;
+      //  background: url("../images/product-2__item#{$i}.jpg") no-repeat;
+      //  -webkit-background-size: 100%;
+      //  background-size: 100%;
+      //}
+    //}
+    li {
+      .btn--on {
+        bottom: 7%;
       }
     }
   }
+}
+/* END NGAN */

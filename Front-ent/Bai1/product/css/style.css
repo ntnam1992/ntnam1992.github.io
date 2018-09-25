@@ -1,0 +1,249 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0 none;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* NGAN */
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.inner {
+    display: block;
+    max-width: 1124px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header,
+.banner,
+.product {
+    display: block;
+    width: 100%;
+}
+
+.header p,
+.banner p,
+.product p {
+    display: block;
+}
+
+.product .product__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.product .product__list .item {
+    position: relative;
+}
+
+.product .product__list .item a {
+    position: absolute;
+    width: 74%;
+    background: url(../images/btn-on.jpg) no-repeat center center;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    height: 49px;
+}
+
+.product .product__list .item a:hover {
+    background: url(../images/btn-hover.jpg) no-repeat center center;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+}
+
+.product .product__list .item li:nth-child(2n+1) a {
+    left: 4.5%;
+}
+
+.product .product__list li {
+    position: relative;
+    width: 50%;
+}
+
+.product .product__list .btn--on {
+    display: block;
+    position: absolute;
+    left: 20.5%;
+    bottom: 9%;
+}
+
+.product .product__list .btn--even {
+    left: 4.5%;
+}
+
+.product .product__list .btn--last {
+    bottom: 10%;
+}
+
+.store {
+    display: block;
+    width: 100%;
+}
+
+.store ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1124px;
+    margin: 0 auto;
+}
+
+.store ul li .btn--on {
+    bottom: 7%;
+}
+
+/* END NGAN */
