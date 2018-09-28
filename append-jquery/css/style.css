@@ -184,6 +184,7 @@ ol{
 }
 li p{
     width: 50%;
+    overflow:;
 }
 span{
     display: block;
