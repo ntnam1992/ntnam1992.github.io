@@ -41,26 +41,73 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.slider{
-	max-width: 950px;
-	width: 100%;
-	height: 598px;
-	display: block;
+.container{
+	width: 500px;
+	height: auto;
+	margin: 40px auto 0;
+
+}
+.menu{
+	width: 500px;
 	margin: 0 auto;
-	margin-top: 30px;
-	background: url(../images/bg_itm_lineup.jpg) no-repeat center center;
-	.act{
-		display: block;
-	}
-	ul{
-		width: 100%;
-		max-width: 950px;
-		list-style-type: none;
-		li{
-			display: none;
-		}
-		.act{
-			display: block !important;
-		}
-	}
+	display:flex;
+	list-style-type: none;
+	justify-content: flex-start;
+	border-top: 1px solid blue;
+	position: fixed;
+	top: 0;
+	left: 31.5%;
+	background: #ffffff;
+	
+}
+.menu li{
+	display: block;
+	width:60px;
+	text-align: center;
+	line-height: 1.6;
+	font-weight: bold;
+}
+.color{
+	height: 300px;
+	/* overflow: auto; */
+}
+.blue{
+	background: blue;
+	width: 100%;
+	height: 200px;
+}
+.green{
+	background: green;
+	width: 100%;
+	height: 300px;
+}
+.pink{
+	background: pink;
+	width: 100%;
+	height: 500px;
+}
+.red{
+	background: red;
+	width: 100%;
+	height: 200px;
+}
+.orange{
+	background: orange;
+	width: 100%;
+	height: 700px;
+}
+.txtblue{
+	color: blue;
+}
+.txtred{
+	color: red;
+}
+.txtgreen{
+	color: green;
+}
+.txtpink{
+	color: pink;
+}
+.txtorg{
+	color: orange;
 }
