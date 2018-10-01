@@ -108,7 +108,7 @@ body {
 
 ol,
 ul {
-    list-style: none;
+    list-style-type:  none;
 }
 
 blockquote,
@@ -137,22 +137,67 @@ table {
     margin: 0 auto;
     margin-top: 30px;
     background: url(../images/bg_itm_lineup.jpg) no-repeat center center;
+    position: relative;
 }
 
 .slider .act {
     display: block;
 }
 
-.slider ul {
+.slider__item-info {
     width: 100%;
     max-width: 950px;
     list-style-type: none;
+    position: absolute;
+    top : 13%;
+    left: 15.5%;
+    overflow: hidden;
+
 }
 
-.slider ul li {
+.slider__item-info li {
     display: none;
+    width: 648px;
+    overflow: hidden;
+ 
+}
+.slider__item-info li:nth-child(1){
+    display: block;
+}
+.act{
+    display: block;
 }
 
-.slider ul .act {
+/* .slider__item-info .act {
     display: block !important;
+} */
+.btn-pre{
+    position: absolute;
+    top: 40%;
+    left: 6%;
+}
+.btn-next{
+    position: absolute;
+    top: 40%;
+    right: 6%;
+}
+.slider__item-nav{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 5%;
+    left: 17%;
+}
+.slider__item-nav li{
+    padding: 0 10px;
+    opacity: 1;
+}
+.slider__item-nav li:nth-child(1){
+    opacity: 0.5;
+}
+.slider__item-nav li:hover{
+    opacity: 0.5;
+}
+.opa{
+    opacity: 0.5;
 }
