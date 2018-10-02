@@ -2,7 +2,6 @@ $(document).ready(function(){
 	var btnPre = $(".js-pre");
 	var btnNext = $(".js-next")
 	var maxImg = 4;
-	var itemList =$(".slider__item-nav li")
 	var list; 
 	var minImg = 0;
 	var count = 0;
@@ -10,7 +9,7 @@ $(document).ready(function(){
 	var widthImg = $('.slider__item-info img').width();
 	var positionItem;
 	/** Event click button next */
-	$(".slider").on("click",".js-next",function(){
+	$(".js-slider").on("click",".js-next",function(){
 		count++;
 		if( count > maxImg ){
 			count = 0;
@@ -19,7 +18,7 @@ $(document).ready(function(){
 
 	});
 	/** Event click button pre */
-	$(".slider").on("click",".js-pre",function(){
+	$(".js-slider").on("click",".js-pre",function(){
 		count--;
 		if( count < 0 ){
 			count = maxImg;
@@ -28,7 +27,7 @@ $(document).ready(function(){
 			
 	});
 	/** Event click list img  */
-	itemList.click(function(){
+	$(".js-nav li").click(function(){
 		var positionItem = $(this).index();
 		animate(positionItem);
 		count = positionItem;
@@ -42,9 +41,9 @@ $(document).ready(function(){
 	}
 	/**click after animate*/
 	function timeOut() {
-    $(".event-pointer").css({pointerEvents:'none'});
+    $(".js-event").css({pointerEvents:'none'});
     setTimeout(function(){
-     $(".event-pointer").css({pointerEvents:'auto'})
+     $(".js-event").css({pointerEvents:'auto'})
  	},1000 );
 }
 });
