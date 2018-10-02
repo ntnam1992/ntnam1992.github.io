@@ -173,11 +173,13 @@ table {
     position: absolute;
     top: 40%;
     left: 6%;
+    cursor: pointer; 
 }
 .btn-next{
     position: absolute;
     top: 40%;
     right: 6%;
+    cursor: pointer; 
 }
 .slider__item-nav{
     display: flex;
@@ -190,11 +192,15 @@ table {
     padding: 0 10px;
     opacity: 1;
 }
+.event-pointer{
+    pointer-events:auto; 
+}
 .slider__item-nav li:nth-child(1){
     opacity: 0.5;
 }
 .slider__item-nav li:hover{
-    opacity: 0.5;
+    opacity: 0.5;    
+    cursor: pointer;  
 }
 .opa{
     opacity: 0.5;
