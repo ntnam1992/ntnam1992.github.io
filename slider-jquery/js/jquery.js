@@ -34,9 +34,9 @@ $(document).ready(function(){
 		count = positionItem;
 	});	
 	function animate(count){
-		$(".slider__item-nav li ").css('opacity',1); //reset opacity list item
-		$(".slider__item-nav li ").eq(count).css('opacity',0.5); // add opacity at position count
-		$(".slider__item-info").animate({right:widthImg*(count)},600);
+		$(".js-nav li ").css('opacity',1); //reset opacity list item
+		$(".js-nav li ").eq(count).css('opacity',0.5); // add opacity at position count
+		$(".js-item").animate({right:widthImg*(count)},600);
 		timeOut();	
 
 	}
