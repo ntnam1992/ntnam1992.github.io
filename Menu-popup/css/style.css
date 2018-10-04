@@ -130,15 +130,27 @@ table {
 }
 
 .container{
-    min-width:269px;
-    width: 269px;
+    min-width:500pxpx;
+    width: 500px;
     margin: 20px auto; 
+
 }
 img{
     display: block;
+    cursor: pointer;
+    pointer-events: auto;
+}
+.menu{
+    min-width: 500px;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    height: 700px;
 }
 .menu ul{
-    width: 100%;
+    width: 269px;
+    margin: 0 auto;
 }
 .menu ul li{
     width: 100%;
@@ -147,18 +159,48 @@ li p{
     width: 100%;
     border: 1px solid;
     box-sizing: border-box;
-    padding: 10px 10px;
     __display: none;
+    padding: 0 20px;
     word-wrap: break-word;
+    height: 0;
+    overflow: hidden;
 }
+
 li p span{
     display: block;
     margin: 0 auto;
     font-size: 20px;
     text-align: center;
-    padding-bottom: 10px;
+    line-height: 2;
 }
 .bt-about{
     display: block;
-    margin: 10px auto 0;
+        margin: 10px auto 10px
+}
+.pop-up1 ,.pop-up2{
+    position: absolute;
+    width: 500px;
+    top: -380px;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-size: 24px;
+    padding-top: 20px;
+}
+p{
+    padding: 10px 20px;
+}
+.pop-up_box{
+    display: block;
+    margin: 10px auto;
+}
+.btn-close{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
