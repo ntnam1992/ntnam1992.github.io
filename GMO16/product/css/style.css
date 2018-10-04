@@ -132,20 +132,17 @@ table {
 }
 
 body {
-    font-family: デバイスフォント;
+    font-family: "MSPGothic", "Hỉagino Gothic", sans-serif;
+    background: url(../images/wall-texture.jpg) repeat-y center center;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
 
 body img {
     max-width: 100%;
     display: block;
     margin: 0 auto;
-}
-
-body {
-    background: url(../images/wall-texture.jpg) repeat-y center center;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
 }
 
 .header {
@@ -162,21 +159,23 @@ body {
 }
 
 .header .header__video a {
-    background: url(../images/hearder-bg-tittle.png) no-repeat center center;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #2f9f1f;
     width: 79.41860465116279%;
     display: block;
     margin: 0 auto;
-    height: 85px;
+    __height: 85px;
     margin-bottom: 30px;
 }
 
 .header .header__video a img {
-    padding-top: 27px;
+    padding: 4.2% 0;
 }
 
 .header .header__video .video {
     margin: 0 auto;
     display: block;
+    width: 75%;
 }
 
 .header .header__video .header__txt {
@@ -394,6 +393,7 @@ body {
     display: block;
     text-align: center;
     padding-top: 30px;
+    font-family: Bodoni MT;
 }
 
 @media screen and (max-width: 644px) {

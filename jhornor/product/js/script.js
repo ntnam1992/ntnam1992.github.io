@@ -14,6 +14,23 @@ $(document).ready(function(){
 	    	});
 	    	$("html, body").animate({ scrollTop: 0 }, 5000);
 	    	$('.header__info img').attr("src",$('.header__info img').attr("src").replace(".png","-hornor.png"));
+	    	setTimeout(function() {timeOut();}, 6000);
+	    	
 	    }
+
 	});
+	function timeOut(){
+		// var toTop=$(".js-main").offset().top;
+		 console.log($(window).scrollTop());
+		if( $(window).scrollTop() ==0){
+			{$("body").removeClass("act");
+				$('ul li .js-main').each(function(i) {
+	    		i += 1;
+	    		$(this).attr("src", $(this).attr("src").replace(i + ".jpg", i + "_hornor.jpg"));
+	    		});
+				$('.header__info img').attr("src",$('.header__info img').attr("src").replace("-hornor.png",".png"));
+				flag=0;
+			}			
+		}
+	}
 });

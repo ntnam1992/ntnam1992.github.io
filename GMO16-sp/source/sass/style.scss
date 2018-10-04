@@ -42,16 +42,14 @@ table {
 	border-spacing: 0;
 }
 body{
-	font-family: デバイスフォント;
+	font-family: "MSPGothic","Hỉagino Gothic", sans-serif;
+	background: url(../images/wall-texture.jpg) repeat-y center center;
+	background-size:100%;
 	img{
 		max-width:100%;
 		display:block;
 		margin:0 auto;
 	}	
-}
-body{
-	background: url(../images/wall-texture.jpg) repeat-y center center;
-	background-size:100%;
 }
 .header{
 	width:100%;
@@ -63,7 +61,6 @@ body{
 		background: url(../images/header__video.jpg) no-repeat ;
 		
 		img {
-			width: 94%;
 			display: block;
 			margin:0 auto;
 		}
@@ -119,7 +116,7 @@ body{
 			position:absolute;
 			//top:18px;
 			display:block;
-			color:#000000;
+			color:#2a262d;
 			font-weight:bold;
 			text-align:center;
 			font-size:22px;
@@ -251,7 +248,7 @@ body{
 			font-weight:bold;
 			color:#4469d5;
 			line-height:2.2;
-			border:1px solid #097680;
+			border:2px solid #b2b720;
 			//@media screen and (max-width: 644px){
 	    		width:96%;
 	    		margin: 50px auto 0 auto;
@@ -286,8 +283,8 @@ body{
 				width:100%;
 				height:84px;
 				position:absolute;
-				top:-30px;
-				left:-10px;
+				top: -22px;
+    			left: -23px;
 				z-index:10;
 			}
 			.icon-2{
@@ -299,7 +296,7 @@ body{
 				// right:-60px;
 				// @media screen and (max-width: 644px){
 		    		top:40px;
-		    		right: -30px;	
+		    		right: -50px;	
 		    	//} 
 			}
 			.icon-3{
@@ -308,10 +305,10 @@ body{
 				height:114px;
 				position:absolute;
 				//top:-60px;
-				left:-30px;
+				left:-39px;
 				z-index:10;
 				//
-		    		top:-40px;
+		    		top:-27px;
 		    	//} 
 			}
 			.icon-4{
@@ -323,8 +320,8 @@ body{
 				// right:-60px;	
 				// @media screen and (max-width: 644px){
 		  		//top: unset;
-					bottom: -90px;
-					right:-30px;
+				bottom: -100px;
+    			right: -27px;
 		    	//} 			
 			}
 			.icon-5{
@@ -345,20 +342,22 @@ body{
 			max-width:683px;
 			//width:100%;
 			margin:40px auto;
-			background: rgba(255,255,255,0.5);
+			background: rgba(186,186,187,0.69);
 			position:relative;
 			z-index:999;
+			padding-bottom: 30px;
 			//@media screen and (max-width: 644px){
 	    		width:96%;
-	    		margin:4% 2%;
+	    		margin:5% 2% 0;
 	    	//} 
 		}
+
 			
 			p{
 				font-size:13px;
 				padding:0 25px;
 				line-height:1.6;
-				padding-bottom:30px;
+				__padding-bottom:30px;
 				color: #3c3c3c;
 				font-weight: bold;
 				&.edit-top{
@@ -389,7 +388,7 @@ body{
 					font-size:45px;
 					display:block;
 					text-align:center;
-					padding-top:25px;
+					padding-top:3px;
 					font-family: Bodoni MT;
 				}
 		}

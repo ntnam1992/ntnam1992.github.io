@@ -42,16 +42,14 @@ table {
 	border-spacing: 0;
 }
 body{
-	font-family: デバイスフォント;
+	font-family:"MSPGothic","Hỉagino Gothic", sans-serif;
+	background: url(../images/wall-texture.jpg) repeat-y center center;
+	background-size:100%;
 	img{
 		max-width:100%;
 		display:block;
 		margin:0 auto;
 	}	
-}
-body{
-	background: url(../images/wall-texture.jpg) repeat-y center center;
-	background-size:100%;
 }
 .header{
 	width:100%;
@@ -63,20 +61,23 @@ body{
 		background: url(../images/wall-texture.jpg) no-repeat ;
 		padding-bottom: 30px;
 		a{
-			background: url(../images/hearder-bg-tittle.png) no-repeat center center;
+			background: rgba(0,0,0,0.5);
+			border: 1px solid #2f9f1f;
 			width: 79.41860465116279%;
 			display: block;
 			margin: 0 auto;	
-			height: 85px;
+			__height: 85px;
 			margin-bottom: 30px;
 			img{
-				padding-top: 27px;
+				padding:4.2% 0;
 			}
 		}
 		
 		.video{
 			margin: 0 auto;
 			display: block;
+			width: 75%;
+			
 		}
 		.header__txt{
 			margin-top: 75px;
@@ -354,6 +355,7 @@ body{
 					display:block;
 					text-align:center;
 					padding-top:30px;
+					font-family: Bodoni MT;
 				}
 		}
 	}
