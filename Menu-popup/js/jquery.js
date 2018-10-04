@@ -4,12 +4,10 @@ $(document).ready(function(){
 	var oldPosition,position;
 
 	$(".js-nav li p").hide();
-
 	/**event click menu show menu*/
 	$(".js-nav li").on("click",".js-img",function(){
 		animteMenu(this);
 	});
-
 	/**event button about show popup*/
 	$(".js-about").click(function(){
 		animatePopup(this);
@@ -18,9 +16,7 @@ $(document).ready(function(){
 	$(".js-close").click(function(){
 		closeBtn();
 	});
-	
-
-	 function animteMenu(element){
+	function animteMenu(element){
 		var position = $(element).parent().index();
 		var src = $(element).attr("src");
 
@@ -64,7 +60,6 @@ $(document).ready(function(){
 	     $(".js-event").css({pointerEvents:'auto'})
 	 	},1010 );
 	}
-
 	function animatePopup(element){
 		var btnIndex = $(element).parent().parent().index();
 		if(btnIndex == 0 || btnIndex == 2 || btnIndex == 4 ){
@@ -74,11 +69,8 @@ $(document).ready(function(){
 		}
 	}
 	function closeBtn(){
-		$(".js-popup-1").hide();
-		$(".js-popup-2").hide();
-		$(".js-popup-1").animate({top : "-380px"},900);
-		$(".js-popup-2").animate({top : "-380px"},900);
-		setTimeout(function() {$(".js-popup-1").show();},950);
-		setTimeout(function() {$(".js-popup-2").show();},950);
+		$(".js-popup-1,.js-popup-2").hide();
+		$(".js-popup-1,.js-popup-2").animate({top : "-380px"},900);
+		setTimeout(function() {$(".js-popup-1,.js-popup-2").show();},950);
 	}
 });
