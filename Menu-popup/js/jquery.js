@@ -64,13 +64,16 @@ $(document).ready(function(){
 		var btnIndex = $(element).parent().parent().index();
 		if(btnIndex == 0 || btnIndex == 2 || btnIndex == 4 ){
 			$(".js-popup-1").animate({top : "100px"},900);
+			$(".js-event").css({pointerEvents:'none'});
 		}else{
 			$(".js-popup-2").animate({top : "100px"},900);
+			$(".js-event").css({pointerEvents:'none'});
 		}
 	}
 	function closeBtn(){
 		$(".js-popup-1,.js-popup-2").hide();
 		$(".js-popup-1,.js-popup-2").animate({top : "-380px"},900);
+		$(".js-event").css({pointerEvents:'auto'})
 		setTimeout(function() {$(".js-popup-1,.js-popup-2").show();},950);
 	}
 });
