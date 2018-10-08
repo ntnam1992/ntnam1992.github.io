@@ -130,8 +130,8 @@ table {
 }
 
 .container{
-    min-width:500px;
-    width: 500px;
+    max-width:500px;
+    width: 100%;
     margin: 40px auto; 
 
 }
@@ -141,8 +141,8 @@ img{
     pointer-events: auto;
 }
 .menu{
-    min-width: 500px;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
@@ -173,20 +173,25 @@ li p span{
     text-align: center;
     line-height: 2;
 }
+li img:first-child{
+    width: 100%;
+    height:auto; 
+}
 .bt-about{
     display: block;
         margin: 10px auto 10px
 }
 .pop-up1 ,.pop-up2{
     position: absolute;
-    width: 500px;
-    top: -380px;
+    width: 100%;
+    top: -460px;
     left: 0;
     background-color: #ffffff;
     border: 1px solid;
     border-radius: 10px;
     box-sizing: border-box;
 }
+
 h1{
     text-align: center;
     font-size: 24px;
@@ -198,6 +203,7 @@ p{
 .pop-up_box{
     display: block;
     margin: 10px auto;
+    width: 94%;
 }
 .btn-close{
     position: absolute;

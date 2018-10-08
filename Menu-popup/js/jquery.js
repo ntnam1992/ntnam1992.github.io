@@ -72,7 +72,7 @@ $(document).ready(function(){
 	}
 	function closeBtn(){
 		$(".js-popup-1,.js-popup-2").hide();
-		$(".js-popup-1,.js-popup-2").animate({top : "-380px"},900);
+		$(".js-popup-1,.js-popup-2").animate({top : "-460px"},900);
 		$(".js-event").css({pointerEvents:'auto'})
 		setTimeout(function() {$(".js-popup-1,.js-popup-2").show();},950);
 	}
