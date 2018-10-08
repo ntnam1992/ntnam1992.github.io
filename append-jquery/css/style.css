@@ -137,7 +137,7 @@ table {
     counter-reset: section;
 }
 .product-input{
-    width: 40%;
+    width: 35%;
     height: 25px;
 }
 .btn-add{
@@ -146,12 +146,14 @@ table {
 }
 .input__item{
     display: inline-block;
-    width: 100%;
+    width: 94%;
     display: flex;
     justify-content: space-around;
+    margin: 0 auto;
 }
+
 .input__item p{
-    width: 30%;
+    width: 25%;
     line-height: 1.6;
 }
 .list-item{
@@ -163,24 +165,24 @@ ol{
 }
 .list-item li{
     background: #ffffff;
-    height: 25px;
+    height: 40px;
     width: 80%;
     display: inline-block;
-    margin:5px 0 5px 50px;
-    
+    margin:5px 0 5px 50px;    
 }
 
 .list-item li::before {
-  counter-increment: section;                 /* Increment the value of section counter by 1 */
-  content: counter(section);   
-  border: 1px solid;
-  border-radius: 25px; 
-  width: 15px;
-  height: 18px;
-  vertical-align: center;  
-  display: inline-block;
-  margin-right: 20px;
-  padding: 2px 0 0 5px;         /* Display the value of section counter */
+    counter-increment: section;                 /* Increment the value of section counter by 1 */
+    content: counter(section);   
+    border: 1px solid;
+    border-radius: 25px; 
+    width: 15px;
+    height: 18px;
+    vertical-align: center;  
+    display: inline-block;
+    margin: 8px 20px 0 20px;
+    padding: 2px 0 0 5px;  
+        /* Display the value of section counter */
 }
 li p{
     width: 50%;
@@ -203,4 +205,6 @@ span{
     display: inline-block;
     float: right;
     clear: both;
+    border: 0;
+    margin: 8px 20px 0 0;
 }
