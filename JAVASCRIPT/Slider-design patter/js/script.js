@@ -53,10 +53,10 @@ var slider = function(){
 	}
 	/**Update Img slider when click inbox image*/
 	function clickImg(i){
-		count = i;
+	count = i;
 	var item;
 	stopImg();
-	var ListSmall = document.getElementsByClassName("small-slider")[0].getElementsByTagName("li")[i];
+	var ListSmall = $(".slider__item-nav li").eq(i)
 	item=document.getElementsByClassName("small-act")[0];
 	item.classList.remove("small-act");
 	ListSmall.classList.add("small-act");

@@ -142,7 +142,7 @@ var thiscanvas = function(){
 				ctx.beginPath();
 				ctx.moveTo(50,110);
 				ctx.lineTo(170,110);
-				ctx.lineTo(xposition,yposition);
+				ctx.lineTo(xpositionF,ypositionF);
 				ctx.stroke();
 				ctx.restore();
 				
@@ -153,7 +153,8 @@ var thiscanvas = function(){
 				ctx.beginPath();
 				ctx.moveTo(740,60);
 				ctx.lineTo(600,60);
-				ctx.lineTo(xpositionF,ypositionF);
+				ctx.lineTo(xposition,yposition);
+				
 				ctx.stroke();
 				ctx.restore();
 			}

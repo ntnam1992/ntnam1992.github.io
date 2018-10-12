@@ -5,8 +5,8 @@
 		];			
 	var textColor = "gray"; // color of text
 	var data = [
-			0.8,   // rate success
-			0.2    // rate faile
+			0.2,   // rate success
+			0.8    // rate faile
 		];
 	var colors = [
 			"#0040ff", //succes color top
