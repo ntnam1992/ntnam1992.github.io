@@ -1,0 +1,526 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body{
+    font-family:Hiragino Kaku Gothic Pro,sans-serif;
+}
+.header{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.slider{
+    width: 100%;
+    position: relative;
+    max-width: 1200px
+}
+.slider__text{
+    position: absolute;
+    top: 36%;
+    left: 12%;
+    font-size: 34px;
+    color: #ffffff;
+    line-height: 1.5;
+    text-shadow: -7px 8px 12px rgba(183, 172, 150, 0.65);
+}
+.slider__tittle--interview{
+    background: url('../images/icon-interview.png') no-repeat center left;
+    font-family: Helvetica;
+    font-weight: bold;
+    position: absolute;
+    font-size: 30px;
+    color: #ffffff;
+    padding-left: 40px;
+    top: 3.5%;
+    left: 41%;
+}
+
+.logo{
+    width: 45%;
+}
+.menu__logo{
+    margin: 23px 0 23px 8.4%;
+    display: inline-block;
+}
+img{
+    display: block;
+}
+span{
+    display: inline-block;
+}
+
+.full__img{
+    max-width: 1200px;
+    width: 100%;
+}
+.banner{
+    position: relative;
+}
+.banner__text{
+    position: absolute;
+    width: 50%;
+    color: #ffffff;
+    top: 19%;
+    right: 0;
+}
+.banner__text ul li{
+    font-size: 15px;
+    line-height: 1.4    ;
+}
+.banner__text ul li:first-child span{
+    font-size: 34px;
+    margin-right: 15px;
+}
+.banner__text ul li:first-child p{
+    font-size: 24px;
+}
+.banner__text ul li:nth-child(2) {
+    font-size: 20px;
+    margin: 5% 0 3%;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.tittle{
+    font-size: 34px;
+    color: #ffc000;
+    padding-left: 1.2%;
+    font-family:Hiragino Kaku Gothic Pro,sans-serif;
+    margin-top: 80px;
+}
+.inner{
+    max-width: 1010px;
+    width: 100%;
+    margin: 0 auto;
+}
+.inner__content{
+    width: 100%;
+    margin: 43px 0 80px 0;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.inner__content--left{
+    __float: left;
+    width: 48.5%;
+    line-height: 2.5;
+    font-size: 14px;   
+    padding-left: 1.2%; 
+}
+
+.inner__content--right{
+    __float: right;
+    width: 48.5%;
+    font-size: 14px;
+    line-height: 2.5;
+    padding-left: 1.2%;
+}
+.hidden{
+    display: none;
+}
+/* .inner__content:after{
+    content: " ";
+    float: none;
+    clear: both;
+    display: block;
+} */
+.title__thumb{
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 80px;
+}
+.thumb{
+    display: flex;
+    margin-top: 40px;
+    color: #ffffff;
+}
+.thumb__item1 , .thumb__item2 , .thumb__item3{
+    position: relative;
+ }
+ .thumb__item1 p , .thumb__item2 p , .thumb__item3 p{
+    position: absolute;
+    bottom: 13.2%;
+    left: 7.5%;
+    line-height: 1.6;
+    font-size: 14px;
+ }
+ .thumb__item1 span , .thumb__item2 span , .thumb__item3 span{
+    font-size: 30px;
+ }
+.footer{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer p{
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 7;
+    background: #282828;
+}
+#page-top{
+    display: block;
+    position: fixed;
+    bottom: 18%;
+    width: 21px;
+    right: 16%;
+    padding: 19px;
+    background: url(../images/bg-to-top.png) no-repeat left top;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
+.nav{
+    width:54%;
+    height:81px;
+}
+.nav__menu{
+    width:100%;
+    margin:0 auto;
+}
+.nav__menu ul li{ 
+     font-size: 14px;
+    height: 81px;
+    width: 20%;
+}
+.nav__menu ul li img{
+    max-width:100%;
+}
+.nav__menu ul{
+     display: flex;
+    /* float: right; */
+    align-items:  center;
+    __width: 66.5%;
+    /* width: 600px; */
+}
+.nav__menu:after{
+    content: " ";
+    clear: both;
+    float: none;
+    display: block;
+}
+.nav__menu ul li a{
+  border-right: 1px solid #d5d5d5;
+    margin-top: 33px;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+}
+.nav__menu ul li a:hover{
+     color: #ffcc53;
+}
+.nav__menu ul li:last-child a{
+    color: #ffffff;
+}
+.nav__menu ul li:last-child a:hover{
+    color: #ffcc53;
+}
+.nav__menu__menu5 {
+    background: #f85050;
+}
+.top-menu{
+    display: flex;
+    justify-content: space-between;
+    background: #ececec;
+}
+
+/**page company*/
+.slider__tittle--text{
+    text-align: center;
+    font-size: 34px;
+    position: absolute;
+    color: #ffffff;
+    top: 30%;
+    left: 26%;
+}
+.slider__tittle--company{
+    background: url('../images/icon-company.png') no-repeat center left;
+    font-family: Helvetica;
+    font-weight: bold;
+    position: absolute;
+    font-size: 30px;
+    color: #ffffff;
+    padding-left: 40px;
+    top: 4.8%;
+    left: 41%;
+    line-height: 1.5;
+}
+.slider__tittle--text{
+    width: 51%;
+}
+.slider__tittle--text span{
+    font-size: 20px;
+}
+.slider__info{
+    width: 83.3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    left: 8.3%;
+    bottom: 0;
+}
+.slider__info--left,.slider__info--right{
+    width: 48.5%;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    background: rgba(65, 66, 67, 0.8);
+    color: #ffffff;
+}
+.info__tittle{
+    color: #7fdc22;
+    font-weight: bold;
+    margin: 6% 0;
+}
+.slider__info--left ul{
+    margin-bottom: 6%;
+}
+.active:hover{
+    color: #7fdc22 !important;
+}
+.slider__info--right img{
+    display: inline-block;
+    padding: 0 10px 5px 0;
+}
+.slider__info--right b{
+    font-weight: bold;
+    font-size: 30px;
+    display: block;
+    margin-bottom: 6%;
+}
+.line1{
+    padding-left: 10px !important;
+}
+.line2{
+   padding-left:16px !important;
+}
+.line3{
+    padding-left:25px !important;
+}
+.title-content{
+    font-size:  34px;
+    margin: 80px auto 20px;
+    text-align: center;
+}
+.border-line{
+    width: 30px;
+    display: block;
+    margin: 0 auto 50px;
+    border-top: 2px solid #78d020;
+    height: 1px;
+}
+.edit-width{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background: #f4f4f7;
+}
+.inner-right-width{
+    width: 48.75%;
+}
+.inner__content--text{
+    width: 83%;
+    float: right;
+    font-size: 14px;
+    margin: 11% auto;
+    line-height: 1.6;
+
+}
+.inner__content--text:after{
+    content: " ";
+    clear: both;
+    float: none;
+}
+.inner__content--tittle{
+    font-size: 24px;
+    margin-bottom: 7%;
+}
+.signature{
+    text-align: right;
+}
+.signature span{
+    font-size: 36px;
+    margin-top: 7%;
+}
+.banner{
+    width: 100%;
+    position: relative;
+}
+.banner__back{
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    background: rgba(116, 116, 116, 0.35);
+    top: 8.5%;
+    left: 24.6%;
+}
+.banner__info{
+     width: 50%;
+    height: 80%;
+    position: absolute;
+    background: rgba(74, 70, 67, 0.8);
+    top: 12%;
+    left: 26.25%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.banner__info span{
+    font-size: 26px;
+    margin: 5% 0;
+}
+.paragraph{
+    margin: 4% 0;
+}
+
+
+
+
+
+
+
