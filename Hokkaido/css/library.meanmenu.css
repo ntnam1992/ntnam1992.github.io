@@ -191,3 +191,6 @@ a.mean-clicked{
 	border:none !important;
 	color:#595959;
 	}
+.mean-bar .meanclose{
+	color: #000000 !important;
+}

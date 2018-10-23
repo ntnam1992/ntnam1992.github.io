@@ -131,6 +131,7 @@ table {
 body{
     font-size: 16px;
     font-family: Arial,sans-serif;
+    position: relative;
 }
 .header{
     width: 100%;
@@ -1048,4 +1049,15 @@ h1{
 }
 .learn-on{
     display: none;
+}
+#page-top{
+    display: block;
+    position: fixed;
+    bottom: 18%;
+    width: 21px;
+    right: 5%;
+    padding: 15px;
+    background: #595959;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
 }

@@ -1,9 +1,10 @@
 @media screen and (max-width: 980px)  {
 	.top-logo{
 		position: absolute;
-   		top: -55px;
+   		top: 0;
+   		width: 99%;
    		left: 1%;
-   		
+
 	}
 	.off{
 		display: none;
@@ -98,7 +99,7 @@
 		width: 90%;
 		margin: 0 auto;
 	}
-	.top-logo a{
+	.top-logo a:first-child{
 		width: 70%;
 	}
 	.top-logo a img {
