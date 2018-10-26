@@ -1,0 +1,559 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+body{
+    font-size: 24px;
+    font-family: HiraMinPro;
+    background: #000000;
+    height: 100%;
+    color: #e3dab7;
+    text-align: center;
+}
+.header{
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    background:  url('../images/line.png') no-repeat center bottom;
+    padding-bottom: 75px;
+}
+img{
+    display: block;
+    margin: 0 auto;
+}
+.title{
+    font-family: Futura Condensed,sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+}
+.logo1{
+    padding: 65px 0 20px;
+    display: block;
+}
+.logo2{
+    display: block;
+    margin-top: 25px;
+}
+.container{
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 65px;
+    border-bottom: 1px solid #e3dab7;
+}
+.tittle2{
+    text-align: center;
+    font-family: HiraMinPro W3;
+    font-size: 24px;
+    margin-top: 65px;
+    line-height: 1.4;
+}
+.tittle2 span{
+    font-size: 42px;
+    display: block;
+}
+.tittle3{
+    text-align: center;
+    font-family: HiraMinPro W3;
+    font-size: 42px;
+    margin: 110px 0 105px;
+    line-height: 1.4;
+}
+.btn-top{
+    margin: 110px auto 35px;
+    border: 4px solid #e3dab7;
+    width: 88.75%;
+    display: block;
+    font-size: 34px;
+    line-height: 1.7;
+    text-decoration: none;
+    color: #e3dab7;
+    opacity: 0.4;
+}
+.btn-top:hover{
+    opacity: 1;
+}
+.btn-top span:before{
+    content: "TOPに戻る";
+    display: inline-block;
+    width: 228px;
+    background: url('../images/icon-next.png') no-repeat center left;
+}
+.footer{
+    font-family: Jason Text Roman;
+    font-size: 18px; 
+    opacity: 0.67;
+    margin: 45px 0;
+}
+/**page comfim*/
+.inner{
+    font-family: HiraMinPro W3;
+    width: 92.5%;
+    margin: 0 auto;
+    font-size: 32px;
+    text-align: left;
+    line-height: 1.5;
+}
+.inner span{
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin-top: 45px;
+    color: #e3dab7;
+}
+.inner p{
+    color: rgba(165, 158, 127, 0.4);
+}
+.group-btn{
+    display: flex;
+    justify-content: space-between;
+    font-size: 34px;
+    text-decoration: none;
+    color: #e3dab7;
+    opacity: 0.4;
+    margin: 110px auto;
+}
+.group-btn span{
+    text-align: center;
+    margin-top: 0;
+
+}
+.btn-repear,.btn-apply{
+    width: 48%;
+    border: 4px solid #e3dab7;
+    box-sizing: border-box;
+    display: block;
+    opacity: 0.4;
+}
+.btn-repear:hover,.btn-apply:hover{
+    opacity: 1;
+}
+.btn-repear span:before{
+    content: "修正する";
+    display: inline-block;
+    width: 155px;
+    background: url('../images/icon-next.png') no-repeat center left;
+    line-height: 1.7;
+    padding: 30px 0;
+}
+.btn-apply span:before{
+    content: "応募する";
+    display: inline-block;
+    width: 155px;
+    background: url('../images/icon-next.png') no-repeat center left;
+    line-height: 1.7;
+    padding: 30px 0;
+}
+/**Subcription page*/
+.subcription{
+    width: 92.5%;
+    margin: 0 auto;
+    display: flex;
+    font-size: 24px;
+    font-family: HiraMinPro W3;
+    text-align: left;
+    margin-bottom: 45px;
+    justify-content: space-between;
+}
+.subcription-item1,.subcription-item2
+{
+    width: 48%;
+}
+.mb-sub{
+    margin-bottom: 65px;
+}
+.subcription span{
+    display: block;
+    width: 100%;
+    height: 110px;
+    border: 3px solid rgba(90, 87, 73,  1);
+    margin-top: 25px;
+}
+.input1{
+    font-family: HiraMinPro W3;
+    display: block;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    background: #000000;
+    color: #e3dab7;
+    height: 110px;
+    border: 3px solid rgba(90, 87, 73,  1);
+    margin-top: 25px;
+    font-size: 24px;
+}
+
+.area-position{
+    width: 100%;
+    margin-top: 25px;
+    border: 3px solid rgba(90, 87, 73, 1);
+    overflow: hidden;
+    color: #808080;
+}
+.hg-input{
+    height: 329px;
+}
+.wd-full{
+    width: 100%;
+}
+.text-1{
+    padding: 33px 25px;
+}
+.overflow-text{
+    margin : 33px 25px;
+    line-height: 1.5;
+    overflow: auto;
+    height: 263px;
+}
+select{
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    opacity: 0;
+}
+option{
+    opacity: 1;
+}
+.edit-text{
+    margin-top: 95px;
+}
+.sel-box{
+    width: 100%;
+    background: #000000;
+    color: #e3dab7;
+    height: 110px;
+    border: 3px solid rgba(90, 87, 73, 1);
+    position: relative;
+    margin-top: 25px;
+}
+
+.drop-down-box img{
+    margin-top: 45px;
+}
+.sel-box:after{
+    content: " ";
+    clear: both;
+    float: none;
+}
+.drop-down-box{
+    width: 110px;
+    height: 110px;
+    display: block;
+    float: right;
+    border-left: 3px solid rgba(90, 87, 73,  1);
+
+}
+#style-10::-webkit-scrollbar{
+    width: 2px;
+    background-color: #000000;
+}
+#style-10::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #000000;
+  box-shadow: inset 0 0 1px 1px #5C6670;
+}
+
+#style-10::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #eee;
+  box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0,0,0,0.3)
+}
+
+#style-10::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(left, #8391A6, #536175);
+}
+.check-off,.check-on{
+    float: left;
+}
+.active{
+    display: none;
+}
+.check-text{
+    line-height: 1;
+    font-size: 24px;
+    color: #e3dab7 !important ; 
+}
+.check-text a{
+    padding-right: 25px;
+
+}
+.btn-submit{
+    width: 100%;
+    display: block;
+    border: 3px solid rgba(90, 87, 73,  1);
+    font-family:  HiraMinPro W3;
+    opacity: 0.4;
+    text-decoration: none;
+    margin-top: 65px;
+}
+.btn-submit:hover{
+    opacity: 1;
+}
+.btn-submit span{
+    width: 100%;
+    margin-top: 0;
+
+}
+.btn-submit span:before{
+    content: "修正する";
+    display: block;
+    width: 210px;
+    background: url('../images/icon-next.png') no-repeat center left;
+    text-align: center;
+    font-size: 34px;
+    margin: 0 auto;
+    padding: 30px 0;
+    
+}
+/**smart*/
+@media screen and (max-width:640px) and (min-width: 421px){
+    .logo2{
+        width: 90%;
+        margin: 25px auto 0;
+    }
+    .logo2 img{
+        width: 100%;
+    }
+    .tittle2{
+        width: 90%;
+        margin:  30px auto 0 ;
+    }
+    .tittle2 span{
+        font-size: 34px;
+    }
+    .tittle3 {
+        font-size: 34px;
+        margin: 40px 0 40px;
+        line-height: 1.4;
+    }
+    .info{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .btn-repear:hover,.btn-apply{
+        opacity: 1;
+    }
+}
+@media screen and (max-width:420px) and (min-width: 320px){
+    .logo2{
+        width: 90%;
+        margin: 20px auto 0;
+    }
+    .logo2 img{
+        width: 100%;
+    }
+    .tittle2{
+        width: 90%;
+        margin:  25px auto 0 ;
+    }
+    .tittle2 span{
+        font-size: 24px;
+    }
+    .tittle3 {
+        font-size: 24px;
+        margin: 30px 0 30px;
+        line-height: 1.4;
+    }
+    .info{
+        width: 90%;
+        margin: 0 auto;
+    }
+    body{
+        font-size: 15px;
+    }
+    .btn-top {
+        font-size: 30px;
+        margin: 40px auto 0;
+    }
+    .footer{
+        font-size: 14px;
+    }
+    /**page comfim*/
+    .group-btn{
+        flex-wrap: wrap;
+        margin: 30px 0 0;
+    }
+    .btn-repear span:before{
+        content: "修正する";
+        display: inline-block;
+        width: 155px;
+        background: url('../images/icon-next.png') no-repeat center left;
+        line-height: 1.7;
+        padding: 30px 0;
+}
+    .btn-apply{
+        margin-top: 10px;
+    }
+    .btn-repear,.btn-apply{
+        opacity: 1;
+    }
+    .btn-apply span:before{
+        content: "応募する";
+        display: inline-block;
+        width: 155px;
+        background: url('../images/icon-next.png') no-repeat center left;
+        line-height: 1.7;
+        padding: 30px 0;
+    }
+    .btn-repear,.btn-apply{
+        width: 100%;
+    }
+    .inner span{
+        font-size: 18px;
+    }
+    .inner p{
+        font-size: 24px;
+    }
+    .overflow-text p,.text-1{
+        font-size: 20px;
+    }
+    .btn-submit{
+        margin-top: 30px;
+    }
+    .btn-submit span:before{
+        font-size: 22px;
+        padding: 20px 0;
+    }
+}
+@media screen and (max-width:640px){
+    .sel-box{
+        height: 55px;
+    }
+    .drop-down-box{
+        width: 55px;
+        height: 55px;
+    }
+    select{
+        height: 55px;
+    }
+    .drop-down-box img{
+        margin-top: 21px;
+    }
+    .input1{
+        height: 55px;
+    }
+}
