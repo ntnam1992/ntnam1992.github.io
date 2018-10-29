@@ -135,12 +135,12 @@ body{
     width: 100%;
     margin: 0 auto;
 }
-.slider{
+.banner1{
     width: 100%;
     position: relative;
     max-width: 1200px
 }
-.slider__text{
+.banner1__text{
     position: absolute;
     top: 36%;
     left: 12%;
@@ -149,7 +149,7 @@ body{
     line-height: 1.5;
     text-shadow: -7px 8px 12px rgba(183, 172, 150, 0.65);
 }
-.slider__tittle--interview{
+.banner1__tittle--interview{
     background: url('../images/icon-interview.png') no-repeat center left;
     font-family: Helvetica;
     font-weight: bold;
@@ -163,9 +163,10 @@ body{
 
 .logo{
     width: 45%;
+    margin-left:8.4% ;
 }
 .menu__logo{
-    margin: 23px 0 23px 8.4%;
+    margin: 23px 0 23px ;
     display: inline-block;
 }
 img{
@@ -245,7 +246,7 @@ span{
     line-height: 2.5;
     padding-left: 1.2%;
 }
-.hidden{
+.hidden-off{
     display: none;
 }
 /* .inner__content:after{
@@ -349,6 +350,12 @@ span{
     width: 100%;
     line-height: 1.6;
 }
+.nav__menu ul li:active{
+    background: #f85050;
+}
+.nav__menu ul li a:active{
+    color: #ffcc53;
+}
 .nav__menu ul li a:hover{
      color: #ffcc53;
 }
@@ -364,11 +371,10 @@ span{
 .top-menu{
     display: flex;
     justify-content: space-between;
-    background: #ececec;
 }
 
 /**page company*/
-.slider__tittle--text{
+.banner1__tittle--text{
     text-align: center;
     font-size: 34px;
     position: absolute;
@@ -376,7 +382,7 @@ span{
     top: 30%;
     left: 26%;
 }
-.slider__tittle--company{
+.banner1__tittle--company{
     background: url('../images/icon-company.png') no-repeat center left;
     font-family: Helvetica;
     font-weight: bold;
@@ -388,13 +394,13 @@ span{
     left: 41%;
     line-height: 1.5;
 }
-.slider__tittle--text{
+.banner1__tittle--text{
     width: 51%;
 }
-.slider__tittle--text span{
+.banner1__tittle--text span{
     font-size: 20px;
 }
-.slider__info{
+.banner1__info{
     width: 83.3%;
     display: flex;
     flex-wrap: wrap;
@@ -403,7 +409,7 @@ span{
     left: 8.3%;
     bottom: 0;
 }
-.slider__info--left,.slider__info--right{
+.banner1__info--left,.banner1__info--right{
     width: 48.5%;
     font-size: 16px;
     line-height: 1.6;
@@ -415,18 +421,19 @@ span{
     color: #7fdc22;
     font-weight: bold;
     margin: 6% 0;
+    font-size: 20px
 }
-.slider__info--left ul{
+.banner1__info--left ul{
     margin-bottom: 6%;
 }
 .active:hover{
     color: #7fdc22 !important;
 }
-.slider__info--right img{
+.banner1__info--right img{
     display: inline-block;
     padding: 0 10px 5px 0;
 }
-.slider__info--right b{
+.banner1__info--right b{
     font-weight: bold;
     font-size: 30px;
     display: block;

@@ -57,7 +57,7 @@
 		padding-left: 0;
 		padding-bottom: 20px;
 	}
-	.slider__text{
+	.banner1__text{
 		font-size: 3.5vw;
 	}
 	.warp{
@@ -69,7 +69,7 @@
 	.thumb__item1 , .thumb__item2 , .thumb__item3{
 		width: 100%;
 	}
-	.slider__tittle--interview{
+	.banner1__tittle--interview{
 		font-size: 2.6vw;
 		line-height: 2
 	}
@@ -134,7 +134,7 @@
 	.menu  li:last-child a{
 		color: #ffffff;
 	}
-	.hidden{
+	.hidden-off{
 		display: block;
 		__margin-top: 50px;
 	}
@@ -143,46 +143,46 @@
 	}
 	 
 	 /* page company */
-	 .slider__tittle--company{
+	 .banner1__tittle--company{
 	 	font-size: 4.5vw;
 	 	padding-left: 7%;
 	 	line-height: 3;
 	 	background-size: 15%;
 
 	 }
-	 .slider__info--left, .slider__info--right{
+	 .banner1__info--left, .banner1__info--right{
 	 	width: 100%;
 	 	font-size: 3.3vw;
 	 }
-	.slider__tittle--text{
+	.banner1__tittle--text{
 	    width: 90%;
 	    left: 5%;
 	    font-size: 4.9vw;
 	    line-height: 1.6;
 	    top: 18.3%;
 	}
-	.slider__tittle--text span{
+	.banner1__tittle--text span{
 		font-size: 4.9vw
 	}
 	.mt-edit{
 		margin-top: 50px;
 	}
-	.slider__info{
+	.banner1__info{
 		bottom: unset;
 		top: 36.6%;
 		width: 90%;
 		left: 5%;
 	}
-	.slider__info--right{
+	.banner1__info--right{
 		margin-top: 10px;
 	}
-	.slider__info--right p{
+	.banner1__info--right p{
 		padding-bottom: 10px;
 	}
-	.slider__info--right b{
+	.banner1__info--right b{
 		font-size: 5vw;
 	}
-	.slider__info--right b{
+	.banner1__info--right b{
 	    
 	    margin-bottom: 3%;
 	}
@@ -232,7 +232,7 @@
 /**page company*/
 @media screen  and (max-width: 980px) and (min-width: 868px){
 
-	.slider__info--left,.slider__info--right{
+	.banner1__info--left,.banner1__info--right{
 	    font-size: 14px;
 	}
 	.line2{
@@ -244,7 +244,7 @@
  
 }
 @media screen  and (max-width: 867px) and (min-width: 769px){
-	.slider__info--left,.slider__info--right{
+	.banner1__info--left,.banner1__info--right{
 	    font-size: 10px;
 	}
 	.line2{
@@ -253,12 +253,12 @@
 	.line3{
 	    padding-left:47px !important;
 	}
-	.slider__info--right b{
+	.banner1__info--right b{
     	font-size: 18px;
 	}
 }
 @media screen  and (max-width: 1156px) and (min-width: 980px){
-	.slider__tittle--text{
+	.banner1__tittle--text{
 		font-size: 23px;
 	}
 }
