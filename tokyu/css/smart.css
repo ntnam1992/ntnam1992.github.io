@@ -239,6 +239,9 @@
 	.tittle-content{
 		font-size: 7.5vw;
 	}
+	.full__img{
+		width: 100%;
+	}
 }
 @media screen  and (max-width: 400px){
 	.menu__logo {
