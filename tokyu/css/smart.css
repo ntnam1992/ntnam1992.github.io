@@ -9,10 +9,10 @@
     width: 400px;
 	}
 }
-@media screen and (max-width: 1040px)  {
+@media screen and (max-width: 1040px) and (min-width: 769px)  {
 	.banner__text ul li{
 	    font-size: 10px;
-	    line-height: 1.4    ;
+	    line-height: 1.4;
 	}
 	.banner__text ul li:first-child span{
 	    font-size: 24px;
@@ -27,20 +27,34 @@
 	}
 }
 @media screen  and (max-width: 769px){
-	.banner__text ul{
+/* 	.banner__text ul{
 	    font-size: 1.4vw;
-	    line-height: 1.4    ;
+	    line-height: 1.4;
+	} */
+	.logo-sp{
+		position: absolute;
+		top:7%;
+		left: 20px;
+		width: 50%;
+	}
+	.banner__text{
+		top: 13%;
 	}
 	.banner__text ul li:first-child span{
-	    font-size: 2.5vw;
+	 	font-size: 34px;
 	    margin-right: 15px;
 	}
 	.banner__text ul li:first-child p{
-	    font-size: 1.9vw;
+	    font-size: 20px;
 	}
 	.banner__text ul li:nth-child(2) {
-	    font-size: 1.6vw;
-	    margin: 5% 0 3%;
+	    font-size: 24px;
+	    margin: 6% 0; 
+	}
+	.banner__text ul li:nth-child(3) ,
+	.banner__text ul li:nth-child(4) ,
+	.banner__text ul li:nth-child(5){
+		font-size: 20px;
 	}
 	.inner{
 		width: 98%;
@@ -58,10 +72,14 @@
 		padding-bottom: 20px;
 	}
 	.banner1__text{
-		font-size: 3.5vw;
+		font-size: 38px;
+	}
+	.banner__text ul li span{
+		display: block;
 	}
 	.warp{
 		flex-wrap: wrap-reverse;
+		margin-bottom: 0;
 	}
 	.thumb{
 		flex-wrap: wrap;
@@ -69,20 +87,26 @@
 	.thumb__item1 , .thumb__item2 , .thumb__item3{
 		width: 100%;
 	}
+	.thumb__item1 p , .thumb__item2 p , .thumb__item3 p{
+		font-size: 28px;
+	}
 	.banner1__tittle--interview{
-		font-size: 2.6vw;
-		line-height: 2
+		font-size: 40px;
+		line-height:2.5;
+		left: 35%;
+	}
+	.tittle{
+		margin-top: 50px;
 	}
 	.menu__block{
     	display: block !important;
 	}
 	.logo{
     	width: 100%;
-
-	}
+    	margin-left: 0;
+   	}
 	.menu__logo{
-		margin: 5% auto;
-
+		margin: 5% auto;	
 	}
 	.top-menu{
 	    flex-wrap: wrap;
@@ -135,11 +159,11 @@
 		color: #ffffff;
 	}
 	.hidden-off{
-		display: block;
+		display: block !important;
 		__margin-top: 50px;
 	}
-	.off{
-		display: none;
+	.sp-off{
+		display: none !important;
 	}
 	 
 	 /* page company */
@@ -162,7 +186,7 @@
 	    top: 18.3%;
 	}
 	.banner1__tittle--text span{
-		font-size: 4.9vw
+		font-size: 4.9vw;
 	}
 	.mt-edit{
 		margin-top: 50px;
@@ -322,5 +346,108 @@
 	}
 	.line3{
 	   width: 12%; 
+	}
+}
+@media screen  and (max-width: 550px) and (min-width: 420px){
+	.thumb__item1 p, .thumb__item2 p, .thumb__item3 p{
+		font-size: 20px;
+	}
+	.thumb__item1 span, .thumb__item2 span, .thumb__item3 span {
+    	font-size: 28px;
+}
+}
+@media screen  and (max-width: 670px) and (min-width: 500px){
+	.banner1__tittle--interview {
+	    font-size: 30px;
+	    line-height: 2.5;
+	    left: 35%;
+	}
+	.banner1__text {
+	    font-size: 25px;
+	}
+	.banner__text ul li:first-child span{
+	 	font-size: 28px;
+	    margin-right: 15px;
+	}
+	.banner__text ul li:first-child p{
+	    font-size: 15px;
+	}
+	.banner__text ul li:nth-child(2) {
+	    font-size: 20px;
+	    margin: 6% 0; 
+	}
+	.banner__text ul li:nth-child(3) ,
+	.banner__text ul li:nth-child(4) ,
+	.banner__text ul li:nth-child(5){
+		font-size: 15px;
+	}
+}
+@media screen  and (max-width: 500px) and (min-width: 420px){
+	.banner1__tittle--interview {
+	    font-size: 25px;
+	    line-height: 2.5;
+	    left: 30%;
+	}
+	.banner1__text {
+	    font-size: 22px;
+	}
+	.banner__text ul li:first-child span{
+	 	font-size: 18px;
+	    margin-right: 15px;
+	}
+	.banner__text ul li:first-child p{
+	    font-size: 14px;
+	}
+	.banner__text ul li:nth-child(2) {
+	    font-size: 16px;
+	    margin: 6% 0; 
+	}
+	.banner__text ul li:nth-child(3) ,
+	.banner__text ul li:nth-child(4) ,
+	.banner__text ul li:nth-child(5){
+		font-size: 14px;
+	}
+}
+@media screen  and (max-width: 420px) and (min-width: 320px){
+	.banner1__tittle--interview {
+	    font-size: 25px !important;
+	    line-height: 2.5;
+	    left: 30%;
+	}
+	.banner__text{
+		top: 5%;
+		width: 55%;
+	}
+	.banner1__text {
+	    font-size: 15px;
+	}
+	.banner__text ul li:first-child span{
+	 	font-size: 15px;
+	    margin-right: 15px;
+	}
+	.banner__text ul li:first-child p{
+	    font-size: 12px;
+	}
+	.banner__text ul li:nth-child(2) {
+	    font-size: 14px;
+	    margin: 5% 0; 
+	}
+	.banner__text ul li:nth-child(3) ,
+	.banner__text ul li:nth-child(4) ,
+	.banner__text ul li:nth-child(5){
+		font-size: 12px;
+	}
+	.thumb__item1 p, .thumb__item2 p, .thumb__item3 p{
+		font-size: 15px;
+	}
+	.thumb__item1 span, .thumb__item2 span, .thumb__item3 span {
+    font-size: 20px;
+	}
+	.title__thumb {
+	    font-size: 25px;
+	    margin-top: 30px;
+	}
+	.inner__content{
+		margin-bottom: 40px;
 	}
 }

@@ -21,7 +21,7 @@ div.nav{
 .mean-container .mean-bar {
 	width: 100%;
 	position: relative;
-	background:url('../images/logo-tokyu.png') no-repeat 5% center;
+	/* background:url('../images/logo-tokyu.png') no-repeat 15px center; */
 	background-size: 45%;
 	padding: 2% 0 2% 0  ;
 	min-height: 42px;
@@ -57,7 +57,7 @@ div.nav{
 }
 .mean-container .mean-nav {
 	width: 100%;
-	margin-top: 44px;
+	margin-top: 50px;
 	height:auto;	
 }
 .mean-container .mean-nav ul {
@@ -82,11 +82,10 @@ div.nav{
 	display: block;
 	float: left;
 	width: 90%;
-	padding: 0 5%;
 	margin: 0;
 	text-align: center;
 	z-index:9999999;
-	padding: 3% 0;
+	padding: 2.5% 0;
 }
 /* .mean-container .mean-nav ul li a img{
 	display:none;
@@ -190,3 +189,6 @@ a.mean-clicked{
 	border:none !important;
 	color:#595959;
 	}
+.mean-bar .meanclose{
+	color: #000000 !important;
+}
