@@ -1,0 +1,39 @@
+@media screen and (max-width: 768px){
+	.pc-hide{
+		display: block;
+	}
+	.logo-sp{
+		position: absolute;
+		top: 20px;
+		left: 14px;
+	}
+	.mean-nav ul li a br{
+		display: none;
+	}
+	.btn-login{
+		height: 70px;
+		width: 140px;
+		border-radius: 5px;
+		position: absolute;
+		top: 15px;
+		right: 130px;
+		background: linear-gradient(to top, #ff6910, #ff6910 50%, #ff8f24 50%, #ff8f24 );
+		box-shadow: 0px 1px 1px 1px #aaaaaa;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.btn-login a{
+		width: 100%;
+		font-size: 26px;
+		font-weight: bold;
+		line-height: 2.8;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		font-family: Yugothic,sans-serif;
+	}
+	.sp-hide{
+		display: none;
+	}
+}
