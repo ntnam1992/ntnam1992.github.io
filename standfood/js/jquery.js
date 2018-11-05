@@ -1,8 +1,21 @@
 $(document).ready(function(){
 	var h1,h2;
 	var h0 = 0;
+	var itemWidth = $('.js-process').width();
+	itemWidth = itemWidth/2;
+		$('.triangle2-sp').css({borderLeft: itemWidth +'px'});
+		$('.triangle2-sp').css({borderRight: itemWidth +'px'});
+		$('.triangle2-sp').css({borderStyle: "solid"});
+		$('.triangle2-sp').css({borderLeftColor: "transparent"});
+		$('.triangle2-sp').css({borderRightColor: "transparent"});
+
+		$('.triangle1-sp').css({borderLeft: itemWidth +'px'});
+		$('.triangle1-sp').css({borderRight: itemWidth +'px'});
+		$('.triangle1-sp').css({borderStyle: "solid"});
+		$('.triangle1-sp').css({borderLeftColor: "transparent"});
+		$('.triangle1-sp').css({borderRightColor: "transparent"});
 	$( window ).resize(function() {
-	  	var itemWidth = $('.js-process').width();
+	  	itemWidth = $('.js-process').width();
 		itemWidth = itemWidth/2;
 		console.log(itemWidth);
 		// $('.triangle2-sp').css({borderLeft: itemWidth+'px solid transparent'});
@@ -22,7 +35,7 @@ $(document).ready(function(){
 		$('.triangle1-sp').css({borderRightColor: "transparent"});
 
 	});
-
+		
 	$(".js-ckeck").click(function(){
 		var test = $(this).hasClass("check-act");
 		if(test == false){
