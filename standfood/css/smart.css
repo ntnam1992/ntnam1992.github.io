@@ -291,7 +291,7 @@
 		margin: 0 auto 10px;
 		line-height: 1.4;
 	}
-	.mean-container .mean-nav ul li:active{
+	.subNav li:active{
 		padding: 2% 0 0 !important;
 	}
 	.mean-container .mean-nav ul li:active a{
@@ -327,9 +327,9 @@
 	.subNav{
 		height: auto;
 	}
-	.mean-nav .active{
+	/* .mean-nav .active{
 		padding: 2% 0 0 !important;
-	}
+	} */
 	/*page H2*/
 	.content-1__form{
 		padding-bottom: 20px;

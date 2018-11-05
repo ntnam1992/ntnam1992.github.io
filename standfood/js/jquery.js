@@ -52,7 +52,7 @@ $(document).ready(function(){
 	$(document).on("click",".mean-nav li",function(){
 		var l = $(this).find(".subNav").length;
 		console.log(l);
-		if( $(this).find(".subNav").length > 0 & !$(this).hasClass("active")){
+		if( $(this).find(".subNav").length > 0 && !$(this).hasClass("active")){
 			$(this).addClass("active")
 		}
 		else{
