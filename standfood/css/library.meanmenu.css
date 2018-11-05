@@ -24,7 +24,7 @@ div.nav{
 	position: relative;
 	background-size: 45%;
 	__padding: 2% 0 2% 0  ;
-	min-height:100px;
+	min-height:66px;
 	/* z-index: 999999; */
 	display:inline-block;	
 }
@@ -32,9 +32,9 @@ div.nav{
 	display: none;
 }
 .mean-container a.meanmenu-reveal {
-	width: 80px;
-	height: 69px;
-	padding: 18px 13px 11px 13px;
+	width: 50px;
+	height: 40px;
+	padding: 20px 6px 5px 6px;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -53,13 +53,13 @@ div.nav{
 .mean-container a.meanmenu-reveal span {
 	display: block;
 	background: #ffffff;
-	height: 8px;
-	width: 48px;
-	margin: 9px auto;
+	height: 4px;
+	width: 24px;
+	margin: 4px auto;
 }
 .mean-container .mean-nav {
 	width: 100%;
-	margin-top:100px;
+	margin-top:66px;
 	height:auto;	
 }
 .mean-container .mean-nav ul {
@@ -67,85 +67,44 @@ div.nav{
 	margin: 0;
 	width: 100%;
 	list-style-type: none;
+	position: relative;
+    list-style-type: none;
+    bottom: unset;
+    left: unset;
+	
 }
 .mean-container .mean-nav ul li {
 	position: relative;
 	__float: left;
 	width: 100%;
+	padding: 2% 0;
 	z-index:1;
-	background:#fdfffc;
-	padding:2px 0;
-	background:#fbfbfd;
-	border-bottom:1px solid #edf7f8;
-	height: 47px;
+	height: auto;
+	max-width: 100%;
+	background: url('../images/bg-linner-menu.jpg') repeat-x top left;
+	background-size: contain;
 }
-
+/* .mean-container .mean-nav ul li:active{
+	padding: 2% 0 0 !important;
+} */
 .mean-container .mean-nav ul li a {
 	display: block;
 	width: 90%;
 	margin: 2% auto;
-	text-align: center;
 	z-index:9999999;
 	text-decoration: none;
-	color: #999999;
+	color: #000000;
+	font-weight: bold;
+
 }
 .mean-container .mean-nav ul li a:active{
 	color: #334d5c;
 }
-/* .mean-container .mean-nav ul li a img{
+.mean-container .mean-nav ul li a img{
 	display:none;
 	}
-.mean-container .mean-nav ul li.nav__menu__menu1 a{
-	background:url(../images/menu_1.jpg) no-repeat center center;
-	}	
-.mean-container .mean-nav ul li.nav__menu__menu2 a{
-	background:url(../images/menu_2.jpg) no-repeat center center;
-	}
-.mean-container .mean-nav ul li.nav__menu__menu3 a{
-	background:url(../images/menu_3.jpg) no-repeat center center
-	}
-.mean-container .mean-nav ul li.nav__menu__menu4 a{
-	background:url(../images/menu_4.jpg) no-repeat center center
-	}
-.mean-container .mean-nav ul li.nav__menu__menu5 a{
-	background:url(../images/menu_5.jpg) no-repeat center center
-	}
-.mean-container .mean-nav ul li.nav__menu__menu6 a{
-	background:url(../images/menu_6.jpg) no-repeat center center
-	}	
-.mean-container .mean-nav ul li.nav__menu__menu7 a{
-	background:url(../images/menu_7.jpg) no-repeat center center
-	}
 
-.mean-container .mean-nav ul li.nav__menu__menu1 a:hover,
-.mean-container .mean-nav ul li.nav__menu__menu1 a.active{
-	background:url(../images/menu_1_hover.jpg) no-repeat center center;
-	}	
-.mean-container .mean-nav ul li.nav__menu__menu2 a:hover,
-.mean-container .mean-nav ul li.nav__menu__menu2 a.active{
-	background:url(../images/menu_2_hover.jpg) no-repeat center center;
-	}
-.mean-container .mean-nav ul li.nav__menu__menu3 a:hover,
-.mean-container .mean-nav ul li.nav__menu__menu3 a.active{
-	background:url(../images/menu_3_hover.jpg) no-repeat center center
-	}
-.mean-container .mean-nav ul li.nav__menu__menu4 a:hover,
-.mean-container .mean-nav ul li.nav__menu__menu4 a.active{
-	background:url(../images/menu_4_hover.jpg) no-repeat center center
-	}
-.mean-container .mean-nav ul li.nav__menu__menu5 a:hover,
-.mean-container .mean-nav ul li.nav__menu__menu5 a.active{
-	background:url(../images/menu_5_hover.jpg) no-repeat center center
-	}
-.mean-container .mean-nav ul li.nav__menu__menu6 a:hover,
-.mean-container .mean-nav ul li.nav__menu__menu6 a.active{
-	background:url(../images/menu_6_hover.jpg) no-repeat center center
-	}images.mean-container .mean-nav ul li.nav__menu__menu7 a:hover,
-.mean-container .mean-nav ul li.nav__menu__menu7 a.active{
-	background:url(../images/menu_7_hover.jpg) no-repeat center center
-	} */
-
-/* .mean-container .mean-nav ul li ul.subNav li.subNav {
+.mean-container .mean-nav ul li ul.subNav li.subNav {
 	border-top:1px solid #edf7f8;
 	border-bottom:none;
     height: auto !important;
@@ -171,14 +130,14 @@ div.nav{
     text-decoration:underline;
 	background:none !important;
 
-} */
+}
 
 a.mean-expand{
-	height:36px !important;
+	height:20px !important;
 	position:absolute;
-	width:47px !important;
+	width:30px !important;
 	right:0px !important;
-	top:15px;
+	top:9px;
 	padding:0px !important;
 	font-size:15px !important;
 	font-weight:bold;
@@ -196,8 +155,8 @@ a.mean-clicked{
 	}
 .mean-bar .meanclose{
 	color: #ffffff !important;
-	font-size: 40px !important;
+	font-size: 25px !important;
     display: flex !important;
     justify-content: center;
-    align-items: center;
+    /* align-items: center;*/
 }
