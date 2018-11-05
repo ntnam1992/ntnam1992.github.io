@@ -49,16 +49,18 @@ $(document).ready(function(){
 	// 		console.log("aaaaaa");
 	// 	// }
 	// });
-	// $(document).on("click",".mean-nav li",function(){
-	// 	if( $(this).find(".subNav").length > 0 & !$(this).hasClass("active")){
-	// 		$(this).addClass("active")
-	// 	}
-	// 	else{
+	$(document).on("click",".mean-nav li",function(){
+		var l = $(this).find(".subNav").length;
+		console.log(l);
+		if( $(this).find(".subNav").length > 0 & !$(this).hasClass("active")){
+			$(this).addClass("active")
+		}
+		else{
 
-	// 			$(this).removeClass("active");
+				$(this).removeClass("active");
 			
-	// 	}
-	// });
+		}
+	});
 	$('.js-sub').click(function(){
 		var test = $(this).hasClass('btn-change');
 		var subBtn = $(this).hasClass('btn-sub');
