@@ -294,9 +294,9 @@
 	.subNav li:active{
 		padding: 2% 0 0 !important;
 	}
-	.mean-container .mean-nav ul li:active a{
+	/* .mean-container .mean-nav ul li:active a{
 		padding-bottom: 2% !important;
-	}
+	} */
 	.subNav li{
 		background: #352700 !important;
 		
