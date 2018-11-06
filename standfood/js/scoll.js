@@ -11,10 +11,10 @@ $(function() {
 	    });
 	    //ƒXƒNƒ[ƒ‹‚µ‚Äƒgƒbƒv
 	    topBtn.click(function () {
-	        $('body,html').animate({
-	            scrollTop: 0
-	        }, 500);
-	        return false;
+	        // $('body,html').animate({
+	        //     // scrollTop: 0
+	        // }, 500);
+	        // return false;
 	    });
 		
 });
