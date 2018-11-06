@@ -134,7 +134,10 @@ table {
 }
 body{
     background: #000000;
-    font-family: Yugo Medium ,sans-serif;
+    font-family: "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" ,
+     "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" ,
+      Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+
     font-size: 16px;
     position: relative;
 }
@@ -344,7 +347,7 @@ img:hover{
     margin: 0 auto;
 }
 h1{
-    font-family: Yugo;
+    font-family: "游明朝","YuMincho","Hiragino Mincho ProN","Hiragino Mincho Pro","ＭＳ 明朝",serif;
     font-size: 36px;
     color: #ffffff;
     line-height: 2;
@@ -366,15 +369,20 @@ h1{
     margin: 0 auto;
     /* border-left: 7px solid #f8e47f ;
     border-right: 7px solid #f8e47f ; */
-    box-sizing: border-box;
-    /* border-image-source: linear-gradient(#f8e47f, #edb747); */
+    /* box-sizing: border-box;
+    /* border-image-source: linear-gradient(#f8e47f, #edb747); 
     border-left: 7px solid #f8e47f;  
     border-right: 7px solid #f8e47f; 
     border-image-source: linear-gradient(#f8e47f, #edb747);
-    border-image-slice: 20;
+    border-image-slice: 20; */
+    border: 11px solid transparent;
+    margin: 0 auto;
+    border-image: url(../images/br-img.png) 18 round;
+    box-sizing: border-box;
+    /* background: #ffffff; */
     position:relative; 
 }
-.inner:before{
+/* .inner:before{
     content:" ";
     background: url('../images/br-container.jpg') no-repeat center top;
     width: 1000px;
@@ -390,18 +398,27 @@ h1{
     width: 1000px;
     height:23px; 
     /* background-size: cover; */
-    /* background: red; */
+    /* background: red;
     display: block;
     position: absolute;
     bottom: -23px;
     left: -7px;
-}
+} */
 .br-inner{
-    border-left: 7px solid #000000;
+    /*border-left: 7px solid #000000;
     border-right: 7px solid #000000;
     background: #ffffff;
     box-sizing: border-box;
-    padding-bottom: 25px;
+    padding-bottom: 25px; */
+    border: 10px solid transparent;
+    width: 100%;
+    margin: 0 auto;
+    border-image: url('../images/br-inner.png') 10 round;
+    box-sizing: border-box;
+    /* padding-bottom: 25px; */
+}
+.bg-inner{
+    background: #ffffff;
 }
 .tittle-1{
     font-family: Yugo,sans-serif;
@@ -610,8 +627,11 @@ h1{
 .btn-register:hover .email-register:before{
     content: url('../images/white-arow.png');
 } 
-.br-inner:last-child{
+/* .br-inner:last-child{
     padding-top: 25px;
+} */
+.pd-register{
+    padding: 25px 0;
 }
 .content-1__text--pb{
     padding-bottom: 20px !important;
@@ -638,6 +658,7 @@ h1{
     margin: 0 auto;
     width: 100%;
     position: relative;
+    z-index: 9999;
 }
 .footer__info{
     text-align: center;
@@ -696,6 +717,7 @@ h1{
     width: 100%;
     position: absolute;
     bottom: 60px;
+    z-index: -1;
 }
 .proccess__item--color1,.proccess__item--color2{
     max-width: 255px;

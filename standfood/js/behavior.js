@@ -33,25 +33,25 @@ $(function() {
 /*==============================================
 	Scroll
 ==============================================*/
-$(function() {
-    $("a[href^=#]").click(function() {
-        var speed = 500;
-        var href = $(this).attr("href");
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top;
-        $("html, body").animate({
-            scrollTop: position
-        }, speed, "swing");
-        return false;
-    });
-});
+// $(function() {
+//     $("a[href^=#]").click(function() {
+//         var speed = 500;
+//         var href = $(this).attr("href");
+//         var target = $(href == "#" || href == "" ? 'html' : href);
+//         var position = target.offset().top;
+//         $("html, body").animate({
+//             scrollTop: position
+//         }, speed, "swing");
+//         return false;
+//     });
+// });
 
 /*==============================================
 	GlobalNavi Dropdown Menu
 ==============================================*/
 $(window).on("load resize", function() {
     var i = $(window).width();
-    var j = 640; //Width(Responsive)
+    var j = 768; //Width(Responsive)
     if (i <= j) {
         $("li.dd ul").css("display", "block");
         $("li.dd").unbind("mouseenter mouseleave");
