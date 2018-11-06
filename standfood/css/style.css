@@ -570,6 +570,10 @@ h1{
     display: block;
     margin-top: 5px;
 }
+.text-pb{
+    padding-bottom: 25px !important;
+    line-height: 1.4;
+}
 .text-mr{
     margin-top: 25px;
 }
@@ -584,7 +588,7 @@ h1{
     margin: 20px 0;
 }
 .btn-register{
-    width: 40.81395348837209%;
+    width: 39.81395348837209%;
     background: url('../images/bg-liner-item.jpg') repeat-x center center;
     background: cover;
     border-radius: 8px;
@@ -593,6 +597,9 @@ h1{
     border-bottom: 1px solid #fef96a;
     box-shadow: 1px 1px 1px #131313;
     margin: 0 auto;
+}
+.pt-inner{
+    padding-top: 25px;
 }
 .email-register{
     color: #000000;
@@ -741,6 +748,7 @@ h1{
     display: block;
     font-weight: bold;
     margin-bottom: 10px;
+    font-size: 19px;
 }
 .triangle1-pc,.triangle2-pc{
     width: 0;
@@ -896,7 +904,7 @@ h1{
 .service{
     color: #ff3333;
     text-align: center;
-    margin: 18px auto ;
+    margin: 18px auto 15px ;
 }.agree{
     color: #ffffff;
     text-align: center;
@@ -909,7 +917,7 @@ h1{
     padding-right: 10px;
 }
 .btn-next {
-    width: 23.1%;
+    width: 27.1%;
     background: url(../images/liner-bg-next.jpg) repeat-x top left;
     border-radius: 8px;
     border-left: 1px solid #22972d;
@@ -924,7 +932,6 @@ h1{
     text-align: center;
     width: 100%;
     display: flex;
-    font-size: 25px;
     line-height: 1.79;
     font-family: YuGothic,sans-serif;
     font-weight: bold;
