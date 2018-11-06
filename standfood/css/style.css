@@ -358,7 +358,7 @@ h1{
 .page-location{
     font-size: 12px;
     color: #ffffff;
-    margin: 12px 0 43px;
+    margin: 12px 0 18px;
 }
 .br-hide{
     display: none;
@@ -573,6 +573,8 @@ h1{
 .text-pb{
     padding-bottom: 25px !important;
     line-height: 1.4;
+    width: 87.75510204081633%;
+    margin: 0 auto;
 }
 .text-mr{
     margin-top: 25px;
@@ -638,7 +640,7 @@ h1{
     padding-top: 25px;
 } */
 .pd-register{
-    padding: 25px 0;
+    padding: 25px 0 10px;
 }
 .content-1__text--pb{
     padding-bottom: 20px !important;
@@ -823,7 +825,7 @@ h1{
     margin-left: 20px;
 }
 .info-phone{
-    margin-top: 55px;
+    margin-top: 22px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -932,7 +934,7 @@ h1{
     text-align: center;
     width: 100%;
     display: flex;
-    line-height: 1.79;
+    line-height: 2.79;
     font-family: YuGothic,sans-serif;
     font-weight: bold;
     justify-content: flex-start;
