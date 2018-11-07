@@ -273,7 +273,7 @@ span{
     display: block;
 } */
 .inner__content:last-child{
-    margin-bottom: 76px;
+    margin-bottom: 85px;
 }
 .title__thumb{
     text-align: center;
@@ -284,7 +284,7 @@ span{
 }
 .thumb{
     display: flex;
-    margin-top: 30px;
+    margin-top: 34px;
     color: #ffffff;
 }
 .thumb__item1 , .thumb__item2 , .thumb__item3{
@@ -557,7 +557,9 @@ span{
     max-width: 1200px;
     width: 100%;
 }
-
+.mb-42{
+    margin-bottom: 42px !important;
+}
 
 
 
