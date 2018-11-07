@@ -406,7 +406,7 @@ span{
     font-size: 34px;
     position: absolute;
     color: #ffffff;
-    top: 30%;
+    top: 28%;
     left: 26%;
 }
 .banner1__tittle--company{
@@ -417,8 +417,8 @@ span{
     font-size: 30px;
     color: #ffffff;
     padding-left: 40px;
-    top: 4.8%;
-    left: 41%;
+    top: 5.8%;
+    left: 42%;
     line-height: 1.5;
 }
 .banner1__tittle--text{
@@ -426,6 +426,7 @@ span{
 }
 .banner1__tittle--text span{
     font-size: 20px;
+    padding-top: 25px;
 }
 .banner1__info{
     width: 83.3%;
@@ -434,7 +435,7 @@ span{
     justify-content: space-between;
     position: absolute;
     left: 8.3%;
-    bottom: 0;
+    bottom: -1%;
 }
 .banner1__info--left,.banner1__info--right{
     width: 48.5%;
@@ -443,15 +444,16 @@ span{
     text-align: center;
     background: rgba(65, 66, 67, 0.8);
     color: #ffffff;
+    padding-top: 2%;
 }
 .info__tittle{
     color: #7fdc22;
     font-weight: bold;
-    margin: 6% 0;
+    margin: 2% 0 5%;
     font-size: 20px
 }
 .banner1__info--left ul{
-    margin-bottom: 6%;
+    margin-bottom: 10%;
 }
 .active:hover{
     color: #7fdc22 !important;
@@ -481,9 +483,9 @@ span{
     text-align: center;
 }
 .border-line{
-    width: 30px;
+    width: 20px;
     display: block;
-    margin: 0 auto 50px;
+    margin: 0 auto 25px;
     border-top: 2px solid #78d020;
     height: 1px;
 }
@@ -500,7 +502,7 @@ span{
     width: 83%;
     float: right;
     font-size: 14px;
-    margin: 11% auto;
+    margin: 15% auto;
     line-height: 1.6;
 
 }
@@ -515,6 +517,7 @@ span{
 }
 .signature{
     text-align: right;
+    line-height: 0.1;
 }
 .signature span{
     font-size: 36px;
@@ -559,6 +562,12 @@ span{
 }
 .mb-42{
     margin-bottom: 42px !important;
+}
+.mb-12{
+    margin-bottom: 12px;
+}
+.mb-29{
+    margin-bottom: 29px;
 }
 
 
