@@ -143,8 +143,8 @@ body{
 }
 .banner1__text{
     position: absolute;
-    top: 36%;
-    left: 12%;
+    top: 34%;
+    left: 8%;
     font-size: 34px;
     color: #ffffff;
     line-height: 1.5;
@@ -189,7 +189,7 @@ span{
     position: absolute;
     width: 50%;
     color: #ffffff;
-    top: 19%;
+    top: 17%;
     right: 0;
 }
 .banner__text ul li{
@@ -201,17 +201,18 @@ span{
     margin-right: 15px;
 }
 .banner__text ul li:first-child p{
-    font-size: 14px;
+    font-size: 16px;
 }
 .banner__text ul li:nth-child(2) {
     font-size: 20px;
-    margin: 5% 0 3%;
+    margin: 5% 0 3.5%;
     font-weight: bold;
 }
 .banner__text ul li:nth-child(3) span,
 .banner__text ul li:nth-child(4) span,
 .banner__text ul li:nth-child(5) span{
     padding-right: 20px;
+    margin-bottom: 10px;
 }
 
 .container{
@@ -222,12 +223,11 @@ span{
 .tittle{
     font-size: 34px;
     color: #ffc000;
-    padding-left: 1.2%;
     font-family:Hiragino Kaku Gothic Pro,sans-serif;
-    margin-top: 76px;
+    margin-top: 79px;
 }
 .mg-edit{
-    margin-top: 40px;
+    margin-top: 36px;
 }
 .inner{
     max-width: 1000px;
@@ -241,13 +241,19 @@ span{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    line-height: 1.9;
+}
+.inner__content--right img{
+    margin-top: 9px;
+}
+.inner__content--left img{
+    margin-top: 7px;
 }
 .inner__content--left{
     __float: left;
     width: 48.5%;
     line-height: 2.3;
     font-size: 14px;   
-    padding-left: 1.2%; 
 }
 
 .inner__content--right{
@@ -267,7 +273,7 @@ span{
     display: block;
 } */
 .inner__content:last-child{
-    margin-bottom: 72px;
+    margin-bottom: 76px;
 }
 .title__thumb{
     text-align: center;
@@ -278,7 +284,7 @@ span{
 }
 .thumb{
     display: flex;
-    margin-top: 40px;
+    margin-top: 30px;
     color: #ffffff;
 }
 .thumb__item1 , .thumb__item2 , .thumb__item3{
@@ -286,8 +292,8 @@ span{
  }
  .thumb__item1 p , .thumb__item2 p , .thumb__item3 p{
     position: absolute;
-    bottom: 13.2%;
-    left: 7.5%;
+    bottom: 10.2%;
+    left: 5.5%;
     line-height: 1.6;
     font-size: 14px;
  }
@@ -309,10 +315,10 @@ span{
 #page-top{
     display: block;
     position: fixed;
-    bottom: 18%;
-    width: 21px;
-    right: 16%;
-    padding: 19px;
+    bottom: 4%;
+    width: 25px;
+    right: 8%;
+    padding: 21px;
     background: url(../images/bg-to-top.png) no-repeat left top;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
@@ -347,6 +353,10 @@ span{
     align-items:  center;
     __width: 66.5%;
     /* width: 600px; */
+    justify-content: flex-end;
+}
+.nav__menu ul li:last-child a{
+    border-right: none;
 }
 .nav__menu:after{
     content: " ";
@@ -381,6 +391,9 @@ span{
 }
 .nav__menu__menu5 {
     background: #f85050;
+}
+.nav__menu ul li:last-child{
+    width: 17%;
 }
 .top-menu{
     display: flex;
@@ -539,8 +552,11 @@ span{
     margin: 4% 0;
 }
 
-
-
+/*edit page*/
+.bn-img{
+    max-width: 1200px;
+    width: 100%;
+}
 
 
 

@@ -34,6 +34,17 @@
 	    font-size: 1.4vw;
 	    line-height: 1.4;
 	} */
+	.inner__content:last-child{
+		margin-bottom: 30px;
+	}
+	.tittle{
+		width: 94%;
+		margin: 0 auto;
+	}
+	.inner__content--left p, .inner__content--right p {
+		width: 94%;
+		margin: 0 auto;
+	}
 	.logo-sp{
 		position: absolute;
 		top:7%;
@@ -99,7 +110,7 @@
 		left: 35%;
 	}
 	.tittle{
-		margin-top: 50px;
+		margin-top: 25px;
 	}
 	.menu__block{
     	display: block !important;
@@ -122,7 +133,7 @@
 
 	}
 	.nav__menu ul li{
-	    width: 100%;
+	    width: 100% !important;
 	    background: #ececec;
 	    border-top: 1px solid #d5d5d5;
 	}
@@ -413,6 +424,7 @@
 	.banner__text ul li:nth-child(5){
 		font-size: 14px;
 	}
+	
 }
 @media screen  and (max-width: 420px) and (min-width: 320px){
 	.banner1__tittle--interview {
@@ -441,7 +453,7 @@
 	.banner__text ul li:nth-child(3) ,
 	.banner__text ul li:nth-child(4) ,
 	.banner__text ul li:nth-child(5){
-		font-size: 12px;
+		font-size: 11px;
 	}
 	.thumb__item1 p, .thumb__item2 p, .thumb__item3 p{
 		font-size: 15px;
@@ -454,6 +466,22 @@
 	    margin-top: 30px;
 	}
 	.inner__content{
-		margin-bottom: 40px;
+		margin-bottom: 20px;
+	}
+	.banner__text ul li:nth-child(3) span,
+	 .banner__text ul li:nth-child(4) span, 
+	 .banner__text ul li:nth-child(5) span{
+	 	margin-bottom: 3px;
+	 }
+}
+@media screen  and (max-width: 550px) and (min-width: 420px){
+	.banner__text{
+		top: 5%;
+	}
+}
+
+@media screen  and (max-width: 342px) {
+	.copy-right{
+		line-height: 3 !important;
 	}
 }
