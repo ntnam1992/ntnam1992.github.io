@@ -423,7 +423,13 @@ h1{
 .tittle-1{
     font-family: Yugo,sans-serif;
     font-size: 18px;
-    padding: 25px 0 10px;
+    padding: 25px 0 10px ;
+    font-weight: bold;
+}
+.tittle-2{
+    font-family: Yugo,sans-serif;
+    font-size: 18px;
+    padding: 17px 0 13px 3.26%;
     font-weight: bold;
 }
 .edit-img{
@@ -537,18 +543,18 @@ h1{
     border: 3px solid #c49d1a;
     background: #ffffff;
 }
-.content-1__step p{
+/* .content-1__step > p{
     padding: 0 10px 0 3.26%;
-}
+} */
 .content-1__step:first-child{
 }
 .step-color{
-    line-height: 2.555555555555556;
+    /* line-height: 2.555555555555556; */
     background: #fefbd2;
     border-bottom: 1px solid #c49d1a;
 }
 .content-1__text--pd{
-    padding:24px 0 24px 3.26% !important;
+    padding:24px 0 18px 3.26% !important;
 }
 .next-step{
     margin: 15px auto;
@@ -558,8 +564,11 @@ h1{
     justify-content: space-around;
     margin: 20px 0 25px;
 }
+.ln-step-txt{
+    padding: 18px auto !important;
+}
 .wd-info{
-   width: 44.30232558139535%; 
+   width: 39.30232558139535%; 
 }
 .content-1__info p{
     padding: 0 ;
@@ -570,19 +579,19 @@ h1{
     display: block;
     margin-top: 5px;
 }
-.text-pb{
-    padding-bottom: 25px !important;
-    line-height: 1.4;
-    width: 87.75510204081633%;
-    margin: 0 auto;
-}
+
 .text-mr{
-    margin-top: 25px;
+    margin-top: 18px;
 }
 .content-1__info a{
     display: block;
     /* max-width: 394px;
     width: 100% */
+}
+.text-pb{
+    padding-bottom: 16px !important;
+    padding-left: 3.26%;
+    line-height: 1.5;
 }
 .note-txt{
     text-align: center;
@@ -599,6 +608,55 @@ h1{
     border-bottom: 1px solid #fef96a;
     box-shadow: 1px 1px 1px #131313;
     margin: 0 auto;
+}
+.mr-tl-4{
+    margin: 4px 0 0 4px;
+}
+.wd-info-1 {
+    width: 43.302326%;
+    padding-left: 1%;
+}
+.wd-info-2{
+    width: 44.302326%;
+    padding-left: 2%;
+}
+.wd-info-2 p{
+    line-height: 1.5 !important;
+    letter-spacing: 1px;
+}
+.mb-12{
+    margin-bottom: 12px;
+}
+.mb-22{
+    margin-bottom: 22px;
+}
+.pt-ln-18{
+    padding-top: 18px !important;
+    padding-right: 20px !important;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.pd-ln-9{
+    padding: 5px 20px 20px 3.26%;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.pr-10{
+    padding-right: 10px;
+}
+.pr-14{
+    padding-right: 14px;
+}
+.ln-1{
+    line-height: 1.6 !important;
+    letter-spacing: 1px;
+}
+.edit-pbt-1{
+    padding-top: 22px !important;
+    padding-bottom: 26px !important;
+}
+.edit-pt-1{
+    padding-top: 12px !important;
 }
 .pt-inner{
     padding-top: 25px;
@@ -639,9 +697,7 @@ h1{
 /* .br-inner:last-child{
     padding-top: 25px;
 } */
-.pd-register{
-    padding: 25px 0 10px;
-}
+
 .content-1__text--pb{
     padding-bottom: 20px !important;
 }
@@ -785,18 +841,7 @@ h1{
     background: #ffffff !important;
     border-color: #c49d1a !important;
 }
-.pt-unset{
-    padding-top: 0 !important;
-}
-.mt-agree{
-    margin-top: 50px;
-}
-.mt-unset{
-    margin-top: 0 !important;
-}
-.pb-page{
-    padding-bottom:  10px !important;
-}
+
 .mess-error{
     background: #ffffff;
     border: 2px solid #ff3333 ;
@@ -878,7 +923,7 @@ h1{
     justify-content: flex-start;
     align-items: center;
     background: #fefbd2;
-    margin-top: 25px;
+    margin-top: 18px;
 }
 .area-txt{
     height: 90%;
@@ -906,7 +951,7 @@ h1{
 .service{
     color: #ff3333;
     text-align: center;
-    margin: 18px auto 15px ;
+    margin: 18px auto 10px ;
 }.agree{
     color: #ffffff;
     text-align: center;
@@ -952,4 +997,69 @@ h1{
 }
 .copy-br{
     display: none;
+}
+/**fix layout*/
+.pt-unset{
+    padding-top: 0 !important;
+}
+.mt-agree{
+    margin-top: 50px;
+}
+.mt-unset{
+    margin-top: 0 !important;
+}
+.pb-page{
+    padding-bottom:  10px !important;
+}
+.pt-15{
+    padding-top: 15px !important;
+}
+.pb-20{
+    padding-top: 18px !important;
+    padding-bottom: 26px !important;
+    letter-spacing: 2px;
+}
+.pt-unset{
+    padding-top: 0 !important;
+}
+.mt-agree{
+    margin-top: 50px;
+}
+.mt-unset{
+    margin-top: 0 !important;
+}
+.pb-page{
+    padding-bottom:  10px !important;
+}
+.pt-15{
+    padding-top: 15px !important;
+}
+.pb-20{
+    padding-top: 18px !important;
+    padding-bottom: 26px !important;
+    letter-spacing: 2px;
+}
+.mt-h1{
+    margin-top: 36px;
+}
+.mt-9{
+    margin-top: 9px !important;
+}
+.mr-22{
+    margin-right: 22px;
+}
+.lt-space{
+    letter-spacing: 1px;
+}
+.pd-register{
+    padding: 20px 0 10px;
+}
+.pd-register1{
+    padding: 22px 0 10px;
+}
+.mt-3{
+    margin-top: 3px;
+}
+.mt-13{
+    margin-top: 13px;
 }

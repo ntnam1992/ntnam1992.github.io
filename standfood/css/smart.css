@@ -94,6 +94,12 @@
 	}
 }
 @media screen and (max-width: 768px){
+	.text-pb{
+	    padding-bottom: 25px !important;
+	    line-height: 1.4;
+	    width: 87.75510204081633%;
+	    margin: 0 auto;
+	}
 	.copy-right{
 		font-family: HirakakuProN,sans-serif;
 	}
@@ -166,9 +172,9 @@
 	.content-1__step{
 		width: 92.27871939736347%;
 	}
-	.content-1__step p{
+	/* .content-1__step p{
 		padding: 0;
-	}
+	} */
 	.content-1__info{
 		flex-wrap: wrap-reverse;
 	}
@@ -383,6 +389,12 @@
 	} */
 	.btn-next{
 		width: 78.7%;
+	}
+	.wd-info-2{
+		width: 87.75510204081633%;
+	}
+	.sp-pb{
+		margin-bottom: 15px;
 	}
 }
 
