@@ -8,18 +8,36 @@
 	<script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/scoll.js"></script>
 </head>
-<body>
-
-	<div class="header">
-		<div class="top-menu">
-			<div class="top-logo1">
-				<a href="#"><img src="images/logo.png" alt="Japan National Tourism Organtional"></a>
-				<a href="#"><img src="images/icon-logo2.png" alt="Japan endless discovery" ></a>
-			</div>
+<body style="position: relative;">
+	<!-- <img src="pc_index.jpg" style="width: 100%; position: absolute;top:0;opacity: 0.4; max-width: 1600px;"> -->
+	<div class="top-menu">
+		<div class="top-logo1">
+			<a href="#"><img src="images/logo.png" alt="Japan National Tourism Organtional"></a>
+			<a href="#"><img src="images/icon-logo2.png" alt="Japan endless discovery" ></a>
 		</div>
+	</div>
+	<div class="header">
+		<div class="top-menu pc-hide">
+			
+			<div class="nav">
+	            <div class="nav__menu " id="globalNavi">            	
+	                <ul >                        
+	                   	<li><a href="#">Home</a></li>
+	                    <li><a href="#">News</a></li>               	
+	                    <li><a href="#"><span>Web</span>  Magazine</a></li>                   
+	                    <li><a href="#"><span>Du Lịch</span>  Trăng Mật</a></li>
+	                    <li><a href="#">Distination</a></li>
+	                    <li><a href="#">Activity</a></li>               	
+	                    <li><a href="#"><span>Basic</span>  Information</a></li>                   
+	                    <li><a href="#"><span>Ramen</span>  University</a></li>
+	                    <li><a href="#">Newsletter</a></li>	                            
+	                </ul>	                   
+	            </div>
+	        </div>  
+        </div>   
 		<div class="banner">
 			<a href=""><img src="images/banner.jpg" class="full-img"></a>
-			<a href="" class="icon-share"><img src="images/share.png" class="full-img"></a>
+			<a href="https://vi-vn.facebook.com/login/" class="icon-share"><img src="images/share.png" class="full-img"></a>
 			<div class="banner__tittle">
 				<p><img src="images/LOGO_CNNB_momiji.png" alt="Cùng yêu thích Nhật Bản hơn!" class="full-img">
 					Cùng yêu thích Nhật Bản hơn!
@@ -27,15 +45,21 @@
 			</div>
 		</div>
 		<div class="list">
-			<div class="list__menu">
-				<a href="#"><img src="images/icon-new-tittle.png" alt="Tin tức & chủ đề" class="full-img"></a>
-				<a href="#"><img src="images/icon-Newsletter.png" alt="Newsletter" class="full-img"></a>
-				<a href="#"><img src="images/icon-honeymoon.png" alt="Du lịch trăng mật" class="full-img"></a>
-				<a href="#"><img src="images/icon-location.png" alt="Điểm đến" class="full-img"></a>
-				<a href="#"><img src="images/icon-activity.png" alt="Hoạt động" class="full-img"></a>
-				<a href="#"><img src="images/icon-map-info.png" alt="Thông tin cơ bản" class="full-img"></a>
-				<a href="#"><img src="images/icon-ramen.png" alt="Ramen University" class="full-img"></a>
-			</div>
+			<ul class="list__menu">
+				<li><a href="#"><img src="images/icon-new-tittle.png" alt="Tin tức & chủ đề" class="full-img"></a></li>
+				<li><a href="#"><img src="images/icon-Newsletter.png" alt="Newsletter" class="full-img"></a></li>
+				<li><a href="#"><img src="images/icon-honeymoon.png" alt="Du lịch trăng mật" class="full-img"></a></li>
+				<li><a href="#"><img src="images/icon-location.png" alt="Điểm đến" class="full-img"></a></li>
+				<li class="Subitem"><a href="#"><img src="images/icon-activity.png" alt="Hoạt động" class="full-img"></a>
+					<ul class="item-list">
+						<li class="item-list__child"><p class="triangle"></p></li>
+						<li><a href="#">dummy dummy</a> </li>
+						<li><a href="#">dummy dummy</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><img src="images/icon-map-info.png" alt="Thông tin cơ bản" class="full-img"></a></li>
+				<li><a href="#"><img src="images/icon-ramen.png" alt="Ramen University" class="full-img"></a></li>
+			<ul>
 		</div>
 	</div>
 	<div class="container">
@@ -55,17 +79,17 @@
 			<li><a href="#">Hakone Sweets Collection Special Event Hakone Sweets Collection...</a></li>
 		</ul>
 		<div class="inner__contact">
-			<div class="inner__contact--left" ><a href="#"><img src="images/bg-content-1.jpg" alt="facebook" class="full-img"></a></div>
+			<div class="inner__contact--left" ><!-- <iframe src="<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcamnhannhatban%2F&tabs=timeline&width=472&height=336&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="472" height="336" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>"> --></div>
 			<div class="inner__contact--right" >
 				<img src="images/bg-content-2.jpg"  class="full-img">
 				<div class="content__right--inner">
 					<p><span class="content__right--tittle1">Newsletter</span>
 						訪日情報を定期的に配信しています。
-					<a href="#">Archives <img src="images/icon-arow.png"></a>
+					<a href="#">Archives<img src="images/icon-arow.png"></a>
 					</p>
 					<p><span class="content__right--tittle2">Subscribe to our newsletter</span>
 					Nhập email để nhận được thông tin ưu đãi, gói giảm giá cùng những thông tin vô cùng hữu ích cho bạn!</p>
-					<a href="#" class="btn-subscrite">Subscribe</a>
+					<a href="https://vi-vn.facebook.com/login/" class="btn-subscrite">Subscribe</a>
 				</div>
 			</div>
 		</div>
@@ -77,9 +101,10 @@
 				</p>
 			</div>
 			<div class="slider">
-				<div class="slider__content">
-					<img src="images/baner-slider.jpg" class="slider__content--img">
-					<a class="btn-play"><img src="images/icon-play.png" class="full-img"></a>
+				<div class="slider__content video-responsive">
+					<iframe width="853" height="480" src="https://www.youtube.com/embed/6esuOu4zjPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="slider__content--img"></iframe>
+					<!-- <img src="images/baner-slider.jpg" class="slider__content--img"> -->
+					<!-- <a class="btn-play"><img src="images/icon-play.png" class="full-img"></a> -->
 				</div>
 			</div>
 		</div>
@@ -117,89 +142,89 @@
 			<div class="activity">
 				<div class="act__list">
 					<div class="act__list--img">
-						<a href="#" class="act__list--item"><img src="images/pic-act-1.png" alt="Mua sắm" class="full-img"></a>
-						<a href="#" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
+						<a href="index-activity.html#shopping" class="act__list--item"><img src="images/pic-act-1.png" alt="Mua sắm" class="full-img"></a>
+						<a href="index-activity.html#shopping" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
 					</div>
-					<a href="#" class="act__list--text">Mua sắm</a>
+					<a href="index-activity.html#shopping" class="act__list--text">Mua sắm</a>
 				</div>
 				<div class="act__list">
 					<div class="act__list--img">
-						<a href="#" class="act__list--item"><img src="images/pic-act-2.png" alt="Văn hóa nhật bản" class="full-img"></a>
-						<a href="#" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
+						<a href="index-activity.html#cultural" class="act__list--item"><img src="images/pic-act-2.png" alt="Văn hóa nhật bản" class="full-img"></a>
+						<a href="index-activity.html#cultural" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
 					</div>
-					<a href="#" class="act__list--text">Văn hóa nhật bản</a>
+					<a href="index-activity.html#cultural" class="act__list--text">Văn hóa nhật bản</a>
 				</div>
 				<div class="act__list">
 					<div class="act__list--img">
-						<a href="#" class="act__list--item"><img src="images/pic-act-3.png" alt="Bốn mùa" class="full-img"></a>
-						<a href="#" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
+						<a href="index-activity.html#seasons" class="act__list--item"><img src="images/pic-act-3.png" alt="Bốn mùa" class="full-img"></a>
+						<a href="index-activity.html#seasons" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
 					</div>
-					<a href="#" class="act__list--text">Bốn mùa</a>
+					<a href="index-activity.html#seasons" class="act__list--text">Bốn mùa</a>
 				</div>
 				<div class="act__list">
 					<div class="act__list--img">
-						<a href="#" class="act__list--item"><img src="images/pic-act-4.png" alt="Sự kiện và lễ hội" class="full-img"></a>
-						<a href="#" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
+						<a href="index-activity.html#event" class="act__list--item"><img src="images/pic-act-4.png" alt="Sự kiện và lễ hội" class="full-img"></a>
+						<a href="index-activity.html#event" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
 					</div>
-					<a href="#" class="act__list--text">Sự kiện và lễ hội</a>
+					<a href="index-activity.html#event" class="act__list--text">Sự kiện và lễ hội</a>
 				</div>
 				<div class="act__list">
 					<div class="act__list--img">
-						<a href="#" class="act__list--item"><img src="images/pic-act-5.png" alt="Ẩm thực Nhật Bản" class="full-img"></a>
-						<a href="#" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
+						<a href="index-activity.html#cuisine" class="act__list--item"><img src="images/pic-act-5.png" alt="Ẩm thực Nhật Bản" class="full-img"></a>
+						<a href="index-activity.html#cuisine" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
 					</div>
-					<a href="#" class="act__list--text">Ẩm thực Nhật Bản</a>
+					<a href="index-activity.html#cuisine" class="act__list--text">Ẩm thực Nhật Bản</a>
 				</div>
 				<div class="act__list">
 					<div class="act__list--img">
-						<a href="#" class="act__list--item"><img src="images/pic-act-6.png" alt="Kiến trúc" class="full-img"></a>
-						<a href="#" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
+						<a href="index-activity.html#construct" class="act__list--item"><img src="images/pic-act-6.png" alt="Kiến trúc" class="full-img"></a>
+						<a href="index-activity.html#construct" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
 					</div>
-					<a href="#" class="act__list--text">Kiến trúc</a>
+					<a href="index-activity.html#construct" class="act__list--text">Kiến trúc</a>
 				</div>
 				<div class="act__list">
 					<div class="act__list--img">
-						<a href="#" class="act__list--item"><img src="images/pic-act-7.png" alt="Công nghệ cao" class="full-img"></a>
-						<a href="#" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
+						<a href="index-activity.html#techno" class="act__list--item"><img src="images/pic-act-7.png" alt="Công nghệ cao" class="full-img"></a>
+						<a href="index-activity.html#techno" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
 					</div>
-					<a href="#" class="act__list--text">Công nghệ cao</a>
+					<a href="index-activity.html#techno" class="act__list--text">Công nghệ cao</a>
 				</div>
 				<div class="act__list">
 					<div class="act__list--img">
-						<a href="#" class="act__list--item"><img src="images/pic-act-8.png" alt="Bảo tàng & 
+						<a href="index-activity.html#museum" class="act__list--item"><img src="images/pic-act-8.png" alt="Bảo tàng & 
 							phòng trưng bày tranh" class="full-img"></a>
-						<a href="#" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
+						<a href="index-activity.html#museum" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
 					</div>
-					<a href="#" class="act__list--text">Bảo tàng &<br/> 
+					<a href="index-activity.html#museum" class="act__list--text">Bảo tàng &<br/> 
 						phòng trưng bày tranh</a>
 				</div>
 				<div class="act__list">
 					<div class="act__list--img">
-						<a href="#" class="act__list--item"><img src="images/pic-act-9.png" alt="Đền thờ & Chùa & Vườn" class="full-img"></a>
-						<a href="#" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
+						<a href="index-activity.html#temple" class="act__list--item"><img src="images/pic-act-9.png" alt="Đền thờ & Chùa & Vườn" class="full-img"></a>
+						<a href="index-activity.html#temple" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
 					</div>
-					<a href="#" class="act__list--text">Đền thờ & Chùa & Vườn</a>
+					<a href="index-activity.html#temple" class="act__list--text">Đền thờ & Chùa & Vườn</a>
 				</div>	
 				<div class="act__list">
 					<div class="act__list--img">
-						<a href="#" class="act__list--item"><img src="images/pic-act-10.png" alt="Phong cảnh nông thôn và tự nhiên" class="full-img"></a>
-						<a href="#" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
+						<a href="index-activity.html#nature" class="act__list--item"><img src="images/pic-act-10.png" alt="Phong cảnh nông thôn và tự nhiên" class="full-img"></a>
+						<a href="index-activity.html#nature" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
 					</div>
-					<a href="#" class="act__list--text">Phong cảnh nông<br/> thôn và tự nhiên</a>
+					<a href="index-activity.html#nature" class="act__list--text">Phong cảnh nông<br/> thôn và tự nhiên</a>
 				</div>
 				<div class="act__list">
 					<div class="act__list--img">
-						<a href="#" class="act__list--item"><img src="images/pic-act-11.png" alt="Chợ" class="full-img"></a>
-						<a href="#" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
+						<a href="index-activity.html#market" class="act__list--item"><img src="images/pic-act-11.png" alt="Chợ" class="full-img"></a>
+						<a href="index-activity.html#market" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
 					</div>
-					<a href="#" class="act__list--text">Chợ</a>
+					<a href="index-activity.html#market" class="act__list--text">Chợ</a>
 				</div>
 				<div class="act__list">
 					<div class="act__list--img">
-						<a href="#" class="act__list--item"><img src="images/pic-act-12.png" alt="Thể thao" class="full-img"></a>
-						<a href="#" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
+						<a href="index-activity.html#sport" class="act__list--item"><img src="images/pic-act-12.png" alt="Thể thao" class="full-img"></a>
+						<a href="index-activity.html#sport" class="btn-seemore"><img src="images/icon-seemore.png" alt="xem them" class="full-img"></a>
 					</div>
-					<a href="#" class="act__list--text">Thể thao</a>
+					<a href="index-activity.html#sport" class="act__list--text">Thể thao</a>
 				</div>
 			</div>
 			<div class="content__index1">

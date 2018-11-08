@@ -67,6 +67,24 @@
 	}
 }
 @media screen and (max-width: 768px){
+	.slider__content--img{
+		padding: 0;
+	}
+	.video-responsive{
+		height: 360px;
+		width: 94%;
+	}
+	.slider__content{
+		width: 94%;
+		background: #958abf;
+	}
+	.video-responsive iframe{
+	    left:1%;
+	    top:1%;
+	    height:98%;
+	    width:98%;
+	    position:absolute;
+	}
 	.list-location ul li{
 		width: 33%;
 		border: none;
@@ -240,9 +258,10 @@
 	}
 }
 @media screen and (max-width: 420px){
-	.pd-95px {
+	.pd-95px,.pd-81px,.pd-81-95px {
     	padding: 20px 0 20px;
 	}
+	
 	.avata{
 		flex-wrap: wrap;
 	}
