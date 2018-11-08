@@ -1210,6 +1210,7 @@ h1{
     width: 100%;
     max-height: 340px;
     height: 100%;
+    overflow: hidden;
     
 }
 .face-iframe iframe{
@@ -1226,7 +1227,4 @@ h1{
     font-family: Times New Roman,sans-serif;
     color: #ffffff;
     
-}
-.face-iframe iframe{
-    width: 100%;
 }
