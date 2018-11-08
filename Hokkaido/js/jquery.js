@@ -18,7 +18,7 @@ $(document).ready(function(){
 		str = str.split("#")[1];	
 		var heightActDiv = $('.' + str)[0].clientHeight;
 		$('.'+ str).css({height: 0});
-		$('.'+ str).animate({height: heightActDiv + 40 + 'px'}, 2000, function() {
+		$('.'+ str).animate({height: parseInt(heightActDiv)  + 40 + 'px'}, 2000, function() {
 			$('.'+ str).addClass('change-active');
 		});
 	}
@@ -34,7 +34,8 @@ $(document).ready(function(){
 		if(status == true){
 			var idName=$(this).parent().find('.avata').attr('id');
 			var thisHeight = $(this).parent().parent().parent().find('.'+ idName).attr('data-height');
-			$(this).parent().parent().parent().find('.'+ idName).animate({height : thisHeight + 40 + 'px'},2000,
+			// $(this).parent().parent().parent().find('.'+ idName).slideDown('slow');
+			$(this).parent().parent().parent().find('.'+ idName).animate({height : parseInt(thisHeight)  + 40 + 'px'},2000,
 			function(){
 				$(this).parent().parent().parent().find('.'+ idName).addClass('change-active');
 			});
@@ -45,6 +46,7 @@ $(document).ready(function(){
 			var idName=$(this).parent().find('.avata').attr('id');
 			var thisHeight = $(this).parent().parent().parent().find('.'+ idName).attr('data-height');
 			console.log($(this).parent().parent().parent().find('.'+ idName))	;
+			// $(this).parent().parent().parent().find('.'+ idName).slideUp('slow');
 			$(this).parent().parent().parent().find('.change-active').removeClass('change-active');
 			$(this).parent().parent().parent().find('.'+ idName).animate({height : 0},1500);
 			timeOut();

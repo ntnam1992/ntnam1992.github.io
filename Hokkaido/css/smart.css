@@ -6,6 +6,9 @@
    		left: 1%;
 
 	}
+	.list__menu{
+		display: none;
+	}
 	.off{
 		display: none;
 	}
@@ -15,6 +18,26 @@
 	}
 	.list__menu{
 		width: 70%;
+	}
+	.icon-share{
+		display: none;
+	}
+	.pc-hide{
+		display: block;
+	}
+	.subNav li:first-child{
+		border-top: 1px solid #edf7f8;
+	}
+	.subNav li:nth-child(2){
+		border-bottom: none;
+	}
+	.mean-nav ul .mean-last a{
+		display: flex !important;
+		align-items: center;
+	}
+	.icon-meanface{
+		width: 12%;
+		margin-right: 15px;
 	}
 }
 @media screen and (max-width: 1042px)  {
@@ -57,6 +80,11 @@
 		bottom: unset;
 		right: unset;
 		width: 100%;
+		max-height: unset;
+		height: 450px !important;
+	}
+	.remen-unit{
+		height: 75%;
 	}
 	.ramen-off{
 		display: none;
@@ -64,20 +92,26 @@
 	.ramen-on{
 		display: block;
 		background: #e60012;
+		max-height: 360px !important;
+		height: 100%;
+	}
+	.remen-unit{
+		width: 60%;
+		margin: 0 auto;
 	}
 }
 @media screen and (max-width: 768px){
-	.slider__content--img{
+/* 	.slider__content--img{
 		padding: 0;
-	}
+	} */
 	.video-responsive{
-		height: 360px;
-		width: 94%;
+		height: 100%;
+		width: 100%;
 	}
-	.slider__content{
+/* 	.slider__content{
 		width: 94%;
 		background: #958abf;
-	}
+	} */
 	.video-responsive iframe{
 	    left:1%;
 	    top:1%;
@@ -338,8 +372,11 @@
 		flex-wrap: wrap;
 	}
 	.act__list{
-		width: 30% !important;
-		margin-bottom: 30px;
+		width: 90%;
+		margin: 0 auto 30px;
+	}
+	.act__list li{
+		width: 30%;
 	}
 }
 @media screen and (max-width: 460px){
@@ -408,6 +445,10 @@
 	}
 }
 @media screen and (max-width: 640px){
+	.remen-unit{
+		width: 94%;
+		height: 75%;
+	}
 	.top-logo1 a:first-child{
 		width: 65%;
 	}
@@ -468,17 +509,22 @@
 	}
 }
 @media screen and (max-width: 870px){
-	.slider{
+	.video{
 		position: relative;
 		top: unset;
 		left: unset;
+		height: 360px;
 	}
-	.slider__content{
+	.video__content{
 		width: 100%;
 	}
-	.slider__content img{
-		width: 50%;
+	.video-responsive{
+		height: 100%;
+		width: 100%;
 	}
+/* 	.slider__content img{
+		width: 50%;
+	} */
 	.btn-play{
 		bottom: 8.5%;
     	right: 21.4%;
@@ -646,5 +692,13 @@
 		text-align: center;
 		width: 100%;
 		display: block;
+	}
+	.video{
+		height: 240px;
+	}
+}
+@media screen and (max-width: 380px){
+	.list__info{
+		width: 80%;
 	}
 }

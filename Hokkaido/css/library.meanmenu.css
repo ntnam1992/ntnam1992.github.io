@@ -74,14 +74,14 @@ div.nav{
 	padding:2px 0;
 	background:#fbfbfd;
 	border-bottom:1px solid #edf7f8;
-	height: 47px;
+	height: auto;
 }
 
 .mean-container .mean-nav ul li a {
 	display: block;
 	width: 90%;
 	margin: 2% auto;
-	text-align: center;
+	text-align: left;
 	z-index:9999999;
 	text-decoration: none;
 	color: #999999;
@@ -171,17 +171,17 @@ div.nav{
 } */
 
 a.mean-expand{
-	height:36px !important;
-	position:absolute;
-	width:47px !important;
-	right:0px !important;
-	top:15px;
-	padding:0px !important;
-	font-size:15px !important;
-	font-weight:bold;
-	border:none !important;
-	color:#595959;
-	background:none !important;
+	height: 20px !important;
+    position: absolute;
+    width: 50px !important;
+    right: 0px !important;
+    top: 3px;
+    padding: 0px !important;
+    font-size: 15px !important;
+    font-weight: bold;
+    border: none !important;
+    color: #595959;
+    background: none !important;
 	}
 a.mean-clicked{
 	height:22px !important;
