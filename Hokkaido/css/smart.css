@@ -39,6 +39,68 @@
 		width: 12%;
 		margin-right: 15px;
 	}
+	.list-location ul{
+    	display: none;
+	}
+	.sp-hide{
+		display: none;	
+	}
+
+	.province--sp ul {
+	    display: none;
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+	    z-index: 99;
+	    background-color: #f6f6f6;
+	}
+	.province--sp {
+	    display: block;
+	    height: 35px;
+	    background-color: #f6f6f6;
+	    border-top: 1px solid #aebdd8;
+	    border-bottom: 1px solid #aebdd8;
+	    color: #384761;
+	    font-weight: bold;
+	    overflow-wrap: break-word;
+	    word-wrap: break-word;
+	    position: relative;
+	}
+	.province--sp li a {
+	    display: block;
+	    height: 35px;
+	    text-decoration: underline;
+    	text-indent: 10px;
+    	margin-top: 10px;
+    	color: #334d5c;
+	}
+	.province--sp > span {
+	    height: 35px;
+	    display: block;
+	    line-height: 2.3;
+	    position: relative;
+	    text-indent: 10px;
+	    overflow-wrap: break-word;
+	    word-wrap: break-word;
+	}
+	.province__arror {
+	    display: block;
+	    background: url('../images/destination_arrow_down.png') no-repeat center center;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    width: 28px;
+	    height: 35px;
+	    margin-right: 1%;
+	    -webkit-background-size: 28px auto;
+	    background-size: 28px auto;
+	    z-index: 100;
+	}
+	.banner__info p {
+	    width: 90%;
+	    margin: 0 auto;
+	}
+
 }
 @media screen and (max-width: 1042px)  {
 	.content{
@@ -101,6 +163,7 @@
 	}
 }
 @media screen and (max-width: 768px){
+
 /* 	.slider__content--img{
 		padding: 0;
 	} */
@@ -424,6 +487,24 @@
 
 }
 @media screen and (max-width: 720px) and (min-width: 421px ){
+	.link-face{
+		position: relative;
+		width: 65%;
+		top: unset;
+		right: unset;
+		margin: 20px auto;
+	}
+	.face-iframe{
+		width: 80%;
+		height: 100%;
+		max-height: unset;
+		margin: 0 auto;
+		overflow: unset;
+	}
+	.face-iframe iframe{
+		width: 100%;
+		margin: 15px auto;
+	}
 	.content{
 		flex-wrap: wrap;
 	}
@@ -601,6 +682,29 @@
 		display: block;
 	}
 
+}
+@media screen and (max-width: 420px){
+	.link-face{
+		position: relative;
+		width: 92%;
+		top: unset;
+		right: unset;
+		margin: 20px auto;
+	}
+	.link-face p{
+		text-align: center;
+	}
+	.face-iframe{
+		width: 80%;
+		height: 100%;
+		max-height: unset;
+		margin: 0 auto;
+		overflow: unset;
+	}
+	.face-iframe iframe{
+		width: 100%;
+		margin: 15px auto;
+	}
 }
 @media screen and (max-width: 360px){
 	.content__index1--info ul li{
