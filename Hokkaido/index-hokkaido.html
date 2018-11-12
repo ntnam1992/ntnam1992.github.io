@@ -7,16 +7,16 @@
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/scoll.js"></script>
-    <script src="js/jquery.bxslider.js"></script>
+    <!-- <script src="js/jquery.bxslider.js"></script> -->
 </head>
-<body>
+<body style="position: relative;">
+	<!-- <img src="pc_activities_all.jpg" style="width: 100%; position: absolute;top:0;opacity: 0.4; z-index: 999;"> -->
 	<div class="top-logo">
 				<a href="#"><img src="images/logo.png" alt="Japan National Tourism Organtional"></a>
 				<a href="#"><img src="images/icon-logo2.png" alt="Japan endless discovery" class="off"></a>
 	</div>
 	<div class="header">
 		<div class="top-menu">
-			
 			<div class="nav">
 	            <div class="nav__menu " id="globalNavi">            	
 	                <ul >                        
@@ -29,161 +29,662 @@
 	                    <li><a href="#"><span>Basic</span>  Information</a></li>                   
 	                    <li><a href="#"><span>Ramen</span>  University</a></li>
 	                    <li><a href="#">Newsletter</a></li>
-	                    <li class="pc-hide"><a href="https://vi-vn.facebook.com/login/"><img src="images/icon-facebook.png" alt="facebook" class="icon-meanface"> Share</a></li>	                            
+	                    <li class="pc-hide"><a href="https://vi-vn.facebook.com/login/"><img src="images/icon-facebook.png" alt="facebook" class="icon-meanface"> Share</a></li>		                            
 	                </ul>	                   
 	            </div>
 	        </div>  
         </div>   
-        <div class="province--sp js-province pc-hide">
-        	<span>Hokkaido
-				<p class="province__arror"></p>
-        	</span>
-				<ul class="province__list">
-					<li><a href="#">Hokkaido</a></li>
-					<li><a href="#">Tohoku</a></li>
-					<li><a href="#">Kanto</a></li>
-					<li><a href="#">Tokyo</a></li>
-					<li><a href="#">Chubu</a></li>
-					<li><a href="#">Osaka Kaisai</a></li>
-					<li><a href="#">Kyoto Nara</a></li>
-					<li><a href="#">Chugoku</a></li>
-					<li><a href="#">Kyushu</a></li>
-					<li><a href="#">Okinawa</a></li>
-				</ul>
-			</div>
-        <div class="status sp-hide">
-			<a> Home > <span>Distination Hokkaido</span> </a>
+        <div class="status">
+			<a> Home > <span>Activity</span> </a>
 		</div> 
 	</div>
 	<div class="container">
 		<div class="banner">
-			<img src="images/Hokkaido/banner-hokkaido.jpg" class="full-img">
-			<div class="banner__info banner__info--color2">
+			<img src="images/activity/banner-act.jpg" class="full-img">
+			<div class="banner__info banner__info--color1">
 				<p>
-					<span>Địa điểm</span>
-					日本各地の文化や自然、観光名所などの情報を紹介します。
-				</p>
-			</div>
-		</div>
-		<div class="inner">
-			<div class="list-location sp-hide">
-				<ul>
-					<li><a href="#">Hokkaido</a></li>
-					<li><a href="#">Tohoku</a></li>
-					<li><a href="#">Kanto</a></li>
-					<li><a href="#">Tokyo</a></li>
-					<li><a href="#">Chubu</a></li>
-					<li><a href="#">Osaka<br/> Kaisai</a></li>
-					<li><a href="#">Kyoto<br/> Nara</a></li>
-					<li><a href="#">Chugoku</a></li>
-					<li><a href="#">Kyushu</a></li>
-					<li><a href="#">Okinawa</a></li>
-				</ul>
-			</div>
-			<h1>Hokkaido</h1>
-			
-			<!-- <img src="images/Hokkaido/japan-hokkaido.png" class="map"> -->
-		</div>
-		<p class="br-top2 wd-65">
-		<img src="images/Hokkaido/japan-hokkaido.png" class="map"></p>
-		<div class="inner wd-70">
-			<p>雄大な自然の中でウィンタースポーツを楽しむ<br/>
-				北海道は自然の楽園です。山、高原、川、湖、海、そして青い空があります。この雄大な大地を心ゆくまでお楽しみください。<br/>
-				日本最北の地、北海道は18世紀の開拓以降、今もなお、美しい自然で溢れています。
-			</p>			
-		</div>
-		<div class="inner pd-95px">
-			<div class="content__location">
-				<a href="#"><img src="images/Hokkaido/content-hok-1.jpg" alt="" class="full-img"></a>
-				<div class="content__location--text">
-					<p class="content__location--tittle"><span>Sapporo </span> 札幌</p>
-					<p>札幌からバスで1時間20分。高くそびえる崖の間に美しいカルデラ湖「支笏湖」があります。水は深い青色で凍結することはありません。</p>
-					<p>もう一つの観光地が、円形のカルデラ湖「洞爺湖」です。湖には「中島」と呼ばれる4つの島が浮かび、樹木を茂らせた美しい姿が湖面に映し出されています。</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container bg-color">
-		<div class="inner pd-95px">
-			<div class="content__location">
-				<a href="#"><img src="images/Hokkaido/content-hok-2.jpg" alt="Hokkaido " class="full-img"></a>
-				<div class="content__location--text">
-					<p class="content__location--tittle"><span>Hokkaido </span> 北海道の湖</p>
-					<p>札幌市は北海道の空の玄関口として東京・大阪と結ばれています。チェス盤のように整然とした街並みが特徴的で、北海道の文化・経済・政治の中心地でもあります。</p>
-					<p>「大通公園」は、春は花で満たされ、毎年2月には世界的に有名な「さっぽろ雪祭り」が開催され、多くの観客が訪れる札幌のメインストリートです。「札幌時計台」は、博物館が併設された札幌の歴史的建造物です。札幌からほど近い「定山渓温泉」は、日帰り入浴も可能な、人気の温泉スポットです。</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container ">
-		<div class="inner pd-81px">
-			<div class="content__location">
-				<a href="#"><img src="images/Hokkaido/content-hok-3.jpg" alt="Hakodate" class="full-img"></a>
-				<div class="content__location--text">
-					<p class="content__location--tittle"><span>Hakodate</span> 函館</p>
-					<p>函館は青森から直通列車で行くことができる北海道の人気観光スポットで、美しい夜景で有名な港湾都市です。星形の要塞「五稜郭」は、美しい函館山とともに市内の主要な観光名所です。魚や新鮮な野菜のお店や屋台が360軒ほど軒を連ねる函館の朝市は、買い物客や観光客で賑わいをみせる人気の観光名所となっています。</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container bg-color">
-		<div class="inner pd-81px">
-			<div class="content__location">
-				<a href="#"><img src="images/Hokkaido/content-hok-4.jpg" alt="Asahikawa" class="full-img"></a>
-				<div class="content__location--text">
-					<p class="content__location--tittle"><span>Asahikawa </span> 旭川</p>
-					<p>旭川は北海道中央部に位置し、札幌から特急電車で1時間30分以内で行くことができます。また、初夏のラベンダー畑や草原の花々で人気の富良野には、旭川から約1時間で行くことができます。</p>
-					<p>富良野の広大な牧草地や花畑の驚くべき美しさは、全ての訪問者にとって忘れられない風景になることでしょう。</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container ">
-		<div class="inner pd-81px">
-			<div class="content__location">
-				<a href="#"><img src="images/Hokkaido/content-hok-5.jpg" alt="Kushiro " class="full-img"></a>
-				<div class="content__location--text">
-					<p class="content__location--tittle"><span>Kushiro </span> 釧路</p>
-					<p>北海道東部最大の都市「釧路市」には、札幌から特急電車を使って4時間以内で行くことができます。ここには透明な湖と手付かずの自然が残されています。釧路湿原の散策や釧路川のカヌー川下りが人気の観光名所です。</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container bg-color">
-		<div class="inner pd-81-95px">
-			<div class="content__location">
-				<a href="#"><img src="images/Hokkaido/content-hok-6.jpg" alt="Hakodate" class="full-img"></a>
-				<div class="content__location--text">
-					<p class="content__location--tittle"><span>Nature </span> 広い自然の中での取り組み</p>
-					<p>標高1308.5メートルのニセコアンヌプリ山の裾野には、4つの大きなスキー場があり、海外のスキーヤーやスノーボーダーから大きな人気を博しています。初心者向けのスキースクールも併設されているので、冬に訪れた際にはスキーの体験コースをぜひお試しください。</p>
-					<p>北海道の雄大な自然は、訪れた人々にとって忘れられない感動となることでしょう。イルカやクジラのウォッチング、川下り、乗馬、トレッキング、熱気球、そして数々の魅力的な観光名所を心ゆくまで堪能してください。</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="inner link-content">
-			<h1>関連リンク</h1>
-			<div class="br-content">
-				<p class=" pt__link-content">
-					<a href="#">Hokkaido(Bahasa Inggris)</a>
-				</p>
-				<p class="mb-8"><span>Majalah Situs Web bulanan JNTO</span></p>
-				<p>
-					<a href="#">・Pastinya main ke Hokkaido saat musim panas!(Bahasa Inggris)</a>
-					<a href="#">・Danau Mashu, Danau Kussharo, Danau Akan(Bahasa Inggris)</a>
-				</p>		
-				<p class="mb-8"><span>Majalah Situs Web bulanan JNTO</span></p>
-				<p>
-					<a href="#">・Kunjungan ke Hokkaido(Bahasa Inggris)</a>
-					<a href="#">・Niseko Japan(Bahasa Inggris)</a>
-					<a href="#">・Niseko United(Bahasa Inggris)</a>
+					<span>Hoạt động</span>
+					知っておくと日本がもっと楽しめる12のテーマを紹介します
 				</p>
 			</div>
 		</div>
 	</div>
 
-	<div class="footer ">
+	<div class="container">
+		<ul>
+			<li>
+				<div class="content__avata  fl-avata act">
+					<div class="avata" id="shopping">
+						<a href="#"><img src="images/activity/avata-act-content-1.jpg" class="dl-inline" alt="ショッピング"></a>
+						<p class="dl-inline ">ショッピング</p>
+					</div>
+					<a class="js-sub js-event click-active" ><img src="images/activity/icon-add.jpg"></a>
+				</div>
+				<div class="shopping contentJs status-close">
+					<div class="content">
+						<div class="content__info">
+							<p>ショッピング天国<br/>
+							日本には世界中のあらゆるブランドの商品が揃っています。円安でショッピングがもっと楽しくなることでしょう。</p>
+							<p class="content__info--tittle">信頼性のある日本のブランド</p>
+							<p>自動車、化粧品、カメラなど、日本のブランド品は海外でも有名です。高品質で種類も豊富なそれらのブランド品は日本でより手頃に購入できます。</p>
+							<p>東京の「銀座」は、世界中の一流ブランドの店舗やショールームが軒を連ねています。 また、多くの百貨店があり、名実ともに日本を代表するショッピングの街です。</p>
+							<p>「東急ハンズ」と「LOFT」の雑貨や食器類などの品揃え、無印良品のシンプルなデザイン、ユニクロの手頃な価格ながら機能的でクールなデザイン、タワーレコードの音楽CDの品揃えの多さは、外国人観光客の間で広く知られています。自動車、化粧品、カメラなど、日本のブランド品は海外でも有名です。高品質で種類も豊富なそれらのブランド品は日本でより手頃に購入できます。</p>
+						</div>
+						<img src="images/activity/pic-act-content-1.jpg" alt="信頼性のある日本のブランド" class="content__info--img">
+					</div>
+					<div class="content br-top">
+						<div class="content__info">
+							<p class="content__info--tittle2">スマートショッピング</p>
+							<p>日本では価値ある商品を、手頃に購入することができます。</p>
+							<p>日本の100円ショップでは、非常に数多くの商品を100円で販売しています。 ドラッグストア「マツモトキヨシ」では、医薬品や化粧品を低価格で購入することができます。書籍、雑誌、コミックを低価格で手に入れたいなら古本屋に行きましょう​​。「ブックオフ」という古本チェーン店は日本全国にあり、多くの本が105円から、定価の半額以下の価格で購入することができます。</p>
+						</div>
+						<img src="images/activity/pic-act-content-2.jpg" alt="スマートショッピング" class="content__info--img">
+					</div>
+					<div class="content__item">
+						<a ><img src="images/activity/act-content-item1.jpg"></a>
+						<p ><span>カメラ</span>
+						一眼レフカメラとコンパクトカメラは、日本のブランドが主です。ビックカメラやヨドバシカメラなどの主要家電量販店では、販売している商品のほとんどが購入する前に手に取ってみることができます。</p>
+					</div>
+					<div class="content__item">
+						<a><img src="images/activity/act-content-item2.jpg"></a>
+						<p><span>ファッション</span>
+						若者向けの衣料品店は、渋谷、原宿、下北沢に多くあります。大人の女性のための服は、表参道や銀座で見つけることができます。また、最新のファッションアイテムを手に入れたいなら、新宿、池袋のデパートやファッションビルが便利です。</p>
+					</div>
+					<div class="content__item">
+						<a><img src="images/activity/act-content-item3.jpg"></a>
+						<p><span>日本ならではの商品</span>
+						扇子、手拭い、風呂敷、浴衣などの日本の伝統的なアイテムは浅草で揃います。</p>
+					</div>
+					<div class="content__item">
+						<a><img src="images/activity/act-content-item4.jpg"></a>
+						<p><span>アウトレットモール</span>
+						ここ数年、有名ブランド品をより手頃に購入することができるアウトレットモールが増えています。富士山御殿場近くのアウトレットモールをはじめ、羽田空港から簡単にアクセスできる木更津や、成田空港近くの酒々井など、有名なアウトレットモールが多数あります。</p>
+					</div>
+					<img src="images/activity/btn-close.png" class="btn-close1" data-name="shopping">
+				</div>
+
+			</li>
+			<li>
+				<div class="content">
+					<div class="content__avata  fl-avata">
+						<div class="avata" id="cultural">
+							<a href="#"><img src="images/activity/avata-act-content-2.jpg" class="dl-inline" alt="日本文化"></a>
+							<p class="dl-inline ">日本文化</p>
+						</div>
+						<a class="js-sub js-event click-active" ><img src="images/activity/icon-add.jpg"></a>
+					</div>
+				</div>
+				<div class="contentJs cultural status-close">
+					<div class="inner">
+						
+						<p>日本文化に触れてみませんか</p>
+						<p>日本には様々な伝統文化があります。代表的な日本の文化を紹介します。<br/>
+						日本の代表的な伝統芸能として、歌舞伎、能、狂言、文楽、そして落語があります。歌舞伎役者は男性のみで、その印象的な衣装で観客を魅了<br/>
+						します。また「歌舞伎座」は日本最高の建築美とも言われています。</p>
+						<p>能と狂言は、L字型の能舞台と呼ばれる特殊な舞台で演じられます。能は「能面」を使用して演じられ、その内容は一般的に悲劇が多いと言われています。その一方、狂言は「笑い」が特徴的な演芸です。</p>
+						<p class="content__info--tittle2">日本文化に触れてみましょう。</p>
+						<p>日本には「道」と呼ばれる伝統的な文化があります。香りを楽しむ「香道」、花の芸術「華道」、筆と墨で文字の美しさを求める<br/>
+						「書道」。スポーツの分野でも「柔道」「剣道」「空手道」「合気道」そして「弓道」などがあります。これらの「道」は、ジャンルに関<br/>
+						わらず、長い時間をかけて美しさと精神性を追求するという共通点があることが特徴です。</p>
+						<div class="thumb-item">
+							<p><img src="images/activity/pic-act-content-3.jpg">
+								<span>歌舞伎座</span>
+								2013年4月にリニューアルオープンした歌舞伎座は、伝統的な様式と最新の建築技術がミックスされた美しさです。
+							</p>
+							<p><img src="images/activity/pic-act-content-4.jpg">
+								<span>忍者</span>
+								日本の神秘的な存在「忍者」は世界的に有名です。現代の日本に忍者はいませんが、忍者ショーで「手裏剣」を駆使する忍者を見たり、忍者の衣装に身を包んで楽しむことはできます。詳しくは以下のリンクをご覧ください。
+							</p>
+							<p><img src="images/activity/pic-act-content-5.jpg">
+								<span>舞妓</span>
+								京都・祇園では、伝統的な日本の芸術を習得し、特徴的な髪形と化粧、着物に身を包んだ日本伝統の「舞妓」を見ることができます。
+							</p>
+							<p><img src="images/activity/pic-act-content-6.jpg">
+								<span>着物</span>
+								日本の伝統的な衣服「着物」は、数千円のものから百万円以上するものまで多種多様です。日本では着物・浴衣のレンタルも普及しているので、ぜひお試しください。
+							</p>
+						</div>
+					</div>
+					<img src="images/activity/btn-close.png" class="btn-close1" data-name="cultural">
+				</div>
+			</li>
+			<li>
+				<div class="content ">
+					<div class="content__avata  fl-avata">
+						<div class="avata "  id="seasons">
+							<a href="#"><img src="images/activity/avata-act-content-3.jpg" class="dl-inline" alt="四季"></a>
+							<p class="dl-inline ">四季</p>
+						</div>
+						<a class="js-sub  js-add click-active" ><img src="images/activity/icon-add.jpg"></a>
+					</div>
+				</div>
+				<div class="seasons contentJs status-close">
+					<div class="inner">
+						
+						<p>本の四季は、春、夏、秋、冬、の4つです。<br/>
+						日本列島は温帯に位置し、1年間で4つの明確な気候変化が見られます。それらは人々にとって喜びや楽しみの源となっています。</p>
+						<div class="thumb-item">
+							<p><img src="images/activity/pic-act-spring.jpg" alt="春">
+								<span>春</span>					
+							梅の花が最初の花をつけたときから、北日本で最後の桜が散るときまで、春は全国の人間と自然にとって、祝いと再生の季節として尊ばれます。
+							</p>
+							<p><img src="images/activity/pic-act-summer.jpg" alt="夏">
+								<span>夏</span>					
+								夏は田植えの季節です。かつての日本では、この季節になると日本中が緑一色に覆われていました。そして、夏は花火の季節です。ほぼ毎晩、日本のどこかで色とりどりの花火が夏空を鮮やかに染めています。
+							</p>
+							<p><img src="images/activity/pic-act-auturm.jpg" alt="秋">
+								<span>秋</span>
+								10月になると夏の気配も遠ざかり、涼しげな秋がやってきます。
+								日本の秋は、赤、金、銅、黄など色とりどりの紅葉が一番の特徴となっています。山並みがカラフルな絨毯で飾られると、収穫の季節の到来です。農村部では黄金色の水稲を刈り取り、次々と田んぼに積み上げていきます。全国では様々な祭りやイベントが行われます。
+							</p>
+							<p><img src="images/activity/pic-act-winter.jpg" alt="冬">
+								<span>冬</span>
+								気候が極端な北日本を除き、日本の冬は柔らかい日差しと青い空に恵まれ、大きく天気が崩れることは少ないです。
+								一方で、北部地域では、雪と氷に関する様々な祭りが開催されます。芸術的な雪と氷の彫刻を見るために多くの観光客が北の大地を訪れます。
+							</p>
+						</div>
+					</div>
+					<img src="images/activity/btn-close.png" class="btn-close1" data-name="seasons">
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="content__avata  fl-avata">
+						<div class="avata" id="event" >
+							<a href="#"><img src="images/activity/avata-act-content-4.jpg" class="dl-inline" alt="祭り・イベント"></a>
+							<p class="dl-inline ">祭り・イベント</p>
+						</div>
+						<a class="js-sub js-add click-active" ><img src="images/activity/icon-add.jpg"></a>
+					</div>
+				</div>
+				<div class="contentJs event status-close">
+					<div class="inner">			
+						<p>日本では四季折々、さまざまな祭りがあります。<br/>
+							これらの祭りを体験することが本当に日本を理解することにつながります。祭りの感動を体験し、あなた自身が感動の一部となってください。</p>
+						<p>日本全国で四季を歓迎する個性あふれる祭りが開かれています。ほぼ毎日、日本のどこかで祭りは行われています。<br/> 
+							雪祭りや花火大会などのイベントは地域社会や観光客のために開催されることが多いですが、伝統ある祭りの多くは、神道や仏教と深い関係があります。</p>
+						<p>太古の昔から、日本人は自然界のあらゆる事象に「神」の存在を認め崇拝しました。<br/>
+							これは神道の起源であると考えられています。神道に基づいた「祭り」では、超自然的存在を祀り、豊作、繁栄、そして人々の幸福を祈ります。</p>
+						<p  class="content__info--tittle2">祭りの一覧</p>	
+						<div class="over-table">
+								<table>
+									<tr>
+										<th>月</th>
+										<th>日程</th>
+										<th>記事</th>
+									</tr>
+									<tr>
+										<td rowspan="4">1月</td>
+										<td>1月1日</td>
+										<td>新年。 1月1日から1月3日にかけて、ほぼすべての企業、会社、工場が休みになります。 家族は最高の着物や洋服を着て、特別な料理を楽しむことで新年を祝い、神社や寺をお参りし、その年の自分の健康と幸福を祈念します。</td>
+									</tr>
+									<tr>
+										<td>1月6日</td>
+										<td>東京の出初式は、高いはしごの上でアクロバティックなアトラクションを行います。</td>
+									</tr>
+									<tr>
+										<td>1月中旬（15日）</td>
+										<td>東京で、大相撲初場所が開催されます。</td>
+									</tr>
+									<tr>
+										<td>成人の日の前日</td>
+										<td>奈良の若草山で山焼きが行われます。</td>
+									</tr>
+									<tr>
+										<td rowspan="4">2月</td>
+										<td>2月初旬の７日間</td>
+										<td>北海道の札幌市で雪祭りが行われます。雪と氷で作られた巨大なたくさんの彫刻が展示される、日本で最も人気のある雪祭りです。</td>
+									</tr>
+									<tr>
+										<td>2月上旬</td>
+										<td>旭川、網走など、北海道の他の都市で雪祭りが開催されます。</td>
+									</tr>
+									<tr>
+										<td>2月3・4日</td>
+										<td>節分は各地のお寺で豆まきを行います。</td>
+									</tr>
+									<tr>
+										<td>2月3・4日</td>
+										<td>奈良県 春日大社 節分万燈籠</td>
+									</tr>
+							</table>
+						</div>
+						<div class="thumb-item">
+							<p><img src="images/activity/pic-act-content-7.jpg" alt="ねぶた祭り">
+								<span>ねぶた祭り</span>
+								「ねぶた」と言われる古代日本の戦士を形どった大型の張りぼて人形を乗せた山車がパレードします。
+							</p>
+							<p><img src="images/activity/pic-act-content-8.jpg" alt="阿波踊り">
+								<span>阿波踊り</span>
+								「阿波踊り」は、徳島県で開催される有名な民族舞踊の祭りです。
+							</p>
+							<p><img src="images/activity/pic-act-content-9.jpg" alt="祇園祭">
+								<span>祇園祭</span>
+								「祇園祭」は京都の夏のシンボルです。山鉾巡行は祭り最大の見所です。
+							</p>
+							<p><img src="images/activity/pic-act-content-10.jpg" alt="三社祭">
+								<span>三社祭</span>
+								「三社祭」は東京の祭りです。神輿をかついで街を練り歩きます。
+							</p>
+						</div>		
+					</div>
+					<img src="images/activity/btn-close.png" class="btn-close1" data-name="event">
+				</div>
+			</li>
+			<li>
+				<div class="content ">
+					<div class="content__avata  fl-avata">
+						<div class="avata"  id="cuisine">
+							<a href="#"><img src="images/activity/avata-act-content-5.jpg" class="dl-inline" alt="日本食・外食"></a>
+							<p class="dl-inline ">日本食・外食</p>
+						</div>
+						<a class="js-sub js-add click-active" ><img src="images/activity/icon-add.jpg"></a>
+					</div>
+				</div>
+				<div class="cuisine contentJs status-close">
+					<div class="inner">			
+						<p>日本では、世界各国の料理が楽しめます。日本料理だけでなく、各ジャンルの世界最高クラスのシェフが、その味を提供するために日本にいます。特に東京には、世界的な金融・ビジネスの中心地として、多くの優れたレストランがあります</p>
+					</div>
+					<div class="content">
+						<div class="content__info">
+							<p class="content__info--tittle2">食品</p>
+							<p>駅周辺には手頃な食事処がたくさんあります。日本語が話せなくても、店の前に食品サンプルやカラー写真のメニューがある店であれば問題ありません。<br/>
+							また、デパートの上階や地下にも手頃な食事処があります。中でも、低価格なお店のいくつかは自動販売機で食券を購入するスタイルです。</p>
+						</div>
+						<img src="images/activity/pic-act-content-11.jpg" alt="食品" class="content__info--img">
+					</div>
+						<div class="inner br-top">
+							<p  class="content__info--tittle2">日本料理</p>
+							<p>近年、欧米諸国で「寿司」は、「すき焼き」以上に人気があります。日本を訪れる多くの観光客は、鮮魚や天ぷらを食べたことがありません。繊細で美しい日本料理を味わうことは、一生の思い出になるでしょう。</p>
+							<div class="list-item">
+								<a class="list-item__img"><img src="images/activity/pic-act-content-12.jpg" alt="すき焼き"></a>
+								<p class="list-item__text">
+									<span>すき焼き</span>
+									様々な野菜、豆腐、しらたきと一緒に薄切りの牛肉を調理する日本食再生の季節として尊ばれます。
+								</p>
+								<a class="list-item__img"><img src="images/activity/pic-act-content-13.jpg" alt="てんぷら"></a>
+								<p class="list-item__text">
+									<span>てんぷら</span>
+									エビ、季節の魚や野菜を卵、水、小麦粉を混ぜた衣を纏わせ、油で揚げたもの
+								</p>
+								<a class="list-item__img"><img src="images/activity/pic-act-content-14.jpg" alt="寿司"></a>
+								<p class="list-item__text">
+									<span>寿司</span>
+									酢飯の上に生の魚介類の切り身をのせたもの。マグロやイカ、エビがポピュラーだが、きゅうり、たくあん、甘い卵巻きなどもある
+								</p>
+								<a class="list-item__img"><img src="images/activity/pic-act-content-15.jpg" alt="刺身"></a>
+								<p class="list-item__text">
+									<span>刺身</span>
+									生の魚をスライスし、醤油で食べるもの
+								</p>
+								<a class="list-item__img"><img src="images/activity/pic-act-content-16.jpg" alt=""></a>
+								<p class="list-item__text">
+									<span>会席料理</span>
+									最も正統な日本料理。だしをベースに海藻、きのこ、野菜、魚などで構成された高い味わいが魅力
+								</p>
+								<a class="list-item__img"><img src="images/activity/pic-act-content-17.jpg" alt=""></a>
+								<p class="list-item__text">
+									<span>焼き鳥</span>
+									鶏肉、内臓などと野菜を竹串に挿し、炭で焼いたもの
+								</p>
+								<a class="list-item__img"><img src="images/activity/pic-act-content-18.jpg" alt="しゃぶしゃぶ"></a>
+								<p class="list-item__text">
+									<span>しゃぶしゃぶ</span>
+									煮立たせた湯に薄切りの柔らかい肉を数回くぐらせて、タレをつけて食べる
+								</p>
+								<a class="list-item__img"><img src="images/activity/pic-act-content-19.jpg" alt="蕎麦・うどん"></a>
+								<p class="list-item__text">
+									<span>蕎麦・うどん</span>
+									麺類は、小麦から作られるうどんと蕎麦粉から作られる蕎麦の2種類があります。どちらも出汁に浸して食べます。
+								</p>
+							</div>
+						</div>
+						<img src="images/activity/btn-close.png" class="btn-close1" data-name="cuisine">
+				</div>
+			</li>
+
+
+			</li>
+			<li>
+				<div class="content">
+					<div class="content__avata  fl-avata">
+						<div class="avata" id = "construct">
+							<a href="#"><img src="images/activity/avata-act-content-6.jpg" class="dl-inline" alt="建築物"></a>
+							<p class="dl-inline ">建築物</p>
+						</div>
+						<a class="js-sub js-add click-active js-event" ><img src="images/activity/icon-add.jpg"></a>
+					</div>
+				</div>
+				<div class="contentJs construct status-close">
+					<div class="inner">
+						<p>脚光を浴びる日本建築</p>
+						<p>約1400年前に建てられた木造建築と、1年前に建てられた鉄骨コンクリートの最新の建物。 どちらも注目すべき日本の建築技術によるものです。</p>
+						<p>世界の木造建築物の中で、最古のものはどこにあるでしょう？最大のものはどこにあるでしょう？どちらも日本にあります。最古の木造建築は、607年に建築された法隆寺であり、最大のも	のは、1709年に建築され57メートルの高さを誇る東大寺です。日本の仏像は、日本独自の工法で作られています。奈良、京都、鎌倉をはじめ、全国に伝統的な優れた建築物が多数	存在します。</p>
+						<p>16世紀後半から17世紀まで、日本全国の大名たちは強さを誇示するために壮大な城の構築を競いました。最も有名なのは姫路城です。19世紀末になると西洋建築が日本に大きな		影響を与えるようになりました。注目すべきは、それらの近代建築物も周辺の自然環境との調和を考えて建てられていることです。</p>
+						<div class="thumb-item fl-warp">
+							<p class="wt-32"><img src="images/activity/pic-act-content-20.jpg" alt="淡路夢舞台">
+								<span>淡路夢舞台</span>
+								「時空を超えて自然と共存する」をテーマに建築。有名な現代日本の建築家、安藤忠雄氏によって設計されました。
+							</p>
+							<p class="wt-32"><img src="images/activity/pic-act-content-21.jpg" alt="東京都庁">
+								<span>東京都庁</span>
+								新宿にそびえ立つ二つの塔が「東京都庁」です。丹下健三が設計しました。
+							</p>
+							<p class="wt-32"><img src="images/activity/pic-act-content-22.jpg" alt="祇園祭">
+								<span>白鷺の城</span>
+								シラサギが羽を広げたような優美な姿から「白鷺城」の愛称で親しまれています。世界遺産に登録されています。
+							</p>
+							<p class="wt-32"><img src="images/activity/pic-act-content-23.jpg" alt="国立新美術館">
+								<span>国立新美術館</span>
+								東京・六本木にある「国立新美術館」は、美術館としては日本最大の延床面積を誇ります。
+								独創的なフォルムの外観は、建築家・黒川紀章氏の設計によるものです。
+							</p>
+							<p class="wt-32"><img src="images/activity/pic-act-content-24.jpg" alt="東京スカイツリー">
+								<span>東京スカイツリー</span>
+								2012年5月に完成した東京スカイツリーは、634メートルの高さの世界最大の鉄塔です。ショッピング施設「ソラマチ東京」を併設し、水族館は人気の観光スポットとなっています。
+							</p>
+						</div>	
+					</div>
+					<img src="images/activity/btn-close.png" class="btn-close1" data-name="construct">
+				</div>
+			</li>
+			<li>
+				<div class="content ">
+					<div class="content__avata  fl-avata">
+						<div class="avata" id="techno">
+							<a href="#"><img src="images/activity/avata-act-content-7.jpg"  class="dl-inline" alt="ハイテク"></a>
+							<p class="dl-inline ">ハイテク</p>
+						</div>
+						<a class="js-sub js-add click-active" ><img src="images/activity/icon-add.jpg"></a>
+					</div>
+				</div>
+				<div class="contentJs techno status-close">
+					<div class="inner">
+						<p>日本の高度な技術</p>
+						<p>日本の伝統的な文化・芸術と、高い技術力が融合することで、新しい何かが誕生することが期待されます。
+							21世紀に入り、電子製品、IT、省エネ技術、生物化学など多くの技術が急速な発展を見せました。日本はそれらの分野の研究開発において、常に世界をリードしています。</p>
+						<p>また、各業界の大手企業は自ら開発した技術をショールームや博物館で公開し、一般の消費者に研究成果をアピールする場を設けています。これらはアトラクションとして見事に構築され	ており、最新技術を楽しく学ぶことができます。</p>
+						<p>日本の多くのサブカルチャーも目ざましい発展を見せています。特にアニメと漫画は世界中に多くのファンを持ち、常に大きな注目を集めています。日本は優れた伝統文化を持つだけでなく	、現代的な文化の分野でもあなたの好奇心を刺激することでしょう。
+						</p>
+						<div class="list-item fl-warp">
+							<a class="list-item__img2"><img src="images/activity/pic-act-content-25.jpg" alt="MEGA WEB トヨタ"></a>
+							<p class="list-item__text2">
+								<span>MEGA WEB トヨタ</span>
+								「MEGAWEBトヨタ」は、車の過去・現在・未来をテーマにした、大人も子供も楽しめる車のテーマパークです。3つのパビリオンと2つのライドコースがあり、様々なアトラクションを楽しめます。
+							</p>
+							<a class="list-item__img2"><img src="images/activity/pic-act-content-26.jpg" alt="NTTインターコミュニケーション・センター"></a>
+							<p class="list-item__text2">
+								<span>NTTインターコミュニケーション・センター</span>
+								「NTTインターコミュニケーション・センター」は、最先端の電子技術を駆使したメディアアートの展示・アトラクションが楽しめる文化施設です。
+							</p>
+							<a class="list-item__img2"><img src="images/activity/pic-act-content-27.jpg" alt="ASIMO"></a>
+							<p class="list-item__text2">
+								<span>ASIMO</span>
+								最新型のヒューマノイドロボット「ASIMO」。彼は日本科学未来館で人間のスタッフとともに通訳・翻訳の仕事をしていました。
+							</p>
+						</div>
+					</div>
+					<img src="images/activity/btn-close.png" class="btn-close1" data-name="techno">
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					
+					<div class="content__avata  fl-avata">
+						<div class="avata" id="museum">
+							<a href="#"><img src="images/activity/avata-act-content-8.jpg"  class="dl-inline" alt="博物館、アートギャラリー"></a>
+							<p class="dl-inline ">博物館、アートギャラリー</p>
+						</div>
+						<a class="js-sub js-add click-active" ><img src="images/activity/icon-add.jpg"></a>
+					</div>
+				</div>
+				<div class="museum contentJs status-close">
+					<div class="inner">
+						<p>日本は、芸術愛好家たちの天国です。経験を豊かにする為にきてみませんか。</p>
+						<p>これまで感じたことのないインスピレーションが湧き上がる場所、それが日本の美術館・博物館です。<br/>
+						日本の芸術は、繊細さと正確さを特徴とし、エレガントな美しさで知られています。<br/>
+						そのような美的感覚は、日本の風土である四季による自然の素晴らしさ、また季節の移り変わりによって培われた日本人独自の感覚と言っていいかもしれません。</p>
+						<p>日本の芸術作品の中には、古くから伝わる伝統工芸的な、漆器・陶器・織物・鎧や剣などから始まり、フランスの印象派の画家と平和的な仏像に影響を与えた「浮世絵」など様々です。<br/>
+						日本には、各地にたくさんの美術館がありますので、行った先のどこかで自分の感性を刺激するような彫像や絵画と出会えるかもしれません。</p>
+						<p>さまざまな場所で展示されているものの中にはお土産として購入できるものもあります。日本へ訪問した際の記念品として家に飾ってみませんか？</p>
+
+						<div class="thumb-item ">
+							<p><img src="images/activity/pic-act-content-28.jpg" alt="東京国立博物館">
+								<span>東京国立博物館</span>
+								日本および東洋の文化財を含め、80000以上のコレクションを展示している日本最大・最古の博物館です。
+							</p>
+							<p><img src="images/activity/pic-act-content-29.jpg" alt="日本民芸館">
+								<span>日本民芸館</span>
+								日本民芸館は、伝統的な日本の家にあった物品（アンティーク品）および、日本の技術で培われ開発された民芸品・工芸品を展示しています。
+							</p>
+							<p><img src="images/activity/pic-act-content-30.jpg" alt="東海道広重美術館">
+								<span>東海道広重美術館</span>
+								日本のみならず世界的に有名な浮世絵師「歌川広重」の作品を収蔵・展示しています。
+							</p>
+							<p><img src="images/activity/pic-act-content-31.jpg" alt="MIHO MUSEUM">
+								<span>MIHO MUSEUM</span>
+								世界中から集められた古代芸術（美術）や日本美術の傑作を展示しています。
+							</p>
+						</div>	
+					</div>
+					<img src="images/activity/btn-close.png" class="btn-close1" data-name="museum">
+				</div>
+			</li>
+			<li>
+				<div class="content ">
+					<div class="content__avata  fl-avata">
+						<div class="avata" id="temple">
+							<a href="#"><img src="images/activity/avata-act-content-9.jpg"  class="dl-inline" alt="神社、寺院、庭園 "></a>
+							<p class="dl-inline ">神社、寺院、庭園 </p>
+						</div>
+						<a class="js-sub  js-add click-active" ><img src="images/activity/icon-add.jpg"></a>
+					</div>
+				</div>
+				<div class="contentJs temple status-close">
+					<div class="inner">
+						<p>日本文化の本質</p>
+						<p>神社、仏教寺院、公園<br/>
+							壮大な仏教寺院は、余分な装飾を極力排除することで生まれる控えめな優雅さが特徴です。緑の森の中でその美しさは更に際立ちます。6世紀にアジア大陸からもたらされた仏教は、魂の悟りと救いを教えてくれるインスピレーションの根源であり、美しい仏教寺院と共に人々に親しまれています。
+						</p>
+						<p>また、寺院だけでなく、仏像や庭園も非常に高い芸術性を備えています。<br/>
+							自然の美しさを見事に再現した日本庭園の空間芸術は世界的に評価が高いものです。寺院の縁側から庭園を眺めると、まるで時間が止まったかのような感覚に浸ることができます。古来から仏教寺院への巡礼は人々の喜びの源となっています。ぜひあなたも訪れてみてください。
+						</p>
+
+						<div class="list-item fl-warp">
+							<a class="list-item__img2"><img src="images/activity/pic-act-content-32.jpg" alt="金閣寺"></a>
+							<p class="list-item__text2">
+								<span>金閣寺</span>
+								"父は田舎の素朴な僧侶で、語彙も乏しく、ただ「金閣ほど美しいものは此世にない」と私に教えた。「金閣寺/三島由紀夫」より抜粋"
+							</p>
+							<a class="list-item__img2"><img src="images/activity/pic-act-content-33.jpg" alt="皇居東庭園"></a>
+							<p class="list-item__text2">
+								<span>皇居東庭園</span>
+								皇居東御苑は、一般に開放されています。
+							</p>
+							<a class="list-item__img2"><img src="images/activity/pic-act-content-34.jpg" alt="鎌倉の大仏"></a>
+							<p class="list-item__text2">
+								<span>鎌倉の大仏</span>
+								鎌倉の大仏は、日本の古都 鎌倉のシンボルとして世界的に有名です。
+							</p>
+							<a class="list-item__img2"><img src="images/activity/pic-act-content-35.jpg" alt="龍安寺"></a>
+							<p class="list-item__text2">
+								<span>龍安寺</span>
+								「石庭」と呼ばれる龍安寺の庭園は、岩と白い砂のみ使用した「枯山水」の様式で有名です。
+							</p>
+						</div>
+					</div>
+					<img src="images/activity/btn-close.png" class="btn-close1" data-name="temple">
+				</div>
+			</li>
+			<li>
+				<div class="content ">
+					<div class="content__avata  fl-avata">
+						<div class="avata" id="nature">
+							<a href="#"><img src="images/activity/avata-act-content-10.jpg"  class="dl-inline" alt="自然、田園風景 "></a>
+							<p class="dl-inline ">自然、田園風景 </p>
+						</div>
+						<a class="js-sub js-add click-active" ><img src="images/activity/icon-add.jpg"></a>
+					</div>
+				</div>
+				<div class="contentJs nature status-close">
+					<div class="inner">
+						<p>農村部を電車でのんびり旅して、古き良き日本の伝統に触れてみませんか。<br/>
+							写真で見たような日本の原風景は、農村部で出会えます。</p>
+						<p>東京の中心部から車や電車でわずか数時間で、緑豊かな山々、静かな農村地帯、海辺の小さな漁村など、全く異なる風景に出会えます。都会の喧騒から離れ、地域社会と直接触れ合うことは、あなたの新しい世界を開く鍵となるかも知れません。</p>
+						<p>日本で稲作が始まったのは3000年以上前と言われています。それ以降、日本の社会や産業は急速に発展しましたが、常にその中心にあるのが稲作でした。初夏には、新緑の色の若い稲が水田に規則正しく植えられ、秋になると、稲は黄金色に変わり、収穫時を迎えます。古の日本を思わせるこの風景は、今でも全国で見ることができます。</p>
+						<p>日本は米や野菜などの農産物が豊富ですが、山と海の幸にも恵まれています。各地のお祭りやイベントでは、その地域の特産品を使用した地元料理をお楽しみください。それこそが日本の本物のおもてなしです。</p>
+						<div class="thumb-item small ">
+							<p><img src="images/activity/pic-act-content-36.jpg" alt="松島">
+								<span>松島</span>
+								日本三景としても名高い「松島」は、海上の斑点のように見える260以上の島々が美しい景色を織りなしています。
+							</p>
+							<p><img src="images/activity/pic-act-content-37.jpg" alt="白川郷">
+								<span>白川郷</span>
+								「白川郷」は山の奥深くにあり、急傾斜の茅葺屋根が特徴の「合掌造り」の民家が有名です。
+							</p>
+							<p><img src="images/activity/pic-act-content-38.jpg" alt="地獄谷温泉">
+								<span>地獄谷温泉</span>
+								「地獄谷温泉」の露天風呂に浸かる猿たち。
+							</p>
+							<p><img src="images/activity/pic-act-content-39.jpg" alt="棚田">
+								<span>棚田</span>
+								段丘地帯に連なる「棚田」は、山間部の小さな土地を有効活用するための工夫です。日本の懐かしい風景がそこにあります。
+							</p>
+							<p><img src="images/activity/pic-act-content-40.jpg" alt="富士山">
+								<span>富士山</span>
+								2013年6月にユネスコの世界遺産に登録された「富士山」は、間違いなく日本で最も有名な観光スポットです。
+							</p>
+						</div>
+					</div>
+					<img src="images/activity/btn-close.png" class="btn-close1" data-name="nature">
+				</div>
+			</li>
+			<li>
+				<div class="content ">
+					<div class="content__avata  fl-avata">
+						<div class="avata" id="market">
+							<a href="#"><img src="images/activity/avata-act-content-11.jpg"  class="dl-inline" alt="市場 "></a>
+							<p class="dl-inline ">市場 </p>
+						</div>
+						<a class="js-sub js-add click-active" ><img src="images/activity/icon-add.jpg"></a>
+					</div>
+				</div>
+				<div class="contentJs market status-close">
+					<div class="inner">
+						<p>市場には、日本の新鮮な食材と海と山の幸が豊富にあり、「真の日本料理」を見つけるためのヒントがあります。また、家族や友人、恋人たちと楽しく過ごせる場所でもあります。</p>
+						<p>活気ある市場は、日本の様々な食材を見つけるのに最適な場所です。見て回るだけでも楽しめますが、市場内で食事をすることもでき、楽しみと興奮を味わうことができます。そして何より、手頃な価格で買い物ができることも特徴です。</p>
+						<p>日本（特に大都市）では、世界中の多種多様な料理が食べられます。例えば、イタリア料理、ハンバーガー、フランス料理、南米料理、中華料理、アジア料理などが楽しめますが、市場では、真の日本料理の神髄を学び、味わうことができます。日本料理には、数多くの種類があります。高級なレストランで振る舞われる懐石料理から、海外でも人気のある寿司や刺身、天ぷら、すき焼き、蕎麦など。これらの食べ物の共通点は、安全性の高い新鮮な食材から作られていることです。味はもちろん間違いありません。そして清潔感もあります。食に関する最高の環境が日本の市場にはあります。</p>
+						<div class="list-item fl-warp no-mar">
+							<a class="list-item__img2"><img src="images/activity/pic-act-content-41.jpg" alt="築地場外市場"></a>
+							<p class="list-item__text2">
+								<span>築地場外市場</span>
+								世界的にも有名な「築地市場」の外郭に位置し、食べることに特化した市場です。今日では、有数の観光地として海外からの観光客で賑わっています。
+							</p>
+							<a class="list-item__img2"><img src="images/activity/pic-act-content-42.jpg" alt="錦市場"></a>
+							<p class="list-item__text2">
+								<span>錦市場</span>
+								京都にあるこの市場は、全長400メートルの敷地に140ものお店が並んでいます。「京都の台所」と呼ばれ、京料理に関してここで揃わないものはないと言われており、京都独特の食文化に触れることができます。
+							</p>
+						</div>
+						<div class="thumb-item ">
+							<p class="wt-28-8"><a class="small-img1"><img src="images/activity/pic-act-content-43.jpg" alt="懐石料理" ></a>
+								<span>懐石料理</span>
+								日本の古来からある「茶道」で提供される軽食が起源で、手間と工夫を凝らした料理を色鮮やかで美しい皿に盛り付けます。客人をもてなす際の料理として発展したものです。
+							</p>
+							<p class="wt-28-8"><a class="small-img2"><img src="images/activity/pic-act-content-44.jpg" alt="寿司" ></a>
+								<span>寿司</span>
+								酢飯（酢を染み込ませた白米）に、薄くスライスした魚の切り身（甲殻類含む）をのせて食べる日本のソウルフードです。
+							</p>
+							<p class="wt-28-8"><a class="small-img3"><img src="images/activity/pic-act-content-45.jpg" alt="和菓子" ></a>
+								<span>和菓子</span>
+								日本には多くの伝統的な菓子の製法があり、日本の風土に適応したものが多く見受けられます。特に、京菓子（京都の菓子）は繊細な技術で仕上げられており、目で見ても楽しむことができます。商店街や、いわゆる「デパ地下（デパートの地下1階）」で販売されています。"
+							</p>
+						</div>
+					</div>
+					<img src="images/activity/btn-close.png" class="btn-close1" data-name="market">
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<div class="content__avata  fl-avata">
+						<div class="avata" id="sport">
+							<a href="#"><img src="images/activity/avata-act-content-12.jpg"  class="dl-inline" alt="日本のスポーツ  "></a>
+							<p class="dl-inline ">日本のスポーツ  </p>
+						</div>
+						<a class="js-sub js-add click-active" ><img src="images/activity/icon-add.jpg"></a>
+					</div>
+				</div>
+				<div class="contentJs sport status-close">
+					<div class="inner">
+						<p>日本では、様々なプロスポーツを観ることができます。主に、野球・相撲・格闘技・サッカーなどのプロスポーツを観戦できます。また、冬場であれば、スキーとスノーボードのようなウィンタースポーツを観るだけではなく楽しむこともできます。</p>
+						<p class="content__info--tittle2">プロスポーツ</p>
+					</div>
+					<div class="content">
+						<div class="content__info">
+							
+							<p><span>相撲</span>日本の国技である大相撲の試合は、両国国技館（東京都）、大阪、名古屋、福岡の各地で開催され、全部で6回の興行があります。<br/>
+							1回の興行で15日間、毎日試合が行われます。試合のことを取組（torikumi）といいます。<br/>
+							その取組の勝ち負けで評価が行われ順位・序列が決定されます。<br/>
+							順位表を番付（banzuke）といいます。<br/>
+							番付の一番上の人を「横綱（yokozuna）」と言い、日本では非常に尊敬されています。
+						</p>
+						</div>
+						<img src="images/activity/pic-act-content-46.jpg" alt="相撲" class="content__info--img mb-50">
+					</div>
+					<div class="content">
+						<div class="content__info">
+							
+							<p><span>野球</span>日本のプロ野球は全部で12チームあり、セントラル・リーグとパシフィック・リーグの2つのプロ野球リーグで構成され、両リーグ各6球団の中でリーグ戦が行われます。<br/>
+							リーグ戦は日本各地の野球場で、3月下旬～10月上旬まで開催されており、時間と場所など幅広く選べて楽しめるスポーツとなっています。
+						</p>
+						</div>
+						<img src="images/activity/pic-act-content-47.jpg" alt="野球" class="content__info--img mb-50">
+					</div>
+					<div class="content">
+						<div class="content__info">
+							
+							<p><span>サッカー</span>日本のプロサッカーリーグは「Jリーグ」と呼ばれています。<br/>
+							近年、日本では特にサッカー熱が広まっており人気があるスポーツです。<br/>
+							また選手の中には、海外のプロリーグで活躍する選手もおり、最近ますます盛り上がりを見せています。<br/>
+							Jリーグのシーズン（3月～12月）の間、土曜日と日曜日を中心に日本各地で試合が開催されています。
+						</p>
+						</div>
+						<img src="images/activity/pic-act-content-48.jpg" alt="サッカー" class="content__info--img mb-50">
+					</div>
+					
+					<div class="inner br-top">
+						<p class="content__info--tittle2">スポーツをしてみよう。</p>
+						<div class="list-item fl-warp no-mar">
+							<a class="list-item__img2 "><img src="images/activity/pic-act-content-49.jpg" alt="スキー、スノーボード"></a>
+							<p class="list-item__text2 ">
+								<span>スキー、スノーボード</span>
+								日本に行くときは、スキーやスノーボードなどのウィンタースポーツを是非試してみてください。最も適したシーズンは12月から2月頃です。スキー場に行けば、服やブーツ・スキーやスノーボード用品をレンタルすることがで　きます。また、教室を開講しているスキー場もあり、場所によっては英語での講習を行っているところもあります。
+							</p>
+							<a class="list-item__img2"><img src="images/activity/pic-act-content-50.jpg" alt="サイクル"></a>
+							<p class="list-item__text2">
+								<span>サイクル</span>
+								自転車は手軽に、日本の都市と自然の景色を楽しむことができるので非常に快適です。日本に滞在する際、自転車のレンタル店を見つけたら、ぜひ自転車をレンタルしてみてください。河川などがない地域では、自転車レーンが設けられた道もあります。四国と本州を結ぶ「瀬戸内しまなみ海道」と呼ばれる橋は、海の上をサイクリングすることができるとして、自転車愛好家たちに好まれています。
+							</p>
+						</div>
+						<p class="wd-50p"><span>スキー・スノーボードを行うのが困難な場合</span>
+							スキーやスノーボードを行うのが難しい場合は、タイヤやチューブをソリのようにして滑ったり、<br/>
+							スノーモービルのレンタルを行っているスキー場もあるので、ぜひチェックしてみてください。
+						</p>
+					</div>
+					<img src="images/activity/btn-close.png" class="btn-close1" data-name="sport">
+				</div>
+			</li>
+		</ul>		
+	</div>
+
+
+
+
+
+
+
+
+	<div class="footer">
 		<div class="footer__tittle footer__tittle--color">
 			<p>Japan National Tourism Organization Supports</p>
 		</div>
@@ -220,14 +721,11 @@
 			<p>Copyright © Japan National Tourism Organization All Right Reserved </p>
 			<p id="page-top">
         		<a class="to-top"><img src="images/icon-top.png"></a>
-        	</p>   
+       		</p>   
 		</div>
 	</div>
-	<script src="js/jquery-1.9.1.min.js"></script> 
 	<script type="text/javascript" src="js/jquery.meanmenu.min.js"></script>
-	<script type="text/javascript" src="js/behavior.js"></script>
+    <script type="text/javascript" src="js/behavior.js"></script>
 	<script type="text/javascript" src="js/scoll.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<!-- <script type="text/javascript" src="js/jquery.js"></script>	 -->
 </body>
-</html>
