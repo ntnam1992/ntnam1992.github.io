@@ -245,8 +245,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 0 20px;
+    margin: 40px auto 20px;
     width: 100%;
+    max-width: 1042px; /*backup*/
 }
 .dl-inline{
     display: inline-block;
@@ -374,7 +375,7 @@ body{
 }
 .btn-close1{
     position: absolute;
-    bottom: -50px;
+    bottom: 0;
     right: 10px;
     cursor: pointer;
 }
@@ -1169,8 +1170,7 @@ h1{
     background-size: cover;
     position: relative;
 }
-.click-hide{
-    display: none;
+.click-active{
 }
 .video-responsive{
     overflow:hidden;
@@ -1235,3 +1235,15 @@ h1{
     
 }
 
+
+/*container backup*/
+.container ul li{
+    margin: 0 auto;
+    border-bottom:  1px solid #cccccc;
+}
+.contentJs{
+    padding-bottom: 40px;
+    position: relative;
+    max-width: 1042px;
+    margin: 0 auto;
+}
