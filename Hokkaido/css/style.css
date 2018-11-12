@@ -1305,12 +1305,12 @@ h1{
     margin-top: 44px;
 }
 .seasons-img{
-    width: 91%;
+    width: 91% !important;
     margin-top: 18px;
     margin-bottom: 35px;
 }
-.seasons-img{
-    width: 91%;
+.seasons-img1{
+    width: 91% !important;
     margin: 18px auto 35px;
 }
 .mb-5{
