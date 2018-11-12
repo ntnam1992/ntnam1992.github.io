@@ -3,10 +3,11 @@ $(document).ready(function(){
 	// console.log(str);
 
 	// console.log($(".btn-close"));
-	$('.contentJs').each(function() {
-		var thisHeight = $(this)[0].clientHeight;
-		$(this).attr({'data-height': thisHeight});
-	});
+	$('.status-close').slideUp(0)
+	// $('.contentJs').each(function() {
+	// 	var thisHeight = $(this)[0].clientHeight;
+	// 	$(this).attr({'data-height': thisHeight});
+	// });
 
 
 
@@ -28,45 +29,26 @@ $(document).ready(function(){
 		var idName = $(this).find(".avata").attr("id");
 		var status = $(this).find(".js-sub").eq(0);
 		console.log(status);
-		if(status.hasClass('click-hide') == false && status.hasClass('js-add') == false){
-			status.addClass('click-hide');
-			$(this).find(".js-add").removeClass('click-hide');
-			$(this).parent().parent().find('.'+ idName).removeClass('change-active');
-			$(this).parent().parent().find('.'+ idName).animate({height : 0},1500);
+		if(status.hasClass('click-active') == true){
+			status.removeClass('click-active');
+			$(this).find(".js-sub").find("img").attr('src','images/activity/icon-sub.jpg');
+			$(this).parent().parent().find('.'+ idName).slideDown('slow');
 			timeOut();
-			for( var i = 0 ; i < 12 ; i++ ){
-				$(this).parent().parent().parent().parent().find('.btn-close');
-				if($(this).parent().parent().parent().parent().find('.btn-close').eq(i).attr('data-name') == idName){
-					$(this).parent().parent().parent().parent().find('.btn-close').eq(i).fadeOut(1500);
-				}
-			}
 		}else{
-			status.removeClass('click-hide');
-			$(this).find(".js-add").addClass('click-hide');
-			var thisHeight = $(this).parent().parent().find('.'+ idName).attr('data-height');
-			 $(this).parent().parent().find('.'+ idName).animate({height : parseInt(thisHeight)  + 40 + 'px'},2000,
-			 function(){
-				$(this).parent().parent().parent().find('.'+ idName).addClass('change-active');
-			});
+			status.addClass('click-active');
+			$(this).find(".js-sub").find("img").attr('src','images/activity/icon-add.jpg');
+			$(this).parent().parent().find('.'+ idName).slideUp('slow');
 			timeOut();
-			for( var i = 0 ; i < 12 ; i++ ){
-				$(this).parent().parent().parent().parent().find('.btn-close');
-				if($(this).parent().parent().parent().parent().find('.btn-close').eq(i).attr('data-name') == idName){
-					$(this).parent().parent().parent().parent().find('.btn-close').eq(i).fadeIn(2000);
-				}
-			}	
 		}
 
 	});
 
-	$(".btn-close").click(function(){
+	$(".btn-close1").click(function(){
 		var idName = $(this).attr('data-name');
-		console.log( $('#' + idName));
-		$('#' + idName).parent().find('.js-sub').addClass('click-hide');
-		$('#' + idName).parent().find('.js-add').removeClass('click-hide');
-		$('.' + idName).removeClass('change-active');
-		$('.' + idName).animate({height : 0},1500);
-		$(this).fadeOut(1500);
+		$('#' + idName).parent().find('.js-sub').addClass('click-active');
+		$('#' + idName).parent().find('.js-sub').find('img').attr('src','images/activity/icon-add.jpg');
+		$('.' + idName).slideUp('slow');
+
 	});
 	// }
 		function timeOut() {
