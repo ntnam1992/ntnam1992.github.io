@@ -18,10 +18,14 @@ $(document).ready(function(){
 	if(str.indexOf('#') != -1 ){
 		str = str.split("#")[1];	
 		var heightActDiv = $('.' + str)[0].clientHeight;
-		$('.'+ str).css({height: 0});
-		$('.'+ str).animate({height: parseInt(heightActDiv)  + 40 + 'px'}, 2000, function() {
-			$('.'+ str).addClass('change-active');
-		});
+		// $('.'+ str).css({height: 0});
+		// $('.'+ str).animate({height: parseInt(heightActDiv)  + 40 + 'px'}, 2000, function() {
+		// 	$('.'+ str).addClass('change-active');
+		// });
+
+		$('.'+ str).slideDown('slow');
+		$('#'+ str).parent().find(".js-sub").find("img").attr('src','images/activity/icon-sub.jpg');
+		$('#'+ str).parent().find(".js-sub").removeClass('click-active');
 	}
 
 	
