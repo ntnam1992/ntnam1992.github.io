@@ -620,7 +620,7 @@ h1{
     font-size: 32px;
     font-family: Times New Roman,sans-serif;
     color: #334d5c;
-    margin-top: 60px;
+    margin-top: 48px;
     margin-bottom: 5px;
 }
 .map{
@@ -1406,7 +1406,7 @@ h1{
     margin-bottom: 22px;
 }
 .mb-24{
-    margin-bottom: 24px;
+    margin-bottom: 24px !important;
 }
 .pr-46{
     padding-right: 46px;
@@ -1445,28 +1445,28 @@ h1{
     padding-right: 10px;
 }
 .pt-23{
-    padding-top: 23px;
+    padding-top: 23px !important;
 }
 .pd-78{
-    padding: 78px 0 33px;
+    padding: 78px 0 76px;
 }
 .lh-1-4{
     line-height: 1.4 !important;
 }
 .mb-20{
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
 }
 .pt-81{
     padding-top: 81px;
 }
-.pb-77{
-    padding-bottom: 77px;
+.pb-71{
+    padding-bottom: 71px;
 }
 .mb-24{
     margin-bottom:  24px;
 }
 .mb-16{
-    margin-bottom: 16px;
+    margin-bottom: 16px !important;
 }
 .mt-100{
     margin-top: 100px;
