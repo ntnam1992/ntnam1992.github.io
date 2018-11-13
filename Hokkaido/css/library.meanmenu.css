@@ -85,6 +85,7 @@ div.nav{
 	z-index:9999999;
 	text-decoration: none;
 	color: #999999;
+	font-size: 13px;
 }
 .mean-container .mean-nav ul li a:active{
 	color: #334d5c;
