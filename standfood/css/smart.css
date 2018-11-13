@@ -160,14 +160,14 @@
 		border-left:  5px solid; */
 		width: 93.75%;
 	}.content{
-		width: 88.5%;
+		width: 96%;
 		margin: 0 auto;
 	}
 	.edit-img{
 		width: 93.75%;
 	}
 	.content-1{
-		width: 88.5%;
+		width: 96%;
 	}
 	.content-1__step{
 		width: 92.27871939736347%;
@@ -412,7 +412,7 @@
 		flex-wrap: wrap;
 	}
 	.tittle-register{
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.btn-sub,.btn-add{
 		top: 5px;
