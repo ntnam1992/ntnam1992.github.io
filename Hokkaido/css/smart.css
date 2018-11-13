@@ -260,7 +260,7 @@
 	}
 	/**page activity*/
 	.fl-avata{
-		flex-wrap: wrap-reverse;
+		flex-wrap: wrap-reverse !important;
 	}
 	.content{
 		width: 90%;
@@ -361,13 +361,11 @@
 	
 	.avata{
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 	.avata p{
 		width: 100%;
 		text-align: center;
-	}
-	.avata a{
-		width: 100%;
 	}
 	.avata a img{
 		padding: 0 0 10px 0;
@@ -526,6 +524,15 @@
 	}
 }
 @media screen and (max-width: 640px){
+	.mt-70{
+		margin-top: 35px;
+	}
+	.pb-70{
+		padding-bottom: 35px;
+	}
+	.mt-60,.mt-55,.mt-48{
+		margin-top: 34px;
+	}
 	.remen-unit{
 		width: 94%;
 		height: 75%;
@@ -612,6 +619,33 @@
 	}
 	.activity{
 		width: 90%;
+	}
+	.list-item li{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.mr-0{
+		margin: 0 auto !important;
+	}
+	.list-item li{
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.list-item__img{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.list-item__text{
+		width: 100% !important;
+		margin: 0 auto;
+	}
+	.list-item__img2{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.list-item__text2{
+		width: 100% !important;
+		margin: 0 auto;
 	}
 }
 @media screen and (max-width: 1250px){
@@ -705,6 +739,26 @@
 		width: 100%;
 		margin: 15px auto;
 	}
+	.mt-10,.mr-49,.mr-69,.mr-34{
+		margin: 0 auto !important;
+	}
+	.seasons-img{
+		width: 80% !important;
+	    margin:18px auto 30px !important;
+	}
+	.seasons-img1{
+		width: 80% !important;
+	}
+	.mt-60,.mt-55,.mt-48{
+		margin-top: 34px;
+	}
+	.js-sub img{
+		width: 10%;
+	}
+	.avatar{
+		justify-content: center;
+	}
+
 }
 @media screen and (max-width: 360px){
 	.content__index1--info ul li{
@@ -804,5 +858,17 @@
 @media screen and (max-width: 380px){
 	.list__info{
 		width: 80%;
+	}
+}
+@media screen and (max-width: 1075px) and (min-width: 981px)  {
+	.banner__info--color1 p{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.logo-page{
+		margin-left: 5%;
+	}
+	.logo-page1{
+   		margin-right: 5%;
 	}
 }

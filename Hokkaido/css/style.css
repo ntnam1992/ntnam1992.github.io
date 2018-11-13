@@ -455,20 +455,25 @@ td{
 .list-item__img img{
     width: 100%;
 }
+.list-item :nth-child(even) .list-item__img{
+    padding-left: 1%;
+
+}
 .wt-32{
-    width: 32.1% !important;
-    margin-right: 1.2%
+    width: 32% !important;
+    __margin-right: 1.2%;
+    margin-bottom: 16px !important;
 }
 .fl-warp{
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 .list-item__text2{
-    width: 21.7% !important;
+    width: 43.4% !important;
     margin-right: 2.45%;
 }
 .list-item__img2{
-    width: 23.4%;
+    width: 46.8%;
     margin-bottom: 20px;
     margin-right: 2.45%;
 }
@@ -1249,7 +1254,7 @@ h1{
 
 
 /*container backup*/
-.container ul li{
+.list-page li{
     margin: 0 auto;
     border-bottom:  1px solid #cccccc;
 }
@@ -1293,7 +1298,7 @@ h1{
 .lh-2{
     line-height: 2;
 }
-.lh-2{
+.lh-1{
     line-height: 1;
 }
 .mb{
@@ -1376,4 +1381,50 @@ h1{
 }
 .mb-12{
     margin-bottom: 12px;
+}
+.pb-0{
+    padding-bottom: 0;
+}
+.pl-1per{
+    padding-left: 1.4%;
+    padding-right: 1.4%;
+}
+.mb-0{
+    margin-bottom: 0;
+}
+.mb-22{
+    margin-bottom: 22px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.pr-46{
+    padding-right: 46px;
+}
+.pb-25{
+    padding-bottom: 25px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mt-13{
+    margin-top: 13px;
+}
+.mr-0{
+    margin: 0 !important;
+}
+.list-item__img3{
+    width: 23.4%;
+    margin-bottom: 20px;
+    margin-right: 2.45%;
+}
+.list-item__text3{
+    width: 21.5% !important;
+    margin-right: 2.45%;
+}
+.list-item__img3 img{
+    width: 100%;
+}
+.mt-13{
+    margin-top: 13px;
 }
