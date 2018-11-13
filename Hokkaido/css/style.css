@@ -655,6 +655,7 @@ h1{
     font-size: 28px !important;
     line-height: 1!important;
     margin-bottom: 10px !important;
+    color: #384761 !important;
 }
 .content__location--tittle span{
     display: inline-block;
@@ -667,6 +668,7 @@ h1{
 .content__location--text p{
     margin-bottom: 30px;
     line-height: 1.6;
+    color: #666666;
 }
 .pd-90px{
     padding: 90px 0 53px;
