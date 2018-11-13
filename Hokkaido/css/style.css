@@ -726,8 +726,10 @@ h1{
     letter-spacing: 1px;
 }
 .banner span{
-    font-size: 42px;
+    font-size: 32px;
     display: block;
+    line-height: 1.6;
+    padding-top: 15px;
 }
 .banner__tittle img{
     display: block;
@@ -832,13 +834,13 @@ h1{
 }
 .content__right--inner p:nth-child(2){
     font-size: 17px;
-    margin-top: 60px;
+    margin-top: 25px;
 }
 .btn-subscrite{
     width: 100%;
     background: #384761;
     text-align: center;
-    line-height: 3.125;
+    line-height: 2.8;
     color: #ffffff !important;
     text-decoration: none;
 }
@@ -902,7 +904,7 @@ h1{
 .content__index1--info{
     position: absolute;
     top: 42.5%;
-    right: 22.5%;
+    right: 19.5%;
     max-width: 261px;
     border-bottom: 1px dotted #384761;
 }
@@ -957,6 +959,7 @@ h1{
     font-family: Times New Roman;
     font-size: 40px;
     display: block;
+    margin-bottom: 6px;
 }
 .content__index2--text p{
     font-family: Times New Roman;
@@ -987,7 +990,7 @@ h1{
     width: 100%;
     text-align: center;
     display: block;
-    margin-top: 20px;
+    margin-top: 12px;
 }
 .act__list--item{
     width: 100%;
@@ -1240,7 +1243,7 @@ h1{
 }
 .link-face{
     width: 59%;
-    height: 55%;
+    height: 65%;
     position: absolute;
     right: 6.5%;
     top: 12.6%;
@@ -1249,7 +1252,7 @@ h1{
     font-size: 36px;
     font-family: Times New Roman,sans-serif;
     color: #ffffff;
-    
+    margin-bottom: 10px;
 }
 
 
@@ -1427,4 +1430,7 @@ h1{
 }
 .mt-13{
     margin-top: 13px;
+}
+.mb-50{
+    margin-bottom: 50px;
 }

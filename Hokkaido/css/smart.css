@@ -1,4 +1,7 @@
 @media screen and (max-width: 980px)  {
+	.title-index span{
+		margin: 0 auto;
+	}
 	.top-logo{
 		position: absolute;
    		top: 0;
@@ -109,6 +112,9 @@
 	.inner{
 		width: 96%;
 	}
+	.banner__tittle2{
+		top: 10%;
+	}
 }
 @media screen and (max-width: 1136px) and (min-width: 641px){
 	.learn-ramen{
@@ -163,6 +169,9 @@
 	}
 }
 @media screen and (max-width: 768px){
+	.content__index2--text{
+		padding-top: 45px;
+	}
 
 /* 	.slider__content--img{
 		padding: 0;
@@ -524,6 +533,10 @@
 	}
 }
 @media screen and (max-width: 640px){
+
+	.banner__tittle2{
+		top: 5%;
+	}
 	.mt-70{
 		margin-top: 35px;
 	}
@@ -682,6 +695,9 @@
 	} */
 }
 @media screen and (max-width: 1136px) and (min-width: 721px){
+	.content__right--inner p:nth-child(2){
+		margin-top: 15px;
+	}
 	.content__right--tittle1{
 		font-size: 20px;
 	}
@@ -718,6 +734,18 @@
 
 }
 @media screen and (max-width: 420px){
+	.mb-50{
+		margin-bottom: 0;
+	}
+	.activity{
+		margin-bottom: 0 !important;
+	}
+	.act__list{
+		margin-bottom: 0;
+	}
+	.act__list li{
+		margin-bottom: 30px;
+	}
 	.link-face{
 		position: relative;
 		width: 92%;
@@ -761,6 +789,7 @@
 
 }
 @media screen and (max-width: 360px){
+
 	.content__index1--info ul li{
 		width: 50% !important;
 		padding-right: 0;
@@ -791,6 +820,9 @@
 	}
 	.content__right--inner p:nth-child(2){
 		font-size: 10px !important;
+	}
+	.content__right--inner{
+		top: 6.5%;
 	}
 }
 
@@ -827,6 +859,9 @@
 	}
 	.banner__tittle{
 		top: 12%;
+	}
+	.content__right--inner p:nth-child(2){
+		margin-top: 30px;
 	}
 }
 @media screen and (max-width: 750px){
@@ -870,5 +905,10 @@
 	}
 	.logo-page1{
    		margin-right: 5%;
+	}
+}
+@media screen and (max-width: 400px){
+	.content__right--inner p:nth-child(2){
+		margin-top: 15px;
 	}
 }
