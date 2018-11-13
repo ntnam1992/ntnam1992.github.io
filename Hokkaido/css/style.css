@@ -668,8 +668,8 @@ h1{
     margin-bottom: 30px;
     line-height: 1.6;
 }
-.pd-95px{
-    padding: 84px 0 95px;
+.pd-90px{
+    padding: 90px 0 53px;
 }
 .bg-color{
     background: #f6f6f6;
@@ -1460,7 +1460,7 @@ h1{
     padding-top: 81px;
 }
 .pb-77{
-    margin-bottom: 77px;
+    padding-bottom: 77px;
 }
 .mb-24{
     margin-bottom:  24px;

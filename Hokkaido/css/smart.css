@@ -237,11 +237,11 @@
 		flex-wrap: wrap-reverse;
 	}
 	.content__location--text{
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 	}
 	.content__location a{
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 		padding-right: 0;
 	}
