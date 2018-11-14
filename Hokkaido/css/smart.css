@@ -115,6 +115,19 @@
 	.banner__tittle2{
 		top: 10%;
 	}
+	.banner__info p{
+		padding-left: 10px;
+	}
+	.status{
+		padding-left: 10px;
+	}
+	.top-logo a{
+		padding-left: 10px;
+	}
+	.nav__menu ul{
+		width: 98%;
+		margin: 0 auto;
+	}
 }
 @media screen and (max-width: 1136px) and (min-width: 641px){
 	.learn-ramen{
@@ -948,5 +961,10 @@
 @media screen and (max-width: 400px){
 	.content__right--inner p:nth-child(2){
 		margin-top: 15px;
+	}
+}
+@media screen and (max-width: 1060px){
+	.list-location a{
+		padding: 0 20px;
 	}
 }
