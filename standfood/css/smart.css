@@ -415,7 +415,8 @@
 		font-size: 16px;
 	}
 	.btn-sub,.btn-add{
-		top: 5px;
+		top: 6px;
+		width: 5%;
 	}
 	.tittle-1{
 		font-size: 15px;
