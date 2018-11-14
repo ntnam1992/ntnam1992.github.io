@@ -455,6 +455,10 @@ span{
 .banner1__info--left ul{
     margin-bottom: 10%;
 }
+.banner1__info--left ul li{
+    width: 90%;
+    margin: 0 auto;
+}
 .active:hover{
     color: #7fdc22 !important;
 }

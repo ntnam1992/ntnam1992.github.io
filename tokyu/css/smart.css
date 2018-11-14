@@ -247,6 +247,10 @@
 	    font-size: 5.5vw;
 	    margin: 5% 0;
 	}
+	.banner__info p{
+		width: 96%;
+		margin: 0 auto;
+	}
 	.paragraph{
 	    margin: 4% 0;
 	}
