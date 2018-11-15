@@ -52,6 +52,11 @@ $(document).ready(function(){
 		$('#' + idName).parent().find('.js-sub').addClass('click-active');
 		$('#' + idName).parent().find('.js-sub').find('img').attr('src','images/activity/icon-add.jpg');
 		$('.' + idName).slideUp('slow');
+		var position = $('#' + idName).offset().top;
+
+		$("body, html").animate({
+			scrollTop: position
+		} /* speed */ );
 
 	});
 	// }
