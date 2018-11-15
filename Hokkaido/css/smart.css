@@ -769,6 +769,9 @@
 	.icon-1 img{
 		width: 70%;
 	}
+	.title-index a{
+		padding-right: 0;
+	}
 	.province--sp{
 		font-size: 14px;
 	}
@@ -933,6 +936,9 @@
 	}
 }
 @media screen and (max-width: 477px){
+	.content__index1--info ul li a{
+		font-size: 14px;
+	}
 	.content__index1--info ul li{
 		width: 30% !important;
 		padding-right: 3%;
