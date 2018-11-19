@@ -49,6 +49,16 @@
     .content-5__info {
     	width: 280px;
     }
+    .img-ab-content-5{
+    	left: -38.5%
+    }
+    .content-5{
+    	background: url('../images/bg-con-5.jpg') no-repeat top center;
+    	__background-size: 100%
+    }
+    .pc-1200{
+    	display: block;
+    }
 }
 @media screen  and (max-width: 920px){
 	.menu li:nth-child(2) a, 

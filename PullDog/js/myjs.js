@@ -22,19 +22,17 @@ $(document).ready(function() {
 			scrollTop: height
 		});
 	});
-
-	$(window).resize(function(){
 		var windowWidth = $(window).width();
 		if(windowWidth > 1200){
 			imgOpacity(0);
 			$(document).scroll(function(){
 			// console.log($(window).scrollTop());
 			
-				if($(window).scrollTop()<heightObj2){
+				if($(window).scrollTop()< heightObj2 - 200){
 					
 					list_scroll(0);
 				}
-				if($(window).scrollTop()>=heightObj2){
+				if($(window).scrollTop()>= heightObj2 - 200){
 					list_scroll(1);
 					if(flag <= 0){
 						flag = 1;
@@ -43,7 +41,7 @@ $(document).ready(function() {
 						img_animate(".js-animate-2","left",-354);
 					}
 				}
-				if($(window).scrollTop()>=heightObj3){
+				if($(window).scrollTop()>= heightObj3 - 200){
 					list_scroll(2);
 					if(flag<=1){
 						flag=2;
@@ -51,7 +49,7 @@ $(document).ready(function() {
 						img_animate(".js-animate-4","bot",-120);	
 					}
 				}
-				if($(window).scrollTop()>=heightObj4){
+				if($(window).scrollTop()>= heightObj4 - 200){
 					list_scroll(3);
 					if(flag<=2){
 						flag=3;
@@ -59,7 +57,7 @@ $(document).ready(function() {
 						img_animate(".js-animate-6","right",-323);	
 					}
 				}
-				if($(window).scrollTop()>=heightObj5){
+				if($(window).scrollTop()>= heightObj5 - 200){
 					list_scroll(4);
 					if(flag<=3){
 						flag=4;
@@ -73,8 +71,31 @@ $(document).ready(function() {
 			});
 		}else{
 			imgOpacity(1);
+			$(document).scroll(function(){
+			// console.log($(window).scrollTop());
+			
+				if($(window).scrollTop()< heightObj2 - 200){
+					
+					list_scroll(0);
+				}
+				if($(window).scrollTop()>= heightObj2 - 200){
+					list_scroll(1);
+					
+				}
+				if($(window).scrollTop()>= heightObj3 - 200){
+					list_scroll(2); 
+					
+				}
+				if($(window).scrollTop()>= heightObj4 - 200){
+					list_scroll(3);
+					
+				}
+				if($(window).scrollTop()>= heightObj5 - 200){
+					list_scroll(4);
+					
+				}
+			});
 		}
-	});
 	// $(document).scroll(function(){
 	// 	// console.log($(window).scrollTop());
 		

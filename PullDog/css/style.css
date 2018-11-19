@@ -590,3 +590,11 @@ body{
     top: 40%;
     z-index: 999999;
 }
+.mw-1379{
+    max-width: 1379px;
+    width: 100%;
+    position: absolute;
+}
+.pc-1200{
+    display: none;
+}
