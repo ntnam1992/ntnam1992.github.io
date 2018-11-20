@@ -44,6 +44,94 @@
 	} 
 }
 
+@media screen  and (max-width: 1366px) and (min-width: 1201px){
+	.img-sauce{
+    	right: -15%;
+    	bottom: -70px;
+    }
+    .content-4__text--animate{
+    	top: 110px;
+    	left: 42%;
+    }
+    .content-4__info{
+    	left: 47%;
+    	/* max-width: 530px; */
+    	width: 44%;
+    }
+ /*    .content-5__info {
+    	width: 280px;
+    } */
+    .img-ab-content-5{
+    	left: -27.5%;
+    	width: 50%;
+    }
+    /* .content-5{
+    	background: url('../images/bg-con-5.jpg') no-repeat top center;
+    	__background-size: 100%
+    } */
+    .pc-1200{
+    	display: block;
+    }
+
+
+  /*   .img-ct-5-1 img,
+    .img-ct-5-2 img,
+    .img-ct-5-3 img,
+    .img-ct-5-4 img{
+    	width: 60%;
+    } */
+    .img-ct-5-1,
+    .img-ct-5-2,
+    .img-ct-5-3,
+    .img-ct-5-4{
+    	top: 15%;
+    }
+    .img-ct-5-1{
+    	left: 5%;
+    }
+    .img-ct-5-2{
+    	left: 30%;
+    }
+    .img-ct-5-3{
+    	left: 50%;
+    }
+    .img-ct-5-4{
+    	left: 70%;
+    }
+    .text-2{
+    	font-size: 35px;
+    	top: 75px;
+   	    left: 110px;
+    }
+    .text-1{
+    	font-size: 60px;
+    	left: 10px;
+    }
+    .img-con1{
+    	width: 60%;
+    }
+    .text-2 span{
+    	font-size: 11px;
+    }
+    .img-content-4{
+    	width: 45%;
+    	right: -22.5%;
+    }
+    .img-ab-content-5{
+    	bottom: unset;
+    	top: 60%;
+    }
+    /* .content-5__info{
+    	width: 28%;
+	    top: 46%;
+	    right: 3%;
+    }
+    .content-5__info p{
+    	font-size: 12px;
+    	margin-bottom: 15px;
+    } */
+
+}
 @media screen  and (max-width: 1200px) and (min-width: 769px){
 	.footer{
 		height: 100px;

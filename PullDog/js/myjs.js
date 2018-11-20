@@ -23,7 +23,7 @@ $(document).ready(function() {
 		});
 	});
 		var windowWidth = $(window).width();
-		if(windowWidth > 1200){
+		if(windowWidth > 1366){
 			imgOpacity(0);
 			$(document).scroll(function(){
 			// console.log($(window).scrollTop());
