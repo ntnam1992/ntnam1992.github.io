@@ -45,7 +45,7 @@ $(document).ready(function() {
 					list_scroll(2);
 					if(flag<=1){
 						flag=2;
-						img_animate(".js-animate-3","top",274);
+						img_animate(".js-animate-3","top",269);
 						img_animate(".js-animate-4","bot",-120);	
 					}
 				}
@@ -53,8 +53,8 @@ $(document).ready(function() {
 					list_scroll(3);
 					if(flag<=2){
 						flag=3;
-						img_animate(".js-animate-5","top",110);
-						img_animate(".js-animate-6","right",-323);	
+						img_animate(".js-animate-5","top",113);
+						img_animate(".js-animate-6","right",-339);	
 					}
 				}
 				if($(window).scrollTop()>= heightObj5 - 200){
@@ -64,8 +64,8 @@ $(document).ready(function() {
 						img_animate(".js-animate-11","left",-358);
 						img_animate(".js-animate-7","fly",20);
 						img_animate(".js-animate-8","fly",345);
-						img_animate(".js-animate-9","fly",600);
-						img_animate(".js-animate-10","fly",825);
+						img_animate(".js-animate-9","fly",580);
+						img_animate(".js-animate-10","fly",820);
 					}
 				}
 			});
@@ -179,7 +179,7 @@ $(document).ready(function() {
 		else if(action=="fly")
 		{
 			$(js_class).css({left:"-1000px",top:"1000px",position:"absolute"});
-			$(js_class).animate({left:value+50,top:170,opacity:1},delay);
+			$(js_class).animate({left:value+50,top:175,opacity:1},delay);
 			$(js_class).animate({left:"-=50px",top:"-=10px"},200);
 			delay += 300;
 		}
