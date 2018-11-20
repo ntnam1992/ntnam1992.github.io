@@ -364,6 +364,7 @@
 	}
 	.content-4__tittle p span{
 		font-size: 25px;
+		padding-top: 10px;
 	}
 	.content-4__tittle p{
 		font-size: 14px;
@@ -527,9 +528,16 @@
 	.hide-1200{
 		display: block;
 	}
-
+	.content-4__tittle img{
+		max-width: 120px;
+		width: 80px;
+	}
 }
 @media screen  and (max-width: 480px) and (min-width: 320px){
+	.content-4__tittle img{
+		max-width: 120px;
+		width: 60px;
+	}
 	.hide-1200{
 		display: block;
 	}
@@ -682,6 +690,7 @@
 	}
 	.content-4__tittle p span{
 		font-size: 19px;
+		padding-top: 10px;
 	}
 	.content-4__tittle p{
 		font-size: 8px;

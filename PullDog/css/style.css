@@ -462,7 +462,7 @@ body{
     font-family: Hirakaku,sans-serif;
 }
 .content-4__tittle img{
-    padding-right: 10px;
+    margin-right: 10px;
 }
 .content-4__tittle{
     display: flex;
