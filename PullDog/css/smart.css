@@ -272,6 +272,7 @@
 	    color: #ffffff;
 	    transform: unset;
 	    text-align: center;
+	    margin-bottom: 10px;
 	}
 	.text-1-sp span{
 		font-size: 33px;
@@ -650,7 +651,7 @@
 	.text-3-1-sp{
 		font-family: Roboto,sans-serif;
 		color: #333333;
-		font-size: 33px;
+		font-size: 25px;
 		font-weight: bold;
 		padding-bottom: 10px;
 	}
