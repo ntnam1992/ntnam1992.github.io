@@ -172,7 +172,10 @@
     .pc-1200{
     	display: block;
     }
-
+	
+ /*    .img-ct-5-4 img{
+    	max-width: 191px;
+    } */
 
     .img-ct-5-1 img,
     .img-ct-5-2 img,
@@ -565,7 +568,7 @@
 	    font-size: 19px;
 	    color: #333333;
 	    margin-bottom: 30px;
-	    padding: 20% 10% 0 !important;
+	    padding: 15% 10% 0 !important;
 	}
 /* 	.content-5__info:before{
 		content: " ";
@@ -605,11 +608,13 @@
 	}
 	.btn__detail--gray,.btn__detail--white{
 		width: 133px;
-		line-height: 2.4;
+		line-height: 2.75;
 		font-size: 14px;
 	}
 	.copy-right{
 		font-size: 13px;
+		color: #999999;
+		text-align: center;
 	}
 	.show-1200{
 		display: none;
@@ -620,6 +625,13 @@
 	.content-4__tittle img{
 		max-width: 120px;
 		width: 80px;
+	}
+	.fl-copy{
+		justify-content: center;
+	}
+	.img-footer{
+		max-width: 246px;
+    	width: 17.7%;
 	}
 }
 @media screen  and (max-width: 480px) and (min-width: 320px){
@@ -841,24 +853,30 @@
 		margin: 0 auto;
 	}
 	.img-ct-5-1 img{
-		max-width: 240px;
+		max-width: 284px;
 		width: 100%;
 		height: auto;
 	}
 	.img-ct-5-2 img{
-		max-width: 210px;
+		max-width: 211px;
 		width: 100%;
 		height: auto;
 	}
 	.img-ct-5-3 img{
-		max-width: 207px;
+		max-width: 206px;
 		width: 100%;
 		height: auto;
 	}
 	.img-ct-5-4 img{
-		max-width: 202px;
+		max-width: 191px;
 		width: 100%;
 		height: auto;
+	}
+	.img-ct-5-1 img,
+	.img-ct-5-2 img,
+	.img-ct-5-3 img,
+	.img-ct-5-4 img{
+		width: 50% !important;
 	}
 	.content-5__tittle{
 		font-family: Arial,sans-serif;
@@ -899,10 +917,10 @@
 	}
 	.mw-327 {
 	    max-width: 327px;
-	    width: 70%;
+	    width: 50%;
 	}
 	.mw-310,.mw-307{
-		width: 70%;
+		width: 50%;
 	}
 	.people-name{
 		font-family: Arial,sans-serif;
@@ -921,10 +939,19 @@
 	}
 	.btn__detail--gray,.btn__detail--white{
 		width: 100px;
-		line-height: 1.8;
+		line-height: 2.75;
 		font-size: 11px;
 	}
 	.copy-right{
 		font-size: 10px;
+		color: #999999;
+		text-align: center;
+	}
+	.fl-copy{
+		justify-content: center;
+	}
+	.img-footer{
+		max-width: 246px;
+    	width: 17.7%;
 	}
 }
