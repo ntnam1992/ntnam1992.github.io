@@ -61,11 +61,11 @@ $(document).ready(function() {
 					list_scroll(4);
 					if(flag<=3){
 						flag=4;
-						img_animate(".js-animate-11","left",-378);
-						img_animate(".js-animate-7","fly",50);
-						img_animate(".js-animate-8","fly",365);
-						img_animate(".js-animate-9","fly",620);
-						img_animate(".js-animate-10","fly",845);
+						img_animate(".js-animate-11","left",-358);
+						img_animate(".js-animate-7","fly",20);
+						img_animate(".js-animate-8","fly",345);
+						img_animate(".js-animate-9","fly",600);
+						img_animate(".js-animate-10","fly",825);
 					}
 				}
 			});
@@ -179,7 +179,7 @@ $(document).ready(function() {
 		else if(action=="fly")
 		{
 			$(js_class).css({left:"-1000px",top:"1000px",position:"absolute"});
-			$(js_class).animate({left:value+50,top:156,opacity:1},delay);
+			$(js_class).animate({left:value+50,top:170,opacity:1},delay);
 			$(js_class).animate({left:"-=50px",top:"-=10px"},200);
 			delay += 300;
 		}
