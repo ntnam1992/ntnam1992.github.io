@@ -521,9 +521,21 @@
 	.copy-right{
 		font-size: 13px;
 	}
+	.show-1200{
+		display: none;
+	}
+	.hide-1200{
+		display: block;
+	}
 
 }
 @media screen  and (max-width: 480px) and (min-width: 320px){
+	.hide-1200{
+		display: block;
+	}
+	.show-1200{
+		display: none;
+	}
 	.sp-hide{
 		display: none !important;
 	}
