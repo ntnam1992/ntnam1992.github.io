@@ -388,10 +388,12 @@
 	}
 	.list-item li{
 		width: 100%;
-		margin-bottom: 50px;
+		margin-bottom: 45px;
 	}
+		margin-bottom: 45px;
 	.list-item p{
 		font-size: 17px;
+		margin: 15px auto 10px;
 	}
 	.list-item li a{
 		margin: 0 auto;
@@ -680,6 +682,8 @@
 		font-size: 8px;
 		display: block;
 		margin-top: 6px;
+		width: 70%;
+		margin: 5px auto 0;
 	}
 	.content-1__info li:nth-child(3),
 	.content-1__info li:nth-child(4),
@@ -723,10 +727,11 @@
 	}
 	.list-item li{
 		width: 100%;
-		margin-bottom: 50px;
+		margin-bottom: 45px;
 	}
 	.list-item p{
 		font-size: 13px;
+		margin: 15px auto 10px;
 	}
 	.list-item li a{
 		margin: 0 auto;
@@ -953,5 +958,9 @@
 	.img-footer{
 		max-width: 246px;
     	width: 17.7%;
+	}
+	.mw-456{
+		width: 70%;
+		margin: 0 auto;
 	}
 }
