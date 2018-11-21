@@ -363,6 +363,7 @@ span{
 .nav__menu ul li:last-child a{
     border-right: none;
 }
+
 .nav__menu:after{
     content: " ";
     clear: both;
