@@ -488,7 +488,10 @@
 		font-size: 15px;
 	}
 	.nav__menu ul li{
-		height: 60px;
+		height: 62px;
+	}
+	.nav__menu ul li a{
+		margin: 20px auto !important;
 	}
 	.tittle{
 		font-size: 20px;
