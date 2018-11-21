@@ -370,7 +370,11 @@ span{
     float: none;
     display: block;
 }
-.full__img {
+/* .full__img {
+    width: 100%;
+} */
+.content-img{
+    max-width: 580px;
     width: 100%;
 }
 .nav__menu ul li a{
