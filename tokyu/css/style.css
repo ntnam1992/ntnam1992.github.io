@@ -201,7 +201,7 @@ span{
     margin-right: 15px;
 }
 .banner__text ul li:first-child p{
-    font-size: 16px;
+    font-size: 14px;
 }
 .banner__text ul li:nth-child(2) {
     font-size: 20px;
@@ -323,7 +323,12 @@ span{
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
 }
-
+.to-top img{
+    margin: 0 auto;
+}
+.pc-hide{
+    display: none;
+}
 
 
 
@@ -363,6 +368,9 @@ span{
     clear: both;
     float: none;
     display: block;
+}
+.full__img {
+    width: 100%;
 }
 .nav__menu ul li a{
   border-right: 1px solid #d5d5d5;
