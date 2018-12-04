@@ -434,9 +434,6 @@ h1 > span{
 		    max-height: 250px;
 		    overflow: scroll;
 		}
-		.info-detail > h1 , .info-detail > p{
-			text-align: center !important;
-		}
 		
 	}
 	/**page 2*/
@@ -550,6 +547,9 @@ h1 > span{
 
 }
 @media screen and (max-width: 991px){
+	.info-detail > h1 , .info-detail > p{
+			text-align: center !important;
+		}
 	.show-pc{
 		display: none;
 	}
