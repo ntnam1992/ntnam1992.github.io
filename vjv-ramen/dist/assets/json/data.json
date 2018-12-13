@@ -1,0 +1,60 @@
+{
+	"data": [
+		{ 
+			"no": "1", 
+			"title": "Tập 1",
+			"subtitle": "Yokohama 「Chúng tôi là những du học sinh Ramen」",
+			"text": "Cùng đến bảo tàng ramen Shin-yokohama tại thành phố Yokohama, tỉnh Kanagawa.",
+			"url": "https://www.youtube.com/embed/kVwbIKHcrFg"
+		},
+		{ 
+			"no": "2", 
+			"title": "Tập 2",
+			"subtitle": "「Nước súp nóng hổi ở thành phố tuyết rơi !」",
+			"text": "Hãy ăn thử món mì Miso ramen của thành phố Sapporo, Hokkaido nào!",
+			"url": "https://www.youtube.com/embed/LHnXdTWwqM0"
+		},
+		{ 
+			"no": "3", 
+			"title": "Tập 3",
+			"subtitle": "Kyoto「Tới Kyoto khám phá những điều mới !」",
+			"text": "Ghé ngang cố đô Kyoto để nếm món mì Seabura ramen.",
+			"url": "https://www.youtube.com/embed/ior65P8D7us"
+		},
+		{ 
+			"no": "4", 
+			"title": "Tập 4",
+			"subtitle": "Fukuoka「Con đường tới Cosplay và Kaedama」",
+			"text": "Thử sức với một vắt mì thêm tại quê hương của món mì Tonkotsu ramen, thành phố Fukuoka !",
+			"url": "https://www.youtube.com/embed/g8y_mLnP0KQ"
+		},
+		{ 
+			"no": "5", 
+			"title": "Tập 5",
+			"subtitle": "Hakodate「Thưởng thức hết thành phố biển nào.」",
+			"text": "Cảm nhận vị mặn của biển với món mì Shio ramen của thành phố Hakodate!",
+			"url": "https://www.youtube.com/embed/MZ1ib0lOCFY"
+		},
+		{ 
+			"no": "6", 
+			"title": "Tập 6",
+			"subtitle": "Toyama「Ramen đen giữa thế giới tuyết !」",
+			"text": "Ăn món mì Fuji Black với màu đen kì lạ tại tỉnh Toyama có tuyết đóng thật cao!",
+			"url": "https://www.youtube.com/embed/_fYUP_viDgE"
+		},
+		{ 
+			"no": "7", 
+			"title": "Tập 7",
+			"subtitle": "Kumamoto「Samurai, Nikuniku , là gì thế nhỉ?」",
+			"text": "Thử sức với món mì ramen có mùi tỏi thật nồng của tỉnh Kumamoto, Kyushu!",
+			"url": "https://www.youtube.com/embed/E9HgsNeoFBo"
+		},
+		{ 
+			"no": "8", 
+			"title": "Tập 8",
+			"subtitle": "Tokyo & Yokohama「Thử thách cuối cùng là làm ra món mì Ramen của chính bạn」",
+			"text": "Cùng làm mì ly tại bảo tàng mì ly Cup noddle nào!",
+			"url": "https://www.youtube.com/embed/Ef1FpzV6Q5g"
+		}
+	]
+}
