@@ -30,14 +30,14 @@
 }
 .slick-list:focus
 {
-    outline: none;
+    outline: none !important;
 }
 .slick-list.dragging
 {
     cursor: pointer;
     cursor: hand;
 }
-/* 
+
 .slick-slider .slick-track,
 .slick-slider .slick-list
 {
@@ -46,7 +46,7 @@
         -ms-transform: translate3d(0, 0, 0);
          -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
-} */
+}
 
 .slick-track
 {
