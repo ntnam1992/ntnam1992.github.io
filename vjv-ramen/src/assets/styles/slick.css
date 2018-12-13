@@ -31,6 +31,7 @@
 .slick-list:focus
 {
     outline: none !important;
+    outline-color: #fff !important;
 }
 .slick-list.dragging
 {
