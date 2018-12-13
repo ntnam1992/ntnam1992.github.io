@@ -376,7 +376,7 @@ body{
 		justify-content:space-around;
 		flex-wrap:wrap;
 	}
-	.list-video ul li a:hover,.list-video ul li a:active{
+	.list-video ul li a:hover{
 		color: #e60012;
 	}
 	.list-video ul li a i img{
@@ -387,7 +387,7 @@ body{
 		// border: 4px solid  #e60012;
 		opacity: 1 !important;
 		box-sizing:border-box;
-		-webkit-transition: width 1s; /* Safari */
+		-webkit-transition: opacity 1s; /* Safari */
 	  	transition: opacity 1s;
 		
 		
