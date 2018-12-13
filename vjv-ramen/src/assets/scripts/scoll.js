@@ -4,7 +4,7 @@ $(function() {
 	    topBtn.hide();
 	    //ƒXƒNƒ[ƒ‹‚ª100‚É’B‚µ‚½‚çƒ{ƒ^ƒ“•\Ž¦
 	    $(window).scroll(function () {
-	        if ($(this).scrollTop() > 2000) {
+	        if ($(this).scrollTop() > 1000) {
 	            topBtn.fadeIn();
 	        } else {
 	            topBtn.fadeOut();
