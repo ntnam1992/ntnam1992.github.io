@@ -21,18 +21,19 @@ $(function() {
 		$(window).resize(function() {
 			checkSlider();
 		});
-		getDataJson();
+		getDataJson(); // get data form file json
 		$(document).on('click', '.slider-slick-js li', function() {
 			var data = $(this).find('img');
 
-			$('.video-iframe-js').attr('src',(data.attr('data-src')));
-			$('.chapter-js').html(data.attr('data-title'));
-			$('.info-chapter-js').html(data.attr('data-subtitle'));
+			$('.video-iframe-js').attr('src',(data.attr('data-src')));//change link vedeo when click img thumnail
+			$('.chapter-js').html(data.attr('data-title'));//change data title when click img thumnail
+			$('.info-chapter-js').html(data.attr('data-subtitle'));//change data subtitle when click img thumnail
 			$('.slider-slick-js li').removeClass('active');
 			$(this).addClass('active');
 		})
 		// checkSlider();
 });
+/**get data from file json and create list video HTML*/
 function getDataJson() {
 	$.getJSON("assets/json/data.json", function(result){
         	var data = result.data;
@@ -47,6 +48,7 @@ function getDataJson() {
         	checkSlider();
         });
 }
+/**check width of window when <= 980 create slider video*/
 function checkSlider() {
 	widthWindow = $(window).width();
 	if(widthWindow <= 980 && sliderData == '') {
