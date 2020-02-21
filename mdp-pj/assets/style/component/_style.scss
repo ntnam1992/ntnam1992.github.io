@@ -55,11 +55,11 @@ body{
 }
 .banner{
     margin: 0 auto;
-    background: url(/mdp-pj/assets/images/img_main.png)no-repeat center center;
+    background: url(../images/img_main.png)no-repeat center center;
     padding-bottom: 45%;
     background-size: cover;
     @media (max-width:768px) {
-        background: url(/mdp-pj/assets/images/img_main_sp.jpg)no-repeat center center;
+        background: url(../images/img_main_sp.jpg)no-repeat center center;
         background-size: cover;
         padding-bottom: 50%;
     }
@@ -398,7 +398,7 @@ body{
     margin-top: 80px;
     @media (max-width:768px) {
         padding-bottom: 42%;
-        background:url(/mdp-pj/assets/images/img-slide-pc.jpg) no-repeat center;
+        background:url(../images/img-slide-pc.jpg) no-repeat center;
         background-size: cover;
     }
     @media (max-width:480px){
