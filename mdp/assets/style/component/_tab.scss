@@ -1,0 +1,264 @@
+//css tab,content in tab
+.tab{
+    display: flex;
+    padding-top: 40px;
+    margin-left: 30px;
+    max-width: 460px;
+    width: 100%;
+    @media (max-width:768px) {
+        max-width: 100%;
+        justify-content: center;
+        margin: 0 20px;
+    }
+    &__calender{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background: #dedede;
+        text-align: center;
+        max-width: 226px;
+        width: 100%;
+        color: $cl-txt-grey;
+        cursor: pointer;
+        p{
+            line-height: 1;
+        }
+        &--title{
+            font-size: 32px;
+            padding-top: 15px;
+            text-align: center;
+            line-height: 1.5 !important;
+            span{
+                font-size: 20px;
+            }
+        }
+        &:first-child{
+            margin-right: 8px;
+        }
+        .icn-active{
+            display: none;
+            margin: 20px auto 5px;
+        }
+        .icn-disable{
+            display: block;
+            margin: 20px auto 5px;
+        }
+    }
+    &__calender.active{
+        background: $cl-white;
+        border: 1px solid #dedede;
+        border-bottom: 0;
+        box-shadow: 3px 0 rgba(217, 224, 226, 0.5) ;
+        color: $cl-txt-red;
+        .icn-active{
+            display: block;
+        }
+        .icn-disable{
+            display: none;
+        }
+    }
+    &__calender.active > .tab-green{
+        font-size: 2rem; 
+        text-align: center;           
+            span{
+                font-size: 1.25rem;
+                color: #d70000 !important;
+            }
+    }
+    &__calender.active > .tab-blue{
+        font-size: 2rem; 
+        text-align: center;           
+            span{
+                font-size: 1.25rem;
+                color: $cl-dark-blue !important;
+            }
+    }
+    &__content{
+        background: $cl-white;
+    }
+    &__info{
+        justify-content: flex-start;
+        &--date{
+            
+            max-width: 140px;
+            text-align: center;
+            padding-top: 25px;
+            width: 100%;
+            line-height: 1.5;
+            @media (max-width:480px) {
+                max-width: 100px;
+            }
+            span{
+                font-size: 31px;
+                display: block;
+               
+            }
+        }
+        &--green{
+            background: $cl-green;
+            color: #d70000;
+        }
+        &--blue{
+            background: $cl-medium-blue;
+            color: $cl-dark-blue;
+        }
+        &--content{
+            background: $cl-white;
+            border-top: 1px solid $cl-green;
+            width: 100%;
+            border-bottom: 1px solid #d5dde0;
+        }
+        &--list{
+            li{
+                color: $cl-txt-red;
+                display: flex;
+                justify-content: space-between;
+                padding: 30px 30px 25px 20px;
+                font-size: 1.125rem;
+                border-bottom: 1px dotted #bfbfbf;
+                &:last-child{
+                    border-bottom: 0;
+                }
+                @media (max-width:768px) {
+                    flex-wrap: wrap; 
+                    padding: 20px 10px ; 
+                    font-size: 1.5rem;                  
+                }
+                @media (max-width:480px) {
+                    font-size: 1.125rem;
+                }
+            }
+        }
+        &--text1{
+            line-height: 1.5;
+            @media (max-width:768px) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            a{
+                margin-right: 20px;
+                text-decoration: underline;
+                @media (max-width:768px) { 
+                                 
+                }
+            }
+            img{
+                max-width: 22px;
+                max-height: 20px;
+                min-width: 22px;
+            }
+            span{
+                @media (max-width:768px) {
+                    width: 100%;
+                    order: 3;
+                }
+            }
+        }
+        &--text2{
+            line-height: 1.5;
+            @media (max-width:768px) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            a{
+                margin-left: 20px;
+                text-decoration: underline;
+                @media (max-width:768px) {
+                    margin-left: 15px;                  
+                }
+            }
+        }
+        &--time{
+            line-height: 1.5;
+            margin-right: 15px;
+        }
+    }
+}
+//end tab
+//css course
+.course{
+    padding-bottom: 165px;
+    @media (max-width:768px) {
+        padding-bottom: 40px;
+    }
+    &__name{
+        position: relative;
+        font-size: 1.75rem;
+        color: $cl-txt-red;
+        font-weight: 500;
+        background: $cl-green;
+        padding: 10px 5px;
+        width:calc(100% -10px);
+        display:flex;
+        align-items: flex-start;
+        &--time{
+            color: #d70000;
+            font-size: 1.125rem;
+        }
+        &--tag{
+            border-radius: 50%;
+            font-size: 1.125rem;
+            background: $cl-blue;
+            max-width: 130px;
+            max-height: 130px;
+            height:130px;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top:-50px;
+            left:15px;
+            @media (max-width:480px) {
+                left: 5px;
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                width: 0; 
+                height: 0; 
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;                
+                border-top: 60px solid $cl-blue;
+                bottom: -5px;
+                right:-10px;
+                transform: rotate(-60deg);
+            }
+        }
+        &--title{
+            max-width: 100%;
+            width: calc(100% -155px);
+            @media (max-width:830px) {
+                flex-wrap: wrap;
+                span:first-child{
+                    margin-left: 10px;
+                }
+                p{
+                    width: 100%;
+                    @media (max-width:480px) {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+    &__content{
+        padding: 30px 20px;
+        text-align: center;
+        color: $cl-txt-red;
+        p{
+            margin-bottom: 10px;
+            font-size: 1.125rem;
+        }
+        border: 1px solid $cl-green;
+    }
+    .tag{
+       position: relative;
+       width: 155px;
+       min-width: 155px;
+       &-text{
+           position: absolute;
+           width: 102%;
+           z-index: 2;
+           top:39%;
+       }
+    }
+}
+//end css course
