@@ -1,623 +1,72 @@
-<!DOCTYPE html>
 <html>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <title>MDP</title>
-    <link rel="stylesheet" type="text/css" href="assets/style/main.css">
-    <link rel="stylesheet" type="text/css" href="assets/style/slick/slick.css">
-    <script type="text/javascript" src="assets/script/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="assets/script/slick.js"></script>
-    <script type="text/javascript" src="assets/script/main.js"></script>
-<body id="body">
-    
-        <header>
-            <div class="menu">
-                <div class="container ">
-                    <div class="inner dl-flex just-between al-center">
-                        <div class="logo"><img src="/mdp/assets/images/logo.png"></div>
-                        <div class="btn__close btn js-header"><img src="/assets/images/btn_close.png">閉じる</div>
-                    </div>
-                </div>       
-            </div>
-            <div class="sub-nav js-hd-close">
-                <div class="container ">
-                    <div class="inner dl-flex just-between al-center">
-                        <div class="nav-mean">
-                            <div class="dl-flex al-center"><img src="/mdp/assets/images/icon_tw.png" class="icon-bird">
-                                <p class="cl-white f-bold title-head">参加者続々！</p></div>
-                            
-                            <div class="btn__notice dl-flex al-center">
-                                <span><img src="/mdp/assets/images/icon-next.png"></span>参加表明する
-                            </div>
-                        </div>
-        
-                        <div class="search">
-                            <img src="/mdp/assets/images/icon_search.png">
-                            <input class="search__ip" value="＠kato 進研模試復習LIVE!に参加します！・・・">
-                        </div> 
-                    </div>            
-                              
-                </div>
-            </div>
-            
-        </header>
-        <div class="container bg-light-grey"> 
-            <div class="banner">
-            </div>       
-            <div class="inner">
-                <div class="dl-flex just-between fl-wrap-reverse-768">
-                    <div class="tab">
-                        <div class="tab__calender active f-bold js-tab" data-tab="tab1">
-                            <p class="tab__calender--title tab-green">1/31<span>（SUN）</span></p>
-                            <p>スタンダード</p>
-                            <p>受験総合コース</p>
-                            <img src="/mdp/assets/images/icn-bot-act.png" class="icn-active">
-                            <img src="/mdp/assets/images/icn-to-bot.jpg" class="icn-disable">
-                        </div>
-                        <div class="tab__calender f-bold js-tab" data-tab="tab2">
-                            <p class="tab__calender--title tab-blue">2/20<span>（SAT）</span></p>
-                            <p>ハイレベル</p>
-                            <p>難関挑戦コース</p>
-                            <img src="/mdp/assets/images/icn-bot-act.png" class="icn-active">
-                            <img src="/mdp/assets/images/icn-to-bot.jpg" class="icn-disable">
-                        </div>
-                    </div>
-                    <div class="social-area">
-                        <div class="area-notice"><span class="notice-text f-bold">＼授業の日程などお役立ち情報をお知らせします!／</span></div>
-                        
-                        <div class="btn__line dl-flex al-center just-center f-bold"><img src="/mdp/assets/images/icn-line.jpg" class="icn__tw">友だち追加</div>
-                        <div class="btn__tw dl-flex al-center just-center f-bold"><img src="/mdp/assets/images/icon_tw.png" class="icn__tw">Twitter友だち追加</div>
-                    </div>
-                </div>
-                <div id="tab1">
-                    <div class="tab__content">
-                        <div class="standard dl-flex al-center">
-                            <span class="btn__standard btn__standard--green f-bold">スタンダード</span>
-                            <p><span class="f-bold">受験総合コース </span> 対象：地元国公立、GMARCH・関関同立などを目指したいかた</p>
-                        </div>
-                    </div>
-                    <div class="tab__info dl-flex">
-                        <div class="tab__info--date tab__info--green cl-white">
-                            <p class="f-bold"><span class="cl-white">1/31</span>（SUN）</p>
-                        </div>
-                        <div class="tab__info--content">
-                            <ul class="tab__info--list">
-                                <li>
-                                    <div class="tab__info--time">16:00~17:10</div>
-                                    <div class="text-content">
-                                        <p class="tab__info--text1"><a class="f-bold">スタンダード国公立数学</a><span>大問3解説＋入試類題演習</span><img src="/mdp/assets/images/icon_newwindow.png" class="js-modal" data-modal="modal-open-1"></p>
-                                        <p  class="tab__info--text2"><span>佐藤 仁志　先生</span><a class="f-bold">（Benesseお茶の水ゼミナール）</a></p>
-                                    </div>
-                                    <div><div class="btn__live f-bold al-center"><img src="/mdp/assets/images/icn-next-blue.png">LIVE授業へ</div></div>
-                                </li>
-                                <li>
-                                    <div class="tab__info--time">17:30~18:40</div>
-                                    <div class="text-content">
-                                        <p class="tab__info--text1"><a class="f-bold">スタンダード国公立数学</a><span>大問5解説＋入試類題演習</span> <img src="/mdp/assets/images/icon_newwindow.png" class="js-modal" data-modal="modal-open-2"></p>
-                                        <p  class="tab__info--text2"><span>横田 竜麻　先生（Benesseお茶の水ゼミナール）</span><a class="f-bold">（Benesseお茶の水ゼミナール）</a></p>
-                                    </div>
-                                    <div><div class="btn__open f-bold al-center">当日OPEN</div></div>
-                                </li>
-                                <li>
-                                    <div class="tab__info--time">19:00~20:10</div>
-                                    <div class="text-content">
-                                        <p class="tab__info--text1"><a class="f-bold">スタンダード国公立数学</a><span>大問6解説＋入試類題演習</span><img src="/mdp/assets/images/icon_newwindow.png" class="js-modal" data-modal="modal-open-1"></p>
-                                        <p  class="tab__info--text2"><span>佐藤 仁志　先生（Benesseお茶の水ゼミナール）</span><a class="f-bold">（Benesseお茶の水ゼミナール）</a></p>
-                                    </div>
-                                    <div><div class="btn__live f-bold al-center"><img src="/mdp/assets/images/icn-next-blue.png">LIVE授業へ</div></div>
-                                </li>
-                                <li>
-                                    <div class="tab__info--time">20:30~21:40</div>
-                                    <div class="text-content">
-                                        <p class="tab__info--text1"><a class="f-bold">スタンダード国公立数学</a><span>大問6解説＋入試類題演習</span> <img src="/mdp/assets/images/icon_newwindow.png" class="js-modal" data-modal="modal-open-2"></p>
-                                        <p  class="tab__info--text2"><span>横田 竜麻　先生</span><a class="f-bold">（Benesseお茶の水ゼミナール）</a></p>
-                                    </div>
-                                    <div><div class="btn__open f-bold al-center">当日OPEN</div></div>
-                                    
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div id="tab2">
-                    <div class="tab__content">
-                        <div class="standard dl-flex al-center">
-                            <span class="btn__standard btn__standard--blue  f-bold">スタンダード</span>
-                            <p><span class="f-bold">受験総合コース </span> 対象：東大京大阪大一橋東工大、早慶上智などを目指したいかた</p>
-                        </div>
-                    </div>
-                    <div class="tab__info dl-flex">
-                        <div class="tab__info--date tab__info--blue cl-white">
-                            <p class="f-bold"><span class="cl-white">2/20</span>（SAT）</p>
-                        </div>
-                        <div class="tab__info--content">
-                            <ul class="tab__info--list">
-                                <li>
-                                    <div class="tab__info--time">17:30~18:40</div>
-                                    <div class="text-content">
-                                        <p class="tab__info--text1"><a class="f-bold">ハイレベル文系数学</a><span>大問7解説＋入試課題演習</span><img src="/assets/images/icon_newwindow.png" class="js-modal" data-modal="modal-open-3"></p>
-                                        <p  class="tab__info--text2"><span>小西 芳幸　先生</span><a class="f-bold">（Benesseお茶の水ゼミナール）</a></p>
-                                    </div>
-                                    <div><div class="btn__live f-bold al-center"><img src="/assets/images/icn-next-blue.png">LIVE授業へ</div></div>
-                                </li>
-                                <li>
-                                    <div class="tab__info--time">19:00~20:10</div>
-                                    <div class="text-content">
-                                        <p class="tab__info--text1"><a class="f-bold">ハイレベル英語</a><span>大問4解説＋入試課題演習</span> <img src="/assets/images/icon_newwindow.png" class="js-modal" data-modal="modal-open-4"></p>
-                                        <p  class="tab__info--text2"><span>尾形 明彦　先生</span><a class="f-bold">（Benesseお茶の水ゼミナール）</a></p>
-                                    </div>
-                                    <div><div class="btn__open f-bold al-center">当日OPEN</div></div>
-                                </li>
-                                <li>
-                                    <div class="tab__info--time">20:30~21:40</div>
-                                    <div class="text-content">
-                                        <p class="tab__info--text1"><a class="f-bold">スタンダード理系数学</a><span>大問4解説＋入試課題演習</span><img src="/assets/images/icon_newwindow.png" class="js-modal" data-modal="modal-open-3"></p>
-                                        <p  class="tab__info--text2"><span>小西 芳幸　先生</span><a class="f-bold">（Benesseお茶の水ゼミナール）</a></p>
-                                    </div>
-                                    <div><div class="btn__live f-bold al-center"><img src="/assets/images/icn-next-blue.png">LIVE授業へ</div></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="dl-flex just-center">
-                    <span class="dot js-dot js-dot-one active"></span>
-                    <span class="dot  js-dot js-dot-two"></span>
-                </div>
-                <div class="course">
-                    <div class="course__name">
-                        <div class="tag">
-                            <p class="course__name--tag cl-white dl-flex al-center"><span class="tag-text">コースを<br/>
-                                迷っている方は</p></span>
-                        </div>
-                    
-                    <div class="course__name--title dl-flex al-center"><span class="cl-white">1/31</span><span class="course__name--time f-bold">（SUN）</span>
-                        <p class="f-bold">「スタンダートコース」がオススメ</p>
-                    </div>
-                        
-                        
-                    </div>
-                    <div class="course__content">
-                        <p>現時点で具体的な志望校が決まっていないかたは</p>
-                        <p>多くの大学で必要となるポイントを解説する「スタンダードコース」がお勧めです。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container bg-light-blue">
-            <div class="inner">
-                <div class="evaluate">
-                    <img src="/assets/images/img-title.png" class="img-title-1 js-top-position">
-                    <p class="evaluate-title cl-white">模試の復習をきっかけに、受験生に向けて<br class="show-sp"/>スタートダッシュが切れるプログラムをご用意しました。
-                    </p>
-                    <div class="group-btn dl-flex ">
-                        <div class="btn__evaluate js-scroll-title" href="#title1">
-                            <p class="btn__evaluate--title"><span class="cl-white f-bold al-center just-center tag-number">1</span>プロの講師のわかりやすい授業を家にいながらでも体感でき</p>
-                            <img src="/assets/images/img-tag1.png" class="btn__evaluate--img">
-                            <div class="btn__scroll--down show-pc"><img src="/assets/images/icn-down.png" class="btn__scroll--img"></div>
-                            <div class="btn__scroll--down show-sp"><img src="/assets/images/icn-bot-act.png" class="btn__scroll--img"></div>
-                        </div>
-                        <div class="btn__evaluate js-scroll-title" href="#title2">
-                            <p class="btn__evaluate--title"><span class="cl-white f-bold al-center just-center tag-number">2</span>自分の目指したい大学レベルに必要な力に集中して学習できる
-                                </p>
-                            <img src="/assets/images/img-tag2.png" class="btn__evaluate--img">
-                            <div class="btn__scroll--down show-pc"><img src="/assets/images/icn-down.png" class="btn__scroll--img"></div>
-                            <div class="btn__scroll--down show-sp"><img src="/assets/images/icn-bot-act.png" class="btn__scroll--img"></div>
-                        </div>
-                        <div class="btn__evaluate js-scroll-title" href="#title3">
-                            <a class="btn__evaluate--title"><span class="cl-white f-bold al-center just-center tag-number">3</span>高2の今から実践できる受験に向けた勉強法がわかる
-                            </a>
-                            <img src="/assets/images/img-tag3.png" class="btn__evaluate--img">
-                            <div class="btn__scroll--down show-pc"><img src="/assets/images/icn-down.png" class="btn__scroll--img"></div>
-                            <div class="btn__scroll--down show-sp"><img src="/assets/images/icn-bot-act.png" class="btn__scroll--img"></div>
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-            
-        </div>
-        <div class="container">
-            <!-- tag number 1 -->
-            
-            <div class="scroll">
-                <div class="scroll__inner">
-                    <div class="evaluate__info">
-                        <p class="tag-large"><span class="cl-white f-bold al-center just-center tag-number">1</span>プロの講師のわかりやすい授業を家にいながらでも体感できる</p>
-                        <p class="evaluate__notice js-top-position">模試本番ではできなかった問題でも「わかる」が実感できる講義を無料で手軽に。
-                        </p>
-                    </div>
-                    <img src="/assets/images/img_no1_pro_sp.png" class="img-evaluate-1 show-sp" id="title1">
-                    <img src="/assets/images/img_no1_pro_PC.png" class="img-evaluate-1 show-pc" id="title1">
-               
-                    <ul class="evaluate__list dl-flex">
-                        <li class="evaluate__list--item">
-                            <p class="title-number">1</p>
-                            <p class="evaluate__list--title">キミの「わからない」を<br/>
-                                「わかる」に変える解説</p>
-                            <span></span>
-                            <p class="evaluate__list--info">東大を始めとする<br/>
-                                数多くの名門校に合格実績のある<br/>
-                                『Benesseお茶の水ゼミナール』の<br/>
-                                人気講師が解説。</p>
-                        </li>
-                        <li class="evaluate__list--item">
-                            <p class="title-number">2</p>
-                            <p class="evaluate__list--title">わからないことがあっても<br/>
-                                スグその場で質問できる。</p>
-                            <span></span>
-                            <p class="evaluate__list--info">チャットで質問すると、<br/>
-                                先生が答えてくれる。<br/>
-                                『だから「分からない」が残らない。<br/>
-                                ※すべての質問にはご回答しかねます。<br/>
-                                ご了承ください。</p>
-                        </li>
-                        <li class="evaluate__list--item">
-                            <p class="title-number">3</p>
-                            <p class="evaluate__list--title">全国の同じ志望校を目指す<br/>
-                                ライバルと競いながら共に学べる</p>
-                            <span></span>
-                            <p class="evaluate__list--info">最大５万人の生徒と同時に受講。<br/>
-                                学校を超えて、<br/>
-                                同じ志望校を目指すライバルと<br/>
-                                普段とは違う臨場感で学べる。</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="inner-tag">
-                <div><p class="link-top"><a>ページの先頭に戻る</a><span class="btn__top btn__top--small dl-flex just-center al-center"><img src="/assets/images/icn-top.png"></span></p></div>
-                <!-- tag number 2 -->
-                <div class="evaluate__info">
-                    <p class="tag-large"><span class="cl-white f-bold al-center just-center tag-number">2</span>自分の目指したい大学レベルに必要な力に集中して学習できる </p>
-                </div>
-                <img src="/assets/images/img_no2_level_PC.png" class="img-evaluate-2" id="title2">
-                <p class="evaluate__list--info2">
-                    進研模試では目指したい大学によって「解けなくちゃいけない問題」は異なります。<br/>
-                    例えば上の図では、問9～問11が難関国公立大学に合格するために解けなくてはいけない問題です。<br/>
-                    今回の「進研模試復習LIVE！」では<br/>
-                    <span>
-                        むやみに模試の復習をするのではなく、<br/>
-                        キミの志望校レベルに合ったコースを用意し、<br/>
-                        「取り組むべき問題」に集中して復習します。<br/>
-                    </span>
-                    
-                </p>
-                <div><p class="link-top"><a>ページの先頭に戻る</a><span class="btn__top btn__top--small dl-flex just-center al-center"><img src="/assets/images/icn-top.png"></span></p></div>
-                <!-- tag number 3 -->
-                <div class="evaluate__info">
-                    <p class="tag-large"><span class="cl-white f-bold al-center just-center tag-number">3</span>自分の目指したい大学レベルに必要な力に集中して学習できる </p>
-                </div>
-                <img src="/assets/images/img_no3_lesson_PC.png" class="img-evaluate-2" id="title3">
-                <p class="evaluate__list--info2">
-                    受験勉強はまだいいか、と思っているかたは注目です。大学受験を経験した先輩は、実は8割以上が<br/>
-                    <span>
-                        高2のうちから受験勉強をスタートさせるべきと言っています。<br/>
-                    </span>
-                    だから今回の「進研模試復習LIVE!」では模試の復習・類題演習で力をつけるだけでなく、<br/>
-                    「今からできる」受験に向けた勉強法を解説。模試の復習をきっかけに、<br/>
-                    <span>
-                        受験生に向けて好スタートが切れます。
-                    </span>
-                    
-                </p>
-                <div><p class="link-top"><a>ページの先頭に戻る</a><span class="btn__top btn__top--small dl-flex just-center al-center"><img src="/assets/images/icn-top.png"></span></p></div>
-            </div>
-            <div class="p-relative img-content">
-                <img src="/assets/images/img-slide-pc.jpg">
-                <div class="img-title">
-                    <p class="cl-white ">
-                        志望大レベル別講座で、<br class="show-sp"/>受験生に向け好スタートを切ろう！
-                    </p>
-                    <div class="btn__tw btn__tw--custom dl-flex al-center just-center f-bold"><img src="/assets/images/icon_tw.png" class="icn__tw">参加表明する</div>
-                </div>
-            </div>
-        </div>
-            
-    
-        <div class="container bg-light-blue slider">
-            <p class="slider__title cl-white">もっと学習したい方はこちらもチェック！</p>
-            <ul class="slider__list js-slider">
-                <li class="slider__list--item">
-                    <div class="dl-flex fl-end">
-                        <img src="/assets/images/icon_newwindow.png" class="js-modal">
-                    </div>
-                    <div class="img-slide">
-                        <img src="/assets/images/img-slider-1.png" >
-                    </div>
-                    
-                    <div class="slider__list--inner">
-                        <p>
-                            現役生専門・少人数授業で希望進路を実現する予備校。東大を始めとする難関大学合格者を多く輩出。
-                        </p>
-                    </div>
-                </li>
-                <li class="slider__list--item">
-                    <div class="dl-flex fl-end">
-                        <img src="/assets/images/icon_newwindow.png" class="js-modal">
-                    </div>
-                    
-                    <div class="img-slide">
-                        <img src="/assets/images/img-slider-2.png" >
-                    </div>
-                    <div class="slider__list--inner">
-                        <p>
-                            スマホ専用受験対策コンテンツ。進研模試結果と連動！志望校との差を埋める問題を毎日配
-                        </p>
-                    </div>
-                </li>
-                <li class="slider__list--item">
-                    <div class="dl-flex fl-end">
-                        <img src="/assets/images/icon_newwindow.png" class="js-modal">
-                    </div>
-                    
-                    <div class="img-slide">
-                        <img src="/assets/images/img-slider-3.png" >
-                    </div>
-                    <div class="slider__list--inner">
-                        <p>
-                            スマホをかざすだけの新しい復習アプリ。受験勉強対策、進研模試の復習を強力サポート。
-    
-                        </p>
-                    </div>
-                </li>
-                <li class="slider__list--item">
-                    <div class="dl-flex fl-end">
-                        <img src="/assets/images/icon_newwindow.png" class="js-modal">
-                    </div>
-                    
-                    <div class="img-slide">
-                        <img src="/assets/images/img-slider-4.png" >
-                    </div>
-                    <div class="slider__list--inner">
-                        <p>
-                            進研模試のWEB解説で人気だった学習教材を集めたページ。さらなる成績UPを目指そう！
-    
-                        </p>
-                    </div>
-                </li>
-                <li class="slider__list--item">
-                    <div class="dl-flex fl-end">
-                        <img src="/assets/images/icon_newwindow.png" class="js-modal">
-                    </div>
-                    
-                    <div class="img-slide">
-                        <img src="/assets/images/img-slider-1.png" >
-                    </div>
-                    <div class="slider__list--inner">
-                        <p>
-                            進研模試のWEB解説で人気だった学習教材を集めたページ。さらなる成績UPを目指そう！
-    
-                        </p>
-                    </div>
-                </li>
-                <li class="slider__list--item">
-                    <div class="dl-flex fl-end">
-                        <img src="/assets/images/icon_newwindow.png" class="js-modal">
-                    </div>
-                    
-                    <div class="img-slide">
-                        <img src="/assets/images/img-slider-2.png" >
-                    </div>
-                    <div class="slider__list--inner">
-                        <p>
-                            進研模試のWEB解説で人気だった学習教材を集めたページ。さらなる成績UPを目指そう！
-    
-                        </p>
-                    </div>
-                </li>
-                <li class="slider__list--item">
-                    <div class="dl-flex fl-end">
-                        <img src="/assets/images/icon_newwindow.png" class="js-modal">
-                    </div>
-                    <div class="img-slide">
-                        <img src="/assets/images/img-slider-3.png" >
-                    </div>
-                    <div class="slider__list--inner">
-                        <p>
-                            進研模試のWEB解説で人気だった学習教材を集めたページ。さらなる成績UPを目指そう！
-    
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div id="modal" class="modal__back">
-        
-            <div class="modal js-hide" id="modal-open-2">
-                <div class="btn__modal btn__modal btn__modal--close1 js-close"><img src="/assets/images/popup/icn-close.png" class=""></div>
-                <div class="modal__title">
-                    <p><span class="modal__title--date f-bold">1/31</span><span class="cl-red">（SUN）</span>6:00~17:10　スタンダード国公立数学
-                        数学B大問3解説＋入試類題演習</p>
-                </div>
-                <div class="modal__content">
-                    <p>対象：弘前大・岩手大・福島大・茨城大・群馬大・埼玉大・千葉大・新潟大・信州大・静岡大・滋賀大・京都府立大・岡山大・広島大・山口大</p>
-                    <p class="ml-30">・香川大・愛媛大・佐賀大・長崎大・熊本大・鹿児島大・琉球大など</p><br/>
-                    <p>この講座では、上記の大学を目指す方にとって「取り組むべき模試の問題」を解説したうえで、実際のスタンダード国公立大学の入試問題（数学）に取り組むことができます。</p>
-                    <p class="modal__content--title f-bold">当日のカリキュラム</p>
-                    <ul class="step">
-                        <li class="step-item">
-                            <p><span>25分</span>模試の問題<br/>
-                                （英語大問5）の解説</p>
-                        </li>
-                        <li class="step-item">
-                            <p><span>15分</span>実際の入試問題<br/>
-                                から抜粋した<br/>類題の演習</p>
-                        </li>
-                        <li class="step-item">
-                            <p><span>25分</span>模試の問題<br/>
-                                （英語大問5）の解説</p>
-                        </li>
-                        <li class="step-item">
-                            <p><span>25分</span>模試の問題<br/>
-                                （英語大問5）の解説</p>
-                        </li>
-                    </ul>
-                    <p class="modal__content--title f-bold">担当講師：<span class="cl-red">佐藤 仁志 先生
-                    </span></p>
-                    <div class="instructor">
-                        <div class="avatar">
-                            <img src="assets/images/popup/img_sato.png">
-                        </div>
-                        <div class="instructor__info">
-                            <p>お茶の水ゼミナール数学科講師。数学の基本概念を重視し、難関大学の入試問題にどのように結びついていくのかを徹底指導。最小限の知識、最大限の知恵で難問を解くことをモットーとしている。
-                            </p>
-                            <p class="comment">【先生からのコメント】</p>
-                            <p>難しく感じる数学をポップに楽しく学びましょう。数学の魅力は覚えることが少ないことです。最低限の知識だけで教えます。</p>
-                        </div>
-                    </div>
-                    <div class="btn__modal btn__modal--close js-close">
-                        <img src="/assets/images/popup/btn-close-small.jpg">閉じる
-                    </div>
-                </div>
-            </div>
-            <div class="modal js-hide" id="modal-open-1">
-                <div class="btn__modal btn__modal--close1 js-close"><img src="/assets/images/popup/icn-close.png" class=""></div>
-                <div class="modal__title">
-                    <p><span class="modal__title--date f-bold">1/31</span><span class="cl-red">（SUN）</span>17:30~18:40　ハイレベル文系数学数学B大問7解説＋入試類題演習</p>
-                </div>
-                <div class="modal__content">
-                    <p>対象：弘前大・岩手大・福島大・茨城大・群馬大・埼玉大・千葉大・新潟大・信州大・静岡大・滋賀大・京都府立大・岡山大・広島大・山口大</p>
-                    <p class="ml-30">・香川大・愛媛大・佐賀大・長崎大・熊本大・鹿児島大・琉球大など</p><br/>
-                    <p>この講座では、上記の大学を目指す方にとって「取り組むべき模試の問題」を解説したうえで、実際にスタンダード国公立大の入試問題（英語）に取り組んでもらいます。</p>
-                    <p class="modal__content--title f-bold">当日のカリキュラム</p>
-                    <ul class="step">
-                        <li class="step-item">
-                            <p><span>25分</span>模試の問題<br/>
-                                （英語大問5）の解説</p>
-                        </li>
-                        <li class="step-item">
-                            <p><span>15分</span>実際の入試問題<br/>
-                                から抜粋した<br/>類題の演習</p>
-                        </li>
-                        <li class="step-item">
-                            <p><span>25分</span>模試の問題<br/>
-                                （英語大問5）の解説</p>
-                        </li>
-                        <li class="step-item">
-                            <p><span>25分</span>模試の問題<br/>
-                                （英語大問5）の解説</p>
-                        </li>
-                    </ul>
-                    <p class="modal__content--title f-bold">担当講師：<span class="cl-red">横田 竜麻 先生</span></p>
-                    <div class="instructor">
-                        <div class="avatar">
-                            <img src="assets/images/popup/img_yokota.png">
-                        </div>
-                        <div class="instructor__info">
-                            <p>お茶の水ゼミナール英語科講師。「受験英語は存在しない」「入試は通過点」を信念とし、本当に使える英語力の指導に定評がある。お茶の水ゼミナールでは難関大志望者向け英語講座を担当。</p>
-                            <p class="comment">【先生からのコメント】</p>
-                            <p>君たちにとっての「わかる」という感覚を、今回の授業を通して感じてもらえればと思います。</p>
-                        </div>
-                    </div>
-                    <div class="btn__modal btn__modal--close js-close">
-                        <img src="/assets/images/popup/btn-close-small.jpg">閉じる
-                    </div>
-                </div>
-            </div>
-            <div class="modal js-hide" id="modal-open-3">
-                <div class="btn__modal btn__modal--close1 js-close"><img src="/assets/images/popup/icn-close.png" ></div>
-                <div class="modal__title">
-                    <p><span class="modal__title--date f-bold">2/20</span><span class="cl-blue">（SAT）</span>19:00~20:10　ハイレベル英語大問4解説＋入試類題演習</p>
-                </div>
-                <div class="modal__content">
-                    <p>対象：東大・京大・東工大・一橋大・慶應大・早稲田大・上智大・</p>
-                    <p class="ml-30">北海道大・東北大・筑波大・お茶の水女子大・東京外国語大・東京農工大・横浜国立大・名古屋大・大阪大・神戸大・九州大・首都大学東京・大阪市立大・大阪府立大・東京医科歯科大・国公立大の医学科／歯学科／薬学科／獣医学科など</p><br/>
-                    <p>北海道大・東北大・筑波大・お茶の水女子大・東京外国語大・東京農工大・横浜国立大・名古屋大・大阪大・神戸大・九州大・首都大学東京・大阪市立大・大阪府立大・東京医科歯科大・国公立大の医学科／歯学科／薬学科／獣医学科など</p>
-                    <p class="modal__content--title f-bold">当日のカリキュラム</p>
-                    <ul class="step">
-                        <li class="step-item">
-                            <p><span>25分</span>模試の問題<br/>
-                                （英語大問5）の解説</p>
-                        </li>
-                        <li class="step-item">
-                            <p><span>15分</span>実際の入試問題<br/>
-                                から抜粋した<br/>類題の演習</p>
-                        </li>
-                        <li class="step-item">
-                            <p><span>25分</span>模試の問題<br/>
-                                （英語大問5）の解説</p>
-                        </li>
-                        <li class="step-item">
-                            <p><span>25分</span>模試の問題<br/>
-                                （英語大問5）の解説</p>
-                        </li>
-                    </ul>
-                    <p class="modal__content--title f-bold">担当講師：<span class="cl-red">尾形 明彦 先生</span></p>
-                    <div class="instructor">
-                        <div class="avatar">
-                            <img src="assets/images/popup/img_konishi.png">
-                        </div>
-                        <div class="instructor__info">
-                            <p>お茶の水ゼミナール英語科講師。熊本県出身。構造分析から実戦的な読解法までのわかりやすい指導が評判。受講生とコミュニケーションをとりながら進める授業によって、早慶上智をはじめとする多数の難関大合格者を送り出している</p>
-                            <p class="comment">【先生からのコメント】</p>
-                            <p>暗記暗記……。そんな学習をしていませんか？　それでは模試で点数はとれません。「自分の頭で考えて」正しい解答を出す、そんな姿勢を作るお手伝いをします。</p>
-                        </div>
-                    </div>
-                    <div class="btn__modal btn__modal--close js-close">
-                        <img src="/assets/images/popup/btn-close-small.jpg">閉じる
-                    </div>
-                </div>
-            </div>
-            <div class="modal js-hide" id="modal-open-4">
-                <div class="btn__modal btn__modal--close1 js-close"><img src="/assets/images/popup/icn-close.png" class="js-close"></div>
-                <div class="modal__title">
-                    <p><span class="modal__title--date f-bold">1/31</span><span class="cl-blue">（SAT）</span>16:00~17:10　スタンダード国公立数学　数学B大問3解説＋入試類題演習</p>
-                </div>
-                <div class="modal__content">
-                    <p>対象：弘前大・岩手大・福島大・茨城大・群馬大・埼玉大・千葉大・新潟大・信州大・静岡大・滋賀大・京都府立大・岡山大・広島大・山口大</p>
-                    <p class="ml-30">・香川大・愛媛大・佐賀大・長崎大・熊本大・鹿児島大・琉球大など</p><br/>
-                    <p>この講座では、上記の大学を目指す方にとって「取り組むべき模試の問題」を解説したうえで、実際にスタンダード国公立大の入試問題（英語）に取り組んでもらいます。</p>
-                    <p class="modal__content--title f-bold">当日のカリキュラム</p>
-                    <ul class="step">
-                        <li class="step-item">
-                            <p><span>25分</span>模試の問題<br/>
-                                （英語大問5）の解説</p>
-                        </li>
-                        <li class="step-item">
-                            <p><span>15分</span>実際の入試問題<br/>
-                                から抜粋した<br/>類題の演習</p>
-                        </li>
-                        <li class="step-item">
-                            <p><span>25分</span>模試の問題<br/>
-                                （英語大問5）の解説</p>
-                        </li>
-                        <li class="step-item">
-                            <p><span>25分</span>模試の問題<br/>
-                                （英語大問5）の解説</p>
-                        </li>
-                    </ul>
-                    <p class="modal__content--title f-bold">担当講師：<span class="cl-red">横田 竜麻 先生</span></p>
-                    <div class="instructor">
-                        <div class="avatar">
-                            <img src="assets/images/popup/img_ogata.png">
-                        </div>
-                        <div class="instructor__info">
-                            <p>お茶の水ゼミナール英語科講師。「受験英語は存在しない」「入試は通過点」を信念とし、本当に使える英語力の指導に定評がある。お茶の水ゼミナールでは難関大志望者向け英語講座を担当。</p>
-                            <p class="comment">【先生からのコメント】</p>
-                            <p>君たちにとっての「わかる」という感覚を、今回の授業を通して感じてもらえればと思います。</p>
-                        </div>
-                    </div>
-                    <div class="btn__modal btn__modal--close js-close">
-                        <img src="/assets/images/popup/btn-close-small.jpg">閉じる
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content-search">
-            <div class="search search--sp">
-                <img src="/assets/images/icon_search.png">
-                <input class="search__ip" value="＠kato 進研模試復習LIVE!に参加します！・・・">
-            </div> 
-        </div>
-
-        <p class="js-scroll-top">
-            <a class="btn__top btn__top--page dl-flex just-center al-center cl-white"><img src="/assets/images/icn-top.png">TOPへ</a></p>
-        <footer>
-            Copyright (c) Benesse Corporation.All rights reserved.
-        </footer>
-        
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Link tổng hợp</title>
+	</head>
+	<body style="width=100%;line-height:18px;">
+		<div style="width:860px; margin:0 auto;">
+			<p style="font-size:14px; font-weight:bold; text-align:center;margin-top:20px; color:#7794da; ">FRESHER NGUYỄN THÀNH NAM<p>
+			<p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">HTML/CSS</p>
+			<p><a href="HTML-CSS/De1-1/index.html">Bài tập lý thuyết đề 1</a></p>
+			<p><a href="HTML-CSS/De1-2/index.html">Bài tập thực hành đề 1</a></p>
+			<p><a href="HTML-CSS/De2-1/index.html">Bài tập lý thuyết đề 2</a></p>
+			<p><a href="HTML-CSS/De2-2/index.html">Bài tập thực hành đề 2</a></p>
+			<p><a href="HTML-CSS/De3-1/index.html">Bài tập lý thuyết đề 3</a></p>
+			<p><a href="HTML-CSS/De3-2/index.html">Bài tập thực hành đề 3</a></p>
+			<p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">JAVASCRIPT</p>
+			<p><a href="JAVASCRIPT/slider/index.html">Bài tập slider</a></p>
+            <p><a href="JAVASCRIPT/calender/index.html">Bài tập Calender</a></p>
+            <p><a href="JAVASCRIPT/FromAjax/index.html">Bài tập FromAjax</a></p>
+            <p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">DESIGN PATTERN</p>
+            <p><a href="JAVASCRIPT/Slider-design patter/index.html">Bài tập slider Design Pattern</a></p>
+            <p><a href="JAVASCRIPT/char1/index.html">Bài tập Đồ thị 1</a></p>
+            <p><a href="JAVASCRIPT/char2/index.html">Bài tập Đồ thị 2</a></p>
+            <p><a href="JAVASCRIPT/char3/index.html">Bài tập Đồ thị 3</a></p>
+            <p><a href="JAVASCRIPT/char4/index.html">Bài tập Đồ thị 4</a></p>
+            <p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">SASS-SCSS-BEM</p>
+            <p><a href="Front-ent/Bai1/product/index.html">Bài 1</a></p>
+            <p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">GMO16</p>
+            <p><a href="GMO16/product/index.html">Bài GMO16 for PC</a></p>
+            <p><a href="GMO16-sp/product/index.html">Bài GMO16 for SP</a></p>
+			<p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">JHORNOR</p>
+            <p><a href="jhornor/product/index.html">Bài Jhornor</a></p>
+            <p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">DOCUMENT</p>
+            <p><a href="Document-jquery/index.html">Bài Document</a></p>
+            <p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">APPEND-JQUERY</p>
+            <p><a href="append-jquery/index.html">Bài Append-remove</a></p>
+            <p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">Slider - jquery</p>
+            <p><a href="slider-jquery/index.html">Bài Slider Jquery</a></p>
+            <p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">Menu - popup</p>
+            <p><a href="Menu-popup/index.html">Bài menu - pop up</a></p>
+            <p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">TweenMax</p>
+            <p><a href="Đề 4 TweenMax/index.html">Bài tập đề 4 nâng cao</a></p>
+            <p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">Marugoto</p>
+            <p><a href="bai 1_marugoto/index-pc.html">Bài tập Marugoto for pc</a></p>
+            <p><a href="bai 1_marugoto/index-sp.html">Bài tập Marugoto for sp</a></p>
+            <p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">TOKYU</p>
+            <p><a href="tokyu/index.html">Tokyu page interview</a></p>
+            <p><a href="tokyu/index-company.html">Tokyu page company</a></p>
+		<p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">HOKKAIDO</p>
+            <p><a href="Hokkaido/index.html">Index</a></p>
+            <p><a href="Hokkaido/index-hokkaido.html">Hokkaido</a></p>	
+		<p><a href="Hokkaido/index-activity.html">Activity</a></p> 
+            <p><a href="vjv-ramen/src/index.html">VJV-RAMEN</a></p>   
+            <p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">LUXURY</p>
+            <p><a href="luxury-test/index-comfim.html">Comfim</a></p>
+            <p><a href="luxury-test/index-subcription.html">subcription</a></p>  
+            <p><a href="luxury-test/index-thank.html">thanks</a></p>   
+            <p><a href="luxury-test/index-subcription-error.html">subcription-error</a></p>
+            <p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">STANDFOOD</p>
+            <p><a href="standfood/index.html">Standfood D2</a></p>
+            <p><a href="standfood/index-H1.html">Standfood H1</a></p>
+            <p><a href="standfood/index-H1-error.html">Standfood H1-error</a></p>
+            <!-- <p><a href="standfood/index-subcription.html">subcription</a></p> --> 
+            <p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">Bull-Dog</p>
+            <p><a href="PullDog/index.html">Bull-Dog</a></p> 
+            <p style="font-size:14px; font-weight:bold;color:#fc0404; margin-top:30px;">Mice-bootstrap</p>
+            <p><a href="mice-1/src/index.html">Mice-list</a></p>
+            <p><a href="mice-1/src/index-detail.html">Mice-list-detail</a></p>
+			<p><a href="mdp/index.html">mdp</a></p>
+		<div>
+	</body>
 </html>
-
