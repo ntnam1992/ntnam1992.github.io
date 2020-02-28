@@ -1,0 +1,134 @@
+
+@import '_banner';
+@import '_breakcrup';
+@import '_dohoku';
+@import '_doto';
+@import '_rusutsu';
+@import '_sapporo';
+// @import '_variable';
+@font-face {
+    font-family: ipamjm;
+    src: url(/assets/font/ipamjm.ttf);
+  }
+  @font-face {
+    font-family: Raleway;
+    src: url(/assets/font/Raleway-Bold.ttf);
+  }
+  @font-face {
+    font-family: Raleway-medium;
+    src: url(/assets/font/Raleway-Medium.ttf);
+  }
+  @font-face {
+    font-family: Raleway-regular;
+    src: url(/assets/font/Raleway-Medium.ttf);
+  }
+ 
+body {
+    line-height: 1.5;
+    font-size: 16px !important;
+    // color: $color-title;
+    @media (max-width:768px) {
+        font-size: 19px;
+    }
+    @media (max-width:480px) {
+        font-size: 15px;
+    }
+}
+$color-gray:#7d7d7d;
+$white:#ffffff;
+$color-title:#3a4d69;
+$color-light-gray:#9c9c9c;
+
+
+
+.show-sp{
+    display: none !important;
+    @media (max-width:768px) {
+        display: flex !important;
+    }
+}
+.show-pc{
+    @media (max-width:768px) {
+        display: none !important;
+    }
+}
+.container{
+    max-width: 1035px;
+    width: calc(100% - 60px);
+    padding: 0 30px;
+    margin: 0 auto  ;
+}
+.inner_container{
+    max-width: 775px;
+    width: 100%;
+    margin: 0 auto;
+}
+h1{
+    position: absolute;
+    font-size: 80px;
+    top: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: $white;
+    font-family: Raleway, sans-serif;
+    line-height: 1.1;
+    span{
+     display: block;
+     margin-top: 20px; 
+     font-size: 26px;  
+     width: 100%;
+     text-align: center;
+     line-height: 1;
+     @media (max-width:640px) {
+        width: calc(100% - 40px);
+        font-size: 22px;
+        margin-top: 10px; 
+     }
+     
+    } 
+    @media (max-width:640px) {
+        top: 40%;
+        font-size: 40px;
+    } 
+    @media (max-width:480px) {
+        top: 30%;
+    }    
+}
+h2{
+    color: $white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.2;
+    padding: 100px 0 20px 0;
+    text-transform: uppercase;
+    font-family:ipamjm;
+    @media (max-width:980px) {
+        padding: 50px 0 30px 0 !important;
+    }
+    @media (max-width:768px) {
+        padding: 30px 0 30px 0 !important;
+        font-size: 20px !important;
+    }
+}
+.content{
+    display: flex;
+    @media (max-width:980px) {
+        flex-wrap: wrap;
+     }
+    &-left{
+        width: 50%;
+        display: inline-block;
+    }
+    &-right{
+        width: 50%;
+        display: inline-block;
+    }
+}
+footer{
+    img{
+        width: 100%;
+    }
+}

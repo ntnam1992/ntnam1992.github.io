@@ -1,0 +1,303 @@
+@import '_variable';
+@font-face {
+    font-family: ipamjm;
+    src: url(/assets/font/ipamjm.ttf);
+  }
+  @font-face {
+    font-family: Raleway;
+    src: url(/assets/font/Raleway-Bold.ttf);
+  }
+  @font-face {
+    font-family: Raleway-medium;
+    src: url(/assets/font/Raleway-Medium.ttf);
+  }
+  @font-face {
+    font-family: Raleway-regular;
+    src: url(/assets/font/Raleway-Medium.ttf);
+  }
+
+#rusutsu{
+    .banner{
+        background: url(/assets/images/hokkaido/rusutsu/bg-rusutsu.jpg);
+        h1{
+            font-family: Raleway-regular ,sans-serif;
+        }
+    }
+    h2{
+        font-family: Raleway,sans-serif;
+    }
+    .aln_center{
+        display: flex;
+        align-items: center;
+    }
+    .breacrumb{
+        background: #326bb2;
+        color: #cccccc;
+    }
+    .pt-content{
+        padding-top: 70px;
+        @media (max-width:768px) {
+            padding-top: 35px;
+        }
+    }
+    .bg-blue{
+        background: $color-bule-rusu;
+        padding-bottom: 110px;
+        @media (max-width:768px) {
+            padding-bottom: 50px;
+            
+        }
+        h2{
+            font-family: Raleway ,sans-serif;
+        }
+    }
+    .cl-white{
+        color: $white !important;
+    }
+    .bg-map{
+        background: url(/assets/images/hokkaido/rusutsu/bg-rusutsu-1.jpg) no-repeat;
+        background-size: cover;
+        padding-bottom: 44.7%;
+        @media (max-width:768px) {
+            padding-bottom: 50px;
+            
+        }
+    }
+    .bg-map1{
+        background: url(/assets/images/hokkaido/rusutsu/bg-rusutsu-4.jpg) no-repeat;
+        background-size: cover;
+        padding-bottom: 44.7%;
+        @media (max-width:768px) {
+            padding-bottom: 50px;
+            
+        }
+    }
+    .title-map{
+        font-size: 26px;
+        color: $white;
+        padding-top: 110px;
+        text-align: left;
+        padding-bottom: 45px;
+        text-align: center;
+       font-family: Raleway ,sans-serif;
+        font-weight: bold;
+        @media (max-width:768px) {
+            padding: 30px 0 30px;
+        }
+    }
+    .bg-blue-content{
+        background: #4b82c6;
+            padding: 30px 30px 20px 30px;
+            margin:90px 0 0;
+            border-radius: 5px;
+            @media (max-width:768px) {
+                margin:45px 0 0;
+                padding: 30px 20px 20px 20px;
+            }
+            h2{
+                width: 100%;
+                padding: 0 0 30px 0;
+                @media (max-width:768px) {
+                    padding: 0 0 30px 0 !important;
+                }
+            }
+        .list-map{
+            font-size: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            li{
+                font-family:Raleway-medium,sans-serif;
+                width: 100%;
+                margin-bottom: 15px;
+                display: flex;
+                // flex-wrap: wrap;
+                span{
+                    // display: block;
+                }
+            }
+            color: $white;
+            b{
+                display: inline-block;
+                font-weight: bold;
+                max-width: 170px;
+                width: 170px;
+                margin-right: 15px;
+            }
+            p{
+                width: 100%;
+                @media (max-width:640px){
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    .map-content{
+      .inner-content-1{
+          max-width: 775px;
+          margin: 0 auto;
+      }
+        p{
+            font-family:ipamjm;
+            max-width: 775px;
+            color: $white;
+           
+        }
+        .txt-map{
+            font-family:Realway-medium, sans-serif;
+            margin-bottom: 30px;
+        }
+    }
+
+    .bg-brown{
+        background: #a07c6c;
+        h2{
+            text-align: left;
+        }
+    }
+    .bg-content-1{
+        background: url(/assets/images/hokkaido/rusutsu/bg-rusutsu-3.jpg) no-repeat center center;
+        background-size: cover;
+        @media (max-width:768px) {
+            background:none;
+        }
+        img{
+            width: 100%;
+        }
+     }  
+     .inner-container p{
+        font-family:Raleway-medium,sans-serif;
+     }
+    .inner-small{
+        padding: 0 80px 90px;
+        @media (max-width:768px) {
+            padding: 0 30px 45px;
+        }
+        p{
+            font-family:Raleway-medium,sans-serif;
+        }
+        img{
+            max-width: 515px;
+            margin: 50px auto 0;
+            display: block;
+            border-radius: 6px;
+            @media (max-width:768px) {
+                margin: 30px auto 0;
+            }
+        }
+    }
+    .bg-orange{
+        background: #e3ae3a;
+    }
+    .content-left{
+        display: flex;
+        justify-content: flex-end;
+        .img-rus{
+            max-width: 620px;
+            width: 100%;
+            padding: 85px 0 85px 0;
+            @media (max-width:768px) {
+                padding: 0;
+                max-width: 100%;
+             }
+        }
+        @media (max-width:768px) {
+            width: 100%;
+            flex-wrap: wrap;
+         }
+         h2{
+             text-align: center;
+             padding: 100px 0 50px 0;;
+         }
+        .inner-small{
+            max-width: 515px;
+            margin-right: 0;
+            padding:160px 80px 220px 80px;
+            img{
+                width: 100%;
+            }
+            @media (max-width:768px) {
+                max-width: 100%;
+                width: 100%;
+                padding:0 30px 30px 30px;
+             }
+             
+        }
+        .inner-left{
+            max-width: 620px;
+            width: calc(100% - 70px);
+            padding-left: 70px;
+            @media (max-width:768px) {
+                max-width: 100%;
+                width: 100%;
+                padding: 0;
+             }
+        }
+    }
+    .content-right{
+        @media (max-width:768px) {
+            width: 100%;
+         }
+        .inner-small{
+            max-width: 520px;
+            padding: 0 80px 60px 100px;
+            p{
+                color: $color-title;
+            }
+            @media (max-width:980px) {
+                padding: 0 40px 60px 40px;
+            }
+            @media (max-width:768px) {
+                max-width: 100%;
+                width: calc(100% - 60px);
+                padding: 0 30px 30px 30px;
+             }
+        }
+        .txt-context{
+            padding-bottom: 25px;
+        }
+    }
+    .fl-end{
+        justify-content: flex-end;
+    }
+     .bg-content-2{
+        background: url(/assets/images/hokkaido/rusutsu/bg-rusutsu-2.jpg) no-repeat center center;
+        background-size: cover;
+        padding-bottom: 160px;
+        @media (max-width:768px) {
+         background: none;
+         padding-bottom: 0px;
+         }
+         img{
+             width: 100%;
+         }
+         .inner-small{
+             margin-top: 270px;
+             @media (max-width:768px) {
+                 margin-top: 0;
+             }
+         }
+     }
+     .img-full{
+         width: 100%;
+     } 
+     .bg-content-3{
+        .inner-small{
+            max-width: 520px;
+            width: calc(100% - 165px);
+            padding: 105px 75px 50px 90px;
+            @media (max-width:768px) {
+                max-width: 100%;
+                width: calc(100% - 60px);
+                padding: 0 30px 30px 30px;
+            }
+            h2{
+                padding: 100px 0 50px;
+            }
+        }
+    }
+     .cl-blue{
+         color: $color-title;
+     } 
+}

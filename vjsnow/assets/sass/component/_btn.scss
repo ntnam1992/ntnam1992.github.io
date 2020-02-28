@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import "foundation/_mixins";
+.btn-prev{
+  left: -10px;
+  @include btn_slider;
+  transition-duration: 0.5s;
+  border-bottom-left-radius: 45%;
+  border-top-left-radius: 45%;
+  transition-property: left;
+  &:hover{
+      left: -25px;
+      background: #e7001d  url(../images/pre.png)no-repeat 10px center;
+  }
+  @media (max-width:1054px) {
+      display: none !important;            
+  }
+}
+
+.btn-next{
+  @include btn_slider;
+  right: -10px;
+  transition-property: right;
+  border-bottom-right-radius: 45%;
+  border-top-right-radius: 45%;
+  &:hover{
+      right: -25px;
+      background: #e7001d  url(../images/next.png)no-repeat;
+      background-position: center right 10px;
+  }
+  @media (max-width:1054px) {
+      display: none !important;            
+  }          
+}

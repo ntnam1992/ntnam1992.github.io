@@ -1,0 +1,16 @@
+@charset "utf-8";
+html {
+  font-size: 10px !important;
+}
+body {
+  background: $base-color;
+  margin: 0;
+  height: 100%;
+  color: $body-color;
+  font-size: 1.4rem;
+  line-height: (32/14);
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+}

@@ -1,0 +1,22 @@
+.breacrumb{
+    color:$color-light-gray;
+    font-family: Raleway-medium , sans-serif;
+    // background: #5581be;
+    height:30px;
+    &_page{
+        list-style-type: none;
+        display: flex;
+        li{
+            margin-right: 10px;
+            @media (max-width:480px) {
+                font-size: 14px;
+            }
+            a{
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

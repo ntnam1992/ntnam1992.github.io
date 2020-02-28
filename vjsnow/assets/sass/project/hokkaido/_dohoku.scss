@@ -1,0 +1,353 @@
+@import '_variable';
+@font-face {
+    font-family: ipamjm;
+    src: url(/assets/font/ipamjm.ttf);
+  }
+  @font-face {
+    font-family: Raleway;
+    src: url(/assets/font/Raleway-Bold.ttf);
+  }
+  @font-face {
+    font-family: Raleway-medium;
+    src: url(/assets/font/Raleway-Medium.ttf);
+  }
+  @font-face {
+    font-family: Raleway-regular;
+    src: url(/assets/font/Raleway-Medium.ttf);
+  }
+
+#dohoku{
+    .banner{
+        background: url(/assets/images/hokkaido/dohoku/bg-dohoku.jpg);
+    }
+    h2{
+        font-family: Raleway,sans-serif;
+    }
+    h1{
+        text-align: center;
+        font-family: Raleway-regular, sans-serif !important;
+    }
+    .aln_center{
+        display: flex;
+        align-items: center;
+    }
+    .breacrumb{
+        background: #192c54;
+        color: #cccccc;
+    }
+    .pt-content{
+        padding-top: 70px;
+        @media (max-width:768px) {
+            padding-top: 35px;
+        }
+    }
+    .bg-blue{
+        background: $color-dark-blue;
+        padding-bottom: 110px;
+        @media (max-width:768px) {
+            padding-bottom: 50px;
+            
+        }
+        h2{
+            font-family: Raleway ,sans-serif;
+        }
+    }
+    .bg-dohoku{
+        height:27.35%;
+        min-height: 520px;
+        // min-height: 520px;
+        background :url(/assets/images/hokkaido/dohoku/img-dohoku-1.jpg) no-repeat;
+        background-size: cover;
+        background-position: top;
+        @media (max-width:768px) {
+           background: none; 
+           min-height: auto;
+           height: auto;
+           img{
+               width: 100%;
+           }           
+        }
+    }
+    .bg-blue-content {
+        background: #2c416f;
+        padding: 30px 30px 20px 30px;
+        margin: 70px 0 0;
+        border-radius: 5px;
+        @media (max-width:480px) {
+            margin: 40px 0 0;
+        }
+        @media (max-width:480px) {
+            padding: 30px 20px 20px 20px;
+        }
+        h2{
+            width: 100%;
+            padding: 0 0 30px 0 !important;
+        }
+        .list-map {
+            font-size: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            color: #ffffff;
+        }
+        li{
+            font-family:Raleway-medium,sans-serif;
+             width: 100%;
+             margin-bottom: 15px;
+             display: flex;
+             // flex-wrap: wrap;
+             span{
+                 // display: block;
+             }
+         }
+    }
+    .cl-white{
+        color: $white !important;
+    }
+    .bg-map{
+        background: url(/assets/images/hokkaido/dohoku/img-dohoku-4.jpg) no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        padding-bottom: 340px;
+        @media (max-width:768px) {
+            padding-bottom: 50px;
+            
+        }
+    }
+    .title-map{
+        font-size: 26px;
+        color: $color-title;
+        padding-top: 90px;
+        text-align: center;
+        padding-bottom: 45px;
+        font-family:Raleway-medium,sans-serif;
+        font-weight: bold;
+        @media (max-width:768px) {
+            padding: 30px 0 30px;
+        }
+    }
+     p,h2{
+        font-family:Raleway-medium,sans-serif !important;
+     }
+    .map-content{
+      .inner-content-1{
+          max-width: 775px;
+          margin: 0 auto;
+      }
+        p{
+            font-family:Raleway-medium,sans-serif;
+            max-width: 775px;
+        }
+    }
+
+    .bg-content-1{
+        background: url(/assets/images/hokkaido/dohoku/img-dohoku-2.jpg) no-repeat center center;
+        background-size: cover;
+        @media (max-width:768px) {
+            height: auto;
+            min-height: auto;
+            padding: 40%;
+        }
+        img{
+            width: 100%;
+        }
+     }  
+    .inner-small{
+        padding: 0 80px 90px;
+        @media (max-width:768px) {
+            padding: 0 30px 45px;
+        }
+        p{
+            font-family:Realway-medium,sans-serif;
+        }
+        img{
+            max-width: 515px;
+            margin: 50px auto 0;
+            display: block;
+            border-radius: 6px;
+            @media (max-width:768px) {
+                margin: 30px auto 0;
+            }
+        }
+    }
+    .content-left{
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width:768px) {
+            width: 100%;
+            flex-wrap: wrap;
+         }
+        .inner-small{
+            max-width: 515px;
+            margin-right: 0;
+            img{
+                width: 100%;
+            }
+            @media (max-width:768px) {
+                max-width: 100%;
+                width: 100%;
+             }
+        }  
+    }
+    .content-right{
+        @media (max-width:768px) {
+            width: 100%;
+         }
+        .inner-small{
+            max-width: 480px;
+            padding: 0 80px 60px 100px;
+            p{
+                color: $color-title;
+            }
+            @media (max-width:980px) {
+                padding: 0 40px 60px 40px;
+            }
+            @media (max-width:768px) {
+                max-width: 100%;
+                width: calc(100% - 60px);
+                padding: 0 30px 30px 30px;
+             }
+        }
+        .txt-context{
+            padding-bottom: 25px;
+        }
+    }
+    .img-do-1{
+        max-width: 268px;
+    }
+    .img-do-2{
+        max-width: 160px;
+    }
+    .bg-light-blue{
+        background: #4e566c;
+        .content-left .inner-small {
+            max-width: 535px;
+            margin-right: 0;
+            padding: 160px 80px 220px 80px;
+            @media (max-width:768px) {
+                max-width: 100%;
+                width: calc(100% - 60px);
+                padding: 0 30px 30px;
+            }
+            h2{
+                padding: 100px 0 50px 0;
+            }
+        }
+    }
+     .bg-content-2{
+
+        background: #b09729;
+        padding-bottom: 0;
+        @media (max-width:768px) {
+         }
+         h2{
+             padding: 90px 0 40px;
+             text-align: left;
+         }
+         img{
+             width: 100%;
+             border-radius: 0;
+             margin: 0;
+         }
+         ul{
+             display: flex;
+             justify-content: flex-start;
+             li:first-child{
+                margin-right: 10px;
+             }
+         }
+         .content-left{
+             .inner-small{
+                 padding: 0 40px 90px;
+                 @media (max-width: 768px){
+                    padding: 0 30px ;
+                }
+             }
+             
+         }
+         .content-right{
+            .inner-small{
+                max-width: 500px;
+                padding: 90px 40px 90px 0;
+                @media (max-width: 768px){
+                    max-width: 100%;
+                    padding: 30px 30px 40px 30px;
+                    width: calc(100% - 60px);
+                }
+            }
+        }
+     }
+     .img-full{
+         width: 100%;
+     } 
+     .cl-blue{
+         color: $color-title;
+     } 
+     .bg-content-3{
+        background: url(/assets/images/hokkaido/dohoku/img-dohoku-3.jpg) no-repeat top center;
+        background-size: cover;
+        padding-bottom: 50px;
+        padding-top: 390px;
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width:768px) {
+            background: none;
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+        
+        .inner-small{
+            max-width: 500px;
+            width: calc(100% - 100px);
+            padding: 0 40px 50px 40px;
+            @media (max-width:768px) {
+                max-width: 100%;
+                width: calc(100% - 60px);
+                padding: 0 30px 30px 30px;
+            }
+        }
+        .content-right-info{            
+            width: 39%;
+            display: flex;
+            justify-content: flex-start;
+            background: #0261a1;
+            @media (max-width:1390px) {
+                width: 47%;
+            }
+            @media (max-width:768px) {
+                width: 100%;
+            }
+            p{
+                color: $color-title;
+            }
+            h2{
+                color: $color-title;
+                padding: 60px 0 50px;
+                text-align: center;
+                font-weight: bold;
+                font-family:ipamjm;
+                @media (max-width:768px) {
+                    padding: 50px 0 30px;
+                }
+            }
+            .txt-context{
+                padding-bottom: 25px;
+            }
+            .info-text-img{
+                display: flex;
+                align-items: flex-start;
+                @media (max-width:768px) {
+                    flex-wrap: wrap;
+                }
+                img{
+                    margin: 0 0 0 10px !important;
+                    max-width: 182px;
+                    @media (max-width:768px) {
+                        width: 100%;
+                        margin: 15px auto !important;
+                    }
+                }
+            }
+        }
+     } 
+}
