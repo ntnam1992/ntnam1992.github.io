@@ -1,7 +1,7 @@
 @import '_variables';
 .slider{
-    padding: 80px 0 140px;
-    margin-top: 80px;
+    padding: 78px 0 140px;
+    margin-top: 75px;
     @media (max-width:768px) {
         padding: 40px 0 70px;
     }
@@ -21,7 +21,7 @@
             // min-width: 264px;
             max-width: 264px;
             // width: 100%;
-            padding: 10px;
+            padding: 10px 10px 20px;
             background:$cl-white;
             margin-right: 15px;
             border-bottom: 2px solid #0d5a8c;
@@ -44,7 +44,7 @@
     min-height: 70px;
     display: block;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 26px;
     img{
         max-width: 100%;
         max-height: 70px;
@@ -57,7 +57,7 @@
     justify-content: center;
     margin-top: 50px;
     position: absolute;
-    bottom: -50px;
+    bottom: -60px;
     left: 0;
     right:0;
     @media (max-width:768px) {
@@ -65,6 +65,7 @@
     }
     li{
         margin-right: 10px;
+        cursor: pointer;
         :last-child{
             margin-right: 0;
         }
@@ -87,6 +88,7 @@
 .slick-arrow{
     color: transparent;
     position: absolute;
+    cursor: pointer;
     width: 40px;
     height:110%;
 }

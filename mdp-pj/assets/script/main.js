@@ -96,6 +96,13 @@ $(document).ready(function(){
     $("#body").addClass("overflow-hidden");
     $(".modal__back").css("display","block");
     $("#" + data).fadeIn();
+    var modalID = $(this).attr("id");
+    var myItems;
+    $.getJSON('assets/json/data.json',function(data){
+      myItems = data.modal1.titleDate;
+     
+      console.log(myItems,modalID);
+    });
   });
   $('.js-close').click(function(){
     $("#body").removeClass("overflow-hidden");
@@ -106,8 +113,6 @@ $(document).ready(function(){
   $(function() {
 
       var top = $(".js-top-position").offset().top;
-      console.log(top);
- 
       var topBtn = $('.js-scroll-top');   
       topBtn.hide();
       $(window).scroll(function () {
@@ -134,4 +139,6 @@ $(document).ready(function(){
       $(".js-hd-close").addClass("active");
      }
     });
+   
+    
 });

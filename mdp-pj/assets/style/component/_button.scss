@@ -1,7 +1,14 @@
 @import '_variables';
 .btn{
-    padding:8px 10px;
+    padding:5px 8px;
+    cursor: pointer;
     //button radius
+    @media (max-width:768px) {
+        padding:7px 17px;
+    }
+    &:hover{
+        opacity: 0.7;
+    }
     &__radius{
         border-radius: 5px;
     }
@@ -34,23 +41,37 @@
     &__close{
         border: $cl-grey 1px solid;
         color: $cl-grey;
+        @media (max-width:768px) {
+            font-size: 1.6875rem;
+        }
         img{
             margin-right: 5px;
+            @media (max-width:768px) {
+                margin-right: 20px;
+                width: 20px;
+            }
+        }
+        @media (max-width:640px) {
+            font-size: 1.5rem;
         }
     }
     //button line
     &__line{
         background:linear-gradient(#68dc1f, #3cbf1c);
         color: $cl-white;
-        padding: 8px 10px 6px;
+        padding: 6px 0;
         max-width: 165px;
         margin: 10px auto 0;
         border-radius: 10px;
         width: 100%;
         box-shadow: 0 1px #6ca262;
         text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F;
+        font-size: 1.25rem;
         @media (max-width:768px){
             margin: 10px 7px;
+            border-radius: 15px;
+            font-size: 1.125rem;
+            letter-spacing: 1px;
         }
     }
     //button twitter
@@ -58,28 +79,41 @@
         background:linear-gradient(#3c9ad9, #3e8ac5);
         color: $cl-white;
         border-radius: 5px;
-        margin: 10px auto 0;
-        padding: 10px 10px;
+        margin: 9px auto 0;
+        padding: 10px 0;
         max-width: 232px;
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 3px;
+        font-size: 1.125rem;
         @media (max-width:768px){
             margin: 10px 7px;
+            max-width: 250px;
+            font-size: 1.125rem;
+            letter-spacing: 1px;
         }
     }
     &__tw--custom{
-        padding: 20px ;
-        border-radius: 0 ;
+        padding: 24px 30px;
+        border-radius: 0;
         font-size: 1.75rem;
-        font-weight: 500 ;
+        font-weight: 500;
         letter-spacing: -1px;
-        margin-top: 30px;
+        margin-top: 38px;
         display: flex;
+        max-width: 240px !important;
         img{
-            margin-right: 10px;
+            margin-right: 34px;
+            max-width: 42px;
+            @media (max-width:480px){
+                margin-right: 20px;
+                max-width: 30px;
+            }
+        }
+        @media (max-width:768px){
+            margin-top: 5%;
         }
         @media (max-width:480px){
-            margin: 7px 7px;
+            margin: 15px 7px;
             padding: 10px;
         }
     }
@@ -88,10 +122,14 @@
         border: $cl-white 1px solid;
         background: linear-gradient(#1087d5, #0054c2);
         border-radius: 5px;
-        padding: 0 25px;
+        padding: 0 32px;
         font-size: 1rem;
         color: $cl-white;
         margin-left: 15px;
+        @media (max-width:768px){
+            padding: 4px 20px;
+            border-radius: 10px;
+        }
         span{
             margin-right: 10px;
             display: inline-block;
@@ -118,11 +156,15 @@
     }
     //button standard
     &__standard{
-        padding: 10px 15px;
+        padding: 10px;
         color: $cl-white;
         border: 1px solid $cl-white;
         display: inline-block;
         min-width: 100px;
+        @media (max-width:768px) {
+            font-size: 1.1875rem;
+            min-width: 120px;
+        }
         &--green{
             background: $cl-green;
             box-shadow: 0 1px $cl-green;
@@ -139,6 +181,7 @@
         color: $cl-blue;
         padding: 6px 7px 9px;
         min-width: 120px;
+        border-radius: 0;
         border: 3px solid $cl-blue;
         display: flex;
         align-items: center;
@@ -155,7 +198,7 @@
         @media (max-width:768px) {
            min-width: 194px; 
            font-size: 1.685rem;
-           padding: 6px 10px 9px;
+           padding: 14px 10px 12px;
            margin-top: 15px;
         }
         @media (max-width:480px) {
@@ -166,14 +209,15 @@
     //button live in tab
     &__open{
         color: $cl-white;
-        background: $cl-grey;
+        background: #cccccc;
+        border-radius: 0;
         padding: 12px 7px;
         min-width: 126px;
         text-align: center;
         @media (max-width:768px) {
             min-width: 200px; 
             font-size: 1.6875rem;
-            padding: 6px 10px 9px;
+            padding: 16px 10px;
             margin-top: 15px;
          }
          @media (max-width:480px) {
@@ -195,7 +239,7 @@
         @media (max-width:768px) {
             max-width: 100%;
             flex-wrap: nowrap;
-            padding: 15px;
+            padding: 25px 15px;
             align-items: center;
             margin-right: 0;
             margin-bottom: 10px;
@@ -205,6 +249,9 @@
         }
         &:last-child{
             margin-right: 0;
+            @media (max-width:768px) {
+                margin-top: 10px;
+            }
         }
         &--title{
             padding-top: 20px;
@@ -217,6 +264,9 @@
             @media (max-width:768px) {
                 order: 1;
                 font-size: 1.5rem;
+                align-items: center;
+                line-height: 1.2;
+                padding-top: 0;
             }
             @media (max-width:480px) {
                 width: 100%;
@@ -243,7 +293,7 @@
         border-top: 0;
         border: 1px solid #ffffff;
         width: 100%;
-        padding: 12px 0 6px;
+        padding: 7px 0 6px;
         @media (max-width:768px) {
             order: 2;
             background: none;

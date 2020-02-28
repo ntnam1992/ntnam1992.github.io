@@ -9,6 +9,7 @@
         max-width: 100%;
         justify-content: center;
         margin: 0 20px;
+        padding-top:15px;
     }
     &__calender{
         border-top-left-radius: 5px;
@@ -20,11 +21,11 @@
         color: $cl-txt-grey;
         cursor: pointer;
         p{
-            line-height: 1;
+            line-height: 1.3;
         }
         &--title{
             font-size: 32px;
-            padding-top: 15px;
+            padding-top: 10px;
             text-align: center;
             line-height: 1.5 !important;
             span{
@@ -36,11 +37,11 @@
         }
         .icn-active{
             display: none;
-            margin: 20px auto 5px;
+            margin: 18px auto 5px;
         }
         .icn-disable{
             display: block;
-            margin: 20px auto 5px;
+            margin: 18px auto 5px;
         }
     }
     &__calender.active{
@@ -78,19 +79,27 @@
     &__info{
         justify-content: flex-start;
         &--date{
-            
             max-width: 140px;
             text-align: center;
-            padding-top: 25px;
+            padding-top: 20px;
             width: 100%;
-            line-height: 1.5;
-            @media (max-width:480px) {
-                max-width: 100px;
+            line-height: 1.4;
+            @media (max-width:768px) {
+                max-width: 18.7%;
+                min-width: 100px;
+                padding-top: 20px;
+                font-size: 1.5rem;
+                line-height: 1;
             }
+            // @media (max-width:480px) {
+            //     max-width: 100px;
+            // }
             span{
-                font-size: 31px;
+                font-size: 1.9375rem;
                 display: block;
-               
+                @media (max-width:768px) {
+                    font-size: 2rem;
+                }
             }
         }
         &--green{
@@ -109,10 +118,9 @@
         }
         &--list{
             li{
-                color: $cl-txt-red;
                 display: flex;
                 justify-content: space-between;
-                padding: 30px 30px 25px 20px;
+                padding: 23px 30px 25px 20px;
                 font-size: 1.125rem;
                 border-bottom: 1px dotted #bfbfbf;
                 &:last-child{
@@ -120,7 +128,7 @@
                 }
                 @media (max-width:768px) {
                     flex-wrap: wrap; 
-                    padding: 20px 10px ; 
+                    padding: 15px 10px ; 
                     font-size: 1.5rem;                  
                 }
                 @media (max-width:480px) {
@@ -144,7 +152,11 @@
             img{
                 max-width: 22px;
                 max-height: 20px;
-                min-width: 22px;
+                min-width: 15px;
+                @media (max-width:768px) {
+                    max-height: 20px;
+                    min-width: 19px;
+                }
             }
             span{
                 @media (max-width:768px) {
@@ -176,14 +188,14 @@
 //end tab
 //css course
 .course{
-    padding-bottom: 165px;
+    padding-bottom: 60px;
+    padding-top: 23px;
     @media (max-width:768px) {
         padding-bottom: 40px;
     }
     &__name{
         position: relative;
         font-size: 1.75rem;
-        color: $cl-txt-red;
         font-weight: 500;
         background: $cl-green;
         padding: 10px 5px;
@@ -197,15 +209,18 @@
         &--tag{
             border-radius: 50%;
             font-size: 1.125rem;
-            background: $cl-blue;
-            max-width: 130px;
-            max-height: 130px;
-            height:130px;
+            background: #1288d5;
+            max-width: 125px;
+            max-height: 125px;
+            height: 130px;
             width: 100%;
             text-align: center;
             position: absolute;
-            top:-50px;
-            left:15px;
+            top: -36px;
+            left: 13px;
+            @media (max-width:768px) {
+                top: -43px;
+            }
             @media (max-width:480px) {
                 left: 5px;
             }
@@ -217,18 +232,21 @@
                 border-left: 20px solid transparent;
                 border-right: 20px solid transparent;                
                 border-top: 60px solid $cl-blue;
-                bottom: -5px;
-                right:-10px;
+                bottom: 2px;
+                right:-5px;
                 transform: rotate(-60deg);
             }
         }
         &--title{
             max-width: 100%;
+            padding-left: 5%;
             width: calc(100% -155px);
             @media (max-width:830px) {
                 flex-wrap: wrap;
+                padding-left: 0;
                 span:first-child{
                     margin-left: 10px;
+                   
                 }
                 p{
                     width: 100%;
@@ -240,9 +258,11 @@
         }
     }
     &__content{
-        padding: 30px 20px;
+        padding: 25px 20px;
         text-align: center;
-        color: $cl-txt-red;
+        @media (max-width:768px) {
+            padding: 20px 20px;
+        }
         p{
             margin-bottom: 10px;
             font-size: 1.125rem;
@@ -257,7 +277,7 @@
            position: absolute;
            width: 102%;
            z-index: 2;
-           top:39%;
+           top:34%;
        }
     }
 }
