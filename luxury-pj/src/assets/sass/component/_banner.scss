@@ -1,0 +1,9 @@
+@charset "utf-8";
+.banner{
+    background: url(../images/img_banner.jpg) no-repeat top;
+    padding-bottom: 79.5%;
+    border-bottom: 1px solid $cl-yellow;
+    position: relative;
+    background-size: cover;
+}
+

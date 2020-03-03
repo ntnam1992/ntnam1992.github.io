@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+body {
+  background: $base-color;
+  margin: 0;
+  height: 100%;
+  color: $cl-yellow;
+  font-size: 24px;
+  line-height: (32/14);
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+h1{
+  position: absolute;
+  top:57%;
+  font-size:42px;
+  text-align: center;
+  width: 100%;
+  @media (max-width:640px) {
+    font-size: 7vw;
+  }
+  span{
+    font-size: 24px;
+    display: block;
+    line-height: 1;
+    @media (max-width:640px) {
+      font-size: 4vw;
+    }
+  }
+}
