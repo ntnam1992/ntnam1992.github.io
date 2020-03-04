@@ -1,0 +1,17 @@
+@charset "utf-8";
+.error{
+  &__text{
+    text-align: center;
+    color: #ff0000;
+    margin: 24px 0 35px;
+    line-height: 2;
+  }
+  &__ip{
+    border: 2px solid #ff0000;
+  }
+  &__color{
+    color: #ff0000;
+  }
+}
+
+

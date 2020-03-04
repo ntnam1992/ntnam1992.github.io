@@ -17,7 +17,11 @@ $red-darken-1: #C9003F;
 $cl-yellow:#e3dab7;
 
 // font
-$font-sans-serif: "Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","Hiragino Sans",メイリオ,Meiryo,sans-serif;
+@font-face {
+  font-family: hiraminpro;
+  src: url(../font/hiraminpro.otf);
+}
+$font-sans-serif: "hiraminpro",メイリオ,Meiryo,sans-serif;
 $font-serif: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 
 

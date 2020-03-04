@@ -1,0 +1,32 @@
+@charset "utf-8";
+#thanks{
+  h1{
+    padding-top: 45px;
+    padding-bottom: 50px;
+    line-height: 1.6;
+    @media (max-width:480px) {
+      font-size: 32px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+  p{
+    margin: 0;
+    text-align: center;
+  }
+
+ .container{
+   margin:50px auto 110px;
+ }
+ footer .container{
+   margin: 0 auto;
+ }
+ .btn__top{
+   margin-top: 90px;
+   @media (max-width:480px) {
+     margin-top: 45px;
+   }
+ }
+}
+
+

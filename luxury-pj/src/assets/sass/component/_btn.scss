@@ -8,8 +8,11 @@
   box-sizing: border-box;
   font-size: 34px;
   max-height: 108px;
+  @media (max-width:540px) {
+    padding: 0 5px;
+  }
   &:hover{
-    opacity: 0.8;
+    opacity: 0.4;
   }
   &:focus{
     outline-color: transparent;
@@ -23,5 +26,19 @@
       background: url(../images/icn-arrow.png) no-repeat center center;
       margin-right: 24px;
     }
+  }
+}
+a.btn__repair,a.btn__top{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:before{
+    content:"";
+    width: 14px;
+    height:22px;
+    display: inline-block;
+    background: url(../images/icn-arrow.png) no-repeat center center;
+    margin-right: 24px;
   }
 }

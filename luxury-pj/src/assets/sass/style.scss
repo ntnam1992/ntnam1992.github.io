@@ -9,8 +9,6 @@
 // Layout
 // ==========================================================================
 @import "layout/_layout";
-@import "layout/_header";
-@import "layout/_gnav";
 @import "layout/_grid";
 
 // ==========================================================================
@@ -28,8 +26,10 @@
 @import "component/_btn";
 @import "component/_group";
 @import "component/_banner";
-
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
+@import "project/_confirm";
+@import "project/_error";
+@import "project/_thanks";
 
