@@ -8,6 +8,9 @@ body {
   color: $cl-yellow;
   font-size: 24px;
   line-height: (32/14);
+  @media (max-width:480px) {
+    font-size: 18px;
+  }
 }
 img {
   max-width: 100%;

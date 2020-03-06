@@ -5,6 +5,10 @@
     color: #ff0000;
     margin: 24px 0 35px;
     line-height: 2;
+    @media screen {
+      margin: 24px 0 ;
+      line-height: 1.5;
+    }
   }
   &__ip{
     border: 2px solid #ff0000;

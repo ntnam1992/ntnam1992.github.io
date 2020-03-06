@@ -6,74 +6,75 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="assets/js/main.js"></script>
     </head>
     <body>
         <header>
-            <div class="banner">
-            </div>
+            <div class="inner">
+                <div class="banner">
+                </div>
+            </div>            
         </header>
-        <div class="container">
-            <form class="inner" action="">
-                <!--group input in form-->
-                <div class="group__items">
-                    <div class="group__items--half">
-                    <label for="first-name">氏名（姓）</label>
-                        <input id="first-name" type="text">
-                    </div>
-                    <div class="group__items--half">
-                        <label for="last-name">氏名（名）</label>
-                        <input id="last-name" type="text">
-                    </div>
-                </div>  
-                <div class="group__items">
-                    <div class="group__items--half">
-                    <label for="first-name">フリガナ（姓）</label>
-                        <input id="first-name" type="text">
-                    </div>
-                    <div class="group__items--half">
-                        <label for="last-name">フリガナ（名）</label>
-                        <input id="last-name" type="text">
-                    </div>
-                </div>  
-                
+        <form class="inner__content" action="">
+            <!--group input in form-->
+            <div class="group__items">
                 <div class="group__items--half">
-                    <label for="last-name">郵便番号</label>
-                    <input id="last-name" type="text">
+                <label for="first-name">氏名（姓）</label>
+                    <input id="first-name" type="text">
                 </div>
-
                 <div class="group__items--half">
-                    <label for="last-name">都道府県</label>
+                    <label for="last-name">氏名（名）</label>
                     <input id="last-name" type="text">
                 </div>
-
-                <div class="group__items--full">
-                    <label for="last-name">市区町村・番地</label>
+            </div>  
+            <div class="group__items">
+                <div class="group__items--half">
+                <label for="first-name">フリガナ（姓）</label>
+                    <input id="first-name" type="text">
+                </div>
+                <div class="group__items--half">
+                    <label for="last-name">フリガナ（名）</label>
                     <input id="last-name" type="text">
                 </div>
+            </div>  
+            
+            <div class="group__items--half">
+                <label for="last-name">郵便番号</label>
+                <input id="last-name" type="text">
+            </div>
 
-                <div class="group__items--full">
-                    <label for="full-name">アパート・マンション名</label>
-                    <input id="full-name" type="text">
+            <div class="group__items--half">
+                <label for="last-name">都道府県</label>
+                <input id="last-name" type="text">
+            </div>
+
+            <div class="group__items--full">
+                <label for="last-name">市区町村・番地</label>
+                <input id="last-name" type="text">
+            </div>
+
+            <div class="group__items--full">
+                <label for="full-name">アパート・マンション名</label>
+                <input id="full-name" type="text">
+            </div>
+
+            <div class="group__items--full">
+                <label for="full-name">電話番号</label>
+                <input id="full-name" type="text" class="ip__error">
+            </div>
+            
+            <div class="group__items">
+                <div class="group__items--half">
+                    <label for="first-name">年齢</label>
+                    <input id="first-name" type="text">
+                    <p class="text-edit">歳</p>
                 </div>
+                    
+            </div> 
 
-                <div class="group__items--full">
-                    <label for="full-name">電話番号</label>
-                    <input id="full-name" type="text" class="ip__error">
-                </div>
-             
-                <div class="group__items">
-                    <div class="group__items--half">
-                        <label for="first-name">年齢</label>
-                        <input id="first-name" type="text">
-                        <p class="text-edit">歳</p>
-                    </div>
-                        
-                </div> 
-
-                <div class="group__items">
-                    <div class="group__items--half">
-                        <label for="select-option">氏名（姓）</label>
+            <div class="group__items">
+                <div class="group__items--half">
+                    <label for="select-option">氏名（姓）</label>
+                    <div class="select__custom js-option">
                         <select id="select-option1" class="js-select">
                             <option >&nbsp;</option>
                             <option>1</option>
@@ -81,14 +82,15 @@
                             <option>3</option>
                             <option>4</option>
                         </select>
-                        <div class="select__custom js-option">
-                            <p class=>&nbsp;</p>
-                        </div>
+                        <p class=>&nbsp;</p>
                     </div>
-                </div> 
+                </div>
+            </div> 
 
-                <div class="group__items--full">
-                    <label  for="select-option">氏名（姓）</label>
+            <div class="group__items--full">
+                <label  for="select-option">氏名（姓）</label>
+                
+                <div class="select__custom js-option">
                     <select id="select-option2" class="js-select">
                         <option>&nbsp;</option>
                         <option>1</option>
@@ -96,81 +98,77 @@
                         <option>3</option>
                         <option>4</option>
                     </select>
-                    <div class="select__custom js-option">
-                        <p>&nbsp;</p>
-                    </div>
+                    <p>&nbsp;</p>
                 </div>
-
-                <div class="group__items--full">
-                    <label for="full-name">メールアドレス</label>
-                    <input id="full-name" type="text">
-                </div>
-
-                <div class="group__items--full">
-                    <label for="full-name">メールアドレス（確認）</label>
-                    <input id="full-name" type="text">
-                </div>
-
-                <div class="group__items--full">
-                    <label for="full-name">応募商品</label>
-                    <input id="full-name" type="text" placeholder="大容量モバイルバッテリー">
-                </div>
-
-                <div class="group__items--full">
-                    <label for="textarea-info">応募規約</label>
-                    <div class="outner-textarea">
-                        <!-- <textarea readonly id="textarea-info">トヨタ自動車株式会社（以下、「当社」といいます。）は、お客様に当社の製品やサービスに関する情報を提供するため、お客様の個人情報を、お客様よりご提供いただきます。                           応募をご希望のお客様は、お申込を行う前に下記の応募規約（以下、「本規約」といいます。）をご一読いただき、同意いただける方は「規約に同意して応募する」のボタンをクリックして、「応募フォーム」へお進みください。 なお、当社は予告なく本規約の内容を変更する場合がありますので、予めご了承ください。                                             1.個人情報の取扱いに関して                    (1) 当社は、当社ホームページ（toyota.jp）に掲載する「個人情報保護に関する基本方針」、「個人情報の取扱いについて」に基づき、お客様の個人情報を適切に取り扱います。                             (2) 個人情報の利用目的当社が取得した個人情報は、以下の目的に利用いたします。                       [1] 抽選、賞品の発送および確認のご連絡                       [2] 賞品配送にあたって不達などの問題が発生した場合の確認・連絡                                   [3] お客様に不利益を与えないために行う、お客様に対する迅速なご連絡（電子メール、電話、郵送によるご連絡）                                       (3)当社が取得した個人情報は、トヨタ自動車株式会社、及びトヨタ自動車株式会社と情報提供契約を締結した者以外での使用は致しません。                           (4)当社は上記の目的範囲内で、個人情報の取り扱いを外部の第三者に委託することがあります。この場合、個人情報のろう洩等が無いよう、業務委託契約に基づく適切な管理を行います。
-                        </textarea> -->
-                        <div class="inner__scroll">
-                            <p>トヨタ自動車株式会社（以下、「当社」といいます。）は、お客様に当社の製品やサービスに関する情報を提供するため、お客様の個人情報を、お客様よりご提供いただきます。</p>
-                            <p>応募をご希望のお客様は、お申込を行う前に下記の応募規約（以下、「本規約」といいます。）をご一読いただき、同意いただける方は「規約に同意して応募する」のボタンをクリックして、「応募フォーム」へお進みください。</p>
-                            <p>お、当社は予告なく本規約の内容を変更する場合がありますので、予めご了承ください。</p>
-                            <p>1.個人情報の取扱いに関して</p>
-                            <p>(1) 当社は、当社ホームページ（toyota.jp）に掲載する「個人情報保護に関する基本方針」、「個人情報の取扱いについて」に基づき、お客様の個人情報を適切に取り扱います。</p>
-                            <p>(2) 個人情報の利用目的</p>
-                            <p>当社が取得した個人情報は、以下の目的に利用いたします。</p>
-                            <p>[1] 抽選、賞品の発送および確認のご連絡</p>
-                            <p>[2] 賞品配送にあたって不達などの問題が発生した場合の確認・連絡</p>
-                            <p>[3] お客様に不利益を与えないために行う、お客様に対する迅速なご連絡</p>
-                            <p>（電子メール、電話、郵送によるご連絡）</p>
-                            <p>(3)当社が取得した個人情報は、トヨタ自動車株式会社、及びトヨタ自動車株式会社と情報提供契約を締結した者以外での使用は致しません。</p>
-                            <p>(4)当社は上記の目的範囲内で、個人情報の取り扱いを外部の第三者に委託することがあります。この場合、個人情報のろう洩等が無いよう、業務委託契約に基づく適切な管理を行います。</p>
-                            <p>2.抽選方法・当選発表について</p>
-                            <p>(1)抽選に関しては、応募期間終了後、厳正かつ公平に実施いたします。</p>
-                            <p>(2)当選者の発表は賞品の発送をもって代えさせていただきます。</p>
-                            <p>（発送は日本国内に限らせていただきます）</p>
-                            <p>(3)賞品の発送は2015年1月28日から順次行ってまいります。</p>
-                            <p>お届け先が離島部および一部地域につきましては、配送にお時間がかかる場合がございます。予めご了承下さい。</p>
-                            <p>(4)応募フォームにご入力不備のある場合や、ご連絡先が不明、ご本人様不在等の理由により、</p>
-                            <p>賞品がお届けできない場合は、当選権利の無効・取消となる場合がございます。</p>
-                            <p>(5)当選の権利の譲渡は一切できません。</p>
-                            <p>(6)落選の場合はご連絡いたしませんので予めご了承下さい。</p>
-                            <p>(7)賞品に関するご質問、抽選や当選に関するお問い合わせにはお答えいたしかねます。</p>
-                            <p>3.申し込みについて</p>
-                            <p>(1)【応募期間】2015年1月16日（金）～2015年1月26日（月）23:59</p>
-                            <p>(2)ご応募は、日本国内在住の方に限らせていただきます。</p>
-                            <p>(3)ご応募は、お一人様1回限りとさせていただきます。</p>
-                            <p>(4)転売目的でのご応募は固くお断りいたします。</p>
-                            <p>(5)当社社員および関係者は応募できません。</p>
-                            <p>(6)インターネット通信料および接続料はお客様の負担となります。</p>
-                            <p>(7)通信の際の接続トラブルにつきましては、責任を負いかねますので、ご了承ください。</p>
-                            <p>(8)申込者が暴力団員、暴力団関係者、その他反社会的勢力であると判明した場合は、</p>
-                            <p>お断りさせていただく場合がございます。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="group__checkbox">
-                    <img src="assets/images/pic-check-off.png" class="js-check-on group__checkbox--off active"><img src="assets/images/pic-check-on.png" class="js-check-off group__checkbox--on"><input id="check-accept" type="checkbox" class="ip__checkbox js-check"><label for="check-accept" class="js-check">応募規約に同意する</label>
-                </div>               
-                <button type="submit" class="btn btn__submit">確認する</button>              
-            </form>
-        </div>
-        <footer>
-            <div class="container">
-                <div class="inner">
-                    <p class="ft-content">©TOYOTA MOTOR CORPORATION. ALL RIGHTS RESERVED.</p>
-                </div>                
             </div>
+
+            <div class="group__items--full">
+                <label for="full-name">メールアドレス</label>
+                <input id="full-name" type="text">
+            </div>
+
+            <div class="group__items--full">
+                <label for="full-name">メールアドレス（確認）</label>
+                <input id="full-name" type="text">
+            </div>
+
+            <div class="group__items--full">
+                <label for="full-name">応募商品</label>
+                <input id="full-name" type="text" placeholder="大容量モバイルバッテリー">
+            </div>
+
+            <div class="group__items--full">
+                <label for="textarea-info">応募規約</label>
+                <div class="outner-textarea">
+                    <!-- <textarea readonly id="textarea-info">トヨタ自動車株式会社（以下、「当社」といいます。）は、お客様に当社の製品やサービスに関する情報を提供するため、お客様の個人情報を、お客様よりご提供いただきます。                           応募をご希望のお客様は、お申込を行う前に下記の応募規約（以下、「本規約」といいます。）をご一読いただき、同意いただける方は「規約に同意して応募する」のボタンをクリックして、「応募フォーム」へお進みください。 なお、当社は予告なく本規約の内容を変更する場合がありますので、予めご了承ください。                                             1.個人情報の取扱いに関して                    (1) 当社は、当社ホームページ（toyota.jp）に掲載する「個人情報保護に関する基本方針」、「個人情報の取扱いについて」に基づき、お客様の個人情報を適切に取り扱います。                             (2) 個人情報の利用目的当社が取得した個人情報は、以下の目的に利用いたします。                       [1] 抽選、賞品の発送および確認のご連絡                       [2] 賞品配送にあたって不達などの問題が発生した場合の確認・連絡                                   [3] お客様に不利益を与えないために行う、お客様に対する迅速なご連絡（電子メール、電話、郵送によるご連絡）                                       (3)当社が取得した個人情報は、トヨタ自動車株式会社、及びトヨタ自動車株式会社と情報提供契約を締結した者以外での使用は致しません。                           (4)当社は上記の目的範囲内で、個人情報の取り扱いを外部の第三者に委託することがあります。この場合、個人情報のろう洩等が無いよう、業務委託契約に基づく適切な管理を行います。
+                    </textarea> -->
+                    <div class="inner__scroll">
+                        <p>トヨタ自動車株式会社（以下、「当社」といいます。）は、お客様に当社の製品やサービスに関する情報を提供するため、お客様の個人情報を、お客様よりご提供いただきます。</p>
+                        <p>応募をご希望のお客様は、お申込を行う前に下記の応募規約（以下、「本規約」といいます。）をご一読いただき、同意いただける方は「規約に同意して応募する」のボタンをクリックして、「応募フォーム」へお進みください。</p>
+                        <p>お、当社は予告なく本規約の内容を変更する場合がありますので、予めご了承ください。</p>
+                        <p>1.個人情報の取扱いに関して</p>
+                        <p>(1) 当社は、当社ホームページ（toyota.jp）に掲載する「個人情報保護に関する基本方針」、「個人情報の取扱いについて」に基づき、お客様の個人情報を適切に取り扱います。</p>
+                        <p>(2) 個人情報の利用目的</p>
+                        <p>当社が取得した個人情報は、以下の目的に利用いたします。</p>
+                        <p>[1] 抽選、賞品の発送および確認のご連絡</p>
+                        <p>[2] 賞品配送にあたって不達などの問題が発生した場合の確認・連絡</p>
+                        <p>[3] お客様に不利益を与えないために行う、お客様に対する迅速なご連絡</p>
+                        <p>（電子メール、電話、郵送によるご連絡）</p>
+                        <p>(3)当社が取得した個人情報は、トヨタ自動車株式会社、及びトヨタ自動車株式会社と情報提供契約を締結した者以外での使用は致しません。</p>
+                        <p>(4)当社は上記の目的範囲内で、個人情報の取り扱いを外部の第三者に委託することがあります。この場合、個人情報のろう洩等が無いよう、業務委託契約に基づく適切な管理を行います。</p>
+                        <p>2.抽選方法・当選発表について</p>
+                        <p>(1)抽選に関しては、応募期間終了後、厳正かつ公平に実施いたします。</p>
+                        <p>(2)当選者の発表は賞品の発送をもって代えさせていただきます。</p>
+                        <p>（発送は日本国内に限らせていただきます）</p>
+                        <p>(3)賞品の発送は2015年1月28日から順次行ってまいります。</p>
+                        <p>お届け先が離島部および一部地域につきましては、配送にお時間がかかる場合がございます。予めご了承下さい。</p>
+                        <p>(4)応募フォームにご入力不備のある場合や、ご連絡先が不明、ご本人様不在等の理由により、</p>
+                        <p>賞品がお届けできない場合は、当選権利の無効・取消となる場合がございます。</p>
+                        <p>(5)当選の権利の譲渡は一切できません。</p>
+                        <p>(6)落選の場合はご連絡いたしませんので予めご了承下さい。</p>
+                        <p>(7)賞品に関するご質問、抽選や当選に関するお問い合わせにはお答えいたしかねます。</p>
+                        <p>3.申し込みについて</p>
+                        <p>(1)【応募期間】2015年1月16日（金）～2015年1月26日（月）23:59</p>
+                        <p>(2)ご応募は、日本国内在住の方に限らせていただきます。</p>
+                        <p>(3)ご応募は、お一人様1回限りとさせていただきます。</p>
+                        <p>(4)転売目的でのご応募は固くお断りいたします。</p>
+                        <p>(5)当社社員および関係者は応募できません。</p>
+                        <p>(6)インターネット通信料および接続料はお客様の負担となります。</p>
+                        <p>(7)通信の際の接続トラブルにつきましては、責任を負いかねますので、ご了承ください。</p>
+                        <p>(8)申込者が暴力団員、暴力団関係者、その他反社会的勢力であると判明した場合は、</p>
+                        <p>お断りさせていただく場合がございます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="group__checkbox">
+                <img src="assets/images/pic-check-off.png" class="js-check-on group__checkbox--off active"><img src="assets/images/pic-check-on.png" class="js-check-off group__checkbox--on"><input id="check-accept" type="checkbox" class="ip__checkbox js-check"><label for="check-accept" class="js-check">応募規約に同意する</label>
+            </div>               
+            <button type="submit" class="btn btn__submit">確認する</button>              
+        </form>
+        <footer>
+            <div class="inner">
+                <p class="ft-content">©TOYOTA MOTOR CORPORATION. ALL RIGHTS RESERVED.</p>
+            </div>                
         </footer>
     </body>
     <script type="text/javascript" src="assets/js/main.js"></script>

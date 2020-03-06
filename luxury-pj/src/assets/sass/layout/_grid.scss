@@ -1,8 +1,17 @@
-.container{
-  max-width: 1200px;
-  margin: 50px auto 154px;
-}
 
-.inner{
+%inner-default{
+  max-width: 1200px;
   padding: 0 25px;
+  box-sizing: border-box;
+}
+.inner{
+  @extend %inner-default;
+  margin: 0 auto;
+  &__content{
+    @extend %inner-default;
+    margin: 50px auto 154px;
+    @media (max-width:480px) {
+      margin: 30px auto 70px;
+    }
+  }
 }
