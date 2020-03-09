@@ -8,15 +8,13 @@ $(document).ready(function(){
     ipOption.text(valueOption);
   });
   function clickCheck(){
-    if($("#check-accept").is(":checked")){
-
+    if($("#check-accept").prop(":checked") == false){
       $(".js-check-on,.js-check-off").removeClass("active");
       $(".js-check-on").addClass("active");
-	  $("#check-accept").is(":checked")= false;
+
     }else{
       $(".js-check-on,.js-check-off").removeClass("active");
       $(".js-check-off").addClass("active");
-	  $("#check-accept").is(":checked") = true;
     }
   }
 });
