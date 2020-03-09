@@ -9,6 +9,7 @@ $(document).ready(function(){
   });
   function clickCheck(){
     if($("#check-accept").is(":checked")){
+		console.log($("#check-accept").is(":checked"));
       $(".js-check-on,.js-check-off").removeClass("active")
       $(".js-check-on").addClass("active")
     }else{
