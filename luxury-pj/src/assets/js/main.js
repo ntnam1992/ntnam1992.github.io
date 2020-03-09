@@ -13,6 +13,7 @@ $(document).ready(function(){
       $(".js-check-on,.js-check-off").removeClass("active")
       $(".js-check-on").addClass("active")
     }else{
+		console.log($("#check-accept").is(":checked"));
       $(".js-check-on,.js-check-off").removeClass("active")
       $(".js-check-off").addClass("active")
     }
