@@ -16,6 +16,9 @@
     padding: 7px 5px;
     font-size: 22px;
   }
+  @media (max-width:480px) {
+    margin-bottom: 26px;
+  }
   &:hover{
     opacity: 0.4;
   }
