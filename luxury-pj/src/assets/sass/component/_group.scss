@@ -4,37 +4,19 @@
 **/
 
 .group__items{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+  margin-bottom: 26px;
+  select{
+    @extend %select__custom;
+  }
   @media (max-width:480px){
     flex-wrap: wrap;
   }
-  &--half{
-    position: relative;
-    width: calc(50% - 10px);
-    @media (max-width:480px){
-      width: 80%;
-    }
-    label{
-      display: block;
-    }
-    margin-bottom: 26px;
-    select{
-      @extend %select__custom;
-    }
-  }
-  &--full{
-    position: relative;
-    width: 100%;
-    label{
-      display: block;
-    }
-    margin-bottom: 26px;
-    select{
-      @extend %select__custom;
-    }
-  }  
+}
+.group__half{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   .text-edit{
     margin-top: 73px;
     position: absolute;
@@ -44,7 +26,14 @@
       margin-top:40px
     }
   }
-
+  &--items{
+    position: relative;
+    width: calc(50% - 10px);
+    @media (max-width:480px){
+      width: 80%;
+      margin-bottom: 26px;
+    }
+  } 
 }
 .group__checkbox{
   margin-bottom: 50px;
