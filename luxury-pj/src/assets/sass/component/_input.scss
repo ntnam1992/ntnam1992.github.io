@@ -20,6 +20,19 @@ input{
     padding: 10px 15px;
     font-size: 18px;
   }
+ 
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #e3dab7;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #e3dab7;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #e3dab7;
 }
 textarea:focus,input:focus{
   outline:transparent !important;
@@ -37,8 +50,7 @@ textarea{
 .outner-textarea{
   border:2px solid $cl-border;
   box-sizing: border-box;
-  padding: 15px 20px;
-  // height: 325px;
+  padding: 15px 20px 20px;
   margin-top: 9px;
   overflow: hidden;
   @media (max-width:480px) {
@@ -46,13 +58,13 @@ textarea{
   }
   p{
     margin: 0;
-    line-height: 1.65;
+    line-height: 1.67;
     color:#808080;
   }
 }
 .inner__scroll{
   overflow-y: scroll;
-  height:295px;
+  height:290px;
   scrollbar-width: thin;
 }
 .inner__scroll::-webkit-scrollbar {
