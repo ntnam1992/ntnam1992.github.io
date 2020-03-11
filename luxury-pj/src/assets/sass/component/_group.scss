@@ -11,6 +11,7 @@
   }
   @media (max-width:480px){
     flex-wrap: wrap;
+    margin-bottom: 15px;
   }
 }
 .group__half{
@@ -23,19 +24,24 @@
     top: 15px;
     right: -45px;
     @media (max-width:480px) {
-      margin-top:40px
+      margin-top:40px;
+      right: -37px;
     }
   }
   &--sp{
     @media (max-width:480px){
-      margin-bottom: 26px;
+      margin-bottom: 15px;
+      
     }
   }
   &--items{
     position: relative;
     width: calc(50% - 10px);
     @media (max-width:480px){
-      width: 80%;
+      &:not(.text-inline){
+        width: 100%;
+      }
+      width: calc(100% - 37px)
     }
   } 
 }
@@ -54,6 +60,9 @@
   }
   label{
     padding-left: 48px;
+  }
+  @media (max-width:480px){
+    margin-bottom: 25px;
   }
 }
 .group__checkbox--on.active,.group__checkbox--off.active{

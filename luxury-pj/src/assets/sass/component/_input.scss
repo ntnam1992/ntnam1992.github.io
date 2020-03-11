@@ -68,6 +68,9 @@ textarea{
   overflow-y: scroll;
   height:290px;
   scrollbar-width: thin;
+  @media (max-width:480px) {
+    height:285px;
+  }
 }
 .inner__scroll::-webkit-scrollbar {
   width: 11px;
