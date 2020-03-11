@@ -26,6 +26,11 @@
       margin-top:40px
     }
   }
+  &--sp{
+    @media (max-width:480px){
+      margin-bottom: 26px;
+    }
+  }
   &--items{
     position: relative;
     width: calc(50% - 10px);
