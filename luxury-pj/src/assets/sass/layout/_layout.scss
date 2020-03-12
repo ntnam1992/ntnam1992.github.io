@@ -12,7 +12,10 @@ footer{
     letter-spacing: -0.6px;
     color: $cl-dark-yellow;
   }
-
+  @media (max-width:480px) {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 header{
   border-bottom: 1px solid $cl-border;
