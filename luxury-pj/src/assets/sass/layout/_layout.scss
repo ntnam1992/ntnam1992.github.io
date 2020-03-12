@@ -11,11 +11,13 @@ footer{
     margin: 0;
     letter-spacing: -0.6px;
     color: $cl-dark-yellow;
+    @media (max-width:480px) {
+      padding: 20px 0;
+    }
   }
   @media (max-width:480px) {
     font-size: 14px;
     line-height: 1.5;
-    padding:20px 0;
   }
 }
 header{
