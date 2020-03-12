@@ -29,7 +29,7 @@
     margin-top: 110px;
     @media (max-width:480px) {
       justify-content: center;
-      margin-top: 50px;
+      margin-top: 25px;
     }
   }
  .container{
@@ -40,6 +40,14 @@
  }
  .inner__content{
   margin: 50px auto 110px;
+  @media (max-width:480px) {
+    margin: 30px auto 70px;
+  }
+ }
+ a.btn__repair{
+  @media (max-width:480px) {
+    margin-bottom: 15px;
+  }
  }
 }
 

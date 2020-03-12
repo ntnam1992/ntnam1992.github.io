@@ -1,9 +1,14 @@
 @charset "utf-8";
 #thanks{
-  h1{
+  .thanks__info{
     padding-top: 45px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     line-height: 1.6;
+    font-size: 45px;
+    letter-spacing: -2px;
+    span{
+      display: blocks;
+    }
     @media (max-width:480px) {
       font-size: 30px;
       padding-top: 25px;
@@ -24,11 +29,14 @@
  .btn__top{
    margin-top: 95px;
    @media (max-width:480px) {
-     margin-top: 45px;
+     margin-top: 25px;
    }
  }
  .inner__content{
   margin: 50px auto 110px;
+  @media (max-width:480px) {
+    margin: 30px auto 70px;
+  }
  }
 }
 
