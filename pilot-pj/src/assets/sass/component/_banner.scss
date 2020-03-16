@@ -1,0 +1,56 @@
+@charset "utf-8";
+/**
+ * Button
+ */
+/* [B001]
+-----------------------------------------------*/
+.banner{
+  display: flex;
+  &__area{
+    background: url(../images/brn_top.png) no-repeat center center;
+    background-size: cover;
+    width: 66.375%;
+    padding-bottom: 28%;
+    @media (max-width:$media-tablet) {
+      width: 100%;
+      position: relative;
+    }
+  }
+  &__map{
+    background: url(../images/bg_map.jpg) no-repeat center center;
+    background-size: cover;
+    width: 33.625%;
+    padding-bottom: 28%;
+  }
+  &__info{
+    &--sp{
+      display: none;
+      @media (max-width:$media-tablet) {
+        position: absolute;
+        bottom: 0;
+        padding: 5px 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0,0,0,0.5);
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+.map__info{
+  display: none;
+  @media (max-width:$media-tablet) {
+    display: block;
+    figure{
+      img{
+        margin: 0 auto;
+        max-width: 321px;
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+  

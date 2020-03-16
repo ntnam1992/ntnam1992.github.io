@@ -1,0 +1,44 @@
+@charset "utf-8";
+html {
+  font-size: 10px !important;
+}
+body {
+  background: (url(../images/bg_page.png)) no-repeat center;
+  background-size: cover;
+  margin: 0;
+  height: 100%;
+  color: $body-color;
+  font-size: 1.4rem;
+  line-height: (32/14);
+  font-family: $font-sans-serif;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.container{
+  max-width: $container--pc;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.inner__content{
+  padding: 0 12px 0;
+  box-sizing: border-box;
+}
+.mt-15{
+  margin-top: 15px;
+}
+.show-pc{
+  display: block;
+  @media (max-width: $media-tablet) {
+    display: none !important;
+  }
+}
+.show-480-sp{
+  display: none;
+  @media (max-width: $media-sp) {
+    display: block;
+  }
+}
+

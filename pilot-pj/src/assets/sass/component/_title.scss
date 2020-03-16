@@ -1,0 +1,122 @@
+@charset "utf-8";
+/**
+ * Button
+ */
+/* [B001]
+-----------------------------------------------*/
+.activity{
+  position: relative;
+  color: $white-base;
+  background: $red-darken-1;
+  &::before{
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    box-shadow: 0px 0 10px rgba(0,0,0,0.8);
+    z-index: 100;
+  }
+  &__link{
+    @media (max-width:$media-tablet) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    li{
+      text-align: right;
+      a{
+        color: $white-base;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover{
+          opacity: 0.8;
+        }
+        &::after{
+          @extend %icn__arrow; 
+          margin-left: 5px;
+          border-left:8px solid $white-base;
+        }
+      }
+      @media (max-width:$media-tablet) {
+        font-size: 12px;
+        margin-top: 10px;
+        &:first-child{
+          margin-right: 45px;
+        }
+      }
+    }
+  }
+  &__group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    @media (max-width:$media-tablet) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &--title{
+      color: $white-base;
+      font-size: 18px;
+      font-family: $font-title;
+      letter-spacing: -1px;
+      @media (max-width:$media-tablet) {
+        text-align: center;
+      }
+    }
+  }
+}
+.title{
+  color: $white-base;
+  &__red{
+    background: $red-base;
+  }
+  &__orange{
+    background: $orange-base;
+  }
+  &__gray{
+    background: $gray-light;
+  }
+  &__blue{
+    background: $blue-base;
+  }
+  &__list{
+    color: $white-base;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 3px;
+    span{
+      font-size: 12px;
+    }
+    &:after{
+      @extend %icn__arrow;
+      margin-left: 5px;
+      border-left:8px solid $white-base;
+    }
+    &--left{
+      font-size: 14px;
+      text-align: left;
+      padding: 4px 7px;
+    }
+    &--red{
+      color: $red-darkest;
+      &::after{
+        @extend %icn__arrow; 
+        margin-left: 5px;
+        border-left:8px solid $red-light;
+      }
+    }
+
+    &--news{
+      color: $red-darkest;
+      padding: 7px 7px 0;
+      &::after{
+        @extend %icn__arrow; 
+        margin-left: 5px;
+        border-left:8px solid $red-light;
+      }
+    }
+  }
+}

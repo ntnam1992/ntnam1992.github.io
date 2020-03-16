@@ -1,0 +1,31 @@
+@charset "utf-8";
+/**
+ * Button
+ */
+/* [B001]
+-----------------------------------------------*/
+.content{
+  &__info{
+    display: flex;
+    font-size: 12px;
+    padding-bottom: 33px;
+    @media (max-width:$media-tablet) {
+      flex-wrap: wrap;
+    }
+    &--left{
+      margin-right: 10px;
+      width: 100%;
+      @media (max-width:$media-tablet) {
+        margin-right: 0;
+      }
+    }
+    &--right{
+      max-width: 182px;
+      width: 100%;
+      @media (max-width:$media-tablet) {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

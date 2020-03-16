@@ -1,0 +1,14 @@
+@charset "utf-8";
+/**
+ * Button
+ */
+/* [B001]
+-----------------------------------------------*/
+%icn__arrow{
+  content:"";
+  width: 0; 
+  height: 0; 
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent; 
+  display: inline-block; 
+}
