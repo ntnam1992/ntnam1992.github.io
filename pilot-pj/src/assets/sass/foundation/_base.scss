@@ -35,6 +35,12 @@ img {
     display: none !important;
   }
 }
+.show-sp{
+  display: none;
+  @media (max-width: $media-tablet) {
+    display: block !important;
+  }
+}
 .show-480-sp{
   display: none;
   @media (max-width: $media-sp) {
