@@ -219,6 +219,8 @@
       border-bottom: 1px solid $border-color;
       @media (max-width:$media-sp) {
         flex-wrap: wrap;
+        margin-top: 7px;
+        padding: 0 7px 7px;
       }
       .title__list--left{
         font-size: 12px;
