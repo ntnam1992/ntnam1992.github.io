@@ -188,10 +188,16 @@
       p{
         width: calc(52% - 10px);
         letter-spacing: -0.5px;
+        @media (max-width:$media-tablet) {
+          width: calc(62.8% - 10px);
+        }
       }
       figure{
         width: 48%;
         margin-left: 10px;
+        @media (max-width:$media-tablet) {
+          width: 37.2%;
+        }
         img{
           width: auto;
         }
@@ -279,6 +285,9 @@
       font-size: 10px;
       p{
         width: calc(52% - 5px);
+        @media (max-width:$media-tablet) {
+          width: calc(62.8% - 10px);
+        }
       }
       figure{
         margin-left: 5px;
