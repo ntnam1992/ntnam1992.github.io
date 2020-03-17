@@ -88,6 +88,9 @@
     font-size: 14px;
     text-align: center;
     padding: 5px 3px;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
     span{
       font-size: 12px;
     }
@@ -102,6 +105,7 @@
       padding: 4px 7px;
       display: block;
       text-decoration: none;
+      cursor: pointer;
       &:not(.no-bold){
         font-weight: 600;
       }
@@ -110,6 +114,7 @@
       color: $red-darkest;
       display: block;
       text-decoration: none;
+      cursor: pointer;
       &::after{
         @extend %icn__arrow; 
         margin-left: 5px;
@@ -120,6 +125,7 @@
       color: $red-darkest;
       display: block;
       text-decoration: none;
+      cursor: pointer;
       &::after{
         @extend %icn__arrow--large; 
         margin-left: 5px;
@@ -132,6 +138,7 @@
       padding: 7px 7px 0;
       display: block;
       text-decoration: none;
+      cursor: pointer;
       &::after{
         @extend %icn__arrow; 
         margin-left: 5px;
