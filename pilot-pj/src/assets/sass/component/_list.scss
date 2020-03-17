@@ -236,7 +236,7 @@
       border: 1px solid $border-color;
       margin-bottom: 2px;
       @media (max-width:$media-tablet) {
-        width: calc(50% - 10px);
+        width: calc(50% - 7px);
         &:nth-child(odd){
           margin-right: 10px;
         }
