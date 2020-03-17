@@ -289,11 +289,14 @@
           width: calc(62.8% - 10px);
         }
         @media (max-width:$media-sp) {
-          font-size: 12px;
+          width: calc(75% - 10px);
         }
       }
       figure{
         margin-left: 5px;
+        @media (max-width:$media-sp) {
+          width: 25%;
+        }
       }
     }
   }
