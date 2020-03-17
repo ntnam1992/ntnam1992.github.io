@@ -14,13 +14,13 @@
     }
     &--left{
       margin-right: 10px;
-      width: 100%;
+      width: calc(100% - 196px);
       @media (max-width:$media-tablet) {
         margin-right: 0;
       }
     }
     &--right{
-      max-width: 182px;
+      max-width: 186px;
       width: 100%;
       @media (max-width:$media-tablet) {
         max-width: 100%;

@@ -5,7 +5,7 @@
 .nav{
   background: $red-darken-1;
   position: relative;
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+  // box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
   // border-bottom: 2px solid #820015;
   &::before {
     content: "";
@@ -18,9 +18,9 @@
     z-index: 100;
   }
   &__title{
-    background: $red-darken-1 ;
-    border-top: 2px solid #af384c;
-    border-bottom: 2px solid #6b0011;
+    background:$red-darken-1 url(../images/bg_line.png) repeat-x top;
+    // border-top: 2px solid #af384c;
+    // border-bottom: 2px solid #6b0011;
     color: $white-base;
     padding: 2px 0;
   }
@@ -30,16 +30,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5px 0 15px;
+  padding: 0 5px 0 15px
 }
 .logo{
   padding: 15px 5px 13px 15px;
+  display: flex;
+  figure{
+    &:nth-child(2){
+      margin-left: 17px;
+    }
+  }
   @media (max-width: $media-tablet) {
-    display: flex;
     flex-wrap: wrap;
     figure{
       width: 100%;
-      &:first-child{
+      &:nth-child(3){
         margin-bottom: 17px;
       }
       img{
