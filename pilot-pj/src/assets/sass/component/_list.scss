@@ -85,8 +85,11 @@
       margin: 0 9px 10px 0;
       background: $base-color-light;
       @media (max-width:$media-tablet) {
+        margin: 0 0 5px 0;
+      }
+      @media (max-width:$media-tablet) {
         &:nth-child(even){
-          margin: 0 0 10px 0;
+          margin: 0 0 5px 0;
         }
         width: calc(50% - 10px);
       }
