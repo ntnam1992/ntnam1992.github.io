@@ -100,12 +100,16 @@
       font-size: 14px;
       text-align: left;
       padding: 4px 7px;
+      display: block;
+      text-decoration: none;
       &:not(.no-bold){
         font-weight: 600;
       }
     }
     &--red{
       color: $red-darkest;
+      display: block;
+      text-decoration: none;
       &::after{
         @extend %icn__arrow; 
         margin-left: 5px;
@@ -114,6 +118,8 @@
     }
     &--red1{
       color: $red-darkest;
+      display: block;
+      text-decoration: none;
       &::after{
         @extend %icn__arrow--large; 
         margin-left: 5px;
@@ -124,6 +130,8 @@
     &--news{
       color: $red-darkest;
       padding: 7px 7px 0;
+      display: block;
+      text-decoration: none;
       &::after{
         @extend %icn__arrow; 
         margin-left: 5px;
