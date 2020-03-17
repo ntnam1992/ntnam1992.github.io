@@ -331,16 +331,9 @@
   color: $white-base;
   text-decoration: none;
   position: absolute;
-  right: 0;
+  right: 12px;
   font-size: 10px;
   letter-spacing: 0;
-  @media all and (-ms-high-contrast:none)
-  {
-    right: 12px;
-  }
-  @-moz-document url-prefix() { 
-    right: 12px;
-  }
   &::before{
     @extend %icn__arrow;
     margin-right: 5px;
@@ -348,6 +341,7 @@
   }
   @media (max-width:$media-tablet) {
     top:-30px;
+    right:0;
   }
 }
 
