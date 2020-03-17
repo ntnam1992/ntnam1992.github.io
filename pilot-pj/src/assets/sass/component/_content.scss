@@ -17,6 +17,7 @@
       width: calc(100% - 196px);
       @media (max-width:$media-tablet) {
         margin-right: 0;
+        width: 100%;
       }
     }
     &--right{
