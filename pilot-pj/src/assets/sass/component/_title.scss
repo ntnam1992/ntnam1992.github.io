@@ -18,6 +18,9 @@
     height: 3px;
     box-shadow: 0px 0 10px rgba(0,0,0,0.8);
     z-index: 100;
+    @media (max-width:$media-tablet) {
+      top:-3px;
+    }
   }
   &__link{
     @media (max-width:$media-tablet) {
