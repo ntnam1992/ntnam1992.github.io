@@ -288,6 +288,9 @@
         @media (max-width:$media-tablet) {
           width: calc(62.8% - 10px);
         }
+        @media (max-width:$media-sp) {
+          font-size: 12px;
+        }
       }
       figure{
         margin-left: 5px;
