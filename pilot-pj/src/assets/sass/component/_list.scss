@@ -125,7 +125,7 @@
       }
       figure{
         max-width: 100%;
-        margin-top:7px;
+        margin-top:10px;
         @media (max-width:$media-sp) {
           display: flex;
           justify-content: flex-start;
@@ -141,7 +141,7 @@
           }
         }
         figcaption{
-          margin-top: 3px;
+          margin-top: 2px;
           color: $body-color;
           text-align: center;
           opacity: 0.8;
@@ -184,7 +184,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 5px 15px 0 7px;
+      margin: 0 15px 0 7px;
       padding-bottom: 15px;
       font-size: 12px;
       line-height: 1.5;
