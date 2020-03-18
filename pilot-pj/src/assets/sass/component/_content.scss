@@ -7,7 +7,7 @@
 .content{
   &__info{
     display: flex;
-    font-size: 12px;
+    // font-size: 12px;
     padding-bottom: 33px;
     @media (max-width:$media-tablet) {
       flex-wrap: wrap;

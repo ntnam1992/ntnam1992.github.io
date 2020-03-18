@@ -21,6 +21,7 @@
     background:$red-darken-1 url(../images/bg_line.png) repeat-x top;
     color: $white-base;
     padding: 2px 0;
+    font-size: 10px;
   }
 }
 
@@ -35,17 +36,23 @@
 }
 .logo{
   padding: 15px 5px 13px 15px;
-  display: flex;
+  
+  a{
+    display: flex;
+    @media (max-width: $media-tablet) {
+      flex-wrap: wrap;
+    }
+  }
   figure{
     &:nth-child(2){
       margin-left: 17px;
     }
   }
   @media (max-width: $media-tablet) {
-    flex-wrap: wrap;
+   
     figure{
       width: 100%;
-      &:nth-child(3){
+      &:first-child{
         margin-bottom: 17px;
       }
       img{

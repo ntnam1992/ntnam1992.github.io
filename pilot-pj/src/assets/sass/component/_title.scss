@@ -66,6 +66,7 @@
       font-size: 18px;
       font-family: $font-title;
       letter-spacing: -1px;
+      font-weight: 600;
       @media (max-width:$media-tablet) {
         text-align: center;
       }
@@ -74,16 +75,16 @@
 }
 .title{
   color: $white-base;
-  &__red{
+  &--red{
     background: $red-base;
   }
-  &__orange{
+  &--orange{
     background: $orange-base;
   }
-  &__gray{
+  &--gray{
     background: $gray-light;
   }
-  &__blue{
+  &--blue{
     background: $blue-base;
   }
   &__list{

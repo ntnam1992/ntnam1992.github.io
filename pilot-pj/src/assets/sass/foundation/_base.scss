@@ -1,16 +1,12 @@
 @charset "utf-8";
 body {
-  background: (url(../images/bg_page.png)) no-repeat center;
-  background-size: cover;
+  background: (url(../images/bg_page.png)) center;
   margin: 0;
   height: 100%;
   color: $body-color;
-  font-size: 10px;
+  font-size: 12px;
   line-height: (32/14);
   font-family: $font-sans-serif;
-  @media (max-width: $media-sp) {
-    font-size: 12px;
-  }
 }
 img {
   max-width: 100%;
@@ -22,7 +18,7 @@ img {
   box-sizing: border-box;
   position: relative;
 }
-.inner__content{
+.inner{
   padding: 0 12px 0;
   box-sizing: border-box;
 }
@@ -46,5 +42,8 @@ img {
   @media (max-width: $media-sp) {
     display: block;
   }
+}
+.f-bold{
+  font-weight: 600;
 }
 

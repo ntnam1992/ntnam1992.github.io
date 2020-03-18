@@ -17,15 +17,17 @@
   position: absolute;
   right:0;
   top:8px;
+  font-size: 10px;
   @media (max-width: $media-tablet) {
     position: relative;
     right: unset;
     top: unset;
   }
   li{
-   
+    border-right: 1px solid $white-base;
     cursor: pointer;
     &:last-child{
+      border-right: 0;
       a{
         border-right: 0;
       }
@@ -38,7 +40,8 @@
       padding: 0 5px;
       color: $white-base;
       text-decoration: none;
-      border-right: 1px solid $white-base;
+      display: flex;
+      align-items: center;     
       @media (max-width: $media-tablet) {
         text-decoration: underline;
       }
@@ -52,7 +55,7 @@
   margin-top: 2px;
   border-bottom: 1px solid #ae515e;
   border-top: 1px solid #5c0814;
-  min-width: 140px;
+  min-width: 105px;
   text-align: center;
   @media (max-width: $media-tablet) {
     background: none;
