@@ -32,6 +32,7 @@
   &__info{
     background: url(../images/bg_content.jpg);
     padding: 30px 17px 19px;
+    
   }
   &__inner{
     
@@ -42,10 +43,16 @@
       border-bottom: 1px solid $brown-light;
       background: $bg-yellow-title;
       padding: 5px 27px;
+      @media (max-width:$media-sp) {
+        padding: 5px 10px ;
+      }
     }
     &--info{
       background: $white-base;
       padding: 20px 27px;
+      @media (max-width:$media-sp) {
+        padding: 10px ;
+      }
     }
     &--font{
       font-size: 14px;

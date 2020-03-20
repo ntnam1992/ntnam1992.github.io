@@ -30,6 +30,9 @@
     right: 3%;
     top: 10px;
     cursor: pointer;
+    @media (max-width:$media-sp) {
+      top:2px;
+    }
   }
   &__sub.active, &__add.active{
     display: block;

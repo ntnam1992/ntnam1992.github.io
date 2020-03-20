@@ -44,6 +44,15 @@
       <li>></li>
       <li>PCからのエントリー手順</li>
     </ul>
+    <div class="show-sp">
+      <ul class="nav_item--sp">
+        <li><a href="#">エントリー概要</a></li>
+        <li><a href="#">PCからの<br>エントリー手順</a></li>
+        <li><a href="#">スマートフォンからの<br>エントリー手順</a></li>
+        <li><a href="#">携帯電話からの<br>エントリー手順</a></li>
+      </ul>
+    </div>
+    
     <div class="border__top"></div>
     <div class="border__content">
       <div class="content">
@@ -111,7 +120,9 @@
                     ※ニックネームはランキングの他、マイページ等に表示されます。
                   </p>
                 </div>
-                <figure><img src="assets/images/pic_step4.jpg" alt="STEP4：「ニックネーム」を入力"></figure>  
+                <figure><img class="show-pc" src="assets/images/pic_step4.jpg" alt="STEP4：「ニックネーム」を入力">
+                  <img class="show-sp" src="assets/images/pic_step4_sp.jpg" alt="STEP4：「ニックネーム」を入力">
+                </figure>  
               </div>
               
             </div> 
@@ -190,7 +201,8 @@
                     注意ください。
                   </p>
                 </div>
-                <figure><img src="assets/images/pic_step3.jpg" alt="STEP3：「ニックネーム」「メールアドレス」を入力"></figure>  
+                <figure><img class="show-pc" src="assets/images/pic_step3.jpg" alt="STEP3：「ニックネーム」「メールアドレス」を入力">
+                  <img class="show-sp" src="assets/images/pic_step3_sp.jpg" alt="STEP3：「ニックネーム」「メールアドレス」を入力"></figure>  
               </div>
               
             </div> 
@@ -258,9 +270,11 @@
       <img src="assets/images/pic_footer.png" class="footer__img">
     </div>
   </div>
+ 
   <script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.meanmenu.min.js"></script>
   <script type="text/javascript" src="assets/js/behavior.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.meanmenu.min.js"></script>
+  
 
   <!-- <script type="text/javascript" src="assets/js/main.js"></script> -->
 </body>
