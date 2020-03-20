@@ -1,0 +1,63 @@
+@charset "utf-8";
+/**
+ * Button
+ */
+/* [B001]
+-----------------------------------------------*/
+.border__content{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 11px solid transparent;
+  margin: 0 auto;
+  border-image: url(../images/br_img.png) 18 round;
+  box-sizing: border-box;
+  position: relative;
+}
+.content{
+  border: 10px solid transparent;
+  width: 100%;
+  margin: 0 auto;
+  border-image: url(../images/bg_inner.png) 10 round;
+  box-sizing: border-box;
+  background: $white-base;
+  padding: 30px 35px 35px;
+  &__info{
+    background: url(../images/bg_content.jpg);
+    padding: 30px 17px 19px;
+  }
+  &__inner{
+    
+  }
+  &__step{
+    border: 3px solid $brown-light;
+    &--title{
+      border-bottom: 1px solid $brown-light;
+      background: $bg-yellow-title;
+      padding: 15px 27px;
+    }
+    &--info{
+      background: $white-base;
+      padding: 20px 27px;
+    }
+  }
+  &__two{
+    &--colum{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      figure{
+        width: 46%;
+      }
+      p{
+        width: calc(54% - 10px);
+      }
+    }
+  }
+}
+.icn__down{
+  img{
+    margin: 15px auto;
+    display: block;
+  }
+}

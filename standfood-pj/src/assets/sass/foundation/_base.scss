@@ -1,0 +1,50 @@
+@charset "utf-8";
+body {
+  background: $body-color;
+  margin: 0;
+  height: 100%;
+  color: $body-color;
+  font-size: 16px;
+  line-height: (32/14);
+  font-family: $font-base;
+  @media (max-width: $media-sp) {
+    // font-size: 12px;
+  }
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.container{
+  max-width: $container--pc;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+.inner__content{
+  padding: 0 12px 0;
+  box-sizing: border-box;
+}
+.mt-15{
+  margin-top: 15px;
+}
+.show-pc{
+  display: block;
+  @media (max-width: $media-tablet) {
+    display: none !important;
+  }
+}
+.show-sp{
+  display: none;
+  @media (max-width: $media-tablet) {
+    display: block !important;
+  }
+}
+.show-480-sp{
+  display: none;
+  @media (max-width: $media-sp) {
+    display: block;
+  }
+}
+

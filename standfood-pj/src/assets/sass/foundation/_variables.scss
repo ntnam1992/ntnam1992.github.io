@@ -1,0 +1,78 @@
+@charset "utf-8";
+// colorf5f6e4
+$base-color-light: #f5f6e4;
+$base-color: #dbdcc0;
+$body-color: #000000;
+$border-color:#94957b;
+$gray: #EEEEEE;
+$gray-light: #e9eada;
+$white-base:#ffffff;
+$primary-color-light-2: #A7DDDD;
+$green-base: #13C959;
+$yellow-base: #fce666;
+$yellow-dark: #ecb715;
+$pink-dark: #990033;
+$blue-base: #7d7ea1;
+$orange-base: #cf7e4f;
+$red-base: #ab3040;
+$red-darken-1: #990019;
+$red-darkest: #5e121e;
+$red-light: #b80320;
+$brown-dark: #352700;
+$brown-dark1: #53492e;
+$brown-light: #c49d1a;
+$bg-yellow-title: #fefbd2;
+
+// font
+@font-face {
+  font-family: hiraminpro;
+  src: url(../font/hiraminpro.otf);
+}
+@font-face {
+  font-family: hirakakupro;
+  src: url(../font/hiraminpro.otf);
+}
+$font-sans-serif: "Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","Hiragino Sans",メイリオ,Meiryo,sans-serif;
+$font-serif: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+$font-title: hiraminpro, sans-serif;
+$font-base:  Yugothic,sans-serif;
+
+// margin
+$margin--xs: 10px;
+$margin--sm: 14px;
+$margin--md: 30px;
+$margin--lg: 50px;
+$margin--xl: 70px;
+
+// container
+$container--pc: 1040px;
+$container--sp: 100%;
+
+
+// ==========================================================================
+// Materialize variables (Custom)
+// ==========================================================================
+
+// 1. Colors
+// ==========================================================================
+
+$primary-color: #34A3AA;
+$primary-color-light: #E8F6F6;
+
+$secondary-color: $primary-color;
+$success-color: $primary-color;
+$error-color: #C9003F;
+$link-color: $primary-color;
+
+// 20. Typography
+// ==========================================================================
+
+$font-stack: $font-sans-serif;
+// $off-black: rgba(0, 0, 0, 0.87);
+// Header Styles
+$h1-fontsize: 3.2rem;
+$h2-fontsize: 2.4rem;
+$h3-fontsize: 2.4rem;
+$h4-fontsize: 1.8rem;
+$h5-fontsize: 1.6rem;
+$h6-fontsize: 1.4rem;

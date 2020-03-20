@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* footer
+----------------------------------------------------------------- */
+footer{
+  background: #990019;
+}
+.footer{
+  &__content{
+    font-size: 10px;
+    padding: 10px ;
+    color: $white-base;
+    letter-spacing: 1px;
+    background: $red-darken-1 url(../images/bg_line.png) repeat-x top;
+    text-align: center;
+    @media (max-width: $media-sp) {
+      line-height: 1.5;
+    }
+  }
+}

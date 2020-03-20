@@ -1,0 +1,34 @@
+@charset "utf-8";
+.logo--sp {
+  display: none;
+  @media (max-width:$media-tablet) {
+    position: absolute;
+    top: 20px;
+    left: 14px;
+    width: 15%;
+    display: block;
+    img{
+      width: auto;
+    }
+  }
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover{
+  opacity: 0.8;
+  transition: opacity 1s;
+}
+.breakcrump{
+  display: flex;
+  color: $white-base;
+  font-size: 12px;
+  font-weight: bold; 
+  align-items: center;
+  margin: 10px auto 20px;
+  a{
+    text-decoration: none;
+    color: $white-base;
+  } 
+}
