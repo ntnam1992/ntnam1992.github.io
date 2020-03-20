@@ -34,8 +34,7 @@
   &__sub.active, &__add.active{
     display: block;
   }
-  &__step{
-    width: 39.81395348837209%;
+  &__gradient{
     background: url(../images/bg_liner_item.jpg) repeat-x center center;
     background: cover;
     border-radius: 4px;
@@ -46,7 +45,7 @@
     margin: 0 auto;
 
     a{
-      padding: 20px 10px;
+      
       font-weight: bold;
       color: $body-color;
       display: flex;
@@ -60,6 +59,17 @@
         height: 12px;
         margin-right: 20px;
       }
+    }
+  }
+  &__accept1{
+    width: 39.81395348837209%;
+    padding: 16px 10px;
+  }
+  &__accept{
+    width: 43%;
+    font-size: 32px;
+    a{
+      padding: 6px 10px;
     }
   }
 }

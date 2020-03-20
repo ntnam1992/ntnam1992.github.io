@@ -20,13 +20,14 @@ a:hover{
   opacity: 0.8;
   transition: opacity 1s;
 }
-.breakcrump{
+.breadcrumb{
   display: flex;
   color: $white-base;
   font-size: 12px;
   font-weight: bold; 
   align-items: center;
   margin: 10px auto 20px;
+  line-height: 1;
   a{
     text-decoration: none;
     color: $white-base;
@@ -35,5 +36,14 @@ a:hover{
 .note__text{
   color: $white-base;
   text-align: center;
-  margin: 20px auto;
+  margin: 17px auto;
+}
+.link:before {
+  content: "";
+  width: 8px;
+  height:8px;
+  display: block;
+  background: url(../images/icn_white_arrow.png);
+  background-size: cover;
+  margin-right: 5px;
 }

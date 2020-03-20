@@ -5,8 +5,9 @@ body {
   height: 100%;
   color: $body-color;
   font-size: 16px;
-  line-height: (32/14);
+  line-height: 1.8;
   font-family: $font-base;
+  letter-spacing: -0.5px;
   @media (max-width: $media-sp) {
     // font-size: 12px;
   }

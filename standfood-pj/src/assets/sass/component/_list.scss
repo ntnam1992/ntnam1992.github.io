@@ -1,0 +1,23 @@
+@charset "utf-8";
+/**
+ * Button
+ */
+/* [B001]
+-----------------------------------------------*/
+.list{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ &__company{
+   li{
+     margin-right: 10px;
+     &:last-child{
+       margin-right: 0;
+     }
+     img{
+       max-width: 100%;
+       width: auto;
+     }
+   }
+ }
+}

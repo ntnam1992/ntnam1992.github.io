@@ -6,13 +6,15 @@
 -----------------------------------------------*/
 .title{
   font-weight: bold;
+  font-size: 18px;
   &__top{
     font-size: 36px;
     font-family: ReimPro,sans-serif;
     color: $white-base;
     margin-top: 113px;
     background: url(../images/bg_content.jpg) repeat;
-    padding: 20px 25px 18px;
+    padding: 0 25px;
+    line-height: 2;
   }
   &__content{
     color: #ffffff;
@@ -22,7 +24,7 @@
     line-height: 2.1;
     background: linear-gradient(to right,#a2712e,#d6b32d,#a2712e);
     box-shadow: 2px -2px 3px 0px #cccccc, -2px 0px 2px 0px #cccccc;
-    margin-top: 26px;
+    margin-top: 22px;
     position: relative;
     text-shadow: 1px -1px #7b7b7b8a;
   }

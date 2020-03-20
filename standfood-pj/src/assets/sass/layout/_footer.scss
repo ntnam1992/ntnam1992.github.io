@@ -1,10 +1,10 @@
 @charset "utf-8";
 /* footer
 ----------------------------------------------------------------- */
-footer{
-  background: #990019;
-}
+
 .footer{
+  color: $white-base;
+  padding-bottom: 80px;
   &__content{
     font-size: 10px;
     padding: 10px ;
@@ -15,5 +15,44 @@ footer{
     @media (max-width: $media-sp) {
       line-height: 1.5;
     }
+  }
+  &__notice{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 15px;
+  }
+  &__link{
+    color: $white-base;
+    font-size: 12px;
+    display: flex;
+    letter-spacing: -0.5px;
+    a{
+      color: $white-base;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    ul{
+      width: 62%;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 20px;
+    }
+    
+  }
+  &__img{
+    max-width: 1200px;
+    width: 100%;
+    position: absolute;
+    bottom: -60px;
+    z-index: -1;
+    left: 0;
+  }
+  .copy-right{
+    font-family: Univers Condended;
+  }
+  .logo-jra-small{
+    margin-right: 12px;
   }
 }

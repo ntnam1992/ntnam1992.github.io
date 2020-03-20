@@ -7,12 +7,15 @@
 .border__content{
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   border: 11px solid transparent;
-  margin: 0 auto;
   border-image: url(../images/br_img.png) 18 round;
   box-sizing: border-box;
   position: relative;
+}
+.border__top{
+  border-top:1px solid #f9e88f;
+  margin: 0 10px 1px;
 }
 .content{
   border: 10px solid transparent;
@@ -21,7 +24,7 @@
   border-image: url(../images/bg_inner.png) 10 round;
   box-sizing: border-box;
   background: $white-base;
-  padding: 30px 35px 35px;
+  padding: 15px 30px 35px;
   &__info{
     background: url(../images/bg_content.jpg);
     padding: 30px 17px 19px;
@@ -34,11 +37,17 @@
     &--title{
       border-bottom: 1px solid $brown-light;
       background: $bg-yellow-title;
-      padding: 15px 27px;
+      padding: 5px 27px;
     }
     &--info{
       background: $white-base;
       padding: 20px 27px;
+    }
+    &--font{
+      font-size: 14px;
+    }
+    &--text{
+      margin-bottom: 10px;
     }
   }
   &__two{
@@ -47,10 +56,10 @@
       justify-content: space-between;
       align-items: flex-start;
       figure{
-        width: 46%;
+        width: calc(50% - 10px);
       }
       .col--right{
-        width: calc(54% - 10px);
+        width: 50%;
       }
     }
   }
