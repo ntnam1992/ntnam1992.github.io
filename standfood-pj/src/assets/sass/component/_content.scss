@@ -12,6 +12,7 @@
   border-image: url(../images/br_img.png) 18 round;
   box-sizing: border-box;
   position: relative;
+
 }
 .border__top{
   border-top:1px solid #f9e88f;
@@ -25,6 +26,9 @@
   box-sizing: border-box;
   background: $white-base;
   padding: 15px 30px 35px;
+  @media (max-width:$media-tablet) {
+    padding: 15px 10px 10px;
+  }
   &__info{
     background: url(../images/bg_content.jpg);
     padding: 30px 17px 19px;
@@ -55,11 +59,25 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      @media (max-width:$media-tablet) {
+        flex-wrap: wrap;
+      }
       figure{
         width: calc(50% - 10px);
+        @media (max-width:$media-tablet) {
+          width: 100%;
+          order:-1;
+          img{
+            margin: 0 auto;
+            display: block;
+          }
+        }
       }
       .col--right{
         width: 50%;
+        @media (max-width:$media-tablet) {
+          width: 100%;
+        }
       }
     }
   }

@@ -64,10 +64,38 @@
   &__accept1{
     width: 39.81395348837209%;
     padding: 16px 10px;
+    box-sizing: border-box;
+    @media (max-width:$media-tablet) {
+      font-size: 16px;
+      width: 70%;
+    }
+    @media (max-width:$media-sp) {
+      font-size: 14px;
+      width: 100%;
+    }
   }
   &__accept{
     width: 43%;
     font-size: 32px;
+    a{
+      &:before{
+        width: 17px;
+        height: 17px;
+        background: url(../images/icn_arrow_large.png) no-repeat center;
+      }
+    }
+    @media (max-width:1000px) {
+      font-size: 28px;
+      
+    }
+    @media (max-width:$media-tablet) {
+      font-size: 20px;
+      width: 70%;
+    }
+    @media (max-width:$media-sp) {
+      font-size: 16px;
+      width: 100%;
+    }
     a{
       padding: 6px 10px;
     }

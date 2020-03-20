@@ -8,15 +8,44 @@
  display: flex;
  align-items: center;
  justify-content: space-between;
+ @media (max-width:$media-tablet) {
+   flex-wrap: wrap;
+   justify-content: center;
+ }
  &__company{
    li{
      margin-right: 10px;
+     @media (max-width:$media-tablet) {
+       width: calc(49% - 10px);
+       &:nth-child(2){
+        margin-right: 0;
+      }
+      &:nth-child(1),&:nth-child(3){
+        a{
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+      &:nth-child(2),&:nth-child(4){
+        a{
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
+      a{
+        margin-bottom: 10px;
+      }
+     }
      &:last-child{
        margin-right: 0;
      }
      img{
        max-width: 100%;
        width: auto;
+       @media (max-width:$media-tablet) {
+         display: block;
+         margin: 0 auto;
+       }
      }
    }
  }
