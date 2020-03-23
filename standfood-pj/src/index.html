@@ -34,11 +34,15 @@
             </ul>	                   
         </div>
     </div>
-     <figure class="logo--sp"><img src="assets/images/logo_JRA_green.png" alt="logo_JRA_green"></figure>
+    <a href="#" class="logo--sp"><img src="assets/images/logo_JRA_green.png" alt="logo_JRA_green"></a>
     <a href="#" class="btn__login--sp">ログイン</a>
   </div>
-  <div class="container">
+  <div class="container container--full">
     <p class="title title__top">PCからのエントリー手順</p>
+  </div>
+   
+  <div class="container">
+    
     <ul class="breadcrumb">
       <li><a href="#">TOP</a></li>
       <li>></li>
@@ -61,11 +65,11 @@
         <div class="title__content">
           <p>空メールからカンタン登録</p>
           <a>
-            <figure><img src="assets/images/btn_sub.png" alt="空メールからカンタン登録" class="btn__sub active"></figure>
-            <figure><img src="assets/images/btn_add.png" alt="空メールからカンタン登録" class="btn__add"></figure>
+            <figure><img src="assets/images/btn_sub.png" alt="空メールからカンタン登録" class="btn__sub js-sub js-check" data-show="obj_frist"></figure>
+            <figure><img src="assets/images/btn_add.png" alt="空メールからカンタン登録" class="btn__add js-add js-check active" data-show="obj_frist"></figure>
           </a>
         </div>
-        <div class="js-extend">
+        <div class="js-extend" id="obj_frist">
           <div class="content__info">
             <div class="content__step">
               <p class="content__step--title title">STEP1：空メールを送信</p>
@@ -99,7 +103,7 @@
             </div> 
             <figure class="icn__down"><img src="assets/images/icn_down.png" alt="STEP4：「ニックネーム」を入力"></figure>  
             <div class="content__step">
-              <p class="content__step--title title">STEP3：「加入者番号」と「生年月日」を入力</p>
+              <p class="content__step--title title">STEP4：「ニックネーム」を入力</p>
               <div class="content__step--info content__two--colum">
                 <div class="col--right">
                   <p class="content__step--text">お好きなニックネームを決めて、入力してください。<br/>
@@ -118,6 +122,10 @@
                   </p>
                   <p class="content__step--font">
                     ※ニックネームはランキングの他、マイページ等に表示されます。
+                  </p>
+                  <p class="content__step--font">
+                    ※ニックネームは一度ご登録いただきますと変更できません。
+                    ご注意ください。
                   </p>
                 </div>
                 <figure><img class="show-pc" src="assets/images/pic_step4.jpg" alt="STEP4：「ニックネーム」を入力">
@@ -147,11 +155,11 @@
         <div class="title__content">
           <p>手入力で登録</p>
           <a>
-            <figure><img src="assets/images/btn_sub.png" alt="手入力で登録" class="btn__sub active"></figure>
-            <figure><img src="assets/images/btn_add.png" alt="手入力で登録" class="btn__add"></figure>
+            <figure><img src="assets/images/btn_sub.png" alt="手入力で登録" class="btn__sub js-sub js-check" data-show="obj_second"></figure>
+            <figure><img src="assets/images/btn_add.png" alt="手入力で登録" class="btn__add js-add js-check active" data-show="obj_second"></figure>
           </a>
         </div>
-        <div class="js-extend">
+        <div class="js-extend" id="obj_second">
           <div class="content__info">
             <div class="content__step">
               <p class="content__step--title title">STEP1：「エントリー」ボタンをクリックしてエントリーフォームへ！
@@ -274,6 +282,7 @@
   <script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
   <script type="text/javascript" src="assets/js/behavior.js"></script>
   <script type="text/javascript" src="assets/js/jquery.meanmenu.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
   
 
   <!-- <script type="text/javascript" src="assets/js/main.js"></script> -->

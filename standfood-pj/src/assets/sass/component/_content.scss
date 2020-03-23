@@ -12,7 +12,9 @@
   border-image: url(../images/br_img.png) 18 round;
   box-sizing: border-box;
   position: relative;
-
+  @media (max-width:$media-sp) {
+    margin: 0 auto 20px;
+  }
 }
 .border__top{
   border-top:1px solid #f9e88f;
@@ -28,6 +30,9 @@
   padding: 15px 30px 35px;
   @media (max-width:$media-tablet) {
     padding: 15px 10px 10px;
+  }
+  @media (max-width:$media-sp) {
+    padding: 10px 5px 10px;
   }
   &__info{
     background: url(../images/bg_content.jpg);
@@ -74,6 +79,7 @@
         @media (max-width:$media-tablet) {
           width: 100%;
           order:-1;
+          margin-bottom: 10px;
           img{
             margin: 0 auto;
             display: block;
@@ -93,5 +99,8 @@
   img{
     margin: 15px auto;
     display: block;
+    @media (max-width:$media-tablet) {
+      margin: 10px auto;
+    }
   }
 }

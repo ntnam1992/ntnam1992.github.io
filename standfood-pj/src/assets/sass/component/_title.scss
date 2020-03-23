@@ -18,6 +18,13 @@
     background: url(../images/bg_content.jpg) repeat;
     padding: 0 25px;
     line-height: 2;
+    @media (max-width:$media-tablet) {
+      margin-top: 0;
+      padding: 0 20px;
+    }
+    @media (max-width:$media-sp) {
+      font-size: 20px;
+    }
   }
   &__content{
     color: #ffffff;
