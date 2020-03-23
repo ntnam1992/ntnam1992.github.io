@@ -89,6 +89,10 @@
         display: block;
         position: absolute;
         left: 5.8%;
+        @media all and (-ms-high-contrast:none)
+        {
+          height:100%;
+        }
         @media (max-width:$media-tablet) {
           position: static;
         }

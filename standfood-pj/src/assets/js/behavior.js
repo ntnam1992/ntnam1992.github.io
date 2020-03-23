@@ -1,21 +1,4 @@
-/*==============================================
-	Swap image Module
-==============================================*/
-// $(function() {
-//     var imgcache = new Object();
-//     $(".btn,.allbtn img").not("[src*='_o.']").each(function(i) {
-//         var imgsrc = this.src;
-//         var dot = this.src.lastIndexOf('.');
-//         var imgovr = this.src.substr(0, dot) + '_o' + this.src.substr(dot, 4);
-//         imgcache[this.src] = new Image();
-//         imgcache[this.src].src = imgovr;
-//         $(this).hover(function() {
-//             this.src = imgovr;
-//         }, function() {
-//             this.src = imgsrc;
-//         });
-//     });
-// });
+
 
 /*==============================================
 	Fade Module
@@ -30,21 +13,6 @@ $(function() {
     });
 });
 
-/*==============================================
-	Scroll
-==============================================*/
-// $(function() {
-//     $("a[href^=#]").click(function() {
-//         var speed = 500;
-//         var href = $(this).attr("href");
-//         var target = $(href == "#" || href == "" ? 'html' : href);
-//         var position = target.offset().top;
-//         $("html, body").animate({
-//             scrollTop: position
-//         }, speed, "swing");
-//         return false;
-//     });
-// });
 
 /*==============================================
 	GlobalNavi Dropdown Menu

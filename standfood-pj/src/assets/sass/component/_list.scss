@@ -15,6 +15,7 @@
  &__company{
    li{
      margin-right: 10px;
+     width: calc(100% - 10px);
      @media (max-width:$media-tablet) {
        width: calc(49% - 10px);
        &:nth-child(2){
