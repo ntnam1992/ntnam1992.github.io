@@ -4,10 +4,10 @@
 
 .footer{
   color: $white-base;
-  padding-bottom: 80px;
-  @media (max-width:$media-tablet) {
-    padding-bottom: 60px;
-  }
+  // padding-bottom: 80px;
+  // @media (max-width:$media-tablet) {
+  //   padding-bottom: 60px;
+  // }
   &__content{
     font-size: 10px;
     padding: 10px ;

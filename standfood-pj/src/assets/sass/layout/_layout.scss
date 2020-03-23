@@ -58,3 +58,14 @@ a:hover{
   }
     
 }
+.outner__container{
+  background: url("../images/pic_footer.png") no-repeat bottom;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  background-size: 100%;
+  @media (max-width:$media-tablet) {
+    padding-bottom: 10px;
+  }
+}
