@@ -32,6 +32,10 @@ $bg-yellow-title: #fefbd2;
   font-family: hirakakupro;
   src: url(../font/hiraminpro.otf);
 }
+@font-face {
+  font-family: yugo;
+  src: url(../font/yugothib.tff);
+}
 $font-page:"Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
 $font-sans-serif: "Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","Hiragino Sans",メイリオ,Meiryo,sans-serif;
 $font-serif: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;

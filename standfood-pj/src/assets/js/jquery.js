@@ -23,4 +23,8 @@ $(document).ready(function(){
 		$(".nav__menu > ul > li").removeClass("active");
 		$(this).addClass("active");
 	})
+	$(".subNav > li").click(function(){
+		$(".subNav > li").removeClass("active");
+		$(this).addClass("active");
+	})
 });
