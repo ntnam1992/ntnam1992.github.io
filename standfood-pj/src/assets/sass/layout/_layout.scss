@@ -40,6 +40,9 @@ a:hover{
   color: $white-base;
   text-align: center;
   margin: 17px auto;
+  @media (max-width:$media-tablet) {
+    margin: 20px auto 12px;
+  }
 }
 .link:before {
   content: "";
@@ -71,4 +74,37 @@ a:hover{
   @media (max-width:$media-tablet) {
     padding-bottom: 10px;
   }
+}
+%triangle{
+  content:"";
+  width: 0;
+  height: 0;
+  border-top: 62px solid transparent;
+  border-bottom: 62px solid transparent;
+  position: absolute;
+  top: 0;
+  right: -45px;
+}
+.triangle--orange{
+  background: linear-gradient(to right, #f39800, #f39b00, #f18700);
+  &:after{
+    @extend %triangle;
+    border-left: 45px solid #f18700;
+  }
+}
+.triangle--red{
+  background: linear-gradient(to right, #e15047, #e25349, #dc413a);
+  &:after{
+    @extend %triangle;
+    border-left: 45px solid #dc413a;
+  }
+}
+.cl--white{
+  color: $white-base;
+}
+.notice__info{
+  padding:30px 10px 0
+}
+.showdow-box{
+  box-shadow: 0px 0 5px 0px rgba(0,0,0,0.8), 0px 0 5px -1px rgba(0,0,0,0.8);
 }

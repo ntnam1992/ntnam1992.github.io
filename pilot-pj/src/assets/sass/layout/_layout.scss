@@ -65,7 +65,15 @@
     min-width: auto;
   }
 }
-a:hover{
-  opacity: 0.8;
-  transition: opacity 1s;
+
+a{
+  cursor: pointer;
+  display: inline-block;
+  &:hover{
+    opacity: 0.8;
+    transition: opacity 1s;
+  }
+}
+.cl--white{
+  color: $white-base;
 }

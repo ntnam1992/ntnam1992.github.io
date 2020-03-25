@@ -27,7 +27,7 @@
   &__sub, &__add{
     display: none;
     position: absolute;
-    right: 3%;
+    right: 3.25%;
     top: 10px;
     cursor: pointer;
     @media (max-width:$media-sp) {
@@ -38,7 +38,7 @@
     display: block;
   }
   &__gradient{
-    background: url(../images/bg_liner_item.jpg) repeat-x center center;
+    background: url(../images/bg_linear_gradient.jpg) repeat-x center center;
     border-radius: 4px;
     border-left: 1px solid #fef96a;
     border-right: 1px solid #fef96a;
@@ -110,7 +110,7 @@
       font-size: 16px;
     }
     a{
-      padding: 6px 10px;
+      padding: 8px 10px;
     }
   }
 }

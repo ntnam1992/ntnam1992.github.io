@@ -85,6 +85,7 @@
       align-items: center;
       width: 100%;
       line-height: 1.3;
+      position: relative;
       &:before{
         content: " ";
         background: url('../images/icn_arrow_large.png') no-repeat left center;
@@ -92,9 +93,12 @@
         height: 40px;
         width: 17px;
         text-align: right;
+        position: absolute;
+        left: 5%;
         @media (max-width:$media-sp) {
           background: url('../images/icon_menu.png') no-repeat left center;
           width: 10px;
+        
         }
       }
       @media (max-width:640px) {
@@ -119,4 +123,30 @@
 }
 .nav_item--sp li:nth-child(4) a:before{
   padding-right: 10.10%;
+}
+
+.progress{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  &__items{
+    margin-right: 65px;
+    max-width: 255px;
+    width: 100%;
+    height:124px;
+    color: $white-base;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  &__title{
+    font-size: 19px;
+    font-weight: bold;
+  }
 }

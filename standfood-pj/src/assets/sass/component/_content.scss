@@ -36,7 +36,7 @@
   }
   &__info{
     background: url(../images/bg_content.jpg);
-    padding: 30px 17px 19px;
+    padding: 30px 19px 19px;
     
   }
   &__inner{
@@ -47,14 +47,14 @@
     &--title{
       border-bottom: 1px solid $brown-light;
       background: $bg-yellow-title;
-      padding: 5px 27px;
+      padding: 7px 27px;
       @media (max-width:$media-sp) {
         padding: 5px 10px ;
       }
     }
     &--info{
       background: $white-base;
-      padding: 20px 27px;
+      padding: 16px 27px;
       @media (max-width:$media-sp) {
         padding: 10px ;
       }
@@ -75,8 +75,11 @@
         flex-wrap: wrap;
       }
       figure{
-        width: calc(50% - 10px);
+        width: calc(51%);
+        margin-left: 25px;
+        margin-top: 5px;
         @media (max-width:$media-tablet) {
+          margin-left: 0;
           width: 100%;
           order:-1;
           margin-bottom: 10px;

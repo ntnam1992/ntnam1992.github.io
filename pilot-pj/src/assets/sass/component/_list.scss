@@ -77,6 +77,9 @@
     padding: 0 0 10px 0;
     &:first-child{
       padding: 15px 0 0;
+      @media (max-width:$media-sp) {
+        padding: 5px 0 0;
+      }
     }
     li{
       border: 1px solid $border-color;
@@ -265,7 +268,7 @@
         }
       }
       .title__list--left{
-        letter-spacing: -0.5px;
+        // letter-spacing: -0.5px;
         span{
           font-size: 10px;
         }
@@ -341,7 +344,8 @@
   }
   @media (max-width:$media-tablet) {
     top:-20px;
-    right:0;
+    right:25px;
+    text-decoration: underline;
   }
 }
 
