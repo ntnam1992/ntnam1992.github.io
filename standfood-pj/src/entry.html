@@ -18,7 +18,7 @@
       <div class="nav__menu " id="globalNavi">            	
           <ul >                        
               <li><a href="#">TOP</a></li>
-              <li class="active"><a href="#">エントリー<br class="show-pc"/>について </a>
+              <li><a href="#">エントリー<br class="show-pc"/>について </a>
                 <ul class="subNav">
                   <li><a href="#">エントリー概要</a></li>
                   <li><a href="#">PCからのエントリー手順</a></li>
@@ -29,7 +29,7 @@
               <li><a href="#">ルール説明</a></li>                   
               <li><a href="#">賞品紹介</a></li>
               <li><a href="#">よくある質問</a></li>               	
-              <li><a href="#">エントリー</a></li>	                            
+              <li class="active"><a href="#">エントリー</a></li>	                            
             </ul>	                   
         </div>
     </div>
@@ -47,14 +47,14 @@
       <li>></li>
       <li>エントリー</li>
     </ul>
-    <div class="show-sp">
+    <!-- <div class="show-sp">
       <ul class="nav_item--sp">
         <li><a href="#">エントリー概要</a></li>
         <li><a href="#">PCからの<br>エントリー手順</a></li>
         <li><a href="#">スマートフォンからの<br>エントリー手順</a></li>
         <li><a href="#">携帯電話からの<br>エントリー手順</a></li>
       </ul>
-    </div>
+    </div> -->
     
     <div class="border__top"></div>
     <div class="border__content">
@@ -63,7 +63,7 @@
           <p>エントリー概要</p>
         </div>
         <div class="content__info">
-          <div class="progress">
+          <div class="progress show-pc">
             <div class="progress__items triangle--orange">
               <p class="progress__title">早期エントリー期間</p>
               <p>2016年10月6日（木）PM<br/>～10月16日（日）17:00</p>
@@ -73,15 +73,86 @@
               <p>2016年10月16日（日）17:00<br/>～10月30日（日）17:00</p>
             </div>
           </div>
+
+          <div class="progress progress--sp">
+            <div class="progress__items triangle__sp--orange">
+              <div class="progress__items--text">
+                <p class="progress__title">早期エントリー期間</p>
+                <p>2016年10月6日（木）PM<br/>～10月16日（日）17:00</p>
+              </div>
+            </div>
+            <div class="progress__items triangle__sp--red">
+              <div class="progress__items--text"s>
+                <p class="progress__title">通常エントリー期間</p>
+                <p>2016年10月16日（日）17:00<br/>～10月30日（日）17:00</p>
+              </div>
+              
+            </div>
+          </div>
+
           <p class="cl--white notice__info">オッズ・マスターズ・グランプリ2016は1st Stageと2nd Stageの2期に分かれて開催され、エントリー期間も1st Stageと2nd Stageで分かれています。いずれかの期間に1度エントリーすれば、以降本キャンペーンをお楽しみいただくことができます。</p>
         </div> 
-        <div class="title__content1">
-          <p>エントリー概要</p>
-        </div>
+       
+        <p class="title__content1">エントリーフォーム1</p>
+
         <div class="content__info">
           <p class="notice__error">
             正しく入力されていない箇所があります。再度ご確認ください。
           </p>
+          <div class="group">
+            <p class="group__info--left title__info">加入者番号 <span class="cl--red">※必須</span></p>
+            <div class="group__info--right">
+              <p class="cl--error">加入者番号を半角で正しく入力してください。</p>
+              <input class="ip__error ip__phone" id="phone_number" type="text">
+              <p class="notice__input">6桁の方は最初に00をつけて下さい。（半角）</p>
+            </div>
+          </div>
+          <div class="group">
+            <p class="group__info--left title__info">加入者番号 <span class="cl--red">※必須</span></p>
+            <div class="group__info--right">
+              <p class="cl--error">生年月日を半角で正しく入力してください。</p>
+              <div class="group__info--input">
+                <input class="ip__error ip__year" id="id_year" type="text">
+                <label for="id_year">年</label>
+
+                <input class="ip__error ip__month" id="id_month" type="text">
+                <label for="id_month">月</label>
+
+                <input class="ip__error ip__day" id="id_day" type="text">
+                <label for="id_day">日</label>
+              </div>
+              <p class="notice__input">記入例：1985年2月12日（半角）</p>
+            </div>
+          </div>
+          <div class="rule">
+            <div class="rule__area">
+              <p>利用規約</p>
+            </div>
+            <div class="rule__info">
+                利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。
+                利用規約テキストが入ります。利用規約テキストが入ります。利用規約テキストが入ります。            
+            </div>
+          </div>
+          <p class="note__text cl--error">利用規約への同意が必要です。</p>
+          <div class="accept__rule">
+            <input type="checkbox" id="id_accept">
+            
+            <label for="id_accept" class="js-label">
+              <img src="assets/images/checkbox_error.png" alt="利用規約に同意する" class="active js-check-off">
+              <img src="assets/images/check_ero_on.png" alt="利用規約に同意する" class="js-check-on">
+              利用規約に同意する
+            </label>
+          </div>
+          <p class="btn btn__green btn__next"><a href="#">次へ</a></p> 
+          <p class="cl--white"></p>
         </div>
       </div>
     </div>    

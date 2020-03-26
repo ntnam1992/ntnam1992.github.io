@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.group{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5px;
+  @media (max-width: $media-tablet) {
+    flex-wrap: wrap;
+  }
+  &__info{
+    &--left{
+      width: 32.3%;
+      background: #fefbd2;
+      border: 1px solid $brown-light;
+      padding: 6px 6px 6px 20px;
+      @media (max-width: $media-tablet) {
+        width: 100%;
+        background: none;
+        border: 0;
+        color: $brown-light;
+        padding: 0;
+      }
+    }
+    &--right{
+      padding-left: 20px;
+      width: 67.7%;
+      @media (max-width: $media-tablet) {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+    &--input{
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}

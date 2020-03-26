@@ -27,4 +27,19 @@ $(document).ready(function(){
 		$(".subNav > li").removeClass("active");
 		$(this).addClass("active");
 	})
+
+	$(".js-label").click(function(){
+
+		$('#id_accept').change(function () {
+			if($(this).is(':checked')) {
+				$(".js-check-on,.js-check-off").removeClass("active");
+				$(".js-check-on").addClass("active");
+					return;
+			}
+			$(".js-check-on,.js-check-off").removeClass("active");
+			$(".js-check-off").addClass("active");
+
+		});
+
+	});
 });

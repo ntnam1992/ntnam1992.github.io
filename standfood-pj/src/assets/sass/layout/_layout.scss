@@ -87,23 +87,37 @@ a:hover{
 }
 .triangle--orange{
   background: linear-gradient(to right, #f39800, #f39b00, #f18700);
+
   &:after{
     @extend %triangle;
     border-left: 45px solid #f18700;
+    @media (max-width:$media-tablet) {
+      display: none;
+    }
   }
+}
+.triangle__sp--orange{
+  background: url("../images/bg_progress1.png")no-repeat center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.triangle__sp--red{
+  background: url("../images/bg_progress2.png")no-repeat center;
+  background-size: cover;
 }
 .triangle--red{
   background: linear-gradient(to right, #e15047, #e25349, #dc413a);
+
   &:after{
     @extend %triangle;
     border-left: 45px solid #dc413a;
+    @media (max-width:$media-tablet) {
+      display: none;
+    }
   }
 }
 .cl--white{
   color: $white-base;
-}
-.notice__info{
-  padding:30px 10px 0
 }
 .showdow-box{
   box-shadow: 0px 0 5px 0px rgba(0,0,0,0.8), 0px 0 5px -1px rgba(0,0,0,0.8);
@@ -119,4 +133,10 @@ a:hover{
 }
 .lh-edit3{
   line-height: 1.55;
+}
+.cl--error{
+  color: #ff6666;
+}
+.cl--red{
+  color :#ff3326;
 }
