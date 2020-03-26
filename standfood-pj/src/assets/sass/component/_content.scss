@@ -10,6 +10,9 @@
   margin: 0 auto 40px;
   border: 11px solid transparent;
   border-image: url(../images/br_img.png) 18 round;
+  -moz-border-image: url(../images/br_img.png) 18 round;
+  -webkit-border-image: url(../images/br_img.png) 18 round;
+  -o-border-image: url(../images/br_img.png) 18 round;
   box-sizing: border-box;
   position: relative;
   @media (max-width:$media-sp) {
@@ -25,6 +28,9 @@
   width: 100%;
   margin: 0 auto;
   border-image: url(../images/bg_inner.png) 10 round;
+  -moz-border-image: url(../images/bg_inner.png) 10 round;
+  -webkit-border-image: url(../images/bg_inner.png) 10 round;
+  -o-border-image: url(../images/bg_inner.png) 10 round;
   box-sizing: border-box;
   background: $white-base;
   padding: 15px 30px 35px;
