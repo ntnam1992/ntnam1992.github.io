@@ -3,27 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chiba Index</title>
+    <title>Where Index</title>
     <link href="/diving/en/assets/css/common.css" rel="stylesheet" type="text/css">
     <link href="/diving/en/assets/css/pages/where.css" rel="stylesheet" type="text/css">
+    <link href="/diving/en/assets/css/vendors/select2.css" rel="stylesheet" type="text/css">
 </head>
 <body id="where_top">
     <div class="main">
-        <!--#include virtual="/diving/en/includes/header.html" -->
-
+         <!-- Header -->
+         <header>
+          <div class="header__cookies">
+              <p>We use cookies on this site to enhance your user experience. If you continue to browse, you accept the use of cookies on our site. See our <span><a href="#" target="_blank">cookies policy</a></span> for more information.</p>
+              <div class="cookies__btn js__cookies__btn">Accept</div>
+          </div>
+          <div class="header__inner">
+              <div class="header__container">
+      
+                  <a href="#" target="_blank" class="header__logo">
+                      <img src="/diving/en/assets/img/common/header_logo.png" alt="JNTO">
+                  </a>
+      
+                  <h1>
+                      <a href="#" target="_blank" class="hidden__title">JAPAN DIVING<span>Dive into the Biodiversity Hot Spot</span></a>
+                  </h1>
+      
+                  <div class="menu">
+                      <div class="menu__btn js__menu__btn">
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                      </div>
+                      <div class="menu__content js__menu__content">
+                          <div class="inner">
+                              <ul class="menu__main">
+                                  <li class="menu__title">
+                                      JAPAN DIVING
+                                  </li>
+                                  <li>
+                                      <a href="" target="_blank">Home <span class="icon__link"></span></a>
+                                  </li>
+                                  <li>
+                                      <a class="active" href="" target="_blank">
+                                          Why Dive in Japan? <span class="icon__link"></span>
+                                      </a>
+                                  </li>
+                                  <li class="menu__sub">
+                                      <a href="#" class="pointer-none">Guides</a>
+                                      <ul class="sub__content">
+                                          <li><a href="" target="_blank">Chiba <span class="icon__link icon__small"></span></a></li>
+                                          <li><a href="" target="_blank">Tokyo <span class="icon__link icon__small"></span></a></li>
+                                          <li><a href="" target="_blank">Kanagawa <span class="icon__link icon__small"></span></a>
+                                          </li>
+                                          <li><a href="" target="_blank">Shizuoka <span class="icon__link icon__small"></span></a>
+                                          </li>
+                                          <li><a href="" target="_blank">Toyama <span class="icon__link icon__small"></span></a></li>
+                                      </ul>
+                                  </li>
+                                  <li>
+                                      <a href="">Where to Dive <span class="icon__link"></span></a>
+                                  </li>
+                                  <li class="menu__sub">
+                                      <a href="#" class="pointer-none">Interview</a>
+                                      <ul class="sub__content sub__content--edit">
+                                          <li>
+                                              <a href="" target="_blank">Andy Murch <span class="icon__link icon__small"></span></a>
+                                          </li>
+                                          <li>
+                                              <a href="" target="_blank">Ryo Minemizu <span class="icon__link icon__small"></span></a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <li>
+                                      <a href="#" target="_blank">Photos <span class="icon__link"></span></a>
+                                  </li>
+                                  <li>
+                                      <a href="#" target="_blank">Travel <span class="icon__link"></span></a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+      <!--end Header -->
         <div class="banner">
             <div class="banner__top">
                 <div class="inner">
                     <p class="banner__title">Where to Dive</p>
                 </div>
             </div>
-             <div class="map">
+            <div class="map">
                 <div class="map__content">
-                  <div class="inner p__relative">
-                    <p class="title title__map">Where to Dive</p>
-                  
-                      <img src="assets/img/index/pic_map.png" alt="Where to Dive" class="map__jp">
-                   
+                  <div class="inner p__relative">   
+                    <div class="map__search">
+                        <div class="map__search--input">
+                          <p class="title__search">Destination</p>
+                          <div class="search__area">
+                            
+                            <span class="search__input">
+                              <select class="js-destination" multiple="multiple">
+                                <!-- <option></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option> -->
+
+                              </select>
+                              <!-- <input type="text" placeholder="Enter destination"> -->
+                            </span> 
+                          </div> 
+                        </div>
+                        <div class="map__search--link">
+                          <p>
+                            <a href="">View All Destinations</a>
+                          </p>
+                           <p>
+                            <a href="">List of Diving Shops</a>
+                           </p> 
+                        </div>
+                    </div>             
+                      <img src="/diving/en/assets/img/index/pic_map.png" alt="Where to Dive" class="map__jp">
                     <ul class="list__location">
                       <li class="show__sp title__category">
                         <p>Hokkaido & Northern Japan</p>
@@ -184,15 +286,9 @@
                         </p>
                       </li>
                     </ul>
-                    <p class="notice__map">100+ of the Best Diving Spot in Japan!<br/>
-                      You can also find the ideal Diving Shop.
-                      </p>
-                   <p class="link__location">
-                    <a href="">View Diving Location Map</a>
-                   </p>
                   </div>
                 </div>
-              </div> 
+            </div> 
         </div>
         <div class="breadcrumb">
             <div class="inner">
@@ -202,12 +298,71 @@
                 </ul>
             </div>
         </div>
-
-        <!--#include virtual="/diving/en/includes/footer.html" -->
+        <div class="inner">
+          <div class="inner__small">
+            <p>
+              Because of Japan’s vast size and relative land to ocean ratio there is a huge variety of dives to partake in. 
+              There are at least three distinct ecosystems, from the far north: where you can find king crabs prowling the depths, 
+              to the warm south: where you can explore coral reefs. Swim through kelp forests and discover large creatures in the region in between the two.
+            </p>
+            <p>From November to May you can swim with schools of hammerheads, and during the summer you can watch manta rays go through their cleaning stations.</p>
+            <p>Turquoise fringed archipelagos and crystal blue lagoons await off the shore. Old WWII wrecks sit quietly on the sandy sea floor, slowly accruing coral and algae. For history buffs there are few better </p>
+          </div>
+          <div class="see__video">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/v7-XTf5XdZw?rel=0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+          <div class="footer__container">
+              <div class="footer__inner">
+                  <a href="#" target="_blank" class="footer__logo">
+                      <img src="/diving/en/assets/img/common/footer_logo.svg" alt="JNTO">
+                  </a>
+        
+                  <ul class="footer__link">
+                      <li><a href="#" target="_blank">Privacy Policy</a></li>
+                      <li><a href="#" target="_blank">Cookie Policy</a></li>
+                      <li><a href="#" target="_blank">Terms Of Use</a></li>
+                  </ul>
+        
+                  <ul class="footer__social">
+                      <li>
+                          <a href="#" target="_blank">
+                              <img src="/diving/en/assets/img/common/icon_fb.svg" alt="Facebook">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#" target="_blank">
+                              <img src="/diving/en/assets/img/common/icon_insta.svg" alt="Instagram">
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#" target="_blank">
+                              <img src="/diving/en/assets/img/common/icon_youtube.svg" alt="Youtube">
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        
+          <div class="copyright">
+              <div class="footer__inner">
+                  <p>&copy; Japan National Tourism Organization. All Rights Reserved.</p>
+              </div>
+          </div>
+        </div>
+        
     </div>
-
     <!-- Javascript and library -->
     <script src="/diving/en/assets/js/vendors/jquery-3.1.js"></script>
+    <script src="/diving/en/assets/js/vendors/select2.min.js"></script>
     <script src="/diving/en/assets/js/common.js"></script>
+    <script src="/diving/en/assets/js/where.js"></script>
 </body>
 </html>
