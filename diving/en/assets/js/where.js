@@ -374,7 +374,7 @@ $(document).ready(function() {
     var data = e.params.data.id;
     // check value id and link to url
     if (data && data.indexOf("sub-") == -1 ){
-      window.location.href = "http://ntnam1992.github.io/guides/chiba";
+      window.location.href = "http://ntnam1992.github.io/diving/en/guides/chiba";
     }
     else{
       window.location.href = "http://ntnam1992.github.io/diving/en/where/detail"
