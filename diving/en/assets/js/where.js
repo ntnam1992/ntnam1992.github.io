@@ -374,10 +374,10 @@ $(document).ready(function() {
     var data = e.params.data.id;
     // check value id and link to url
     if (data && data.indexOf("sub-") == -1 ){
-      window.location.href = "https://ntnam1992.github.io/diving/en/guides/chiba/";
+      window.location.href = "http://localhost:3000/diving/en/guides/chiba";
     }
     else{
-      window.location.href = "https://ntnam1992.github.io/diving/en/where/detail"
+      window.location.href = "http://localhost:3000/diving/en/where/detail"
     }
 });
 // call function select2 and import data
