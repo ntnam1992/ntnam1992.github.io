@@ -54,6 +54,9 @@
       border-bottom: 1px solid $brown-light;
       background: $bg-yellow-title;
       padding: 7px 27px;
+      @media (max-width:$media-tablet) {
+        text-align: center;
+      }
       @media (max-width:$media-sp) {
         padding: 5px 10px ;
       }
@@ -67,6 +70,9 @@
     }
     &--font{
       font-size: 14px;
+      @media (max-width:$media-sp) {
+        font-size: 12px;
+      }
     }
     &--text{
       margin-bottom: 10px;

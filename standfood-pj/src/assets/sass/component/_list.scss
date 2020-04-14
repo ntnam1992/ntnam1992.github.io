@@ -71,6 +71,9 @@
         margin: 12px 0 20px;
       }
     }
+    &.active{
+      background: #d6b32d;
+    }
     a{
       text-align: center;
       display: block;
@@ -95,18 +98,22 @@
         text-align: right;
         position: absolute;
         left: 5%;
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+          height: 100%; 
+        }
         @media (max-width:$media-sp) {
           background: url('../images/icon_menu.png') no-repeat left center;
           width: 10px;
         
         }
       }
-      @media (max-width:640px) {
-        font-size: 18px;
+      @media (max-width:$media-tablet) {
+        font-size: 16px;
+        height:47px;
       }
       @media (max-width:$media-sp) {
-        font-size: 14px;
-        height: 50px;
+        font-size: 12px;
+        height: 35px;
       }
     }
   }
@@ -114,6 +121,12 @@
 
 .nav_item--sp li:nth-child(1) a:before{
   padding-right: 11.78451178451178%;
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    height: 25px;
+    @media (max-width:$media-sp) {
+      height: 20px;
+    }
+  }
 }
 .nav_item--sp li:nth-child(2) a:before{
   padding-right: 13.46801346801347%;
@@ -159,30 +172,44 @@
       max-width: 100%;
       margin-right: 0;
       position: relative;
-      padding-bottom: 32%;
-      font-size: 22px;
-     }
-     @media (max-width:640px) {
-      font-size: 16px;
+      padding-bottom: 22%;
+      font-size: 15px;
      }
      @media (max-width:$media-sp) {
-      font-size: 14px;
+      font-size: 12px;
      }
     &:last-child{
       margin-right: 45px;
+      p{
+        margin-left: 35px;
+      }
       @media (max-width:$media-tablet) {
         margin-right: 0;
+        p{
+          margin-left: 0;
+        }
        }
+      
     }
     &:first-child{
       margin-left: 24px;
+      p{
+        margin-left: 15px;
+      }
       @media (max-width:$media-tablet) {
         margin-left: 0;
+        p{
+          margin-left: 0;
+        }
        }
     }
     &--text{
       position: absolute;
       top:10px;
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+        left:0;
+        right:0;  
+      }
     }
     p{
       text-align: center;
@@ -192,13 +219,10 @@
     font-size: 19px;
     font-weight: bold;
     @media (max-width:$media-tablet) {
-      font-size: 28px;
-    }
-    @media (max-width:640px) {
-      font-size: 22px;
-     }
-     @media (max-width:640px) {
       font-size: 18px;
+    }
+     @media (max-width:640px) {
+      font-size: 14px;
      }
   }
 }

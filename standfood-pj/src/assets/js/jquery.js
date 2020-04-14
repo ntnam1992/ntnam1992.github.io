@@ -42,4 +42,12 @@ $(document).ready(function(){
 		});
 
 	});
+	$(".mean-expand").click(function(){
+		if($(".mean-expand").hasClass("mean-clicked") == true){
+			$(".subNav").parent().css({"padding": "2% 0 0"});
+		}
+		else{
+			$(".subNav").parent().css({"padding": "2% 0"});
+		}
+	});
 });
